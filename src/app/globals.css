@@ -19,6 +19,11 @@
   --color-at-text-muted: var(--at-text-muted);
   --color-at-pink: var(--at-pink);
   --color-at-section: var(--at-section);
+  --color-at-border: var(--at-border);
+  --color-at-line: var(--at-line);
+  --color-at-bg-soft: var(--at-bg-soft);
+  --color-at-footer-line: var(--at-footer-line);
+  --color-at-footer-muted: var(--at-footer-muted);
   --font-at-heading: var(--at-font-heading);
   --font-at-body: var(--at-font-body);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -71,6 +76,11 @@
   --at-text-muted: #8988a3;
   --at-pink: #f12d90;
   --at-section: #ffffff;
+  --at-border: #efeeff;
+  --at-line: #cccccc;
+  --at-bg-soft: #fafaff;
+  --at-footer-line: #4b4785;
+  --at-footer-muted: #666582;
   --at-font-heading: "Montserrat", "Noto Sans JP", sans-serif;
   --at-font-body: "Noto Sans JP", sans-serif;
   --card: oklch(1 0 0);
@@ -148,5 +158,14 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

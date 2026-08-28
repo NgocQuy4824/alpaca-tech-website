@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-[#2d2970] w-full flex justify-center px-4 sm:px-8 lg:px-[76px] pt-16 pb-8">
+    <footer className="bg-at-primary w-full flex justify-center px-4 sm:px-8 lg:px-[76px] pt-16 pb-8">
       <div className="w-full max-w-[1288px] flex flex-col">
         {/* Top row: logos + back-to-top */}
         <div className="flex flex-row justify-between items-center h-[98px] max-[540px]:h-auto max-[540px]:flex-col max-[540px]:gap-4">
@@ -58,8 +58,12 @@ export function Footer() {
           {/* Nav + contact + lang */}
           <div className="flex flex-col items-end gap-8 max-[540px]:items-start max-[540px]:w-full">
             <div className="flex items-end gap-10 max-[540px]:flex-col max-[540px]:items-start">
-              <Link href="/en#solutions" className="group flex flex-col">
+              <Link href="/en/solution" className="group flex flex-col">
                 <span className="text-white text-sm tracking-[0.04em]">SOLUTION</span>
+                <span className="h-px w-0 bg-white group-hover:w-full transition-all duration-300" />
+              </Link>
+              <Link href="/en/aim" className="group flex flex-col">
+                <span className="text-white text-sm tracking-[0.04em]">AIM</span>
                 <span className="h-px w-0 bg-white group-hover:w-full transition-all duration-300" />
               </Link>
             </div>
@@ -92,9 +96,9 @@ export function Footer() {
               </div>
               <Link
                 href="/en#contact"
-                className="hidden lg:flex items-center gap-3 bg-white rounded-lg px-4 py-3 hover:bg-[#7472e2] group transition-colors"
+                className="hidden lg:flex items-center gap-3 bg-white rounded-lg px-4 py-3 hover:bg-at-accent group transition-colors"
               >
-                <span className="text-[#2d2970] group-hover:text-white text-sm font-bold tracking-[0.04em] transition-colors">CONTACT</span>
+                <span className="text-at-primary group-hover:text-white text-sm font-bold tracking-[0.04em] transition-colors">CONTACT</span>
                 <img
                   src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-24x24_53ad8034-be39-43e4-a7ff-6ee82c06d5c3.svg"
                   alt=""
@@ -107,7 +111,7 @@ export function Footer() {
               href="/en#contact"
               className="flex lg:hidden w-full items-center justify-center gap-3 bg-white rounded-lg px-6 py-4"
             >
-              <span className="text-[#2d2970] text-sm font-bold tracking-[0.04em]">CONTACT</span>
+              <span className="text-at-primary text-sm font-bold tracking-[0.04em]">CONTACT</span>
               <img
                 src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-24x24_53ad8034-be39-43e4-a7ff-6ee82c06d5c3.svg"
                 alt=""
@@ -118,23 +122,23 @@ export function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="flex flex-col lg:flex-row justify-between gap-4 mt-6 pt-6 border-t border-[#4b4785]">
+        <div className="flex flex-col lg:flex-row justify-between gap-4 mt-6 pt-6 border-t border-at-footer-line">
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap gap-10">
-              <Link href="/en/privacy-policy" className="text-[#8988a3] text-xs tracking-[0.04em] hover:text-white/50 transition-colors">Privacy Policy</Link>
-              <Link href="/en/site-policy" className="text-[#8988a3] text-xs tracking-[0.04em] hover:text-white/50 transition-colors">Site Policy</Link>
-              <Link href="/en/security-policy" className="text-[#8988a3] text-xs tracking-[0.04em] hover:text-white/50 transition-colors">Security Policy</Link>
+              <Link href="/en/privacy-policy" className="text-at-text-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors">Privacy Policy</Link>
+              <Link href="/en/site-policy" className="text-at-text-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors">Site Policy</Link>
+              <Link href="/en/security-policy" className="text-at-text-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors">Security Policy</Link>
             </div>
-            <Link href="/en/email-disclaimer" className="text-[#8988a3] text-xs tracking-[0.04em] hover:text-white/50 transition-colors">SHARING CONFIDENTIAL INFORMATION WITHIN THE GROUP</Link>
-            <span className="text-[#8988a3] text-xs tracking-[0.04em] hidden lg:block">©AlpacaTech Co. Ltd. all rights reserved.</span>
+            <Link href="/en/email-disclaimer" className="text-at-text-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors">SHARING CONFIDENTIAL INFORMATION WITHIN THE GROUP</Link>
+            <span className="text-at-text-muted text-xs tracking-[0.04em] hidden lg:block">©AlpacaTech Co. Ltd. all rights reserved.</span>
           </div>
           <div className="flex flex-col items-end gap-4 lg:max-w-[320px]">
-            <p className="text-[#8988a3] text-[10px] leading-[1.8] tracking-[0.04em] text-right max-[540px]:text-left">
+            <p className="text-at-text-muted text-[10px] leading-[1.8] tracking-[0.04em] text-right max-[540px]:text-left">
               AlpacaTech Co., Ltd.<br />Financial Instruments Business Operator<br />(Investment Advisory and Agency Business)<br />Registration Number 3453<br />Member Association: Japan Investment Advisers Association
             </p>
           </div>
         </div>
-        <span className="text-[#666582] text-xs tracking-[0.04em] lg:hidden mt-6">©AlpacaTech Co. Ltd. all rights reserved.</span>
+        <span className="text-at-footer-muted text-xs tracking-[0.04em] lg:hidden mt-6">©AlpacaTech Co. Ltd. all rights reserved.</span>
       </div>
     </footer>
   );

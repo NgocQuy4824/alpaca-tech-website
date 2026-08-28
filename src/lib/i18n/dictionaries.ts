@@ -290,7 +290,7 @@ export const vi: Dictionary = {
     },
     aim: {
       title: "Mô hình đầu tư AIM",
-      subtitle: "(SV Digital Software Investment Management)",
+      subtitle: "(Quản lý Đầu tư SV Digital Software)",
       desc: "SV Digital Software cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
       learnMore: "Tìm hiểu thêm",
     },
@@ -323,7 +323,7 @@ export const vi: Dictionary = {
     },
     aim: {
       title: "Mô hình đầu tư AIM",
-      subtitle: "(SV Digital Software Investment Management)",
+      subtitle: "(Quản lý Đầu tư SV Digital Software)",
       desc: "SV Digital Software cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
       learnMore: "Tìm hiểu thêm",
     },
@@ -335,11 +335,11 @@ export const vi: Dictionary = {
   },
   aimPage: {
     heroTitle: "AIM",
-    heroSubtitle: "SV Digital Software Investment Management",
+    heroSubtitle: "Quản lý Đầu tư SV Digital Software",
     intro: {
       title: "Mô hình đầu tư AIM",
       para1: "SV Digital Software cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển.",
-      para2: "AIM (SV Digital Software Investment Management) là mô hình định lượng cốt lõi của chúng tôi — phân tích nhiều loại dữ liệu thị trường để tạo ra các tín hiệu xây dựng danh mục có kỷ luật. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
+      para2: "AIM (Quản lý Đầu tư SV Digital Software) là mô hình định lượng cốt lõi của chúng tôi — phân tích nhiều loại dữ liệu thị trường để tạo ra các tín hiệu xây dựng danh mục có kỷ luật. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
       bullets: [
         "Dự báo thị trường dựa trên dữ liệu với AI độc quyền",
         "Tầm nhìn trung - dài hạn — tránh biến động do nhiễu",

@@ -13,7 +13,7 @@ export function RecruitTeaser({ dict, locale }: { dict: Dictionary; locale: Loca
         </h2>
         <Image
           src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-1289x473_v-fms_webp_d751e825-390f-47ac-ae9e-7fcc038798ce.jpg"
-          alt="Team at AlpacaTech"
+          alt="Team at SV Digital Software"
           width={1289}
           height={473}
           className="w-full h-auto rounded-2xl object-cover"

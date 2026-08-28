@@ -3,15 +3,15 @@ import { notFound } from "next/navigation";
 import type { Locale } from "@/lib/i18n/types";
 import { isValidLocale } from "@/lib/i18n/types";
 import { getDictionary } from "@/lib/i18n/getDictionary";
-import { RecruitPageContent } from "@/components/sites/alpaca-tech/pages/RecruitPageContent";
+import { RecruitPageContent } from "@/components/sites/sv-digital-software/pages/RecruitPageContent";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
   const locale = raw as Locale;
   return {
-    title: locale === "vi" ? "Tuyển Dụng — AlpacaTech" : "Recruit — AlpacaTech",
-    description: locale === "vi" ? "Gia nhập AlpacaTech — Cơ hội nghề nghiệp trong kỹ thuật dữ liệu, AI và nghiên cứu định lượng." : "Join AlpacaTech — Career opportunities in data engineering, AI, and quantitative research.",
+    title: locale === "vi" ? "Tuyển Dụng — SV Digital Software" : "Recruit — SV Digital Software",
+    description: locale === "vi" ? "Gia nhập SV Digital Software — Cơ hội nghề nghiệp trong kỹ thuật dữ liệu, AI và nghiên cứu định lượng." : "Join SV Digital Software — Career opportunities in data engineering, AI, and quantitative research.",
     alternates: {
       languages: {
         en: `${"https://www.alpaca-tech.ai"}/en/recruit`,

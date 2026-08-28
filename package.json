@@ -1,12 +1,12 @@
 {
-  "name": "alpaca-tech-website",
+  "name": "sv-digital-software-website",
   "version": "1.0.0",
   "private": true,
-  "description": "AlpacaTech corporate website",
+  "description": "SV Digital Software corporate website",
   "author": "NgocQuy",
   "license": "MIT",
   "keywords": [
-    "alpaca-tech",
+    "sv-digital-software",
     "nextjs",
     "corporate-site",
     "fintech"

@@ -1,6 +1,6 @@
-# AlpacaTech Website
+# SV Digital Software Website
 
-AlpacaTech corporate website — cloned from `https://www.alpaca-tech.ai/en` using AI website cloner template.
+SV Digital Software corporate website — cloned from `https://www.alpaca-tech.ai/en` using AI website cloner template.
 
 ## Tech Stack
 
@@ -28,4 +28,4 @@ npm run check  # lint + typecheck + build
 
 ## License
 
-MIT — assets remain property of AlpacaTech Co., Ltd.
+MIT — assets remain property of SV Digital Software Co., Ltd.

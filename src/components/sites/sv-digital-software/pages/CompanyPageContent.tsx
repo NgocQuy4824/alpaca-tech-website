@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
-import { PageHero } from "@/components/sites/alpaca-tech/shared/PageHero";
-import { SectionHeading } from "@/components/sites/alpaca-tech/shared/SectionHeading";
+import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
+import { SectionHeading } from "@/components/sites/sv-digital-software/shared/SectionHeading";
 
 function InfoRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -33,7 +33,7 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
           <div className="w-full max-w-[1288px] flex flex-col gap-10">
             <Image
               src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-1288x568_v-fms_webp_7ca49a22-4fcb-4fce-92b8-2971466e6190.jpg"
-              alt="AlpacaTech team"
+              alt="SV Digital Software team"
               width={1288}
               height={568}
               className="w-full h-auto rounded-2xl object-cover"
@@ -42,8 +42,8 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
             <div className="flex flex-col gap-4">
               <SectionHeading>{d.info.heading}</SectionHeading>
               <div className="flex flex-col pt-4">
-                {d.info.rows.map((row) => (
-                  <InfoRow key={row.label} label={row.label}>
+                {d.info.rows.map((row, i) => (
+                  <InfoRow key={`${row.label}-${i}`} label={row.label}>
                     <span>{row.value}</span>
                   </InfoRow>
                 ))}

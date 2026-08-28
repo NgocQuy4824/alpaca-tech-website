@@ -17,13 +17,13 @@ export function Footer({ dict, locale }: Props) {
             {/* eslint-disable @next/next/no-img-element */}
             <img
               src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-45x50_030be4ed-718d-43a1-829f-973b0b230ea6.svg"
-              alt="AlpacaTech"
+              alt="SV Digital Software"
               className="h-[50px] w-auto"
             />
             {/* eslint-disable @next/next/no-img-element */}
             <img
               src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-152x50_f6b98fc6-7513-4527-81e0-cadcd7b6be47.svg"
-              alt="AlpacaTech"
+              alt="SV Digital Software"
               className="h-[50px] w-auto"
             />
           </div>

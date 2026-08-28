@@ -3,15 +3,15 @@ import { notFound } from "next/navigation";
 import type { Locale } from "@/lib/i18n/types";
 import { isValidLocale } from "@/lib/i18n/types";
 import { getDictionary } from "@/lib/i18n/getDictionary";
-import { SolutionPageContent } from "@/components/sites/alpaca-tech/pages/SolutionPageContent";
+import { SolutionPageContent } from "@/components/sites/sv-digital-software/pages/SolutionPageContent";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
   const locale = raw as Locale;
   return {
-    title: locale === "vi" ? "Giải Pháp — AlpacaTech" : "Solution — AlpacaTech",
-    description: locale === "vi" ? "Giải pháp Dữ liệu AlpacaTech — Snowflake và AlphaCrafter cho phân tích dữ liệu tài chính." : "AlpacaTech Data Solution — Snowflake and AlphaCrafter for financial data analytics.",
+    title: locale === "vi" ? "Giải Pháp — SV Digital Software" : "Solution — SV Digital Software",
+    description: locale === "vi" ? "Giải pháp Dữ liệu SV Digital Software — Snowflake và AlphaCrafter cho phân tích dữ liệu tài chính." : "SV Digital Software Data Solution — Snowflake and AlphaCrafter for financial data analytics.",
     alternates: {
       languages: {
         en: `${"https://www.alpaca-tech.ai"}/en/solution`,

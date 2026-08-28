@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
-import { PageHero } from "@/components/sites/alpaca-tech/shared/PageHero";
+import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
 
 export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   const d = dict.solutionPage;

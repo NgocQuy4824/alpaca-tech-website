@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
-import { PageHero } from "@/components/sites/alpaca-tech/shared/PageHero";
+import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
 
 export function RecruitPageContent({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   const d = dict.recruitPage;
@@ -16,7 +16,7 @@ export function RecruitPageContent({ dict, locale }: { dict: Dictionary; locale:
           <div className="w-full max-w-[1288px] flex flex-col gap-12">
             <Image
               src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-1289x473_v-fms_webp_d751e825-390f-47ac-ae9e-7fcc038798ce.jpg"
-              alt="AlpacaTech team"
+              alt="SV Digital Software team"
               width={1289}
               height={473}
               className="w-full h-auto rounded-2xl object-cover"

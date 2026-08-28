@@ -1,5 +1,6 @@
 // Central i18n dictionary. `en` is the source of truth for shape; `vi` must match.
 // Add a new string here (both `en` and `vi`) and reference it via `useLocale().dict`.
+// TODO(rebrand): AIM = "SV Digital Software Investment Management" — the acronym no longer matches the brand name.
 
 export const en = {
   header: {
@@ -11,7 +12,7 @@ export const en = {
       news: "NEWS",
     },
     contact: "CONTACT",
-    homeAria: "AlpacaTech home",
+    homeAria: "SV Digital Software home",
     openMenu: "Open menu",
     closeMenu: "Close menu",
   },
@@ -33,19 +34,19 @@ export const en = {
     sitePolicy: "Site Policy",
     securityPolicy: "Security Policy",
     emailDisclaimer: "SHARING CONFIDENTIAL INFORMATION WITHIN THE GROUP",
-    copyright: "©AlpacaTech Co. Ltd. all rights reserved.",
+    copyright: "©SV Digital Software Co. Ltd. all rights reserved.",
     companyInfo:
-      "AlpacaTech Co., Ltd.\nFinancial Instruments Business Operator\n(Investment Advisory and Agency Business)\nRegistration Number 3453\nMember Association: Japan Investment Advisers Association",
+      "SV Digital Software Co., Ltd.\nFinancial Instruments Business Operator\n(Investment Advisory and Agency Business)\nRegistration Number 3453\nMember Association: Japan Investment Advisers Association",
     backToTop: "Back to top",
   },
   hero: {
     titleLine1: "Beyond Limits in",
     titleLine2: "Finance with Data Science",
     subtitle:
-      "AlpacaTech is a technology company that develops solutions for investment management, research, analysis and system integration for the financial industry. We combine cutting-edge technology with financial expertise to provide solutions that meet our customers' high standards.",
+      "SV Digital Software is a technology company that develops solutions for investment management, research, analysis and system integration for the financial industry. We combine cutting-edge technology with financial expertise to provide solutions that meet our customers' high standards.",
     cta: "CONTACT",
     news: [
-      { date: "2025/4/14 10:00", title: "AlpacaTech participates in Snowflake Summit 2025" },
+      { date: "2025/4/14 10:00", title: "SV Digital Software participates in Snowflake Summit 2025" },
       { date: "2024/11/20 09:00", title: "AlphaCrafter featured at AWS re:Invent 2024" },
     ],
   },
@@ -53,31 +54,31 @@ export const en = {
     heading: "SOLUTIONS",
     dataSolution: {
       title: "DATA SOLUTION",
-      desc: "As a Snowflake Solutions Partner, AlpacaTech supports clients from environment setup through to data analytics and utilization. We have also developed \"AlphaCrafter\" — a generative AI data agent operating directly within data warehouses. Utilizing this technology, SBI Securities' product won the Grand Prize at the Japan Financial Innovation Award 2024.",
+      desc: "As a Snowflake Solutions Partner, SV Digital Software supports clients from environment setup through to data analytics and utilization. We have also developed \"AlphaCrafter\" — a generative AI data agent operating directly within data warehouses. Utilizing this technology, SBI Securities' product won the Grand Prize at the Japan Financial Innovation Award 2024.",
       learnMore: "Learn more",
     },
     aim: {
       title: "AIM investment model",
-      subtitle: "(AlpacaTech Investment Management)",
-      desc: "AlpacaTech provides asset management solutions that meet our clients' needs, using cutting-edge research and medium to long term market forecasts that utilize our independently developed AI algorithms. AIM is used in the AI investment \"ROBOPRO\", which was developed in collaboration with FOLIO and has over ¥40B in AUM.",
+      subtitle: "(SV Digital Software Investment Management)",
+      desc: "SV Digital Software provides asset management solutions that meet our clients' needs, using cutting-edge research and medium to long term market forecasts that utilize our independently developed AI algorithms. AIM is used in the AI investment \"ROBOPRO\", which was developed in collaboration with FOLIO and has over ¥40B in AUM.",
       learnMore: "Learn more",
     },
   },
   companyTeaser: {
     heading: "COMPANY",
-    desc: "AlpacaTech is a group company of FOLIO Holdings. As a member of the FOLIO Group, which aims to create new financial solutions and realize a prosperous future, we combine our AI and system development technologies with our financial expertise to provide cutting-edge technology that meets the needs of our customers.",
+    desc: "SV Digital Software is a group company of FOLIO Holdings. As a member of the FOLIO Group, which aims to create new financial solutions and realize a prosperous future, we combine our AI and system development technologies with our financial expertise to provide cutting-edge technology that meets the needs of our customers.",
     readMore: "Read more",
   },
   recruitTeaser: {
     heading: "RECRUIT",
-    desc: "AlpacaTech values five principles: \"Strive for Excellence in Quality\", \"Think and Act Bold\", \"Stronger Together\", \"Integrity and Trust\" and \"Embrace Change\". We look forward to working with future colleagues who share these principles and can help us provide new value that goes Beyond Limits.",
+    desc: "SV Digital Software values five principles: \"Strive for Excellence in Quality\", \"Think and Act Bold\", \"Stronger Together\", \"Integrity and Trust\" and \"Embrace Change\". We look forward to working with future colleagues who share these principles and can help us provide new value that goes Beyond Limits.",
     readMore: "Read more",
   },
   newsTeaser: {
     heading: "NEWS",
     viewAll: "View All",
     items: [
-      { date: "2025.04.14", title: "AlpacaTech participates in Snowflake Summit 2025" },
+      { date: "2025.04.14", title: "SV Digital Software participates in Snowflake Summit 2025" },
       { date: "2024.11.20", title: "AlphaCrafter featured at AWS re:Invent 2024 — Generative AI data agent demo" },
     ],
   },
@@ -86,13 +87,13 @@ export const en = {
     heading: "SOLUTIONS",
     dataSolution: {
       title: "DATA SOLUTION",
-      desc: "As a Snowflake Solutions Partner, AlpacaTech supports clients from environment setup through to data analytics and utilization. We have also developed \"AlphaCrafter\" — a generative AI data agent operating directly within data warehouses. Utilizing this technology, SBI Securities' product won the Grand Prize at the Japan Financial Innovation Award 2024.",
+      desc: "As a Snowflake Solutions Partner, SV Digital Software supports clients from environment setup through to data analytics and utilization. We have also developed \"AlphaCrafter\" — a generative AI data agent operating directly within data warehouses. Utilizing this technology, SBI Securities' product won the Grand Prize at the Japan Financial Innovation Award 2024.",
       contactUs: "Contact us",
     },
     aim: {
       title: "AIM investment model",
-      subtitle: "(AlpacaTech Investment Management)",
-      desc: "AlpacaTech provides asset management solutions that meet our clients' needs, using cutting-edge research and medium to long term market forecasts that utilize our independently developed AI algorithms. AIM is used in the AI investment \"ROBOPRO\", which was developed in collaboration with FOLIO and has over ¥40B in AUM.",
+      subtitle: "(SV Digital Software Investment Management)",
+      desc: "SV Digital Software provides asset management solutions that meet our clients' needs, using cutting-edge research and medium to long term market forecasts that utilize our independently developed AI algorithms. AIM is used in the AI investment \"ROBOPRO\", which was developed in collaboration with FOLIO and has over ¥40B in AUM.",
       learnMore: "Learn more",
     },
     cta: {
@@ -103,11 +104,11 @@ export const en = {
   },
   aimPage: {
     heroTitle: "AIM",
-    heroSubtitle: "AlpacaTech Investment Management",
+    heroSubtitle: "SV Digital Software Investment Management",
     intro: {
       title: "AIM investment model",
-      para1: "AlpacaTech provides asset management solutions that meet our clients' needs, using cutting-edge research and medium to long term market forecasts that utilize our independently developed AI algorithms.",
-      para2: "AIM (AlpacaTech Investment Management) is our core quantitative model — it analyses a wide range of market data to generate disciplined, portfolio construction signals. AIM is used in the AI investment \"ROBOPRO\", which was developed in collaboration with FOLIO and has over ¥40B in AUM.",
+      para1: "SV Digital Software provides asset management solutions that meet our clients' needs, using cutting-edge research and medium to long term market forecasts that utilize our independently developed AI algorithms.",
+      para2: "AIM (SV Digital Software Investment Management) is our core quantitative model — it analyses a wide range of market data to generate disciplined, portfolio construction signals. AIM is used in the AI investment \"ROBOPRO\", which was developed in collaboration with FOLIO and has over ¥40B in AUM.",
       bullets: [
         "Data-driven market forecasting with proprietary AI",
         "Medium to long term horizon — avoids noise-driven churn",
@@ -145,7 +146,7 @@ export const en = {
     info: {
       heading: "COMPANY INFORMATION",
       rows: [
-        { label: "Company Name", value: "AlpacaTech Co., Ltd." },
+        { label: "Company Name", value: "SV Digital Software Co., Ltd." },
         { label: "Date of Establishment", value: "July 8, 2022" },
         { label: "Head Office Location", value: "1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703" },
         { label: "Capital", value: "JPY 10,000,000 (as of March 2026)" },
@@ -161,7 +162,7 @@ export const en = {
     history: {
       heading: "Company History",
       items: [
-        { year: "2022.07", text: "AlpacaTech Co., Ltd. established." },
+        { year: "2022.07", text: "SV Digital Software Co., Ltd. established." },
         { year: "2022.10", text: "Registered as Financial Instruments Business Operator (Investment Advisory and Agency Business)." },
         { year: "2023.05", text: "ROBOPRO evaluated as No. 1 in cumulative return and Sharpe ratio by the Financial Services Agency." },
         { year: "2024.11", text: "AlphaCrafter featured at AWS re:Invent 2024." },
@@ -203,10 +204,10 @@ export const en = {
   },
   recruitPage: {
     heroTitle: "RECRUIT",
-    intro: "AlpacaTech values five principles: \"Strive for Excellence in Quality\", \"Think and Act Bold\", \"Stronger Together\", \"Integrity and Trust\" and \"Embrace Change\". We look forward to working with future colleagues who share these principles and can help us provide new value that goes Beyond Limits In Finance.",
+    intro: "SV Digital Software values five principles: \"Strive for Excellence in Quality\", \"Think and Act Bold\", \"Stronger Together\", \"Integrity and Trust\" and \"Embrace Change\". We look forward to working with future colleagues who share these principles and can help us provide new value that goes Beyond Limits In Finance.",
     career: {
       heading: "CAREER OPPORTUNITIES",
-      desc: "Complete list of our current job openings can be viewed from the link below. We look forward to applications from individuals who share AlpacaTech's vision and enthusiasm for our services.",
+      desc: "Complete list of our current job openings can be viewed from the link below. We look forward to applications from individuals who share SV Digital Software's vision and enthusiasm for our services.",
       viewPositions: "View Our Open Positions",
     },
     jobs: [
@@ -220,12 +221,12 @@ export const en = {
     heroTitle: "NEWS",
     viewMore: "View More",
     items: [
-      { date: "2025.04.14", title: "AlpacaTech participates in Snowflake Summit 2025 — Booth demo of AlphaCrafter" },
+      { date: "2025.04.14", title: "SV Digital Software participates in Snowflake Summit 2025 — Booth demo of AlphaCrafter" },
       { date: "2025.03.17", title: "AlphaCrafter wins Grand Prize at the 3rd Google Cloud Generative AI Innovation Awards" },
       { date: "2024.11.20", title: "AlphaCrafter featured at AWS re:Invent 2024 — live demo of generative AI data agent" },
       { date: "2024.09.10", title: "SBI Securities' AlphaCrafter-powered product wins Japan Financial Innovation Award 2024 Grand Prize" },
       { date: "2023.05.16", title: "Financial Services Agency evaluates ROBOPRO as No. 1 in cumulative return and Sharpe ratio" },
-      { date: "2023.02.14", title: "AlpacaTech becomes Snowflake Solutions Partner" },
+      { date: "2023.02.14", title: "SV Digital Software becomes Snowflake Solutions Partner" },
     ],
   },
 };
@@ -242,7 +243,7 @@ export const vi: Dictionary = {
       news: "TIN TỨC",
     },
     contact: "LIÊN HỆ",
-    homeAria: "Trang chủ AlpacaTech",
+    homeAria: "Trang chủ SV Digital Software",
     openMenu: "Mở menu",
     closeMenu: "Đóng menu",
   },
@@ -264,19 +265,19 @@ export const vi: Dictionary = {
     sitePolicy: "Chính sách trang web",
     securityPolicy: "Chính sách bảo mật thông tin",
     emailDisclaimer: "CHIA SẺ THÔNG TIN BẢO MẬT TRONG TẬP ĐOÀN",
-    copyright: "©AlpacaTech Co. Ltd. Bảo lưu mọi quyền.",
+    copyright: "©SV Digital Software Co. Ltd. Bảo lưu mọi quyền.",
     companyInfo:
-      "AlpacaTech Co., Ltd.\nNhà điều hành kinh doanh công cụ tài chính\n(Kinh doanh tư vấn và đại lý đầu tư)\nSố đăng ký 3453\nHiệp hội thành viên: Hiệp hội Cố vấn Đầu tư Nhật Bản",
+      "SV Digital Software Co., Ltd.\nNhà điều hành kinh doanh công cụ tài chính\n(Kinh doanh tư vấn và đại lý đầu tư)\nSố đăng ký 3453\nHiệp hội thành viên: Hiệp hội Cố vấn Đầu tư Nhật Bản",
     backToTop: "Về đầu trang",
   },
   hero: {
     titleLine1: "Vượt Mọi Giới Hạn",
     titleLine2: "Tài Chính Bằng Khoa Học Dữ Liệu",
     subtitle:
-      "AlpacaTech là công ty công nghệ phát triển các giải pháp về quản lý đầu tư, nghiên cứu, phân tích và tích hợp hệ thống cho ngành tài chính. Chúng tôi kết hợp công nghệ tiên tiến với chuyên môn tài chính để cung cấp các giải pháp đáp ứng tiêu chuẩn cao của khách hàng.",
+      "SV Digital Software là công ty công nghệ phát triển các giải pháp về quản lý đầu tư, nghiên cứu, phân tích và tích hợp hệ thống cho ngành tài chính. Chúng tôi kết hợp công nghệ tiên tiến với chuyên môn tài chính để cung cấp các giải pháp đáp ứng tiêu chuẩn cao của khách hàng.",
     cta: "LIÊN HỆ",
     news: [
-      { date: "2025/4/14 10:00", title: "AlpacaTech tham gia Snowflake Summit 2025" },
+      { date: "2025/4/14 10:00", title: "SV Digital Software tham gia Snowflake Summit 2025" },
       { date: "2024/11/20 09:00", title: "AlphaCrafter góp mặt tại AWS re:Invent 2024" },
     ],
   },
@@ -284,31 +285,31 @@ export const vi: Dictionary = {
     heading: "GIẢI PHÁP",
     dataSolution: {
       title: "GIẢI PHÁP DỮ LIỆU",
-      desc: "Là Đối tác Giải pháp Snowflake, AlpacaTech hỗ trợ khách hàng từ thiết lập môi trường đến phân tích và khai thác dữ liệu. Chúng tôi cũng đã phát triển \"AlphaCrafter\" — tác nhân dữ liệu AI tạo sinh hoạt động trực tiếp trong kho dữ liệu. Nhờ công nghệ này, sản phẩm của SBI Securities đã giành Giải Đặc biệt tại Japan Financial Innovation Award 2024.",
+      desc: "Là Đối tác Giải pháp Snowflake, SV Digital Software hỗ trợ khách hàng từ thiết lập môi trường đến phân tích và khai thác dữ liệu. Chúng tôi cũng đã phát triển \"AlphaCrafter\" — tác nhân dữ liệu AI tạo sinh hoạt động trực tiếp trong kho dữ liệu. Nhờ công nghệ này, sản phẩm của SBI Securities đã giành Giải Đặc biệt tại Japan Financial Innovation Award 2024.",
       learnMore: "Tìm hiểu thêm",
     },
     aim: {
       title: "Mô hình đầu tư AIM",
-      subtitle: "(AlpacaTech Investment Management)",
-      desc: "AlpacaTech cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
+      subtitle: "(SV Digital Software Investment Management)",
+      desc: "SV Digital Software cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
       learnMore: "Tìm hiểu thêm",
     },
   },
   companyTeaser: {
     heading: "CÔNG TY",
-    desc: "AlpacaTech là công ty thành viên của FOLIO Holdings. Là một phần của Tập đoàn FOLIO, hướng tới việc tạo ra các giải pháp tài chính mới và hiện thực hóa tương lai thịnh vượng, chúng tôi kết hợp công nghệ AI và phát triển hệ thống với chuyên môn tài chính để cung cấp công nghệ tiên tiến đáp ứng nhu cầu của khách hàng.",
+    desc: "SV Digital Software là công ty thành viên của FOLIO Holdings. Là một phần của Tập đoàn FOLIO, hướng tới việc tạo ra các giải pháp tài chính mới và hiện thực hóa tương lai thịnh vượng, chúng tôi kết hợp công nghệ AI và phát triển hệ thống với chuyên môn tài chính để cung cấp công nghệ tiên tiến đáp ứng nhu cầu của khách hàng.",
     readMore: "Đọc thêm",
   },
   recruitTeaser: {
     heading: "TUYỂN DỤNG",
-    desc: "AlpacaTech coi trọng năm nguyên tắc: \"Theo đuổi sự xuất sắc về chất lượng\", \"Dám nghĩ dám làm\", \"Mạnh mẽ hơn khi cùng nhau\", \"Chính trực và tin cậy\" và \"Ôm lấy sự thay đổi\". Chúng tôi mong được đồng hành cùng những đồng nghiệp tương lai chia sẻ các nguyên tắc này và cùng tạo ra giá trị mới vượt mọi giới hạn.",
+    desc: "SV Digital Software coi trọng năm nguyên tắc: \"Theo đuổi sự xuất sắc về chất lượng\", \"Dám nghĩ dám làm\", \"Mạnh mẽ hơn khi cùng nhau\", \"Chính trực và tin cậy\" và \"Ôm lấy sự thay đổi\". Chúng tôi mong được đồng hành cùng những đồng nghiệp tương lai chia sẻ các nguyên tắc này và cùng tạo ra giá trị mới vượt mọi giới hạn.",
     readMore: "Đọc thêm",
   },
   newsTeaser: {
     heading: "TIN TỨC",
     viewAll: "Xem tất cả",
     items: [
-      { date: "2025.04.14", title: "AlpacaTech tham gia Snowflake Summit 2025" },
+      { date: "2025.04.14", title: "SV Digital Software tham gia Snowflake Summit 2025" },
       { date: "2024.11.20", title: "AlphaCrafter góp mặt tại AWS re:Invent 2024 — Demo tác nhân dữ liệu AI tạo sinh" },
     ],
   },
@@ -317,13 +318,13 @@ export const vi: Dictionary = {
     heading: "GIẢI PHÁP",
     dataSolution: {
       title: "GIẢI PHÁP DỮ LIỆU",
-      desc: "Là Đối tác Giải pháp Snowflake, AlpacaTech hỗ trợ khách hàng từ thiết lập môi trường đến phân tích và khai thác dữ liệu. Chúng tôi cũng đã phát triển \"AlphaCrafter\" — tác nhân dữ liệu AI tạo sinh hoạt động trực tiếp trong kho dữ liệu. Nhờ công nghệ này, sản phẩm của SBI Securities đã giành Giải Đặc biệt tại Japan Financial Innovation Award 2024.",
+      desc: "Là Đối tác Giải pháp Snowflake, SV Digital Software hỗ trợ khách hàng từ thiết lập môi trường đến phân tích và khai thác dữ liệu. Chúng tôi cũng đã phát triển \"AlphaCrafter\" — tác nhân dữ liệu AI tạo sinh hoạt động trực tiếp trong kho dữ liệu. Nhờ công nghệ này, sản phẩm của SBI Securities đã giành Giải Đặc biệt tại Japan Financial Innovation Award 2024.",
       contactUs: "Liên hệ",
     },
     aim: {
       title: "Mô hình đầu tư AIM",
-      subtitle: "(AlpacaTech Investment Management)",
-      desc: "AlpacaTech cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
+      subtitle: "(SV Digital Software Investment Management)",
+      desc: "SV Digital Software cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
       learnMore: "Tìm hiểu thêm",
     },
     cta: {
@@ -334,11 +335,11 @@ export const vi: Dictionary = {
   },
   aimPage: {
     heroTitle: "AIM",
-    heroSubtitle: "AlpacaTech Investment Management",
+    heroSubtitle: "SV Digital Software Investment Management",
     intro: {
       title: "Mô hình đầu tư AIM",
-      para1: "AlpacaTech cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển.",
-      para2: "AIM (AlpacaTech Investment Management) là mô hình định lượng cốt lõi của chúng tôi — phân tích nhiều loại dữ liệu thị trường để tạo ra các tín hiệu xây dựng danh mục có kỷ luật. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
+      para1: "SV Digital Software cung cấp các giải pháp quản lý tài sản đáp ứng nhu cầu của khách hàng, sử dụng nghiên cứu tiên tiến và dự báo thị trường trung - dài hạn dựa trên các thuật toán AI do chúng tôi tự phát triển.",
+      para2: "AIM (SV Digital Software Investment Management) là mô hình định lượng cốt lõi của chúng tôi — phân tích nhiều loại dữ liệu thị trường để tạo ra các tín hiệu xây dựng danh mục có kỷ luật. AIM được sử dụng trong sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng FOLIO với tổng tài sản quản lý hơn 40 tỷ yên.",
       bullets: [
         "Dự báo thị trường dựa trên dữ liệu với AI độc quyền",
         "Tầm nhìn trung - dài hạn — tránh biến động do nhiễu",
@@ -376,7 +377,7 @@ export const vi: Dictionary = {
     info: {
       heading: "THÔNG TIN CÔNG TY",
       rows: [
-        { label: "Tên công ty", value: "AlpacaTech Co., Ltd." },
+        { label: "Tên công ty", value: "SV Digital Software Co., Ltd." },
         { label: "Ngày thành lập", value: "8 tháng 7, 2022" },
         { label: "Địa chỉ trụ sở chính", value: "1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703" },
         { label: "Vốn điều lệ", value: "10.000.000 yên (tính đến tháng 3/2026)" },
@@ -392,7 +393,7 @@ export const vi: Dictionary = {
     history: {
       heading: "Lịch sử công ty",
       items: [
-        { year: "2022.07", text: "Thành lập AlpacaTech Co., Ltd." },
+        { year: "2022.07", text: "Thành lập SV Digital Software Co., Ltd." },
         { year: "2022.10", text: "Đăng ký Nhà điều hành kinh doanh công cụ tài chính (Kinh doanh tư vấn và đại lý đầu tư)." },
         { year: "2023.05", text: "ROBOPRO được Cơ quan Dịch vụ Tài chính đánh giá Số 1 về lợi nhuận lũy kế và tỷ lệ Sharpe." },
         { year: "2024.11", text: "AlphaCrafter góp mặt tại AWS re:Invent 2024." },
@@ -434,10 +435,10 @@ export const vi: Dictionary = {
   },
   recruitPage: {
     heroTitle: "TUYỂN DỤNG",
-    intro: "AlpacaTech coi trọng năm nguyên tắc: \"Theo đuổi sự xuất sắc về chất lượng\", \"Dám nghĩ dám làm\", \"Mạnh mẽ hơn khi cùng nhau\", \"Chính trực và tin cậy\" và \"Ôm lấy sự thay đổi\". Chúng tôi mong được đồng hành cùng những đồng nghiệp tương lai chia sẻ các nguyên tắc này và cùng tạo ra giá trị mới vượt mọi giới hạn trong tài chính.",
+    intro: "SV Digital Software coi trọng năm nguyên tắc: \"Theo đuổi sự xuất sắc về chất lượng\", \"Dám nghĩ dám làm\", \"Mạnh mẽ hơn khi cùng nhau\", \"Chính trực và tin cậy\" và \"Ôm lấy sự thay đổi\". Chúng tôi mong được đồng hành cùng những đồng nghiệp tương lai chia sẻ các nguyên tắc này và cùng tạo ra giá trị mới vượt mọi giới hạn trong tài chính.",
     career: {
       heading: "CƠ HỘI NGHỀ NGHIỆP",
-      desc: "Danh sách đầy đủ các vị trí tuyển dụng hiện tại có thể xem qua liên kết bên dưới. Chúng tôi mong nhận được hồ sơ từ những cá nhân chia sẻ tầm nhìn và nhiệt huyết của AlpacaTech với các dịch vụ của chúng tôi.",
+      desc: "Danh sách đầy đủ các vị trí tuyển dụng hiện tại có thể xem qua liên kết bên dưới. Chúng tôi mong nhận được hồ sơ từ những cá nhân chia sẻ tầm nhìn và nhiệt huyết của SV Digital Software với các dịch vụ của chúng tôi.",
       viewPositions: "Xem vị trí tuyển dụng",
     },
     jobs: [
@@ -451,12 +452,12 @@ export const vi: Dictionary = {
     heroTitle: "TIN TỨC",
     viewMore: "Xem thêm",
     items: [
-      { date: "2025.04.14", title: "AlpacaTech tham gia Snowflake Summit 2025 — Demo AlphaCrafter tại gian hàng" },
+      { date: "2025.04.14", title: "SV Digital Software tham gia Snowflake Summit 2025 — Demo AlphaCrafter tại gian hàng" },
       { date: "2025.03.17", title: "AlphaCrafter giành Giải Đặc biệt tại Google Cloud Generative AI Innovation Awards lần 3" },
       { date: "2024.11.20", title: "AlphaCrafter góp mặt tại AWS re:Invent 2024 — demo trực tiếp tác nhân dữ liệu AI tạo sinh" },
       { date: "2024.09.10", title: "Sản phẩm vận hành bởi AlphaCrafter của SBI Securities giành Giải Đặc biệt Japan Financial Innovation Award 2024" },
       { date: "2023.05.16", title: "Cơ quan Dịch vụ Tài chính đánh giá ROBOPRO Số 1 về lợi nhuận lũy kế và tỷ lệ Sharpe" },
-      { date: "2023.02.14", title: "AlpacaTech trở thành Đối tác Giải pháp Snowflake" },
+      { date: "2023.02.14", title: "SV Digital Software trở thành Đối tác Giải pháp Snowflake" },
     ],
   },
 };

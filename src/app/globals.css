@@ -11,9 +11,11 @@
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
   --font-heading: var(--font-sans);
 
-  /* AlpacaTech design tokens */
+  /* SV Digital Software design tokens */
   --color-at-primary: var(--at-primary);
+  --color-at-secondary: var(--at-secondary);
   --color-at-accent: var(--at-accent);
+  --color-at-bg: var(--at-bg);
   --color-at-text-dark: var(--at-text-dark);
   --color-at-text-medium: var(--at-text-medium);
   --color-at-text-muted: var(--at-text-muted);
@@ -65,22 +67,24 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.976 0.003 247.858);
+  --foreground: oklch(0.13 0.028 261.692);
 
-  /* AlpacaTech design tokens */
-  --at-primary: #2d2970;
-  --at-accent: #7472e2;
-  --at-text-dark: #1f243a;
-  --at-text-medium: #333333;
-  --at-text-muted: #8988a3;
-  --at-pink: #f12d90;
+  /* SV Digital Software design tokens — blue/white theme */
+  --at-primary: #164de5;
+  --at-secondary: #0246a7;
+  --at-accent: #0246a7;
+  --at-bg: #f8fafc;
+  --at-text-dark: #0f172a;
+  --at-text-medium: #0f172a;
+  --at-text-muted: #64748b;
+  --at-pink: #164de5;
   --at-section: #ffffff;
-  --at-border: #efeeff;
-  --at-line: #cccccc;
-  --at-bg-soft: #fafaff;
-  --at-footer-line: #4b4785;
-  --at-footer-muted: #666582;
+  --at-border: #e2e8f0;
+  --at-line: #cbd5e1;
+  --at-bg-soft: #f1f5f9;
+  --at-footer-line: #2f6fe0;
+  --at-footer-muted: #b8c7e8;
   --at-font-heading: "Montserrat", "Noto Sans JP", sans-serif;
   --at-font-body: "Noto Sans JP", sans-serif;
   --card: oklch(1 0 0);

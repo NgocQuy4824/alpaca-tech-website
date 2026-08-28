@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { PageHero } from "@/components/sites/alpaca-tech/shared/PageHero";
-
-export const metadata: Metadata = {
-  title: "Company — AlpacaTech",
-  description: "Company information for AlpacaTech Co., Ltd. — Group company of FOLIO Holdings.",
-};
-import { SectionHeading } from "@/components/sites/alpaca-tech/shared/SectionHeading";
+import type { Dictionary } from "@/lib/i18n/dictionaries";
+import type { Locale } from "@/lib/i18n/types";
+import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
+import { SectionHeading } from "@/components/sites/sv-digital-software/shared/SectionHeading";
 
 function InfoRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -24,92 +20,42 @@ function InfoRow({ label, children }: { label: string; children: React.ReactNode
   );
 }
 
-export default function CompanyPage() {
+export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale: Locale }) {
+  const d = dict.companyPage;
+
   return (
     <main className="flex flex-col">
-      <PageHero title="COMPANY" current="COMPANY" />
+      <PageHero title={d.heroTitle} current={d.heroTitle} locale={locale} />
 
-      {/* Main white card */}
-      <div className="flex justify-center bg-at-primary px-0">
+      <div className="flex justify-center bg-at-bg px-0">
         <div className="bg-white rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex flex-col items-center gap-16 px-5 lg:px-[76px] py-20">
           {/* Company info */}
           <div className="w-full max-w-[1288px] flex flex-col gap-10">
             <Image
               src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-1288x568_v-fms_webp_7ca49a22-4fcb-4fce-92b8-2971466e6190.jpg"
-              alt="AlpacaTech team"
+              alt="SV Digital Software team"
               width={1288}
               height={568}
               className="w-full h-auto rounded-2xl object-cover"
             />
 
             <div className="flex flex-col gap-4">
-              <SectionHeading>COMPANY INFORMATION</SectionHeading>
-
+              <SectionHeading>{d.info.heading}</SectionHeading>
               <div className="flex flex-col pt-4">
-                <InfoRow label="Company Name">
-                  <span>AlpacaTech Co., Ltd.</span>
-                </InfoRow>
-                <InfoRow label="Date of Establishment">
-                  <span>July 8, 2022</span>
-                </InfoRow>
-                <InfoRow label="Head Office Location">
-                  <span>
-                    1-6-4 Hirakawacho,
-                    <br />
-                    Chiyoda-ku,
-                    <br />
-                    Tokyo 102-0093,
-                    <br />
-                    H1O Hirakawacho 703
-                  </span>
-                </InfoRow>
-                <InfoRow label="Capital">
-                  <span>
-                    JPY 10,000,000 <span className="text-sm text-at-text-medium/70">(as of March 2026)</span>
-                  </span>
-                </InfoRow>
-                <InfoRow label="Representative Director, CEO & CAIO">
-                  <span>Tomoya Kitayama</span>
-                </InfoRow>
-                <InfoRow label="Representative Director, CAO">
-                  <span>Maiko Mizuno</span>
-                </InfoRow>
-                <InfoRow label="Director">
-                  <div className="flex items-center gap-4 flex-wrap">
-                    <span>Morifumi Yotsumoto</span>
-                    <Link href="#" className="text-at-primary text-sm underline underline-offset-4 hover:opacity-60">
-                      ブログはこちら
-                    </Link>
-                  </div>
-                </InfoRow>
-                <InfoRow label="Director">
-                  <span>Kazuyuki Ishikawa</span>
-                </InfoRow>
-                <InfoRow label="Director">
-                  <span>Shinichiro Kai</span>
-                </InfoRow>
-                <InfoRow label="Standing Corporate Auditor">
-                  <span>Kazuhiko Osone</span>
-                </InfoRow>
-                <InfoRow label="Executive Officer, CTO">
-                  <span>Andreas Alexelis</span>
-                </InfoRow>
+                {d.info.rows.map((row, i) => (
+                  <InfoRow key={`${row.label}-${i}`} label={row.label}>
+                    <span>{row.value}</span>
+                  </InfoRow>
+                ))}
               </div>
             </div>
           </div>
 
           {/* Company History */}
           <div className="w-full max-w-[1288px] bg-white rounded-[60px] max-[991px]:rounded-[40px] border border-at-border px-6 lg:px-[76px] py-12 lg:py-[76px] flex flex-col gap-12">
-            <SectionHeading>Company History</SectionHeading>
+            <SectionHeading>{d.history.heading}</SectionHeading>
             <ul className="flex flex-col pl-6 border-l-0">
-              {[
-                { year: "2022.07", text: "AlpacaTech Co., Ltd. established." },
-                { year: "2022.10", text: "Registered as Financial Instruments Business Operator (Investment Advisory and Agency Business)." },
-                { year: "2023.05", text: "ROBOPRO evaluated as No. 1 in cumulative return and Sharpe ratio by the Financial Services Agency." },
-                { year: "2024.11", text: "AlphaCrafter featured at AWS re:Invent 2024." },
-                { year: "2025.03", text: 'AlphaCrafter wins Grand Prize at Google Cloud Generative AI Innovation Awards.' },
-                { year: "2025.06", text: 'ROBOPRO wins Nikkei Trendy "2025 Robo-Advisor Grand Prize".' },
-              ].map((h) => (
+              {d.history.items.map((h) => (
                 <li key={h.year} className="flex gap-4 py-4 border-t border-dotted border-at-line first:border-0">
                   <span className="text-at-primary text-base font-bold w-[110px] shrink-0">{h.year}</span>
                   <span className="text-at-text-medium text-base leading-[1.6]">{h.text}</span>
@@ -120,13 +66,9 @@ export default function CompanyPage() {
 
           {/* Achievements */}
           <div className="w-full max-w-[1288px] flex flex-col gap-6">
-            <SectionHeading>Achievements with Business Partners</SectionHeading>
+            <SectionHeading>{d.achievements.heading}</SectionHeading>
             <div className="flex flex-col">
-              {[
-                { title: "SBI Securities", desc: "Snowflake data platform & AlphaCrafter introduction — Japan Financial Innovation Award 2024 Grand Prize.", meta: "Financial Services / Data Platform" },
-                { title: "FOLIO", desc: "Joint development of ROBOPRO — AI-driven asset management with ¥40B+ AUM.", meta: "Asset Management / AI" },
-                { title: "MUFG", desc: "Fintech Accelerator Program Runner-up Prize (2017) — AlpacaSearch for kabu.com.", meta: "Fintech / Search" },
-              ].map((a) => (
+              {d.achievements.items.map((a) => (
                 <div key={a.title} className="flex flex-col lg:flex-row lg:items-center gap-4 py-6 border-t border-dotted border-at-line first:border-t">
                   <div className="lg:w-[32%] bg-at-bg-soft border border-at-line rounded-[64px] px-6 py-4 flex items-center justify-center">
                     <span className="text-at-primary text-lg font-bold tracking-[0.04em] text-center">{a.title}</span>
@@ -138,19 +80,14 @@ export default function CompanyPage() {
                 </div>
               ))}
             </div>
-            <span className="text-at-text-medium text-sm tracking-[0.04em] text-center">*Includes the achievements of our predecessor company.</span>
+            <span className="text-at-text-medium text-sm tracking-[0.04em] text-center">{d.achievements.note}</span>
           </div>
 
           {/* Awards */}
           <div className="w-full max-w-[1288px] bg-white rounded-[60px] border border-at-border px-6 lg:px-[76px] py-12 lg:py-[76px] flex flex-col gap-6">
-            <SectionHeading>Award-winning track record</SectionHeading>
+            <SectionHeading>{d.awards.heading}</SectionHeading>
             <ul className="flex flex-col pl-6">
-              {[
-                { date: "2017.04.06", title: 'MUFG Fintech Accelerator Program "Runner-up Prize"', desc: "kabu.com Securities announced a partnership with us. We participated in the MUFG Fintech Accelerator Program and won the Runner-up Prize. Later launched AlpacaSearch for kabu.com." },
-                { date: "2023.05.16", title: 'Financial Services Agency: "Robopro is No. 1 in Cumulative Return and Sharpe Ratio"', desc: "In the report on KPIs showing investment performance of domestic asset management companies, ROBOPRO was evaluated as No. 1." },
-                { date: "2025.03.17", title: "Grand Prize — 3rd Google Cloud Generative AI Innovation Awards", desc: 'Our AI data agent "AlphaCrafter" won the Grand Prize, exploring data warehouses and generating analyses.' },
-                { date: "2025.06.05", title: 'Nikkei Trendy "2025 Robo-Advisor Grand Prize"', desc: "ROBOPRO recorded the highest returns among major Robo-Advisors in Nikkei Trendy's comparison (July 2025 issue)." },
-              ].map((a) => (
+              {d.awards.items.map((a) => (
                 <li key={a.date} className="flex flex-col lg:flex-row gap-4 py-6 border-t border-dotted border-at-line first:border-0">
                   <span className="text-at-primary text-base font-bold w-[110px] shrink-0">{a.date}</span>
                   <div className="flex-1 flex flex-col gap-1">
@@ -173,21 +110,21 @@ export default function CompanyPage() {
             />
             <div className="absolute inset-0 bg-black/10" />
             <div className="relative z-10 bg-white rounded-lg flex flex-col lg:flex-row items-center justify-between gap-4 px-8 py-4">
-              <span className="text-at-text-medium text-sm tracking-[0.04em] leading-[2]">1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703</span>
+              <span className="text-at-text-medium text-sm tracking-[0.04em] leading-[2]">{d.map.address}</span>
               <a
                 href="https://maps.google.com/?q=H1O+Hirakawacho+Tokyo"
                 target="_blank"
                 rel="noreferrer"
                 className="bg-at-primary text-white rounded-lg px-6 py-3 text-sm font-medium tracking-[0.04em] hover:bg-at-accent transition-colors shrink-0"
               >
-                View Google Map
+                {d.map.viewMap}
               </a>
             </div>
           </div>
 
           {/* Group companies */}
           <div className="w-full max-w-[1288px] bg-white rounded-[60px] px-6 lg:px-[76px] py-12 lg:py-[76px] flex flex-col gap-10">
-            <SectionHeading>GROUP COMPANIES</SectionHeading>
+            <SectionHeading>{d.groupCompanies.heading}</SectionHeading>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14">
               <a href="https://www.folio-hd.co.jp/" target="_blank" rel="noreferrer" className="border border-at-border rounded-lg h-[346px] max-[991px]:h-[188px] flex flex-col items-center justify-center gap-6 hover:bg-white transition-colors group p-4">
                 {/* eslint-disable @next/next/no-img-element */}
@@ -196,7 +133,9 @@ export default function CompanyPage() {
                   alt="FOLIO Holdings"
                   className="w-[65%] max-w-[280px] h-auto group-hover:w-[75%] transition-all duration-700"
                 />
-                <span className="text-at-primary text-sm flex items-center gap-2">Visit site <span aria-hidden>↗</span></span>
+                <span className="text-at-primary text-sm flex items-center gap-2">
+                  {d.groupCompanies.visitSite} <span aria-hidden>↗</span>
+                </span>
               </a>
               <a href="https://folio-sec.com/" target="_blank" rel="noreferrer" className="border border-at-border rounded-lg h-[346px] max-[991px]:h-[188px] flex flex-col items-center justify-center gap-6 hover:bg-white transition-colors group p-4">
                 {/* eslint-disable @next/next/no-img-element */}
@@ -205,21 +144,19 @@ export default function CompanyPage() {
                   alt="FOLIO Securities"
                   className="w-[32%] max-w-[150px] h-auto group-hover:w-[42%] transition-all duration-700"
                 />
-                <span className="text-at-primary text-sm flex items-center gap-2">Visit site <span aria-hidden>↗</span></span>
+                <span className="text-at-primary text-sm flex items-center gap-2">
+                  {d.groupCompanies.visitSite} <span aria-hidden>↗</span>
+                </span>
               </a>
             </div>
           </div>
 
           {/* Contact CTA */}
           <div className="w-full max-w-[1288px] bg-white rounded-[60px] px-6 lg:px-[76px] py-12 lg:py-20 flex flex-col items-center gap-6">
-            <SectionHeading>CONTACT</SectionHeading>
-            <p className="text-at-text-dark text-base leading-[2] tracking-[0.04em] text-center max-w-[640px]">
-              For inquiries about our solutions, partnerships, or anything else,
-              <br className="hidden lg:block" />
-              please reach out via our contact form.
-            </p>
-            <Link href="/en#contact" className="inline-flex items-center gap-3 bg-at-primary text-white rounded-lg px-8 py-4 hover:bg-at-accent transition-colors">
-              <span className="text-sm font-bold tracking-[0.04em]">Contact Us</span>
+            <SectionHeading>{d.contact.heading}</SectionHeading>
+            <p className="text-at-text-dark text-base leading-[2] tracking-[0.04em] text-center max-w-[640px]">{d.contact.desc}</p>
+            <Link href={`/${locale}#contact`} className="inline-flex items-center gap-3 bg-at-primary text-white rounded-lg px-8 py-4 hover:bg-at-accent transition-colors">
+              <span className="text-sm font-bold tracking-[0.04em]">{d.contact.contactUs}</span>
               <span aria-hidden>→</span>
             </Link>
           </div>

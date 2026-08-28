@@ -1,20 +1,22 @@
 import { Breadcrumb } from "./Breadcrumb";
+import type { Locale } from "@/lib/i18n/types";
 
 type Props = {
   title: string;
   subtitle?: string;
   current: string;
+  locale: Locale;
 };
 
-export function PageHero({ title, subtitle, current }: Props) {
+export function PageHero({ title, subtitle, current, locale }: Props) {
   return (
-    <section className="relative bg-at-primary flex justify-center px-5 lg:px-[76px] pt-[114px] pb-8">
+    <section className="relative bg-gradient-to-br from-at-primary to-at-secondary flex justify-center px-5 lg:px-[76px] pt-[114px] pb-8">
       <div
         aria-hidden
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-40"
         style={{
           background:
-            "radial-gradient(circle at 25% 30%, rgba(116,114,226,0.45) 0%, transparent 45%), radial-gradient(circle at 78% 65%, rgba(241,45,144,0.18) 0%, transparent 40%)",
+            "radial-gradient(circle at 25% 30%, rgba(255,255,255,0.16) 0%, transparent 45%), radial-gradient(circle at 78% 65%, rgba(2,70,167,0.5) 0%, transparent 40%)",
         }}
       />
       <div className="relative z-10 w-full max-w-[1288px] flex flex-col gap-10">
@@ -29,7 +31,7 @@ export function PageHero({ title, subtitle, current }: Props) {
           ) : null}
         </div>
         <div className="flex justify-end">
-          <Breadcrumb current={current} />
+          <Breadcrumb current={current} locale={locale} />
         </div>
       </div>
     </section>

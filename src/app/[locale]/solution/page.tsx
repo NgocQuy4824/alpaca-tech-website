@@ -1,0 +1,30 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import type { Locale } from "@/lib/i18n/types";
+import { isValidLocale } from "@/lib/i18n/types";
+import { getDictionary } from "@/lib/i18n/getDictionary";
+import { SolutionPageContent } from "@/components/sites/alpaca-tech/pages/SolutionPageContent";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale: raw } = await params;
+  if (!isValidLocale(raw)) return {};
+  const locale = raw as Locale;
+  return {
+    title: locale === "vi" ? "Giải Pháp — AlpacaTech" : "Solution — AlpacaTech",
+    description: locale === "vi" ? "Giải pháp Dữ liệu AlpacaTech — Snowflake và AlphaCrafter cho phân tích dữ liệu tài chính." : "AlpacaTech Data Solution — Snowflake and AlphaCrafter for financial data analytics.",
+    alternates: {
+      languages: {
+        en: `${"https://www.alpaca-tech.ai"}/en/solution`,
+        vi: `${"https://www.alpaca-tech.ai"}/vi/solution`,
+      },
+    },
+  };
+}
+
+export default async function SolutionPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: raw } = await params;
+  if (!isValidLocale(raw)) notFound();
+  const locale = raw as Locale;
+  const dict = getDictionary(locale);
+  return <SolutionPageContent dict={dict} locale={locale} />;
+}

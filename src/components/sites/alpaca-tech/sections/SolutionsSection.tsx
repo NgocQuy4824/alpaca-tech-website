@@ -1,30 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Dictionary } from "@/lib/i18n/dictionaries";
+import type { Locale } from "@/lib/i18n/types";
 
-export function SolutionsSection() {
+export function SolutionsSection({ dict, locale }: { dict: Dictionary; locale: Locale }) {
+
   return (
-    <section id="solutions" className="flex justify-center bg-at-primary px-0">
+    <section id="solutions" className="flex justify-center bg-at-bg px-0">
       <div className="bg-white rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex justify-center px-5 lg:px-[76px] py-[120px] max-[540px]:py-20">
         <div className="w-full max-w-[1288px] flex flex-col gap-16">
           <h2 className="font-[var(--font-montserrat)] text-at-primary text-[72px] max-[991px]:text-[50px] font-extrabold leading-none">
-            SOLUTIONS
+            {dict.solutions.heading}
           </h2>
 
           <div className="flex flex-col gap-10">
             {/* Data Solution */}
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-14">
               <div className="flex-1 flex flex-col gap-6">
-                <h3 className="text-at-text-medium text-[34px] font-bold leading-[1.4] font-[var(--font-noto-sans-jp)]">DATA SOLUTION</h3>
+                <h3 className="text-at-text-medium text-[34px] font-bold leading-[1.4] font-[var(--font-noto-sans-jp)]">
+                  {dict.solutions.dataSolution.title}
+                </h3>
                 <p className="text-at-text-dark text-base leading-[2] tracking-[0.04em] font-[var(--font-noto-sans-jp)]">
-                  As a Snowflake Solutions Partner, AlpacaTech supports clients from environment setup through to data analytics and utilization.
-                  <br />
-                  We have also developed &quot;AlphaCrafter&quot; — a generative AI data agent operating directly within data warehouses. Utilizing this technology, SBI Securities&apos; product won the Grand Prize at the Japan Financial Innovation Award 2024.
+                  {dict.solutions.dataSolution.desc}
                 </p>
                 <Link
-                  href="/en/solution"
+                  href={`/${locale}/solution`}
                   className="inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
                 >
-                  <span className="text-sm font-bold tracking-[0.04em]">Learn more</span>
+                  <span className="text-sm font-bold tracking-[0.04em]">{dict.solutions.dataSolution.learnMore}</span>
                   {/* eslint-disable @next/next/no-img-element */}
                   <img
                     src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-96x96_webp_d036ae1d-3000-4afc-9403-6e669407edd6.png"
@@ -53,20 +56,19 @@ export function SolutionsSection() {
                   className="w-full h-auto rounded-2xl object-cover lg:hidden"
                 />
                 <div>
-                  <h3 className="text-at-text-medium text-[34px] font-bold leading-[1.4] font-[var(--font-noto-sans-jp)]">AIM investment model</h3>
-                  <p className="text-at-text-dark text-xs tracking-[0.04em]">(AlpacaTech Investment Management)</p>
+                  <h3 className="text-at-text-medium text-[34px] font-bold leading-[1.4] font-[var(--font-noto-sans-jp)]">
+                    {dict.solutions.aim.title}
+                  </h3>
+                  <p className="text-at-text-dark text-xs tracking-[0.04em]">{dict.solutions.aim.subtitle}</p>
                 </div>
                 <p className="text-at-text-dark text-base leading-[2] tracking-[0.04em] font-[var(--font-noto-sans-jp)]">
-                  AlpacaTech provides asset management solutions that meet our clients&apos; needs, using cutting-edge research and medium to long term market forecasts that utilize our independently developed AI algorithms.
-                  <br />
-                  <br />
-                  AIM is used in the AI investment &ldquo;ROBOPRO&rdquo;, which was developed in collaboration with FOLIO and has over ¥40B in AUM.
+                  {dict.solutions.aim.desc}
                 </p>
                 <Link
-                  href="/en/aim"
+                  href={`/${locale}/aim`}
                   className="inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
                 >
-                  <span className="text-sm font-bold tracking-[0.04em]">Learn more</span>
+                  <span className="text-sm font-bold tracking-[0.04em]">{dict.solutions.aim.learnMore}</span>
                   {/* eslint-disable @next/next/no-img-element */}
                   <img
                     src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-96x96_webp_d036ae1d-3000-4afc-9403-6e669407edd6.png"

@@ -23,7 +23,7 @@ export function RecruitTeaser({ dict, locale }: { dict: Dictionary; locale: Loca
         </p>
         <Link
           href={`/${locale}/recruit`}
-          className="inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent transition-colors self-start"
+          className="inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent transition-colors self-center"
         >
           <span className="text-sm font-bold tracking-[0.04em]">{dict.recruitTeaser.readMore}</span>
           {/* eslint-disable @next/next/no-img-element */}

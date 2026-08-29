@@ -37,7 +37,7 @@ export function RecruitPageContent({ dict, locale }: { dict: Dictionary; locale:
               <Link
                 href="https://www.alpaca-tech.ai/en/recruit"
                 target="_blank"
-                className="inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent transition-colors"
+                className="inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent transition-colors self-center"
               >
                 <span className="text-base font-bold tracking-[0.04em]">{d.career.viewPositions}</span>
                 {/* eslint-disable @next/next/no-img-element */}

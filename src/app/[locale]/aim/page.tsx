@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const locale = raw as Locale;
   return {
     title: locale === "vi" ? "AIM — SV Digital Software" : "AIM — SV Digital Software",
-    description: locale === "vi" ? "AIM (Quản lý Đầu tư SV Digital Software) — Mô hình quản lý tài sản bằng AI vận hành ROBOPRO với hơn 40 tỷ yên AUM." : "AIM (SV Digital Software Investment Management) — AI-driven asset management model powering ROBOPRO with over ¥40B in AUM.",
+    description: locale === "vi" ? "AIM — Nền tảng AI SV Digital Software — vận hành sản phẩm đầu tư AI ROBOPRO với hơn 250 triệu USD AUM." : "AIM — SV Digital Software AI Platform — powering the AI investment product ROBOPRO with over $250M in AUM.",
     alternates: {
       languages: {
         en: `${"https://www.alpaca-tech.ai"}/en/aim`,

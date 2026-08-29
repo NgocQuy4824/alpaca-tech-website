@@ -122,35 +122,6 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
             </div>
           </div>
 
-          {/* Group companies */}
-          <div className="w-full max-w-[1288px] bg-white rounded-[60px] px-6 lg:px-[76px] py-12 lg:py-[76px] flex flex-col gap-10">
-            <SectionHeading>{d.groupCompanies.heading}</SectionHeading>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14">
-              <a href="https://www.folio-hd.co.jp/" target="_blank" rel="noreferrer" className="border border-at-border rounded-lg h-[346px] max-[991px]:h-[188px] flex flex-col items-center justify-center gap-6 hover:bg-white transition-colors group p-4">
-                {/* eslint-disable @next/next/no-img-element */}
-                <img
-                  src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-400x40_95708867-a98f-47c3-85b3-ba75056b3d52.svg"
-                  alt="FOLIO Holdings"
-                  className="w-[65%] max-w-[280px] h-auto group-hover:w-[75%] transition-all duration-700"
-                />
-                <span className="text-at-primary text-sm flex items-center gap-2">
-                  {d.groupCompanies.visitSite} <span aria-hidden>↗</span>
-                </span>
-              </a>
-              <a href="https://folio-sec.com/" target="_blank" rel="noreferrer" className="border border-at-border rounded-lg h-[346px] max-[991px]:h-[188px] flex flex-col items-center justify-center gap-6 hover:bg-white transition-colors group p-4">
-                {/* eslint-disable @next/next/no-img-element */}
-                <img
-                  src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-200x114_a5036b2e-8320-4b76-9ed6-13bd2a05a0f3.svg"
-                  alt="FOLIO Securities"
-                  className="w-[32%] max-w-[150px] h-auto group-hover:w-[42%] transition-all duration-700"
-                />
-                <span className="text-at-primary text-sm flex items-center gap-2">
-                  {d.groupCompanies.visitSite} <span aria-hidden>↗</span>
-                </span>
-              </a>
-            </div>
-          </div>
-
           {/* Contact CTA */}
           <div className="w-full max-w-[1288px] bg-white rounded-[60px] px-6 lg:px-[76px] py-12 lg:py-20 flex flex-col items-center gap-6">
             <SectionHeading>{d.contact.heading}</SectionHeading>

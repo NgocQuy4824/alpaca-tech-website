@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const locale = raw as Locale;
   return {
     title: locale === "vi" ? "Công Ty — SV Digital Software" : "Company — SV Digital Software",
-    description: locale === "vi" ? "Thông tin công ty SV Digital Software Co., Ltd. — Công ty thành viên của FOLIO Holdings." : "Company information for SV Digital Software Co., Ltd. — Group company of FOLIO Holdings.",
+    description: locale === "vi" ? "Thông tin công ty SV Digital Software Co., Ltd. — công ty phần mềm số chuyên về phát triển phần mềm, nền tảng AI & dữ liệu và chuyển đổi số." : "Company information for SV Digital Software Co., Ltd. — digital software company specializing in software development, AI & data platforms and digital transformation.",
     alternates: {
       languages: {
         en: `${"https://www.alpaca-tech.ai"}/en/company`,

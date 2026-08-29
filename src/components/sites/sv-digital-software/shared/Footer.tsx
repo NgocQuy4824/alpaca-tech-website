@@ -45,7 +45,7 @@ export function Footer({ dict, locale }: Props) {
               <a href="https://www.folio-hd.co.jp/" target="_blank" rel="noreferrer" className="hover:opacity-50 transition-opacity">
                 <img
                   src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-280x28_885dcb01-32d1-4f35-aacf-3034aa67ed45.svg"
-                  alt="FOLIO Holdings"
+                  alt="SaveZust Holdings"
                   className="h-7 w-auto"
                 />
               </a>

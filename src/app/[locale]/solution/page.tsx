@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const locale = raw as Locale;
   return {
     title: locale === "vi" ? "Giải Pháp — SV Digital Software" : "Solution — SV Digital Software",
-    description: locale === "vi" ? "Giải pháp Dữ liệu SV Digital Software — Snowflake và AlphaCrafter cho phân tích dữ liệu tài chính." : "SV Digital Software Data Solution — Snowflake and AlphaCrafter for financial data analytics.",
+    description: locale === "vi" ? "Giải pháp phần mềm số SV Digital Software — nền tảng dữ liệu, AI và mô hình đầu tư AIM." : "SV Digital Software digital solutions — data platforms, AI and the AIM investment model.",
     alternates: {
       languages: {
         en: `${"https://www.alpaca-tech.ai"}/en/solution`,

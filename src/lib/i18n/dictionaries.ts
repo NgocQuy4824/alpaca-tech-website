@@ -40,10 +40,10 @@ export const en = {
     backToTop: "Back to top",
   },
   hero: {
-    titleLine1: "Beyond Limits in",
-    titleLine2: "Finance with Data Science",
+    titleLine1: "Beyond Limits with",
+    titleLine2: "Digital Software & AI",
     subtitle:
-      "SV Digital Software is a technology company that develops solutions for investment management, research, analysis and system integration for the financial industry. We combine cutting-edge technology with financial expertise to provide solutions that meet our customers' high standards.",
+      "SV Digital Software designs and builds digital products, data platforms and AI solutions. We combine cutting-edge engineering with deep domain expertise to deliver software that meets our customers' highest standards.",
     cta: "CONTACT",
     news: [
       { date: "2025/4/14 10:00", title: "SV Digital Software participates in Snowflake Summit 2025" },
@@ -272,10 +272,10 @@ export const vi: Dictionary = {
     backToTop: "Về đầu trang",
   },
   hero: {
-    titleLine1: "Vượt Mọi Giới Hạn",
-    titleLine2: "Tài Chính Bằng Khoa Học Dữ Liệu",
+    titleLine1: "Vượt Mọi Giới Hạn Với",
+    titleLine2: "Phần Mềm Số & AI",
     subtitle:
-      "SV Digital Software là công ty công nghệ phát triển các giải pháp về quản lý đầu tư, nghiên cứu, phân tích và tích hợp hệ thống cho ngành tài chính. Chúng tôi kết hợp công nghệ tiên tiến với chuyên môn tài chính để cung cấp các giải pháp đáp ứng tiêu chuẩn cao của khách hàng.",
+      "SV Digital Software thiết kế và xây dựng các sản phẩm số, nền tảng dữ liệu và giải pháp AI. Chúng tôi kết hợp kỹ thuật tiên tiến với chuyên môn sâu để tạo ra phần mềm đáp ứng những tiêu chuẩn khắt khe nhất của khách hàng.",
     cta: "LIÊN HỆ",
     news: [
       { date: "2025/4/14 10:00", title: "SV Digital Software tham gia Snowflake Summit 2025" },

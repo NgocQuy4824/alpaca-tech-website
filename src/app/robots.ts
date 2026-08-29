@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const SITE_URL = "https://www.alpaca-tech.ai";
+import { SITE_URL } from "@/lib/i18n/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {

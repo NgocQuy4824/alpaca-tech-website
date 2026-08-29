@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Noto_Sans_JP, Montserrat } from "next/font/google";
+import { SITE_URL, BRAND_NAME } from "@/lib/i18n/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,23 +25,87 @@ const montserrat = Montserrat({
   weight: ["400", "700", "800"],
 });
 
+const SITE_TITLE = "Digital Products, Data Platforms & AI";
+const SITE_DESCRIPTION =
+  "SV Digital Software designs and builds digital products, data platforms and AI solutions — combining cutting-edge engineering with deep domain expertise to deliver software that meets the highest standards.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.alpaca-tech.ai"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "SV Digital Software — Beyond Limits in Finance with Data Science",
-    template: "%s | SV Digital Software",
+    default: `${BRAND_NAME} — ${SITE_TITLE}`,
+    template: `%s | ${BRAND_NAME}`,
   },
-  description: "SV Digital Softwareは、金融業界向けの投資・運用・調査・分析・システム連携に係るソリューションを開発するテクノロジー企業です。 最先端のテクノロジーと金融における知見・ノウハウを融合し、お客様の高い基準を満たすソリューションを提供しています。",
-  applicationName: "SV Digital Software",
+  description: SITE_DESCRIPTION,
+  applicationName: BRAND_NAME,
+  keywords: [
+    "digital software",
+    "software development",
+    "data platform",
+    "AI solutions",
+    "generative AI",
+    "cloud engineering",
+    "digital transformation",
+    BRAND_NAME,
+  ],
   openGraph: {
     type: "website",
-    siteName: "SV Digital Software",
+    siteName: BRAND_NAME,
     locale: "en_US",
+    alternateLocale: ["vi_VN"],
+    title: `${BRAND_NAME} — ${SITE_TITLE}`,
+    description:
+      "SV Digital Software designs and builds digital products, data platforms and AI solutions.",
+    url: `${SITE_URL}/en`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${BRAND_NAME} — ${SITE_TITLE}`,
+    description:
+      "SV Digital Software designs and builds digital products, data platforms and AI solutions.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: BRAND_NAME,
+  legalName: `${BRAND_NAME} Co., Ltd.`,
+  url: SITE_URL,
+  description:
+    "SV Digital Software designs and builds digital products, data platforms and AI solutions.",
+  foundingDate: "2022-07-08",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "1-6-4 Hirakawacho, H1O Hirakawacho 703",
+    addressLocality: "Chiyoda-ku",
+    addressRegion: "Tokyo",
+    postalCode: "102-0093",
+    addressCountry: "JP",
+  },
+  sameAs: ["https://www.linkedin.com/", "https://www.instagram.com/"],
+  knowsAbout: [
+    "Software Development",
+    "Data Platforms",
+    "Artificial Intelligence",
+    "Generative AI",
+    "Cloud Engineering",
+    "Digital Transformation",
+  ],
+};
+
 export const viewport: Viewport = {
-  themeColor: "#164DE5",
+  themeColor: "#FFFFFF",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -53,7 +118,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${notoSansJP.variable} ${montserrat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

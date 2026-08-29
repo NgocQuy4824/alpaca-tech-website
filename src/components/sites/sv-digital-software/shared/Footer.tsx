@@ -9,7 +9,7 @@ type Props = {
 
 export function Footer({ dict, locale }: Props) {
   return (
-    <footer className="bg-at-secondary w-full flex justify-center px-4 sm:px-8 lg:px-[76px] pt-16 pb-8">
+    <footer className="bg-at-primary w-full flex justify-center px-4 sm:px-8 lg:px-[76px] pt-16 pb-8">
       <div className="w-full max-w-[1288px] flex flex-col">
         {/* Top row: logos + back-to-top */}
         <div className="flex flex-row justify-between items-center h-[98px] max-[540px]:h-auto max-[540px]:flex-col max-[540px]:gap-4">

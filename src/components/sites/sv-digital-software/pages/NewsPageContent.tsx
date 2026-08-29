@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
 import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
@@ -11,7 +12,7 @@ export function NewsPageContent({ dict, locale }: { dict: Dictionary; locale: Lo
       <PageHero title={d.heroTitle} current={d.heroTitle} locale={locale} />
 
       <div className="flex justify-center bg-at-bg px-0">
-        <div className="bg-white rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex justify-center px-5 lg:px-[76px] py-[100px] max-[540px]:py-20">
+        <div className="bg-at-section rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex justify-center px-5 lg:px-[76px] py-[100px] max-[540px]:py-20">
           <div className="w-full max-w-[952px] flex flex-col gap-6">
             <ul className="flex flex-col">
               {d.items.map((n) => (
@@ -37,14 +38,9 @@ export function NewsPageContent({ dict, locale }: { dict: Dictionary; locale: Lo
               ))}
             </ul>
 
-            <button className="self-center mt-4 inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-full lg:w-auto hover:bg-at-accent transition-colors">
+            <button className="self-center mt-4 inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-auto hover:bg-at-accent transition-colors">
               <span className="text-sm font-bold tracking-[0.04em]">{d.viewMore}</span>
-              {/* eslint-disable @next/next/no-img-element */}
-              <img
-                src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-96x96_webp_d036ae1d-3000-4afc-9403-6e669407edd6.png"
-                alt=""
-                className="w-6 h-6 invert rotate-90"
-              />
+              <ArrowRight className="w-6 h-6 shrink-0 rotate-90" strokeWidth={2.5} />
             </button>
           </div>
         </div>

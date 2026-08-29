@@ -28,7 +28,7 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
       <PageHero title={d.heroTitle} current={d.heroTitle} locale={locale} />
 
       <div className="flex justify-center bg-at-bg px-0">
-        <div className="bg-white rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex flex-col items-center gap-16 px-5 lg:px-[76px] py-20">
+        <div className="bg-at-section rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex flex-col items-center gap-16 px-5 lg:px-[76px] py-20">
           {/* Company info */}
           <div className="w-full max-w-[1288px] flex flex-col gap-10">
             <Image
@@ -52,7 +52,7 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
           </div>
 
           {/* Company History */}
-          <div className="w-full max-w-[1288px] bg-white rounded-[60px] max-[991px]:rounded-[40px] border border-at-border px-6 lg:px-[76px] py-12 lg:py-[76px] flex flex-col gap-12">
+          <div className="w-full max-w-[1288px] bg-at-section rounded-[60px] max-[991px]:rounded-[40px] border border-at-border px-6 lg:px-[76px] py-12 lg:py-[76px] flex flex-col gap-12">
             <SectionHeading>{d.history.heading}</SectionHeading>
             <ul className="flex flex-col pl-6 border-l-0">
               {d.history.items.map((h) => (
@@ -84,7 +84,7 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
           </div>
 
           {/* Awards */}
-          <div className="w-full max-w-[1288px] bg-white rounded-[60px] border border-at-border px-6 lg:px-[76px] py-12 lg:py-[76px] flex flex-col gap-6">
+          <div className="w-full max-w-[1288px] bg-at-section rounded-[60px] border border-at-border px-6 lg:px-[76px] py-12 lg:py-[76px] flex flex-col gap-6">
             <SectionHeading>{d.awards.heading}</SectionHeading>
             <ul className="flex flex-col pl-6">
               {d.awards.items.map((a) => (
@@ -100,7 +100,7 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
           </div>
 
           {/* Map */}
-          <div className="w-full max-w-[1288px] bg-white rounded-[60px] overflow-hidden relative h-[567px] flex flex-col justify-end p-8">
+          <div className="w-full max-w-[1288px] bg-at-section rounded-[60px] overflow-hidden relative h-[567px] flex flex-col justify-end p-8">
             <Image
               src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-2400x960_v-frms_webp_44a88171-ab75-4da1-ac69-eed42270853b.png"
               alt="Map — H1O Hirakawacho"
@@ -109,13 +109,13 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
               className="object-cover"
             />
             <div className="absolute inset-0 bg-black/10" />
-            <div className="relative z-10 bg-white rounded-lg flex flex-col lg:flex-row items-center justify-between gap-4 px-8 py-4">
+            <div className="relative z-10 bg-at-section rounded-lg flex flex-col lg:flex-row items-center justify-between gap-4 px-8 py-4">
               <span className="text-at-text-medium text-sm tracking-[0.04em] leading-[2]">{d.map.address}</span>
               <a
                 href="https://maps.google.com/?q=H1O+Hirakawacho+Tokyo"
                 target="_blank"
                 rel="noreferrer"
-                className="bg-at-primary text-white rounded-lg px-6 py-3 text-sm font-medium tracking-[0.04em] hover:bg-at-accent transition-colors shrink-0"
+                className="bg-at-primary text-at-bg rounded-lg px-6 py-3 text-sm font-medium tracking-[0.04em] hover:bg-at-accent transition-colors shrink-0"
               >
                 {d.map.viewMap}
               </a>
@@ -123,10 +123,10 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
           </div>
 
           {/* Contact CTA */}
-          <div className="w-full max-w-[1288px] bg-white rounded-[60px] px-6 lg:px-[76px] py-12 lg:py-20 flex flex-col items-center gap-6">
+          <div className="w-full max-w-[1288px] bg-at-section rounded-[60px] px-6 lg:px-[76px] py-12 lg:py-20 flex flex-col items-center gap-6">
             <SectionHeading>{d.contact.heading}</SectionHeading>
             <p className="text-at-text-dark text-base leading-[2] tracking-[0.04em] text-center max-w-[640px]">{d.contact.desc}</p>
-            <Link href={`/${locale}#contact`} className="inline-flex items-center gap-3 bg-at-primary text-white rounded-lg px-8 py-4 hover:bg-at-accent transition-colors">
+            <Link href={`/${locale}#contact`} className="inline-flex items-center gap-3 bg-at-primary text-at-bg rounded-lg px-8 py-4 hover:bg-at-accent transition-colors">
               <span className="text-sm font-bold tracking-[0.04em]">{d.contact.contactUs}</span>
               <span aria-hidden>→</span>
             </Link>

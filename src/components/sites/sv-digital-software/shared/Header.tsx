@@ -53,7 +53,7 @@ export function Header({ locale }: Props) {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-at-primary/85 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.25)]"
+          ? "bg-at-primary/85 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
           : "bg-transparent"
       }`}
     >
@@ -102,7 +102,7 @@ export function Header({ locale }: Props) {
 
           <Link
             href={`/${locale}#contact`}
-            className="group flex items-center gap-2.5 bg-white rounded-full pl-5 pr-1.5 py-1.5 hover:bg-at-accent hover:shadow-[0_8px_24px_rgba(22,77,229,0.35)] transition-all duration-300"
+            className="group flex items-center gap-2.5 bg-white rounded-full pl-5 pr-1.5 py-1.5 hover:bg-at-accent hover:shadow-[0_8px_24px_rgba(88,149,7,0.4)] transition-all duration-300"
           >
             <span className="text-at-primary group-hover:text-white text-[14px] font-bold tracking-[0.08em] transition-colors duration-300">
               {dict.header.contact}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
 import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
@@ -12,7 +13,7 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
       <PageHero title={d.heroTitle} current={d.heroTitle} locale={locale} />
 
       <div className="flex justify-center bg-at-bg px-0">
-        <div className="bg-white rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex justify-center px-5 lg:px-[76px] py-[100px] max-[540px]:py-20">
+        <div className="bg-at-section rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex justify-center px-5 lg:px-[76px] py-[100px] max-[540px]:py-20">
           <div className="w-full max-w-[1288px] flex flex-col gap-16">
             <h2 className="font-[var(--font-montserrat)] text-at-primary text-[72px] max-[991px]:text-[50px] font-extrabold leading-none">
               {d.heading}
@@ -33,15 +34,10 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
                   </p>
                   <Link
                     href={`/${locale}#contact`}
-                    className="inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
+                    className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
                   >
                     <span className="text-sm font-bold tracking-[0.04em]">{d.dataSolution.contactUs}</span>
-                    {/* eslint-disable @next/next/no-img-element */}
-                    <img
-                      src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-96x96_webp_d036ae1d-3000-4afc-9403-6e669407edd6.png"
-                      alt=""
-                      className="w-6 h-6 invert"
-                    />
+                    <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />
                   </Link>
                 </div>
                 <Image
@@ -77,15 +73,10 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
                   </p>
                   <Link
                     href={`/${locale}/aim`}
-                    className="inline-flex items-center justify-between gap-3 bg-at-primary text-white rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
+                    className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
                   >
                     <span className="text-sm font-bold tracking-[0.04em]">{d.aim.learnMore}</span>
-                    {/* eslint-disable @next/next/no-img-element */}
-                    <img
-                      src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-96x96_webp_d036ae1d-3000-4afc-9403-6e669407edd6.png"
-                      alt=""
-                      className="w-6 h-6 invert"
-                    />
+                    <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />
                   </Link>
                 </div>
                 <Image

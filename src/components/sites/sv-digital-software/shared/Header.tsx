@@ -64,20 +64,16 @@ export function Header({ locale }: Props) {
       >
         <Link
           href={`/${locale}`}
-          className="flex items-center gap-[5px] shrink-0 transition-transform duration-300 hover:scale-[1.03]"
+          className="flex items-center gap-2.5 shrink-0 transition-transform duration-300 hover:scale-[1.03]"
           aria-label={dict.header.homeAria}
         >
-          {/* eslint-disable @next/next/no-img-element */}
-          <img
-            src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-45x50_030be4ed-718d-43a1-829f-973b0b230ea6.svg"
-            alt="SV Digital Software icon"
-            className="h-[50px] w-[44px] max-[991px]:h-[30px] max-[991px]:w-[35px] object-contain"
-          />
-          <img
-            src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-152x50_f6b98fc6-7513-4527-81e0-cadcd7b6be47.svg"
-            alt="SV Digital Software"
-            className="h-[50px] w-[152px] max-[991px]:h-[30px] max-[991px]:w-[108px] object-contain"
-          />
+          <span className="flex items-center justify-center h-[46px] w-[46px] max-[991px]:h-[34px] max-[991px]:w-[34px] rounded-xl bg-white text-at-primary font-[var(--font-montserrat)] font-extrabold text-lg max-[991px]:text-sm leading-none select-none">
+            SV
+          </span>
+          <span className="flex flex-col leading-none">
+            <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[22px] max-[991px]:text-[17px] tracking-[0.02em]">SV Digital</span>
+            <span className="font-[var(--font-montserrat)] text-white/80 font-bold text-[10px] max-[991px]:text-[8px] tracking-[0.28em] mt-1">SOFTWARE</span>
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">

@@ -86,9 +86,7 @@ export function AimPageContent({ dict, locale }: { dict: Dictionary; locale: Loc
                 </p>
               </div>
               <a
-                href="https://folio-sec.com/"
-                target="_blank"
-                rel="noreferrer"
+                href={`/${locale}#contact`}
                 className="shrink-0 inline-flex items-center justify-between gap-3 bg-white text-at-primary rounded-lg px-6 py-3 hover:bg-at-accent hover:text-white transition-colors"
               >
                 <span className="text-sm font-bold tracking-[0.04em]">{d.robopro.learnMore}</span>

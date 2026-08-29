@@ -14,18 +14,13 @@ export function Footer({ dict, locale }: Props) {
         {/* Top row: logos + back-to-top */}
         <div className="flex flex-row justify-between items-center h-[98px] max-[540px]:h-auto max-[540px]:flex-col max-[540px]:gap-4">
           <div className="flex items-center gap-2.5">
-            {/* eslint-disable @next/next/no-img-element */}
-            <img
-              src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-45x50_030be4ed-718d-43a1-829f-973b0b230ea6.svg"
-              alt="SV Digital Software"
-              className="h-[50px] w-auto"
-            />
-            {/* eslint-disable @next/next/no-img-element */}
-            <img
-              src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-152x50_f6b98fc6-7513-4527-81e0-cadcd7b6be47.svg"
-              alt="SV Digital Software"
-              className="h-[50px] w-auto"
-            />
+            <span className="flex items-center justify-center h-[46px] w-[46px] rounded-xl bg-white text-at-primary font-[var(--font-montserrat)] font-extrabold text-lg leading-none select-none">
+              SV
+            </span>
+            <span className="flex flex-col leading-none">
+              <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[22px] tracking-[0.02em]">SV Digital</span>
+              <span className="font-[var(--font-montserrat)] text-white/80 font-bold text-[10px] tracking-[0.28em] mt-1">SOFTWARE</span>
+            </span>
           </div>
           <a href="#" className="w-20 h-20 hover:opacity-50 transition-opacity max-[540px]:hidden" aria-label={dict.footer.backToTop}>
             {/* eslint-disable @next/next/no-img-element */}
@@ -42,12 +37,11 @@ export function Footer({ dict, locale }: Props) {
           <div className="flex flex-col gap-4">
             <span className="text-white text-xs font-bold tracking-[0.04em]">{dict.footer.groupCompanies}</span>
             <div className="flex items-center gap-10 max-[540px]:flex-col max-[540px]:items-start max-[540px]:gap-6">
-              <a href="https://www.folio-hd.co.jp/" target="_blank" rel="noreferrer" className="hover:opacity-50 transition-opacity">
-                <img
-                  src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-280x28_885dcb01-32d1-4f35-aacf-3034aa67ed45.svg"
-                  alt="SaveZust Holdings"
-                  className="h-7 w-auto"
-                />
+              <a href="" target="_blank" rel="noreferrer" className="hover:opacity-50 transition-opacity">
+                <span className="flex items-baseline gap-2 select-none">
+                  <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[24px] leading-none tracking-[0.01em]">SaveZust</span>
+                  <span className="font-[var(--font-montserrat)] text-white font-bold text-[11px] leading-none tracking-[0.3em]">HOLDINGS</span>
+                </span>
               </a>
             </div>
           </div>

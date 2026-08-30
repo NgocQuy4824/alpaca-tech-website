@@ -1,5 +1,5 @@
-export type Locale = "en" | "vi";
-export const LOCALES = ["en", "vi"] as const;
+export type Locale = "en" | "vi" | "lo";
+export const LOCALES = ["en", "vi", "lo"] as const;
 export const DEFAULT_LOCALE: Locale = "en";
 
 export function isValidLocale(value: string): value is Locale {

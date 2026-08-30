@@ -10,11 +10,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
   const locale = raw as Locale;
+  const dict = getDictionary(locale);
+  const descriptions: Record<Locale, string> = {
+    en: "SV Digital Software digital solutions — data platforms, AI and the AIM investment model.",
+    vi: "Giải pháp phần mềm số SV Digital Software — nền tảng dữ liệu, AI và mô hình đầu tư AIM.",
+    lo: "ວິທີແກ້ໄຂຊອບແວດິຈິຕອນ SV Digital Software — ແພລດຟອມຂໍ້ມູນ, AI ແລະ ໂມເດວການລົງທຶນ AIM.",
+  };
   return pageMetadata({
     locale,
     path: "/solution",
-    title: locale === "vi" ? "Giải Pháp" : "Solution",
-    description: locale === "vi" ? "Giải pháp phần mềm số SV Digital Software — nền tảng dữ liệu, AI và mô hình đầu tư AIM." : "SV Digital Software digital solutions — data platforms, AI and the AIM investment model.",
+    title: dict.solutionPage.heroTitle,
+    description: descriptions[locale],
   });
 }
 

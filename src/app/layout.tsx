@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: BRAND_NAME,
     locale: "en_US",
-    alternateLocale: ["vi_VN"],
+    alternateLocale: ["vi_VN", "lo_LA"],
     title: `${BRAND_NAME} — ${SITE_TITLE}`,
     description:
       "SV Digital Software designs and builds digital products, data platforms and AI solutions.",

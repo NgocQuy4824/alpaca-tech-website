@@ -10,11 +10,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
   const locale = raw as Locale;
+  const descriptions: Record<Locale, string> = {
+    en: "AIM — SV Digital Software AI Platform — powering the AI investment product ROBOPRO with over $250M in AUM.",
+    vi: "AIM — Nền tảng AI SV Digital Software — vận hành sản phẩm đầu tư AI ROBOPRO với hơn 250 triệu USD AUM.",
+    lo: "AIM — ແພລດຟອມ AI ຂອງ SV Digital Software — ຂັບເຄື່ອນຜະລິດຕະພັນການລົງທຶນ AI ROBOPRO ມີຫຼາຍກວ່າ $250M AUM.",
+  };
   return pageMetadata({
     locale,
     path: "/aim",
     title: locale === "vi" ? "Mục tiêu (AIM)" : "AIM",
-    description: locale === "vi" ? "AIM — Nền tảng AI SV Digital Software — vận hành sản phẩm đầu tư AI ROBOPRO với hơn 250 triệu USD AUM." : "AIM — SV Digital Software AI Platform — powering the AI investment product ROBOPRO with over $250M in AUM.",
+    description: descriptions[locale],
   });
 }
 

@@ -18,6 +18,7 @@ export const CAREERS_URL = "#";
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/",
   instagram: "https://www.instagram.com/",
+  facebook: "https://www.facebook.com/",
 };
 
 /** Build an absolute URL for a given locale + path ("" = home). */
@@ -35,7 +36,7 @@ export function buildAlternates(locale: string, path = "") {
   return { canonical: absoluteUrl(locale, path), languages };
 }
 
-const OG_LOCALE: Record<string, string> = { en: "en_US", vi: "vi_VN" };
+const OG_LOCALE: Record<string, string> = { en: "en_US", vi: "vi_VN", lo: "lo_LA" };
 
 /**
  * Build a page's full SEO metadata from just (locale, path, title, description).

@@ -11,6 +11,12 @@ import { InfiniteMarquee } from "@/components/sites/sv-digital-software/sections
 import { NewsTeaser } from "@/components/sites/sv-digital-software/sections/NewsTeaser";
 import { notFound } from "next/navigation";
 
+const HOME_TITLES: Record<Locale, string> = {
+  en: "SV Digital Software — Digital Products, Data Platforms & AI",
+  vi: "SV Digital Software — Sản Phẩm Số, Nền Tảng Dữ Liệu & AI",
+  lo: "SV Digital Software — ຜະລິດຕະພັນດິຈິຕອນ, ແພລດຟອມຂໍ້ມູນ & AI",
+};
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
@@ -20,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     locale,
     path: "",
     brandFirst: true,
-    title: locale === "vi" ? "SV Digital Software — Sản Phẩm Số, Nền Tảng Dữ Liệu & AI" : "SV Digital Software — Digital Products, Data Platforms & AI",
+    title: HOME_TITLES[locale],
     description: dict.hero.subtitle,
   });
 }

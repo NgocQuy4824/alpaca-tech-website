@@ -10,11 +10,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
   const locale = raw as Locale;
+  const dict = getDictionary(locale);
+  const descriptions: Record<Locale, string> = {
+    en: "Company information for SV Digital Software Co., Ltd. — digital software company specializing in software development, AI & data platforms and digital transformation.",
+    vi: "Thông tin công ty SV Digital Software Co., Ltd. — công ty phần mềm số chuyên về phát triển phần mềm, nền tảng AI & dữ liệu và chuyển đổi số.",
+    lo: "ຂໍ້ມູນບໍລິສັດ SV Digital Software Co., Ltd. — ບໍລິສັດຊອບແວດິຈິຕອນ ຊ່ຽວຊານດ້ານການພັດທະນາຊອບແວ, ແພລດຟອມ AI & ຂໍ້ມູນ ແລະ ການປ່ຽນແປງດິຈິຕອນ.",
+  };
   return pageMetadata({
     locale,
     path: "/company",
-    title: locale === "vi" ? "Công Ty" : "Company",
-    description: locale === "vi" ? "Thông tin công ty SV Digital Software Co., Ltd. — công ty phần mềm số chuyên về phát triển phần mềm, nền tảng AI & dữ liệu và chuyển đổi số." : "Company information for SV Digital Software Co., Ltd. — digital software company specializing in software development, AI & data platforms and digital transformation.",
+    title: dict.companyPage.heroTitle,
+    description: descriptions[locale],
   });
 }
 

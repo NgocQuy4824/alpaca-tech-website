@@ -15,7 +15,7 @@ export function ContactSection({ dict }: Props) {
   const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(c.emailSubject)}`;
   const address = dict.companyPage.map.address;
 
-  const cards: { icon: typeof Mail; label: string; value: string; href?: string; multiline?: boolean }[] = [
+  const cards: { icon: typeof Mail; label: string; value: string; href?: string }[] = [
     { icon: Mail, label: c.emailLabel, value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` },
     {
       icon: Phone,
@@ -23,7 +23,7 @@ export function ContactSection({ dict }: Props) {
       value: CONTACT_PHONE,
       href: `tel:${CONTACT_PHONE.replace(/[^+\d]/g, "")}`,
     },
-    { icon: MapPin, label: c.addressLabel, value: address, multiline: true },
+    { icon: MapPin, label: c.addressLabel, value: address },
     { icon: Clock, label: c.hoursLabel, value: c.hours },
   ];
 
@@ -47,7 +47,7 @@ export function ContactSection({ dict }: Props) {
         email: CONTACT_EMAIL,
         telephone: CONTACT_PHONE,
         contactType: "customer service",
-        availableLanguage: ["en", "vi"],
+        availableLanguage: ["en", "vi", "lo"],
         hoursAvailable: {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -55,7 +55,7 @@ export function ContactSection({ dict }: Props) {
           closes: "18:00",
         },
       },
-      sameAs: [SOCIAL_LINKS.linkedin, SOCIAL_LINKS.instagram],
+      sameAs: [SOCIAL_LINKS.linkedin, SOCIAL_LINKS.instagram, SOCIAL_LINKS.facebook],
     },
   };
 
@@ -83,7 +83,7 @@ export function ContactSection({ dict }: Props) {
 
           {/* Info cards */}
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
-            {cards.map(({ icon: Icon, label, value, href, multiline }) => (
+            {cards.map(({ icon: Icon, label, value, href }) => (
               <div
                 key={label}
                 className="border border-at-border rounded-2xl bg-at-bg-soft px-5 py-5 flex gap-4"
@@ -130,6 +130,15 @@ export function ContactSection({ dict }: Props) {
               className="inline-flex items-center gap-1.5 text-at-primary hover:text-at-accent transition-colors"
             >
               <span className="text-sm font-bold tracking-[0.04em]">Instagram</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+            <a
+              href={SOCIAL_LINKS.facebook}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 text-at-primary hover:text-at-accent transition-colors"
+            >
+              <span className="text-sm font-bold tracking-[0.04em]">Facebook</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>

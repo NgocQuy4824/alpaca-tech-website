@@ -10,11 +10,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
   const locale = raw as Locale;
+  const dict = getDictionary(locale);
+  const descriptions: Record<Locale, string> = {
+    en: "Join SV Digital Software — Career opportunities in software development, data engineering, AI and product design.",
+    vi: "Gia nhập SV Digital Software — Cơ hội nghề nghiệp trong phát triển phần mềm, kỹ thuật dữ liệu, AI và thiết kế sản phẩm.",
+    lo: "ຮ່ວມງານກັບ SV Digital Software — ໂອກາດອາຊີບໃນການພັດທະນາຊອບແວ, ວິສະວະກຳຂໍ້ມູນ, AI ແລະ ານອອກແບບຜະລິດຕະພັນ.",
+  };
   return pageMetadata({
     locale,
     path: "/recruit",
-    title: locale === "vi" ? "Tuyển Dụng" : "Recruit",
-    description: locale === "vi" ? "Gia nhập SV Digital Software — Cơ hội nghề nghiệp trong phát triển phần mềm, kỹ thuật dữ liệu, AI và thiết kế sản phẩm." : "Join SV Digital Software — Career opportunities in software development, data engineering, AI and product design.",
+    title: dict.recruitPage.heroTitle,
+    description: descriptions[locale],
   });
 }
 

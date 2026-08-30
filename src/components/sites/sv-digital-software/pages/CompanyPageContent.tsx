@@ -100,19 +100,19 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
           </div>
 
           {/* Map */}
-          <div className="w-full max-w-[1288px] bg-at-section rounded-[60px] overflow-hidden relative h-[567px] flex flex-col justify-end p-8">
-            <Image
-              src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-2400x960_v-frms_webp_44a88171-ab75-4da1-ac69-eed42270853b.png"
-              alt="Map — H1O Hirakawacho"
-              fill
-              sizes="(max-width: 1288px) 100vw, 1288px"
-              className="object-cover"
+          <div className="w-full max-w-[1288px] bg-at-section rounded-[60px] overflow-hidden relative h-[567px] flex flex-col justify-end p-0">
+            <iframe
+              title="Office location — 12 King Street, Westminster, London"
+              src="https://www.google.com/maps?q=12+King+Street+Westminster+London+SW1Y+6QY+United+Kingdom&z=16&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 w-full h-full border-0"
             />
-            <div className="absolute inset-0 bg-black/10" />
-            <div className="relative z-10 bg-at-section rounded-lg flex flex-col lg:flex-row items-center justify-between gap-4 px-8 py-4">
+            <div className="absolute inset-0 bg-black/0 pointer-events-none" />
+            <div className="relative z-10 mx-8 mb-8 bg-at-section rounded-lg flex flex-col lg:flex-row items-center justify-between gap-4 px-8 py-4 border border-at-border">
               <span className="text-at-text-medium text-sm tracking-[0.04em] leading-[2]">{d.map.address}</span>
               <a
-                href="https://maps.google.com/?q=H1O+Hirakawacho+Tokyo"
+                href="https://www.google.com/maps/search/?api=1&query=12+King+Street+Westminster+London+SW1Y+6QY+United+Kingdom"
                 target="_blank"
                 rel="noreferrer"
                 className="bg-at-primary text-at-bg rounded-lg px-6 py-3 text-sm font-medium tracking-[0.04em] hover:bg-at-accent transition-colors shrink-0"

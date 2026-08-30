@@ -86,13 +86,12 @@ const organizationJsonLd = {
   foundingDate: "2022-07-08",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "1-6-4 Hirakawacho, H1O Hirakawacho 703",
-    addressLocality: "Chiyoda-ku",
-    addressRegion: "Tokyo",
-    postalCode: "102-0093",
-    addressCountry: "JP",
+    streetAddress: "12 King Street, Westminster",
+    addressLocality: "London",
+    postalCode: "SW1Y 6QY",
+    addressCountry: "GB",
   },
-  sameAs: ["https://www.linkedin.com/", "https://www.instagram.com/"],
+  sameAs: ["https://www.linkedin.com/", "https://www.instagram.com/", "https://www.facebook.com/"],
   knowsAbout: [
     "Software Development",
     "Data Platforms",

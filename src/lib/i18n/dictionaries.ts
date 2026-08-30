@@ -114,8 +114,8 @@ export const en = {
       learnMore: "Learn more",
     },
     cta: {
-      title: "Interested in our solutions?",
-      desc: "For inquiries about our solutions, partnerships, or anything else, please reach out via our contact form.",
+      title: "Have a project in mind?",
+      desc: "Don't hesitate to reach out. We'd love to walk you through how we apply cutting-edge technology to your project — and how SV Digital Software's experienced team delivers projects of every scale, from a single feature to a full platform.",
       contactUs: "Contact Us",
     },
   },
@@ -165,7 +165,7 @@ export const en = {
       rows: [
         { label: "Company Name", value: "SV Digital Software Co., Ltd." },
         { label: "Date of Establishment", value: "July 8, 2022" },
-        { label: "Head Office Location", value: "1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703" },
+        { label: "Head Office Location", value: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom" },
         { label: "Capital", value: "USD 67,000 (as of March 2026)" },
         { label: "Business Lines", value: "Custom software development · Data & AI platform engineering · Cloud modernization · Digital transformation consulting" },
         { label: "Core Technologies", value: "TypeScript / React / Next.js · Python · LLM & Generative AI · Snowflake / dbt · AWS / GCP / Azure" },
@@ -209,7 +209,7 @@ export const en = {
       ],
     },
     map: {
-      address: "1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703",
+      address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
       viewMap: "View Google Map",
     },
     contact: {
@@ -363,8 +363,8 @@ export const vi: Dictionary = {
       learnMore: "Tìm hiểu thêm",
     },
     cta: {
-      title: "Quan tâm đến giải pháp của chúng tôi?",
-      desc: "Để được tư vấn về giải pháp, hợp tác hoặc bất kỳ điều gì khác, vui lòng liên hệ qua biểu mẫu của chúng tôi.",
+      title: "Bạn có dự án nào trong đầu không?",
+      desc: "Đừng ngần ngại liên hệ với chúng tôi để tìm hiểu thêm về cách chúng tôi áp dụng công nghệ tiên tiến vào dự án của bạn — và năng lực mạnh mẽ của SV Digital Software trong việc triển khai các dự án ở mọi quy mô với đội ngũ nhân tài giàu kinh nghiệm.",
       contactUs: "Liên hệ",
     },
   },
@@ -414,7 +414,7 @@ export const vi: Dictionary = {
       rows: [
         { label: "Tên công ty", value: "SV Digital Software Co., Ltd." },
         { label: "Ngày thành lập", value: "8 tháng 7, 2022" },
-        { label: "Địa chỉ trụ sở chính", value: "1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703" },
+        { label: "Địa chỉ trụ sở chính", value: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom" },
         { label: "Vốn điều lệ", value: "67.000 USD (tính đến tháng 3/2026)" },
         { label: "Lĩnh vực hoạt động", value: "Phát triển phần mềm theo yêu cầu · Nền tảng Dữ liệu & AI · Hiện đại hóa Cloud · Tư vấn chuyển đổi số" },
         { label: "Công nghệ cốt lõi", value: "TypeScript / React / Next.js · Python · LLM & AI tạo sinh · Snowflake / dbt · AWS / GCP / Azure" },
@@ -458,7 +458,7 @@ export const vi: Dictionary = {
       ],
     },
     map: {
-      address: "1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703",
+      address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
       viewMap: "Xem Google Map",
     },
     contact: {
@@ -610,8 +610,8 @@ export const lo: Dictionary = {
       learnMore: "ຮຽນຮູ້ເພີ່ມເຕີມ",
     },
     cta: {
-      title: "ສົນໃຈວິທີແກ້ໄຂຂອງພວກເຮົາບໍ?",
-      desc: "ສຳລັບຄຳຖາມກ່ຽວກັບວິທີແກ້ໄຂ, ການເປັນພາຄີ, ຫຼື ສິ່ງອື່ນໃດກໍຕາມ, ກະລຸນາຕິດຕໍ່ຜ່ານແບບຟອມຂອງພວກເຮົາ.",
+      title: "ທ່ານມີໂປຣເຈັກໃນໃຈບໍ?",
+      desc: "ຢ່າລັງເລທີ່ຈະຕິດຕໍ່ພວກເຮົາ ເພື່ອຮຽນຮູ້ເພີ່ມເຕີມກ່ຽວກັບວິທີທີ່ພວກເຮົານຳໃຊ້ເທັກໂນໂລຢີລ້ຳສະໄໝເຂົ້າໃນໂປຣເຈັກຂອງທ່ານ — ແລະ ຄວາມສາມາດທີ່ເຂັ້ມແຂງຂອງ SV Digital Software ໃນການສົ່ງມອບໂປຣເຈັກໃນທຸກຂະໜາດ ດ້ວຍທີມບຸກຄະລາກອນທີ່ມີປະສົບການ.",
       contactUs: "ຕິດຕໍ່ພວກເຮົາ",
     },
   },
@@ -661,7 +661,7 @@ export const lo: Dictionary = {
       rows: [
         { label: "ຊື່ບໍລິສັດ", value: "SV Digital Software Co., Ltd." },
         { label: "ວັນທີກໍ່ຕັ້ງ", value: "8 ກໍລະກົດ 2022" },
-        { label: "ທີ່ຕັ້ງສຳນັກງານໃຫຍ່", value: "1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703" },
+        { label: "ທີ່ຕັ້ງສຳນັກງານໃຫຍ່", value: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom" },
         { label: "ທຶນຈົດທະບຽນ", value: "USD 67,000 (ເຖິງເດືອນມີນາ 2026)" },
         { label: "ສາຍທຸລະກິດ", value: "ການພັດທະນາຊອບແວຕາມຄວາມຕ້ອງການ · ວິສະວະກຳແພລດຟອມຂໍ້ມູນ & AI · ການທັນສະໄໝ Cloud · ການປຶກສາການປ່ຽນແປງດິຈິຕອນ" },
         { label: "ເທັກໂນໂລຢີຫຼັກ", value: "TypeScript / React / Next.js · Python · LLM & AI ສ້າງສັນ · Snowflake / dbt · AWS / GCP / Azure" },
@@ -705,7 +705,7 @@ export const lo: Dictionary = {
       ],
     },
     map: {
-      address: "1-6-4 Hirakawacho, Chiyoda-ku, Tokyo 102-0093, H1O Hirakawacho 703",
+      address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
       viewMap: "ເບິ່ງແຜນທີ່ Google",
     },
     contact: {

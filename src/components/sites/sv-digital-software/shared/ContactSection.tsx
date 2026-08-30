@@ -40,7 +40,7 @@ export function ContactSection({ dict }: Props) {
       address: {
         "@type": "PostalAddress",
         streetAddress: address,
-        addressCountry: "JP",
+        addressCountry: "GB",
       },
       contactPoint: {
         "@type": "ContactPoint",

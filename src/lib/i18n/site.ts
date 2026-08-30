@@ -15,6 +15,10 @@ export const CONTACT_PHONE = "+81 3-1234-5678";
 // real job-board URL (e.g. "https://careers.svdigitalsoftware.com") and every
 // recruit link updates automatically.
 export const CAREERS_URL = "#";
+
+// Head-office address (canonical, English) — used for the Google Maps embed,
+// the "View Google Map" link and the structured-data address.
+export const OFFICE_ADDRESS = "12 King Street, Westminster, London SW1Y 6QY, United Kingdom";
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/",
   instagram: "https://www.instagram.com/",

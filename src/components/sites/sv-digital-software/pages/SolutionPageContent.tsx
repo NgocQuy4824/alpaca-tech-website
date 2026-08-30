@@ -54,7 +54,7 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
                 <div className="flex-1 flex flex-col gap-6 order-2 lg:order-1">
                   <Image
                     src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-1580x900_v-fms_webp_31f15ca1-ecef-4de2-b1f6-3c60fd859499.jpg"
-                    alt="AIM investment model"
+                    alt="AIM AI and data platform"
                     width={791}
                     height={450}
                     className="w-full h-auto rounded-2xl object-cover lg:hidden"
@@ -81,7 +81,7 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
                 </div>
                 <Image
                   src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-1580x900_v-fms_webp_31f15ca1-ecef-4de2-b1f6-3c60fd859499.jpg"
-                  alt="AIM investment model"
+                  alt="AIM AI and data platform"
                   width={791}
                   height={450}
                   className="hidden lg:block flex-1 max-w-[50%] w-full h-auto rounded-2xl object-cover order-2"

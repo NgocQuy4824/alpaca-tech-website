@@ -1,11 +1,12 @@
 // Central i18n dictionary. `en` is the source of truth for shape; `vi` and `lo` must match.
-// Add a new string here (both `en` and `vi`) and reference it via `useLocale().dict`.
-// TODO(rebrand): AIM = "SV Digital Software Investment Management" — the acronym no longer matches the brand name.
+// Add a new string here (all three locales) and reference it via `getDictionary(locale)`.
+// AIM is positioned as SV Digital Software's AI & data platform (not an investment product).
 
 export const en = {
   header: {
     nav: {
       solution: "SOLUTION",
+      technologies: "TECHNOLOGIES",
       aim: "AIM",
       company: "COMPANY",
       recruit: "RECRUIT",
@@ -28,16 +29,13 @@ export const en = {
     groupCompanies: "Group Companies",
     nav: {
       solution: "SOLUTION",
+      technologies: "TECHNOLOGIES",
       aim: "AIM",
     },
     contact: "CONTACT",
-    privacyPolicy: "Privacy Policy",
-    sitePolicy: "Site Policy",
-    securityPolicy: "Security Policy",
-    emailDisclaimer: "SHARING CONFIDENTIAL INFORMATION WITHIN THE GROUP",
     copyright: "©SV Digital Software Co. Ltd. all rights reserved.",
     companyInfo:
-      "SV Digital Software Co., Ltd.\nFinancial Instruments Business Operator\n(Investment Advisory and Agency Business)\nRegistration Number 3453\nMember Association: Japan Investment Advisers Association",
+      "SV Digital Software Co., Ltd.\nDigital Software & AI Solutions\nLondon, United Kingdom",
     backToTop: "Back to top",
   },
   contact: {
@@ -247,6 +245,33 @@ export const en = {
       { date: "2023.02.14", title: "SV Digital Software becomes Snowflake Solutions Partner" },
     ],
   },
+  technologiesPage: {
+    heroTitle: "TECHNOLOGIES",
+    intro:
+      "We focus on researching and mastering modern technologies, pioneering across many fields. Our teams leverage top-tier frameworks, libraries and tools to build robust, scalable solutions for our clients.",
+    categories: {
+      frontend: "FRONTEND",
+      backend: "BACKEND",
+      mobile: "MOBILE",
+      cloud: "CLOUD & INFRASTRUCTURE",
+      database: "DATABASE",
+      ai: "AI & EMERGING TECHNOLOGIES",
+    },
+    categoryDesc: {
+      frontend:
+        "Pixel-perfect, fast and accessible interfaces — built with modern component-driven frameworks for a smooth experience on every device.",
+      backend:
+        "Reliable, secure and scalable server-side systems and APIs that power your business logic and integrate with anything.",
+      mobile:
+        "Native and cross-platform apps that feel at home on iOS and Android — one codebase, two stores, a consistent experience.",
+      cloud:
+        "Cloud-native architecture, containers and automated pipelines that keep your product resilient, observable and easy to ship.",
+      database:
+        "The right data store for every workload — relational, document or in-memory — designed for performance, integrity and scale.",
+      ai:
+        "From generative AI and LLM integrations to machine learning and computer vision — we turn emerging tech into real product value.",
+    },
+  },
 };
 
 export type Dictionary = typeof en;
@@ -255,6 +280,7 @@ export const vi: Dictionary = {
   header: {
     nav: {
       solution: "GIẢI PHÁP",
+      technologies: "CÔNG NGHỆ",
       aim: "MỤC TIÊU",
       company: "CÔNG TY",
       recruit: "TUYỂN DỤNG",
@@ -277,16 +303,13 @@ export const vi: Dictionary = {
     groupCompanies: "Công ty thành viên",
     nav: {
       solution: "GIẢI PHÁP",
+      technologies: "CÔNG NGHỆ",
       aim: "MỤC TIÊU",
     },
     contact: "LIÊN HỆ",
-    privacyPolicy: "Chính sách bảo mật",
-    sitePolicy: "Chính sách trang web",
-    securityPolicy: "Chính sách bảo mật thông tin",
-    emailDisclaimer: "CHIA SẺ THÔNG TIN BẢO MẬT TRONG TẬP ĐOÀN",
     copyright: "©SV Digital Software Co. Ltd. Bảo lưu mọi quyền.",
     companyInfo:
-      "SV Digital Software Co., Ltd.\nNhà điều hành kinh doanh công cụ tài chính\n(Kinh doanh tư vấn và đại lý đầu tư)\nSố đăng ký 3453\nHiệp hội thành viên: Hiệp hội Cố vấn Đầu tư Nhật Bản",
+      "SV Digital Software Co., Ltd.\nGiải pháp phần mềm số & AI\nLondon, Vương quốc Anh",
     backToTop: "Về đầu trang",
   },
   contact: {
@@ -496,12 +519,40 @@ export const vi: Dictionary = {
       { date: "2023.02.14", title: "SV Digital Software trở thành Đối tác Giải pháp Snowflake" },
     ],
   },
+  technologiesPage: {
+    heroTitle: "CÔNG NGHỆ",
+    intro:
+      "Chúng tôi tập trung nghiên cứu và làm chủ các công nghệ hiện đại, tiên phong trong nhiều lĩnh vực. Đội ngũ của chúng tôi tận dụng các framework, thư viện và công cụ hàng đầu để xây dựng những giải pháp vững chắc, có khả năng mở rộng cho khách hàng.",
+    categories: {
+      frontend: "FRONTEND",
+      backend: "BACKEND",
+      mobile: "MOBILE",
+      cloud: "CLOUD & HẠ TẦNG",
+      database: "CƠ SỞ DỮ LIỆU",
+      ai: "AI & CÔNG NGHỆ MỚI NỔI",
+    },
+    categoryDesc: {
+      frontend:
+        "Giao diện đẹp, nhanh và dễ tiếp cận — xây dựng bằng các framework hiện đại theo hướng component cho trải nghiệm mượt mà trên mọi thiết bị.",
+      backend:
+        "Hệ thống phía server và API đáng tin cậy, bảo mật và có khả năng mở rộng — là nền tảng vận hành logic nghiệp vụ và tích hợp mọi thứ.",
+      mobile:
+        "Ứng dụng native và đa nền tảng mang cảm giác quen thuộc trên iOS lẫn Android — một codebase, hai kho ứng dụng, trải nghiệm nhất quán.",
+      cloud:
+        "Kiến trúc cloud-native, container và pipeline tự động giúp sản phẩm bền vững, quan sát được và dễ triển khai.",
+      database:
+        "Kho dữ liệu phù hợp cho mọi khối lượng công việc — quan hệ, tài liệu hay in-memory — thiết kế để đạt hiệu suất, tính toàn vẹn và khả năng mở rộng.",
+      ai:
+        "Từ AI tạo sinh và tích hợp LLM đến machine learning và thị giác máy tính — chúng tôi biến công nghệ mới nổi thành giá trị sản phẩm thực.",
+    },
+  },
 };
 
 export const lo: Dictionary = {
   header: {
     nav: {
       solution: "ວິທີແກ້ໄຂ",
+      technologies: "ເທັກໂນໂລຢີ",
       aim: "AIM",
       company: "ບໍລິສັດ",
       recruit: "ຮັບສະໝັກງານ",
@@ -524,16 +575,13 @@ export const lo: Dictionary = {
     groupCompanies: "ບໍລິສັດໃນເຄືອ",
     nav: {
       solution: "ວິທີແກ້ໄຂ",
+      technologies: "ເທັກໂນໂລຢີ",
       aim: "AIM",
     },
     contact: "ຕິດຕໍ່",
-    privacyPolicy: "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ",
-    sitePolicy: "ນະໂຍບາຍເວັບໄຊ",
-    securityPolicy: "ນະໂຍບາຍຄວາມປອດໄພ",
-    emailDisclaimer: "ການແບ່ງປັນຂໍ້ມູນລັບພາຍໃນກຸ່ມ",
     copyright: "©SV Digital Software Co. Ltd. ສະຫງວນລິຂະສິດ.",
     companyInfo:
-      "SV Digital Software Co., Ltd.\nຜ້ປະກອບການທຸລະກິດເຄື່ອງມືການເງິນ\n(ທຸລະກິດຄຳປຶກສາ ແລະ ຕົວແທນການລົງທຶນ)\nເລກທະບຽນ 3453\nສະມາຄົມສະມາຊິກ: ສະມາຄົມທີ່ປຶກສາການລົງທຶນແຫ່ງຍີ່ປຸ່ນ",
+      "SV Digital Software Co., Ltd.\nວິທີແກ້ໄຂຊອບແວດິຈິຕອນ & AI\nລອນດອນ, ສະຫະລາຊະອານາຈັກ",
     backToTop: "ກັບຂຶ້ນເທິງ",
   },
   contact: {
@@ -742,6 +790,33 @@ export const lo: Dictionary = {
       { date: "2023.05.16", title: "AIM ບັນລຸຈຸດສຳຄັນໃນ production — ນຳໃຊ້ໃນຂະໜາດໃຫຍ່ເພື່ອຂັບເຄື່ອນການຕັດສິນໃຈໂດຍອີງຂໍ້ມູນ" },
       { date: "2023.02.14", title: "SV Digital Software ກາຍເປັນຄູ່ຮ່ວມວິທີແກ້ໄຂ Snowflake" },
     ],
+  },
+  technologiesPage: {
+    heroTitle: "ເທັກໂນໂລຢີ",
+    intro:
+      "ພວກເຮົາສຸມໃສ່ການຄົ້ນຄວ້າ ແລະ ຄອບຄອງເທັກໂນໂລຢີທັນສະໄໝ, ຸກເບີກໃນຫຼາຍຂົງເຂດ. ທີມຂອງພວກເຮົານຳໃຊ້ framework, ໄລບຣາຣີ ແລະ ເຄື່ອງມືຊັ້ນນຳ ເພື່ອສ້າງວິທີແກ້ໄຂທີ່ແຂງແຮງ ແລະ ຂະຫຍາຍໄດ້ສຳລັບລູກຄ້າ.",
+    categories: {
+      frontend: "FRONTEND",
+      backend: "BACKEND",
+      mobile: "MOBILE",
+      cloud: "CLOUD & ໂຄງລ່າງ",
+      database: "ຖານຂໍ້ມູນ",
+      ai: "AI & ເທັກໂນໂລຢີໃໝ່",
+    },
+    categoryDesc: {
+      frontend:
+        "ໜ້າຈໍສວຍ, ໄວ ແລະ ເຂົ້າເຖິງໄດ້ — ສ້າງດ້ວຍ framework ທັນສະໄໝແບບ component ເພື່ອປະສົບການລື່ນໄຫຼໃນທຸກອຸປະກອນ.",
+      backend:
+        "ລະບົບຝັ່ງເຊີບເວີ ແລະ API ທີ່ເຊື່ອຖືໄດ້, ປອດໄພ ແລະ ຂະຫຍາຍໄດ້ — ເປັນພື້ນຖານຂັບເຄື່ອນ logic ທຸລະກິດ ແລະ ເຊື່ອມໂຍງທຸກສິ່ງ.",
+      mobile:
+        "ແອັບ native ແລະ ຂ້າມແພລດຟອມ ທີ່ໃຫ້ຄວາມຮູ້ສຶກຄຸ້ນເຄີຍໃນ iOS ແລະ Android — ຄອດດຽວ, ສອງຮ້ານ, ປະສົບການສອດຄ່ອງ.",
+      cloud:
+        "ສະຖາປັດຕະຍະກຳ cloud-native, container ແລະ pipeline ອັດຕະໂນມັດ ທີ່ຮັກສາຜະລິດຕະພັນໃຫ້ທົນທານ, ສັງເກດໄດ້ ແລະ ງ່າຍຕໍ່ການສົ່ງມອບ.",
+      database:
+        "ຄັງຂໍ້ມູນທີ່ເໝາະສຳລັບທຸກວຽກ — ຄວາມສຳພັນ, ເອກະສານ ຫຼື in-memory — ອອກແບບເພື່ອປະສິດທິພາບ, ຄວາມຖືກຕ້ອງ ແລະ ການຂະຫຍາຍ.",
+      ai:
+        "ຕັ້ງແຕ່ AI ສ້າງສັນ ແລະ ການເຊື່ອມໂຍງ LLM ຈົນເຖິງ machine learning ແລະ ການເບິ່ງເຫັນ — ພວກເຮົາປ່ຽນເທັກໂນໂລຢີໃໝ່ໃຫ້ເປັນມູນຄ່າຜະລິດຕະພັນຈິງ.",
+    },
   },
 };
 

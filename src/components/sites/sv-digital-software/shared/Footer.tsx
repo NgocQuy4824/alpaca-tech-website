@@ -37,12 +37,10 @@ export function Footer({ dict, locale }: Props) {
           <div className="flex flex-col gap-4">
             <span className="text-white text-xs font-bold tracking-[0.04em]">{dict.footer.groupCompanies}</span>
             <div className="flex items-center gap-10 max-[540px]:flex-col max-[540px]:items-start max-[540px]:gap-6">
-              <a href="" target="_blank" rel="noreferrer" className="hover:opacity-50 transition-opacity">
-                <span className="flex items-baseline gap-2 select-none">
-                  <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[24px] leading-none tracking-[0.01em]">SaveZust</span>
-                  <span className="font-[var(--font-montserrat)] text-white font-bold text-[11px] leading-none tracking-[0.3em]">HOLDINGS</span>
-                </span>
-              </a>
+              <span className="flex items-baseline gap-2 select-none">
+                <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[24px] leading-none tracking-[0.01em]">SaveZust</span>
+                <span className="font-[var(--font-montserrat)] text-white font-bold text-[11px] leading-none tracking-[0.3em]">HOLDINGS</span>
+              </span>
             </div>
           </div>
 
@@ -50,6 +48,10 @@ export function Footer({ dict, locale }: Props) {
             <div className="flex items-end gap-10 max-[540px]:flex-col max-[540px]:items-start">
               <Link href={`/${locale}/solution`} className="group flex flex-col">
                 <span className="text-white text-sm tracking-[0.04em]">{dict.footer.nav.solution}</span>
+                <span className="h-px w-0 bg-white group-hover:w-full transition-all duration-300" />
+              </Link>
+              <Link href={`/${locale}/technologies`} className="group flex flex-col">
+                <span className="text-white text-sm tracking-[0.04em]">{dict.footer.nav.technologies}</span>
                 <span className="h-px w-0 bg-white group-hover:w-full transition-all duration-300" />
               </Link>
               <Link href={`/${locale}/aim`} className="group flex flex-col">
@@ -115,32 +117,6 @@ export function Footer({ dict, locale }: Props) {
 
         <div className="flex flex-col lg:flex-row justify-between gap-4 mt-6 pt-6 border-t border-at-footer-line">
           <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap gap-10">
-              <Link
-                href={`/${locale}/privacy-policy`}
-                className="text-at-footer-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors"
-              >
-                {dict.footer.privacyPolicy}
-              </Link>
-              <Link
-                href={`/${locale}/site-policy`}
-                className="text-at-footer-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors"
-              >
-                {dict.footer.sitePolicy}
-              </Link>
-              <Link
-                href={`/${locale}/security-policy`}
-                className="text-at-footer-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors"
-              >
-                {dict.footer.securityPolicy}
-              </Link>
-            </div>
-            <Link
-              href={`/${locale}/email-disclaimer`}
-              className="text-at-footer-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors"
-            >
-              {dict.footer.emailDisclaimer}
-            </Link>
             <span className="text-at-footer-muted text-xs tracking-[0.04em] hidden lg:block">{dict.footer.copyright}</span>
           </div>
           <div className="flex flex-col items-end gap-4 lg:max-w-[320px]">

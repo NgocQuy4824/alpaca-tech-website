@@ -41,7 +41,7 @@ export function AimPageContent({ dict, locale }: { dict: Dictionary; locale: Loc
               </div>
               <Image
                 src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-1580x900_v-fms_webp_31f15ca1-ecef-4de2-b1f6-3c60fd859499.jpg"
-                alt="AIM investment model"
+                alt="AIM AI and data platform"
                 width={791}
                 height={450}
                 className="flex-1 lg:max-w-[50%] w-full h-auto rounded-2xl object-cover"

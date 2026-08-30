@@ -43,6 +43,7 @@ export function Header({ locale }: Props) {
 
   const NAV_ITEMS = [
     { label: dict.header.nav.solution, href: `/${locale}/solution` },
+    { label: dict.header.nav.technologies, href: `/${locale}/technologies` },
     { label: dict.header.nav.aim, href: `/${locale}/aim` },
     { label: dict.header.nav.company, href: `/${locale}/company` },
     { label: dict.header.nav.recruit, href: `/${locale}/recruit` },

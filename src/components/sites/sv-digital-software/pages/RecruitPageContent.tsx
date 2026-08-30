@@ -1,10 +1,9 @@
-import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
-import { SITE_URL } from "@/lib/i18n/site";
 import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
+import { CAREERS_URL } from "@/lib/i18n/site";
 
 export function RecruitPageContent({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   const d = dict.recruitPage;
@@ -36,22 +35,19 @@ export function RecruitPageContent({ dict, locale }: { dict: Dictionary; locale:
 
               <p className="text-at-text-dark text-base leading-[2] tracking-[0.04em] font-[var(--font-noto-sans-jp)]">{d.career.desc}</p>
 
-              <Link
-                href={`${SITE_URL}/en/recruit`}
-                target="_blank"
+              <a
+                href={CAREERS_URL}
                 className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent transition-colors self-center"
               >
                 <span className="text-base font-bold tracking-[0.04em]">{d.career.viewPositions}</span>
                 <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />
-              </Link>
+              </a>
 
               <div className="flex flex-col border-t border-at-border mt-4">
                 {d.jobs.map((job) => (
                   <a
                     key={job.title}
-                    href={`${SITE_URL}/en/recruit`}
-                    target="_blank"
-                    rel="noreferrer"
+                    href={CAREERS_URL}
                     className="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-6 py-6 border-b border-at-border group"
                   >
                     <span className="text-at-primary text-base font-bold group-hover:underline underline-offset-4">{job.title}</span>

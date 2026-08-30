@@ -10,6 +10,11 @@ export const BRAND_NAME = "SV Digital Software";
 // Contact details shown in the Contact section. Update these in one place.
 export const CONTACT_EMAIL = "hello@svdigitalsoftware.com";
 export const CONTACT_PHONE = "+81 3-1234-5678";
+
+// Recruiting / careers page. Currently a placeholder — replace "#" with your
+// real job-board URL (e.g. "https://careers.svdigitalsoftware.com") and every
+// recruit link updates automatically.
+export const CAREERS_URL = "#";
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/",
   instagram: "https://www.instagram.com/",

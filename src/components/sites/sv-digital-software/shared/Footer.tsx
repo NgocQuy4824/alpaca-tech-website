@@ -86,7 +86,7 @@ export function Footer({ dict, locale }: Props) {
                 </a>
               </div>
               <Link
-                href={`/${locale}#contact`}
+                href={`/${locale}/contact`}
                 className="hidden lg:flex items-center gap-3 bg-white rounded-lg px-4 py-3 hover:bg-at-accent group transition-colors"
               >
                 <span className="text-at-primary group-hover:text-white text-sm font-bold tracking-[0.04em] transition-colors">
@@ -101,7 +101,7 @@ export function Footer({ dict, locale }: Props) {
               </Link>
             </div>
 
-            <Link href={`/${locale}#contact`} className="flex lg:hidden w-full items-center justify-center gap-3 bg-white rounded-lg px-6 py-4">
+            <Link href={`/${locale}/contact`} className="flex lg:hidden w-full items-center justify-center gap-3 bg-white rounded-lg px-6 py-4">
               <span className="text-at-primary text-sm font-bold tracking-[0.04em]">{dict.footer.contact}</span>
               {/* eslint-disable @next/next/no-img-element */}
               <img

@@ -101,7 +101,7 @@ export function Header({ locale }: Props) {
           <LanguageSwitcher locale={locale} />
 
           <Link
-            href={`/${locale}#contact`}
+            href={`/${locale}/contact`}
             className="group flex items-center gap-2.5 bg-white rounded-full pl-5 pr-1.5 py-1.5 hover:bg-at-accent hover:shadow-[0_8px_24px_rgba(88,149,7,0.4)] transition-all duration-300"
           >
             <span className="text-at-primary group-hover:text-white text-[14px] font-bold tracking-[0.08em] transition-colors duration-300">
@@ -160,7 +160,7 @@ export function Header({ locale }: Props) {
           >
             <LanguageSwitcher locale={locale} onClick={() => setMenuOpen(false)} className="text-white/80 hover:text-white" />
             <Link
-              href={`/${locale}#contact`}
+              href={`/${locale}/contact`}
               onClick={() => setMenuOpen(false)}
               className="flex items-center justify-between bg-white rounded-full px-6 py-4 hover:bg-at-accent group transition-colors"
             >

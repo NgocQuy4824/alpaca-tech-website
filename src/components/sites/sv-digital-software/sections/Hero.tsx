@@ -29,7 +29,7 @@ export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
           </p>
 
           <Link
-            href={`/${locale}#contact`}
+            href={`/${locale}/contact`}
             className="mt-8 inline-flex items-center justify-between gap-3 bg-white rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent group transition-colors duration-300"
           >
             <span className="text-at-primary group-hover:text-white text-sm font-bold tracking-[0.04em] transition-colors">

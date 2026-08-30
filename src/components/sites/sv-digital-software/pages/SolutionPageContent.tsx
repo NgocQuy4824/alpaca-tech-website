@@ -33,7 +33,7 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
                     {d.dataSolution.desc}
                   </p>
                   <Link
-                    href={`/${locale}#contact`}
+                    href={`/${locale}/contact`}
                     className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
                   >
                     <span className="text-sm font-bold tracking-[0.04em]">{d.dataSolution.contactUs}</span>
@@ -98,7 +98,7 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
                 {d.cta.desc}
               </p>
               <Link
-                href={`/${locale}#contact`}
+                href={`/${locale}/contact`}
                 className="inline-flex items-center justify-between gap-3 bg-white text-at-primary rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent hover:text-white group transition-colors"
               >
                 <span className="text-sm font-bold tracking-[0.04em]">{d.cta.contactUs}</span>

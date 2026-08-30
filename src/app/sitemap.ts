@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { LOCALES } from "@/lib/i18n/types";
 import { absoluteUrl, buildAlternates } from "@/lib/i18n/site";
 
-const paths = ["", "/solution", "/aim", "/company", "/recruit", "/news"];
+const paths = ["", "/solution", "/aim", "/company", "/recruit", "/news", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -8,7 +8,7 @@ type Props = {
 };
 
 export function ContactCTA({
-  href = "/en#contact",
+  href = "/en/contact",
   variant = "dark",
   title = "Get in touch",
   description = "For inquiries about our solutions, partnerships, or anything else, please reach out via our contact form.",

@@ -126,7 +126,7 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
           <div className="w-full max-w-[1288px] bg-at-section rounded-[60px] px-6 lg:px-[76px] py-12 lg:py-20 flex flex-col items-center gap-6">
             <SectionHeading>{d.contact.heading}</SectionHeading>
             <p className="text-at-text-dark text-base leading-[2] tracking-[0.04em] text-center max-w-[640px]">{d.contact.desc}</p>
-            <Link href={`/${locale}#contact`} className="inline-flex items-center gap-3 bg-at-primary text-at-bg rounded-lg px-8 py-4 hover:bg-at-accent transition-colors">
+            <Link href={`/${locale}/contact`} className="inline-flex items-center gap-3 bg-at-primary text-at-bg rounded-lg px-8 py-4 hover:bg-at-accent transition-colors">
               <span className="text-sm font-bold tracking-[0.04em]">{d.contact.contactUs}</span>
               <span aria-hidden>→</span>
             </Link>

@@ -7,6 +7,14 @@ import { LOCALES } from "./types";
 export const SITE_URL = "https://www.alpaca-tech.ai";
 export const BRAND_NAME = "SV Digital Software";
 
+// Contact details shown in the Contact section. Update these in one place.
+export const CONTACT_EMAIL = "hello@svdigitalsoftware.com";
+export const CONTACT_PHONE = "+81 3-1234-5678";
+export const SOCIAL_LINKS = {
+  linkedin: "https://www.linkedin.com/",
+  instagram: "https://www.instagram.com/",
+};
+
 /** Build an absolute URL for a given locale + path ("" = home). */
 export function absoluteUrl(locale: string, path = ""): string {
   return `${SITE_URL}/${locale}${path}`;

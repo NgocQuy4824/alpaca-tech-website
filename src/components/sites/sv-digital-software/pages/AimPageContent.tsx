@@ -87,7 +87,7 @@ export function AimPageContent({ dict, locale }: { dict: Dictionary; locale: Loc
                 </p>
               </div>
               <a
-                href={`/${locale}#contact`}
+                href={`/${locale}/contact`}
                 className="shrink-0 inline-flex items-center justify-between gap-3 bg-at-section text-at-primary rounded-lg px-6 py-3 hover:bg-at-accent hover:text-white transition-colors"
               >
                 <span className="text-sm font-bold tracking-[0.04em]">{d.robopro.learnMore}</span>
@@ -102,7 +102,7 @@ export function AimPageContent({ dict, locale }: { dict: Dictionary; locale: Loc
                 {d.cta.desc}
               </p>
               <Link
-                href={`/${locale}#contact`}
+                href={`/${locale}/contact`}
                 className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent transition-colors"
               >
                 <span className="text-sm font-bold tracking-[0.04em]">{d.cta.contactUs}</span>

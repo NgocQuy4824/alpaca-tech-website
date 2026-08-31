@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
 import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
@@ -23,17 +23,11 @@ export function NewsPageContent({ dict, locale }: { dict: Dictionary; locale: Lo
                   <Link href={`/${locale}/news`} className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6 flex-1 min-w-0">
                     <div className="flex items-center gap-2 shrink-0 lg:w-[220px]">
                       <span className="text-at-primary text-lg leading-[1.4] font-[var(--font-montserrat)]">{n.date}</span>
-                      <span className="text-at-pink text-lg font-bold tracking-[0.05em] font-[var(--font-montserrat)]">NEW</span>
+                      <span className="text-at-accent text-lg font-bold tracking-[0.05em] font-[var(--font-montserrat)]">NEW</span>
                     </div>
                     <span className="text-at-text-dark text-[15px] leading-[1.8] group-hover:underline underline-offset-2 flex-1">{n.title}</span>
                   </Link>
-                  {/* eslint-disable @next/next/no-img-element */}
-                  <img
-                    src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-24x25_8d4ecf56-3396-4d0a-b273-349d6c7f8bd6.svg"
-                    alt=""
-                    className="w-6 h-6 shrink-0 hidden lg:block"
-                    aria-hidden
-                  />
+                  <ArrowUpRight className="w-5 h-5 shrink-0 hidden lg:block text-at-primary" strokeWidth={2} />
                 </li>
               ))}
             </ul>

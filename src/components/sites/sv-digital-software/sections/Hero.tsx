@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
 
@@ -35,12 +36,7 @@ export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
             <span className="text-at-primary group-hover:text-at-primary text-sm font-bold tracking-[0.04em] transition-colors">
               {dict.hero.cta}
             </span>
-            {/* eslint-disable @next/next/no-img-element */}
-            <img
-              src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-24x24_53ad8034-be39-43e4-a7ff-6ee82c06d5c3.svg"
-              alt=""
-              className="w-6 h-6 group-hover:opacity-0 transition-opacity"
-            />
+            <ArrowRight className="w-6 h-6 shrink-0 text-at-primary" strokeWidth={2.5} />
           </Link>
         </div>
 
@@ -61,12 +57,7 @@ export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
                   {item.title}
                 </span>
               </div>
-              {/* eslint-disable @next/next/no-img-element */}
-              <img
-                src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-24x25_7e72b4d9-f9f2-4254-b013-bb2ba8954be7.svg"
-                alt=""
-                className="w-6 h-6 shrink-0 group-hover:opacity-0 transition-opacity"
-              />
+              <ArrowUpRight className="w-6 h-6 shrink-0 text-at-primary" strokeWidth={2} />
             </Link>
           ))}
         </div>

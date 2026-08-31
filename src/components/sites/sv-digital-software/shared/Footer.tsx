@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
 
@@ -94,23 +95,13 @@ export function Footer({ dict, locale }: Props) {
                 <span className="text-at-primary group-hover:text-at-primary text-sm font-bold tracking-[0.04em] transition-colors">
                   {dict.footer.contact}
                 </span>
-                {/* eslint-disable @next/next/no-img-element */}
-                <img
-                  src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-24x24_53ad8034-be39-43e4-a7ff-6ee82c06d5c3.svg"
-                  alt=""
-                  className="w-6 h-6 group-hover:opacity-0 transition-opacity"
-                />
+                <ArrowRight className="w-6 h-6 text-at-primary" strokeWidth={2.5} />
               </Link>
             </div>
 
-            <Link href={`/${locale}/contact`} className="flex lg:hidden w-full items-center justify-center gap-3 bg-white rounded-lg px-6 py-4">
+            <Link href={`/${locale}/contact`} className="flex lg:hidden w-full items-center justify-center gap-3 bg-white rounded-lg px-6 py-4 hover:bg-at-hover hover:text-at-primary transition-colors">
               <span className="text-at-primary text-sm font-bold tracking-[0.04em]">{dict.footer.contact}</span>
-              {/* eslint-disable @next/next/no-img-element */}
-              <img
-                src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-24x24_53ad8034-be39-43e4-a7ff-6ee82c06d5c3.svg"
-                alt=""
-                className="w-6 h-6"
-              />
+              <ArrowRight className="w-6 h-6 text-at-primary" strokeWidth={2.5} />
             </Link>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
 
@@ -28,16 +28,11 @@ export function NewsTeaser({ dict, locale }: { dict: Dictionary; locale: Locale 
                 <Link href={`/${locale}/news`} className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6 flex-1 min-w-0">
                   <div className="flex items-center gap-2 shrink-0 w-[220px]">
                     <span className="text-at-text-muted text-lg font-normal font-[var(--font-montserrat)]">{n.date}</span>
-                    <span className="text-at-pink text-lg font-bold font-[var(--font-montserrat)] tracking-[0.05em]">NEW</span>
+                    <span className="text-at-accent text-lg font-bold font-[var(--font-montserrat)] tracking-[0.05em]">NEW</span>
                   </div>
                   <span className="text-at-text-dark text-[15px] leading-[1.8] group-hover:underline underline-offset-2">{n.title}</span>
                 </Link>
-                {/* eslint-disable @next/next/no-img-element */}
-                <img
-                  src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-24x25_7e72b4d9-f9f2-4254-b013-bb2ba8954be7.svg"
-                  alt=""
-                  className="w-6 h-6 shrink-0"
-                />
+                <ArrowUpRight className="w-5 h-5 shrink-0 text-at-primary" strokeWidth={2} />
               </li>
             ))}
             <Link

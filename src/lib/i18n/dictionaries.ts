@@ -236,13 +236,20 @@ export const en = {
   newsPage: {
     heroTitle: "NEWS",
     viewMore: "View More",
+    showLess: "Show Less",
     items: [
       { date: "2025.04.14", title: "SV Digital Software participates in Snowflake Summit 2025 — Booth demo of AlphaCrafter" },
       { date: "2025.03.17", title: "AlphaCrafter wins Grand Prize at the 3rd Google Cloud Generative AI Innovation Awards" },
       { date: "2024.11.20", title: "AlphaCrafter featured at AWS re:Invent 2024 — live demo of generative AI data agent" },
       { date: "2024.09.10", title: "AIM platform v2 released — new integration APIs, enterprise-grade security and expanded forecasting capabilities" },
+      { date: "2024.06.05", title: "SV Digital Software launches a generative AI consulting practice for enterprise clients" },
+      { date: "2024.01.18", title: "Our engineering team doubles as we take on larger platform builds" },
+      { date: "2023.11.09", title: "Data engineering practice certified across Snowflake, dbt and major cloud providers" },
+      { date: "2023.08.22", title: "SV Digital Software open-sources an internal data pipeline toolkit" },
       { date: "2023.05.16", title: "AIM reaches a production milestone — deployed at scale to power data-driven decision-making" },
       { date: "2023.02.14", title: "SV Digital Software becomes Snowflake Solutions Partner" },
+      { date: "2022.12.15", title: "AIM platform v1 enters production" },
+      { date: "2022.09.01", title: "SV Digital Software opens its first dedicated R&D studio" },
     ],
   },
   technologiesPage: {
@@ -510,13 +517,20 @@ export const vi: Dictionary = {
   newsPage: {
     heroTitle: "TIN TỨC",
     viewMore: "Xem thêm",
+    showLess: "Thu gọn",
     items: [
       { date: "2025.04.14", title: "SV Digital Software tham gia Snowflake Summit 2025 — Demo AlphaCrafter tại gian hàng" },
       { date: "2025.03.17", title: "AlphaCrafter giành Giải Đặc biệt tại Google Cloud Generative AI Innovation Awards lần 3" },
       { date: "2024.11.20", title: "AlphaCrafter góp mặt tại AWS re:Invent 2024 — demo trực tiếp tác nhân dữ liệu AI tạo sinh" },
       { date: "2024.09.10", title: "Ra mắt nền tảng AIM v2 — API tích hợp mới, bảo mật cấp doanh nghiệp và khả năng dự báo mở rộng" },
+      { date: "2024.06.05", title: "SV Digital Software ra mắt dịch vụ tư vấn AI tạo sinh cho khách hàng doanh nghiệp" },
+      { date: "2024.01.18", title: "Đội ngũ kỹ sư của chúng tôi tăng gấp đôi khi đảm nhận các dự án nền tảng lớn hơn" },
+      { date: "2023.11.09", title: "Bộ phận kỹ thuật dữ liệu đạt chứng nhận trên Snowflake, dbt và các nhà cung cấp cloud lớn" },
+      { date: "2023.08.22", title: "SV Digital Software mã nguồn mở bộ công cụ pipeline dữ liệu nội bộ" },
       { date: "2023.05.16", title: "AIM đạt cột mốc production — triển khai ở quy mô lớn để hỗ trợ ra quyết định dựa trên dữ liệu" },
       { date: "2023.02.14", title: "SV Digital Software trở thành Đối tác Giải pháp Snowflake" },
+      { date: "2022.12.15", title: "Nền tảng AIM v1 đi vào production" },
+      { date: "2022.09.01", title: "SV Digital Software mở studio R&D chuyên dụng đầu tiên" },
     ],
   },
   technologiesPage: {
@@ -782,17 +796,24 @@ export const lo: Dictionary = {
   newsPage: {
     heroTitle: "ຂ່າວສານ",
     viewMore: "ເບິ່ງເພີ່ມ",
+    showLess: "ຫຍໍ້ລົງ",
     items: [
       { date: "2025.04.14", title: "SV Digital Software ຮ່ວມງານ Snowflake Summit 2025 — ສາທິດ AlphaCrafter ທີ່ບູດ" },
       { date: "2025.03.17", title: "AlphaCrafter ຊະນະລາງວັນໃຫຍ່ໃນ Google Cloud Generative AI Innovation Awards ຄັ້ງທີ 3" },
       { date: "2024.11.20", title: "AlphaCrafter ຖືກນຳສະເໜີໃນ AWS re:Invent 2024 — ສາທິດສົດຕົວແທນຂໍ້ມູນ AI ສ້າງສັນ" },
       { date: "2024.09.10", title: "ເປີດຕົວແພລດຟອມ AIM v2 — API ເຊື່ອມໂຍງໃໝ່, ຄວາມປອດໄພລະດັບວິສາຫະກິດ ແລະ ຄວາມສາມາດຄາດການທີ່ຂະຫຍາຍ" },
+      { date: "2024.06.05", title: "SV Digital Software ເປີດບໍລິການທີ່ປຶກສາ AI ສ້າງສັນ ສຳລັບລູກຄ້າວິສາຫະກິດ" },
+      { date: "2024.01.18", title: "ທີມວິສະວະກອນຂອງພວກເຮົາເພີ່ມຂຶ້ນເປັນສອງເທົ່າ ເມື່ອຮັບໂປຣເຈັກແພລດຟອມຂະໜາດໃຫຍ່ຂຶ້ນ" },
+      { date: "2023.11.09", title: "ພະແນກວິສະວະກຳຂໍ້ມູນໄດ້ຮັບການຮັບຮອງເທິງ Snowflake, dbt ແລະ ຜູ້ໃຫ້ບໍລິການ cloud ຫຼັກ" },
+      { date: "2023.08.22", title: "SV Digital Software ເປີດເຜີຍລະຫັດແຫຼ່ງ (open-source) ຊຸດເຄື່ອງມື pipeline ຂໍ້ມູນພາຍໃນ" },
       { date: "2023.05.16", title: "AIM ບັນລຸຈຸດສຳຄັນໃນ production — ນຳໃຊ້ໃນຂະໜາດໃຫຍ່ເພື່ອຂັບເຄື່ອນການຕັດສິນໃຈໂດຍອີງຂໍ້ມູນ" },
       { date: "2023.02.14", title: "SV Digital Software ກາຍເປັນຄູ່ຮ່ວມວິທີແກ້ໄຂ Snowflake" },
+      { date: "2022.12.15", title: "ແພລດຟອມ AIM v1 ເຂົ້າສູ່ production" },
+      { date: "2022.09.01", title: "SV Digital Software ເປີດສະຕູດິໂອ R&D ສະເພາະທຳອິດ" },
     ],
   },
   technologiesPage: {
-    heroTitle: "ເທັກໂນໂລຢີ",
+    heroTitle: "ເທັກໂນລຢີ",
     intro:
       "ພວກເຮົາສຸມໃສ່ການຄົ້ນຄວ້າ ແລະ ຄອບຄອງເທັກໂນໂລຢີທັນສະໄໝ, ຸກເບີກໃນຫຼາຍຂົງເຂດ. ທີມຂອງພວກເຮົານຳໃຊ້ framework, ໄລບຣາຣີ ແລະ ເຄື່ອງມືຊັ້ນນຳ ເພື່ອສ້າງວິທີແກ້ໄຂທີ່ແຂງແຮງ ແລະ ຂະຫຍາຍໄດ້ສຳລັບລູກຄ້າ.",
     categories: {

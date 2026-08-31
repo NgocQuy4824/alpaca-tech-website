@@ -24,7 +24,7 @@ export function RecruitTeaser({ dict, locale }: { dict: Dictionary; locale: Loca
         </p>
         <Link
           href={`/${locale}/recruit`}
-          className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent transition-colors self-center"
+          className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-hover hover:text-at-primary transition-colors self-center"
         >
           <span className="text-sm font-bold tracking-[0.04em]">{dict.recruitTeaser.readMore}</span>
           <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />

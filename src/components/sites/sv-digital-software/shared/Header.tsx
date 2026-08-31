@@ -103,12 +103,12 @@ export function Header({ locale }: Props) {
 
           <Link
             href={`/${locale}/contact`}
-            className="group flex items-center gap-2.5 bg-white rounded-full pl-5 pr-1.5 py-1.5 hover:bg-at-accent hover:shadow-[0_8px_24px_rgba(88,149,7,0.4)] transition-all duration-300"
+            className="group flex items-center gap-2.5 bg-white rounded-full pl-5 pr-1.5 py-1.5 hover:bg-at-hover hover:text-at-primary hover:shadow-[0_8px_24px_rgba(45,56,100,0.35)] transition-all duration-300"
           >
-            <span className="text-at-primary group-hover:text-white text-[14px] font-bold tracking-[0.08em] transition-colors duration-300">
+            <span className="text-at-primary group-hover:text-at-primary text-[14px] font-bold tracking-[0.08em] transition-colors duration-300">
               {dict.header.contact}
             </span>
-            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-at-primary group-hover:bg-white transition-colors duration-300">
+            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-at-primary text-white group-hover:bg-white transition-colors duration-300">
               <ArrowRight
                 className="w-4 h-4 text-white group-hover:text-at-primary transition-all duration-300 group-hover:translate-x-0.5"
                 strokeWidth={2.5}
@@ -163,9 +163,9 @@ export function Header({ locale }: Props) {
             <Link
               href={`/${locale}/contact`}
               onClick={() => setMenuOpen(false)}
-              className="flex items-center justify-between bg-white rounded-full px-6 py-4 hover:bg-at-accent group transition-colors"
+              className="flex items-center justify-between bg-white rounded-full px-6 py-4 hover:bg-at-hover hover:text-at-primary group transition-colors"
             >
-              <span className="text-at-primary group-hover:text-white text-sm font-bold tracking-[0.08em] transition-colors">
+              <span className="text-at-primary group-hover:text-at-primary text-sm font-bold tracking-[0.08em] transition-colors">
                 {dict.header.contact}
               </span>
               <span className="flex items-center justify-center w-9 h-9 rounded-full bg-at-primary group-hover:bg-white transition-colors">

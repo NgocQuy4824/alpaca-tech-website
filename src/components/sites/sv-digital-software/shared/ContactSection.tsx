@@ -75,7 +75,7 @@ export function ContactSection({ dict }: Props) {
 
           <a
             href={mailto}
-            className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-8 py-4 w-full sm:w-[300px] hover:bg-at-accent transition-colors"
+            className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-8 py-4 w-full sm:w-[300px] hover:bg-at-hover hover:text-at-primary transition-colors"
           >
             <span className="text-sm font-bold tracking-[0.04em]">{c.emailButton}</span>
             <Mail className="w-5 h-5" strokeWidth={2} />

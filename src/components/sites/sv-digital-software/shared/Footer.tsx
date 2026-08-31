@@ -89,9 +89,9 @@ export function Footer({ dict, locale }: Props) {
               </div>
               <Link
                 href={`/${locale}/contact`}
-                className="hidden lg:flex items-center gap-3 bg-white rounded-lg px-4 py-3 hover:bg-at-accent group transition-colors"
+                className="hidden lg:flex items-center gap-3 bg-white rounded-lg px-4 py-3 hover:bg-at-hover hover:text-at-primary group transition-colors"
               >
-                <span className="text-at-primary group-hover:text-white text-sm font-bold tracking-[0.04em] transition-colors">
+                <span className="text-at-primary group-hover:text-at-primary text-sm font-bold tracking-[0.04em] transition-colors">
                   {dict.footer.contact}
                 </span>
                 {/* eslint-disable @next/next/no-img-element */}

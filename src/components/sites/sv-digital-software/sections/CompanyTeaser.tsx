@@ -25,7 +25,7 @@ export function CompanyTeaser({ dict, locale }: { dict: Dictionary; locale: Loca
           </p>
           <Link
             href={`/${locale}/company`}
-            className="inline-flex items-center justify-between gap-3 bg-white text-at-primary rounded-lg px-6 py-[17px] w-[280px] hover:bg-at-accent hover:text-white group transition-colors"
+            className="inline-flex items-center justify-between gap-3 bg-white text-at-primary rounded-lg px-6 py-[17px] w-[280px] hover:bg-at-hover hover:text-at-primary group transition-colors"
           >
             <span className="text-sm font-bold tracking-[0.04em]">{dict.companyTeaser.readMore}</span>
             {/* eslint-disable @next/next/no-img-element */}

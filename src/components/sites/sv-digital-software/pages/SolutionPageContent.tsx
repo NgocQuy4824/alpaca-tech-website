@@ -34,7 +34,7 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
                   </p>
                   <Link
                     href={`/${locale}/contact`}
-                    className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
+                    className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-hover hover:text-at-primary transition-colors"
                   >
                     <span className="text-sm font-bold tracking-[0.04em]">{d.dataSolution.contactUs}</span>
                     <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />
@@ -73,7 +73,7 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
                   </p>
                   <Link
                     href={`/${locale}/aim`}
-                    className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
+                    className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-hover hover:text-at-primary transition-colors"
                   >
                     <span className="text-sm font-bold tracking-[0.04em]">{d.aim.learnMore}</span>
                     <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />
@@ -99,7 +99,7 @@ export function SolutionPageContent({ dict, locale }: { dict: Dictionary; locale
               </p>
               <Link
                 href={`/${locale}/contact`}
-                className="inline-flex items-center justify-between gap-3 bg-white text-at-primary rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent hover:text-white group transition-colors"
+                className="inline-flex items-center justify-between gap-3 bg-white text-at-primary rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-hover hover:text-at-primary group transition-colors"
               >
                 <span className="text-sm font-bold tracking-[0.04em]">{d.cta.contactUs}</span>
                 {/* eslint-disable @next/next/no-img-element */}

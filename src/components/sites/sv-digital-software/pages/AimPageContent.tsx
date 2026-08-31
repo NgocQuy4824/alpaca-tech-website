@@ -88,7 +88,7 @@ export function AimPageContent({ dict, locale }: { dict: Dictionary; locale: Loc
               </div>
               <a
                 href={`/${locale}/contact`}
-                className="shrink-0 inline-flex items-center justify-between gap-3 bg-at-section text-at-primary rounded-lg px-6 py-3 hover:bg-at-accent hover:text-white transition-colors"
+                className="shrink-0 inline-flex items-center justify-between gap-3 bg-at-section text-at-primary rounded-lg px-6 py-3 hover:bg-at-hover hover:text-at-primary transition-colors"
               >
                 <span className="text-sm font-bold tracking-[0.04em]">{d.robopro.learnMore}</span>
                 <span aria-hidden>→</span>
@@ -103,7 +103,7 @@ export function AimPageContent({ dict, locale }: { dict: Dictionary; locale: Loc
               </p>
               <Link
                 href={`/${locale}/contact`}
-                className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-accent transition-colors"
+                className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-[280px] hover:bg-at-hover hover:text-at-primary transition-colors"
               >
                 <span className="text-sm font-bold tracking-[0.04em]">{d.cta.contactUs}</span>
                 <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />

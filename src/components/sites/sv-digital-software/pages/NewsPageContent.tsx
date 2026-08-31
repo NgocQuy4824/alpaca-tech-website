@@ -38,7 +38,7 @@ export function NewsPageContent({ dict, locale }: { dict: Dictionary; locale: Lo
               ))}
             </ul>
 
-            <button className="self-center mt-4 inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-auto hover:bg-at-accent transition-colors">
+            <button className="self-center mt-4 inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-full lg:w-auto hover:bg-at-hover hover:text-at-primary transition-colors">
               <span className="text-sm font-bold tracking-[0.04em]">{d.viewMore}</span>
               <ArrowRight className="w-6 h-6 shrink-0 rotate-90" strokeWidth={2.5} />
             </button>

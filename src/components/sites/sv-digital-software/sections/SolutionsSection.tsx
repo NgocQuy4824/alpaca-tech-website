@@ -26,7 +26,7 @@ export function SolutionsSection({ dict, locale }: { dict: Dictionary; locale: L
                 </p>
                 <Link
                   href={`/${locale}/solution`}
-                  className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
+                  className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-hover hover:text-at-primary transition-colors"
                 >
                   <span className="text-sm font-bold tracking-[0.04em]">{dict.solutions.dataSolution.learnMore}</span>
                   <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />
@@ -62,7 +62,7 @@ export function SolutionsSection({ dict, locale }: { dict: Dictionary; locale: L
                 </p>
                 <Link
                   href={`/${locale}/aim`}
-                  className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-accent transition-colors"
+                  className="inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] w-fit hover:bg-at-hover hover:text-at-primary transition-colors"
                 >
                   <span className="text-sm font-bold tracking-[0.04em]">{dict.solutions.aim.learnMore}</span>
                   <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />

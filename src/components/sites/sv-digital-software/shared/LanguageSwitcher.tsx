@@ -82,7 +82,7 @@ export function LanguageSwitcher({ locale, className = "", onClick }: Props) {
                       </span>
                       <span className="text-sm font-bold text-at-primary truncate">{dict.language[l]}</span>
                     </span>
-                    <Check className="w-4 h-4 text-at-pink shrink-0" />
+                    <Check className="w-4 h-4 text-at-accent shrink-0" />
                   </span>
                 ) : (
                   <Link

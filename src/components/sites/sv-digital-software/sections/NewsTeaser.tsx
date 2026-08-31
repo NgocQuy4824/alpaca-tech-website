@@ -15,7 +15,7 @@ export function NewsTeaser({ dict, locale }: { dict: Dictionary; locale: Locale 
             </h2>
             <Link
               href={`/${locale}/news`}
-              className="hidden lg:inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] hover:bg-at-accent transition-colors"
+              className="hidden lg:inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] hover:bg-at-hover hover:text-at-primary transition-colors"
             >
               <span className="text-sm font-bold tracking-[0.04em]">{dict.newsTeaser.viewAll}</span>
               <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />
@@ -42,7 +42,7 @@ export function NewsTeaser({ dict, locale }: { dict: Dictionary; locale: Locale 
             ))}
             <Link
               href={`/${locale}/news`}
-              className="lg:hidden mt-8 inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] hover:bg-at-accent transition-colors"
+              className="lg:hidden mt-8 inline-flex items-center justify-between gap-3 bg-at-primary text-at-bg rounded-lg px-6 py-[17px] hover:bg-at-hover hover:text-at-primary transition-colors"
             >
               <span className="text-sm font-bold tracking-[0.04em]">{dict.newsTeaser.viewAll}</span>
               <ArrowRight className="w-6 h-6 shrink-0" strokeWidth={2.5} />

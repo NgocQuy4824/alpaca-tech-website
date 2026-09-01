@@ -43,6 +43,7 @@ export function Header({ locale }: Props) {
 
   const NAV_ITEMS = [
     { label: dict.header.nav.solution, href: `/${locale}/solution` },
+    { label: dict.header.nav.technologies, href: `/${locale}/technologies` },
     { label: dict.header.nav.aim, href: `/${locale}/aim` },
     { label: dict.header.nav.company, href: `/${locale}/company` },
     { label: dict.header.nav.recruit, href: `/${locale}/recruit` },
@@ -53,7 +54,7 @@ export function Header({ locale }: Props) {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-at-primary/85 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.25)]"
+          ? "bg-at-primary/85 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
           : "bg-transparent"
       }`}
     >
@@ -64,20 +65,16 @@ export function Header({ locale }: Props) {
       >
         <Link
           href={`/${locale}`}
-          className="flex items-center gap-[5px] shrink-0 transition-transform duration-300 hover:scale-[1.03]"
+          className="flex items-center gap-2.5 shrink-0 transition-transform duration-300 hover:scale-[1.03]"
           aria-label={dict.header.homeAria}
         >
-          {/* eslint-disable @next/next/no-img-element */}
-          <img
-            src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-45x50_030be4ed-718d-43a1-829f-973b0b230ea6.svg"
-            alt="SV Digital Software icon"
-            className="h-[50px] w-[44px] max-[991px]:h-[30px] max-[991px]:w-[35px] object-contain"
-          />
-          <img
-            src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-152x50_f6b98fc6-7513-4527-81e0-cadcd7b6be47.svg"
-            alt="SV Digital Software"
-            className="h-[50px] w-[152px] max-[991px]:h-[30px] max-[991px]:w-[108px] object-contain"
-          />
+          <span className="flex items-center justify-center h-[46px] w-[46px] max-[991px]:h-[34px] max-[991px]:w-[34px] rounded-xl bg-white text-at-primary font-[var(--font-montserrat)] font-extrabold text-lg max-[991px]:text-sm leading-none select-none">
+            SV
+          </span>
+          <span className="flex flex-col leading-none">
+            <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[22px] max-[991px]:text-[17px] tracking-[0.02em]">SV Digital</span>
+            <span className="font-[var(--font-montserrat)] text-white/80 font-bold text-[10px] max-[991px]:text-[8px] tracking-[0.28em] mt-1">SOFTWARE</span>
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
@@ -105,13 +102,13 @@ export function Header({ locale }: Props) {
           <LanguageSwitcher locale={locale} />
 
           <Link
-            href={`/${locale}#contact`}
-            className="group flex items-center gap-2.5 bg-white rounded-full pl-5 pr-1.5 py-1.5 hover:bg-at-accent hover:shadow-[0_8px_24px_rgba(22,77,229,0.35)] transition-all duration-300"
+            href={`/${locale}/contact`}
+            className="group flex items-center gap-2.5 bg-white rounded-full pl-5 pr-1.5 py-1.5 hover:bg-at-hover hover:text-at-primary hover:shadow-[0_8px_24px_rgba(45,56,100,0.35)] transition-all duration-300"
           >
-            <span className="text-at-primary group-hover:text-white text-[14px] font-bold tracking-[0.08em] transition-colors duration-300">
+            <span className="text-at-primary group-hover:text-at-primary text-[14px] font-bold tracking-[0.08em] transition-colors duration-300">
               {dict.header.contact}
             </span>
-            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-at-primary group-hover:bg-white transition-colors duration-300">
+            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-at-primary text-white group-hover:bg-white transition-colors duration-300">
               <ArrowRight
                 className="w-4 h-4 text-white group-hover:text-at-primary transition-all duration-300 group-hover:translate-x-0.5"
                 strokeWidth={2.5}
@@ -164,11 +161,11 @@ export function Header({ locale }: Props) {
           >
             <LanguageSwitcher locale={locale} onClick={() => setMenuOpen(false)} className="text-white/80 hover:text-white" />
             <Link
-              href={`/${locale}#contact`}
+              href={`/${locale}/contact`}
               onClick={() => setMenuOpen(false)}
-              className="flex items-center justify-between bg-white rounded-full px-6 py-4 hover:bg-at-accent group transition-colors"
+              className="flex items-center justify-between bg-white rounded-full px-6 py-4 hover:bg-at-hover hover:text-at-primary group transition-colors"
             >
-              <span className="text-at-primary group-hover:text-white text-sm font-bold tracking-[0.08em] transition-colors">
+              <span className="text-at-primary group-hover:text-at-primary text-sm font-bold tracking-[0.08em] transition-colors">
                 {dict.header.contact}
               </span>
               <span className="flex items-center justify-center w-9 h-9 rounded-full bg-at-primary group-hover:bg-white transition-colors">

@@ -13,7 +13,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/en"
-          className="inline-flex items-center gap-3 bg-white text-at-primary rounded-lg px-8 py-4 hover:bg-at-accent hover:text-white transition-colors"
+          className="inline-flex items-center gap-3 bg-white text-at-primary rounded-lg px-8 py-4 hover:bg-at-hover hover:text-at-primary transition-colors"
         >
           <span className="text-sm font-bold tracking-[0.04em]">Back to home</span>
           <span aria-hidden>→</span>

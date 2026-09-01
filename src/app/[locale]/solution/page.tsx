@@ -3,22 +3,25 @@ import { notFound } from "next/navigation";
 import type { Locale } from "@/lib/i18n/types";
 import { isValidLocale } from "@/lib/i18n/types";
 import { getDictionary } from "@/lib/i18n/getDictionary";
+import { pageMetadata } from "@/lib/i18n/site";
 import { SolutionPageContent } from "@/components/sites/sv-digital-software/pages/SolutionPageContent";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
   const locale = raw as Locale;
-  return {
-    title: locale === "vi" ? "Giải Pháp — SV Digital Software" : "Solution — SV Digital Software",
-    description: locale === "vi" ? "Giải pháp Dữ liệu SV Digital Software — Snowflake và AlphaCrafter cho phân tích dữ liệu tài chính." : "SV Digital Software Data Solution — Snowflake and AlphaCrafter for financial data analytics.",
-    alternates: {
-      languages: {
-        en: `${"https://www.alpaca-tech.ai"}/en/solution`,
-        vi: `${"https://www.alpaca-tech.ai"}/vi/solution`,
-      },
-    },
+  const dict = getDictionary(locale);
+  const descriptions: Record<Locale, string> = {
+    en: "SV Digital Software digital solutions — data platforms, AI and the AIM platform.",
+    vi: "Giải pháp phần mềm số SV Digital Software — nền tảng dữ liệu, AI và nền tảng AIM.",
+    lo: "ວິທີແກ້ໄຂຊອບແວດິຈິຕອນ SV Digital Software — ແພລດຟອມຂໍ້ມູນ, AI ແລະ ແພລດຟອມ AIM.",
   };
+  return pageMetadata({
+    locale,
+    path: "/solution",
+    title: dict.solutionPage.heroTitle,
+    description: descriptions[locale],
+  });
 }
 
 export default async function SolutionPage({ params }: { params: Promise<{ locale: string }> }) {

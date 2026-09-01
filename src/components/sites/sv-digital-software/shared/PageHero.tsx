@@ -16,7 +16,7 @@ export function PageHero({ title, subtitle, current, locale }: Props) {
         className="absolute inset-0 opacity-40"
         style={{
           background:
-            "radial-gradient(circle at 25% 30%, rgba(255,255,255,0.16) 0%, transparent 45%), radial-gradient(circle at 78% 65%, rgba(2,70,167,0.5) 0%, transparent 40%)",
+            "radial-gradient(circle at 25% 30%, rgba(255,255,255,0.16) 0%, transparent 45%), radial-gradient(circle at 78% 65%, rgba(66,211,165,0.25) 0%, transparent 40%)",
         }}
       />
       <div className="relative z-10 w-full max-w-[1288px] flex flex-col gap-10">

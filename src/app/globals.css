@@ -15,6 +15,7 @@
   --color-at-primary: var(--at-primary);
   --color-at-secondary: var(--at-secondary);
   --color-at-accent: var(--at-accent);
+  --color-at-hover: var(--at-hover);
   --color-at-bg: var(--at-bg);
   --color-at-text-dark: var(--at-text-dark);
   --color-at-text-medium: var(--at-text-medium);
@@ -67,24 +68,25 @@
 }
 
 :root {
-  --background: oklch(0.976 0.003 247.858);
-  --foreground: oklch(0.13 0.028 261.692);
+  --background: #ffffff;
+  --foreground: #111827;
 
-  /* SV Digital Software design tokens — blue/white theme */
-  --at-primary: #164de5;
-  --at-secondary: #0246a7;
-  --at-accent: #0246a7;
-  --at-bg: #f8fafc;
-  --at-text-dark: #0f172a;
-  --at-text-medium: #0f172a;
-  --at-text-muted: #64748b;
-  --at-pink: #164de5;
+  /* SV Digital Software design tokens — indigo brand + mint accent */
+  --at-primary: #2d3864;
+  --at-secondary: #3e4c82;
+  --at-accent: #3e4c82;
+  --at-hover: #f1e9d7;
+  --at-bg: #ffffff;
+  --at-text-dark: #111827;
+  --at-text-medium: #111827;
+  --at-text-muted: #5b6470;
+  --at-pink: #42d3a5;
   --at-section: #ffffff;
-  --at-border: #e2e8f0;
-  --at-line: #cbd5e1;
-  --at-bg-soft: #f1f5f9;
-  --at-footer-line: #2f6fe0;
-  --at-footer-muted: #b8c7e8;
+  --at-border: #e5e9f0;
+  --at-line: #ccd4de;
+  --at-bg-soft: #f5f7fa;
+  --at-footer-line: #3e4c82;
+  --at-footer-muted: #9aa6d0;
   --at-font-heading: "Montserrat", "Noto Sans JP", sans-serif;
   --at-font-body: "Noto Sans JP", sans-serif;
   --card: oklch(1 0 0);

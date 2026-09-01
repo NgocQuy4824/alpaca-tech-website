@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
 
@@ -9,23 +10,18 @@ type Props = {
 
 export function Footer({ dict, locale }: Props) {
   return (
-    <footer className="bg-at-secondary w-full flex justify-center px-4 sm:px-8 lg:px-[76px] pt-16 pb-8">
+    <footer className="bg-at-primary w-full flex justify-center px-4 sm:px-8 lg:px-[76px] pt-16 pb-8">
       <div className="w-full max-w-[1288px] flex flex-col">
         {/* Top row: logos + back-to-top */}
         <div className="flex flex-row justify-between items-center h-[98px] max-[540px]:h-auto max-[540px]:flex-col max-[540px]:gap-4">
           <div className="flex items-center gap-2.5">
-            {/* eslint-disable @next/next/no-img-element */}
-            <img
-              src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-45x50_030be4ed-718d-43a1-829f-973b0b230ea6.svg"
-              alt="SV Digital Software"
-              className="h-[50px] w-auto"
-            />
-            {/* eslint-disable @next/next/no-img-element */}
-            <img
-              src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-152x50_f6b98fc6-7513-4527-81e0-cadcd7b6be47.svg"
-              alt="SV Digital Software"
-              className="h-[50px] w-auto"
-            />
+            <span className="flex items-center justify-center h-[46px] w-[46px] rounded-xl bg-white text-at-primary font-[var(--font-montserrat)] font-extrabold text-lg leading-none select-none">
+              SV
+            </span>
+            <span className="flex flex-col leading-none">
+              <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[22px] tracking-[0.02em]">SV Digital</span>
+              <span className="font-[var(--font-montserrat)] text-white/80 font-bold text-[10px] tracking-[0.28em] mt-1">SOFTWARE</span>
+            </span>
           </div>
           <a href="#" className="w-20 h-20 hover:opacity-50 transition-opacity max-[540px]:hidden" aria-label={dict.footer.backToTop}>
             {/* eslint-disable @next/next/no-img-element */}
@@ -42,13 +38,10 @@ export function Footer({ dict, locale }: Props) {
           <div className="flex flex-col gap-4">
             <span className="text-white text-xs font-bold tracking-[0.04em]">{dict.footer.groupCompanies}</span>
             <div className="flex items-center gap-10 max-[540px]:flex-col max-[540px]:items-start max-[540px]:gap-6">
-              <a href="https://www.folio-hd.co.jp/" target="_blank" rel="noreferrer" className="hover:opacity-50 transition-opacity">
-                <img
-                  src="https://storage.googleapis.com/studio-design-asset-files/projects/4yqBl2mdWj/s-280x28_885dcb01-32d1-4f35-aacf-3034aa67ed45.svg"
-                  alt="FOLIO Holdings"
-                  className="h-7 w-auto"
-                />
-              </a>
+              <span className="flex items-baseline gap-2 select-none">
+                <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[24px] leading-none tracking-[0.01em]">SaveZust</span>
+                <span className="font-[var(--font-montserrat)] text-white font-bold text-[11px] leading-none tracking-[0.3em]">HOLDINGS</span>
+              </span>
             </div>
           </div>
 
@@ -56,6 +49,10 @@ export function Footer({ dict, locale }: Props) {
             <div className="flex items-end gap-10 max-[540px]:flex-col max-[540px]:items-start">
               <Link href={`/${locale}/solution`} className="group flex flex-col">
                 <span className="text-white text-sm tracking-[0.04em]">{dict.footer.nav.solution}</span>
+                <span className="h-px w-0 bg-white group-hover:w-full transition-all duration-300" />
+              </Link>
+              <Link href={`/${locale}/technologies`} className="group flex flex-col">
+                <span className="text-white text-sm tracking-[0.04em]">{dict.footer.nav.technologies}</span>
                 <span className="h-px w-0 bg-white group-hover:w-full transition-all duration-300" />
               </Link>
               <Link href={`/${locale}/aim`} className="group flex flex-col">
@@ -92,61 +89,25 @@ export function Footer({ dict, locale }: Props) {
                 </a>
               </div>
               <Link
-                href={`/${locale}#contact`}
-                className="hidden lg:flex items-center gap-3 bg-white rounded-lg px-4 py-3 hover:bg-at-accent group transition-colors"
+                href={`/${locale}/contact`}
+                className="hidden lg:flex items-center gap-3 bg-white rounded-lg px-4 py-3 hover:bg-at-hover hover:text-at-primary group transition-colors"
               >
-                <span className="text-at-primary group-hover:text-white text-sm font-bold tracking-[0.04em] transition-colors">
+                <span className="text-at-primary group-hover:text-at-primary text-sm font-bold tracking-[0.04em] transition-colors">
                   {dict.footer.contact}
                 </span>
-                {/* eslint-disable @next/next/no-img-element */}
-                <img
-                  src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-24x24_53ad8034-be39-43e4-a7ff-6ee82c06d5c3.svg"
-                  alt=""
-                  className="w-6 h-6 group-hover:opacity-0 transition-opacity"
-                />
+                <ArrowRight className="w-6 h-6 text-at-primary" strokeWidth={2.5} />
               </Link>
             </div>
 
-            <Link href={`/${locale}#contact`} className="flex lg:hidden w-full items-center justify-center gap-3 bg-white rounded-lg px-6 py-4">
+            <Link href={`/${locale}/contact`} className="flex lg:hidden w-full items-center justify-center gap-3 bg-white rounded-lg px-6 py-4 hover:bg-at-hover hover:text-at-primary transition-colors">
               <span className="text-at-primary text-sm font-bold tracking-[0.04em]">{dict.footer.contact}</span>
-              {/* eslint-disable @next/next/no-img-element */}
-              <img
-                src="https://storage.googleapis.com/studio-design-asset-files/projects/nBW2yYm1av/s-24x24_53ad8034-be39-43e4-a7ff-6ee82c06d5c3.svg"
-                alt=""
-                className="w-6 h-6"
-              />
+              <ArrowRight className="w-6 h-6 text-at-primary" strokeWidth={2.5} />
             </Link>
           </div>
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between gap-4 mt-6 pt-6 border-t border-at-footer-line">
           <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap gap-10">
-              <Link
-                href={`/${locale}/privacy-policy`}
-                className="text-at-footer-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors"
-              >
-                {dict.footer.privacyPolicy}
-              </Link>
-              <Link
-                href={`/${locale}/site-policy`}
-                className="text-at-footer-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors"
-              >
-                {dict.footer.sitePolicy}
-              </Link>
-              <Link
-                href={`/${locale}/security-policy`}
-                className="text-at-footer-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors"
-              >
-                {dict.footer.securityPolicy}
-              </Link>
-            </div>
-            <Link
-              href={`/${locale}/email-disclaimer`}
-              className="text-at-footer-muted text-xs tracking-[0.04em] hover:text-white/50 transition-colors"
-            >
-              {dict.footer.emailDisclaimer}
-            </Link>
             <span className="text-at-footer-muted text-xs tracking-[0.04em] hidden lg:block">{dict.footer.copyright}</span>
           </div>
           <div className="flex flex-col items-end gap-4 lg:max-w-[320px]">

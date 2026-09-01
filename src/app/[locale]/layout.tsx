@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import type { Locale } from "@/lib/i18n/types";
+import { LOCALES, type Locale } from "@/lib/i18n/types";
 import { isValidLocale } from "@/lib/i18n/types";
 import { getDictionary } from "@/lib/i18n/getDictionary";
 import { Header } from "@/components/sites/sv-digital-software/shared/Header";
@@ -7,7 +7,7 @@ import { Footer } from "@/components/sites/sv-digital-software/shared/Footer";
 import { HtmlLang } from "@/components/sites/sv-digital-software/shared/HtmlLang";
 
 export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "vi" }];
+  return LOCALES.map((locale) => ({ locale }));
 }
 
 type Props = {

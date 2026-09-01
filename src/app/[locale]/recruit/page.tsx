@@ -3,22 +3,25 @@ import { notFound } from "next/navigation";
 import type { Locale } from "@/lib/i18n/types";
 import { isValidLocale } from "@/lib/i18n/types";
 import { getDictionary } from "@/lib/i18n/getDictionary";
+import { pageMetadata } from "@/lib/i18n/site";
 import { RecruitPageContent } from "@/components/sites/sv-digital-software/pages/RecruitPageContent";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: raw } = await params;
   if (!isValidLocale(raw)) return {};
   const locale = raw as Locale;
-  return {
-    title: locale === "vi" ? "Tuyển Dụng — SV Digital Software" : "Recruit — SV Digital Software",
-    description: locale === "vi" ? "Gia nhập SV Digital Software — Cơ hội nghề nghiệp trong kỹ thuật dữ liệu, AI và nghiên cứu định lượng." : "Join SV Digital Software — Career opportunities in data engineering, AI, and quantitative research.",
-    alternates: {
-      languages: {
-        en: `${"https://www.alpaca-tech.ai"}/en/recruit`,
-        vi: `${"https://www.alpaca-tech.ai"}/vi/recruit`,
-      },
-    },
+  const dict = getDictionary(locale);
+  const descriptions: Record<Locale, string> = {
+    en: "Join SV Digital Software — Career opportunities in software development, data engineering, AI and product design.",
+    vi: "Gia nhập SV Digital Software — Cơ hội nghề nghiệp trong phát triển phần mềm, kỹ thuật dữ liệu, AI và thiết kế sản phẩm.",
+    lo: "ຮ່ວມງານກັບ SV Digital Software — ໂອກາດອາຊີບໃນການພັດທະນາຊອບແວ, ວິສະວະກຳຂໍ້ມູນ, AI ແລະ ານອອກແບບຜະລິດຕະພັນ.",
   };
+  return pageMetadata({
+    locale,
+    path: "/recruit",
+    title: dict.recruitPage.heroTitle,
+    description: descriptions[locale],
+  });
 }
 
 export default async function RecruitPage({ params }: { params: Promise<{ locale: string }> }) {

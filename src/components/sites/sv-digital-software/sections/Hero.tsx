@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
+import { HeroLottie } from "@/components/HeroLottie";
 
 export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
 
@@ -17,6 +18,14 @@ export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
       />
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.07]">
         <div className="w-[1200px] h-[700px] rounded-full border border-white/20 blur-[1px]" />
+      </div>
+
+      {/* Snake Lottie — full-width band weaving across the banner */}
+      <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 z-0 hidden lg:block">
+        <HeroLottie variant="desktop" className="w-full h-[420px] opacity-40" />
+      </div>
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-0 lg:hidden">
+        <HeroLottie variant="mobile" className="w-full h-[220px] opacity-45" />
       </div>
 
       <div className="relative z-10 w-full max-w-[1288px] flex flex-col justify-end h-full min-h-[calc(100vh-120px)]">

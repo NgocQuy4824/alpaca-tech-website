@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
         hostname: "storage.googleapis.com",
         pathname: "/studio-design-asset-files/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
     ],
   },
 };

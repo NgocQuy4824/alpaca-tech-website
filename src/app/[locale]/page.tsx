@@ -8,7 +8,6 @@ import { SolutionsSection } from "@/components/sites/sv-digital-software/section
 import { CompanyTeaser } from "@/components/sites/sv-digital-software/sections/CompanyTeaser";
 import { RecruitTeaser } from "@/components/sites/sv-digital-software/sections/RecruitTeaser";
 import { InfiniteMarquee } from "@/components/sites/sv-digital-software/sections/InfiniteMarquee";
-import { NewsTeaser } from "@/components/sites/sv-digital-software/sections/NewsTeaser";
 import { notFound } from "next/navigation";
 
 const HOME_TITLES: Record<Locale, string> = {
@@ -44,7 +43,6 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
       <CompanyTeaser dict={dict} locale={locale} />
       <RecruitTeaser dict={dict} locale={locale} />
       <InfiniteMarquee dict={dict} locale={locale} />
-      <NewsTeaser dict={dict} locale={locale} />
     </main>
   );
 }

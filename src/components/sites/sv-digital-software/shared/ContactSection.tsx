@@ -13,7 +13,7 @@ type Props = { dict: Dictionary; locale: Locale };
 export function ContactSection({ dict }: Props) {
   const c = dict.contact;
   const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(c.emailSubject)}`;
-  const address = dict.companyPage.map.address;
+  const address = c.address;
 
   const cards: { icon: typeof Mail; label: string; value: string; href?: string }[] = [
     { icon: Mail, label: c.emailLabel, value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` },

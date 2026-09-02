@@ -23,6 +23,9 @@ export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/",
   instagram: "https://www.instagram.com/",
   facebook: "https://www.facebook.com/",
+  x: "https://x.com/",
+  github: "https://github.com/",
+  youtube: "https://www.youtube.com/",
 };
 
 /** Build an absolute URL for a given locale + path ("" = home). */

@@ -6,9 +6,10 @@ type Props = {
   subtitle?: string;
   current: string;
   locale: Locale;
+  parent?: { label: string; href: string };
 };
 
-export function PageHero({ title, subtitle, current, locale }: Props) {
+export function PageHero({ title, subtitle, current, locale, parent }: Props) {
   return (
     <section className="relative bg-gradient-to-br from-at-primary to-at-secondary flex justify-center px-5 lg:px-[76px] pt-[114px] pb-8">
       <div
@@ -31,7 +32,7 @@ export function PageHero({ title, subtitle, current, locale }: Props) {
           ) : null}
         </div>
         <div className="flex justify-end">
-          <Breadcrumb current={current} locale={locale} />
+          <Breadcrumb current={current} locale={locale} parent={parent} />
         </div>
       </div>
     </section>

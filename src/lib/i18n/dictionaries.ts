@@ -1,16 +1,13 @@
-// Central i18n dictionary. `en` is the source of truth for shape; `vi` and `lo` must match.
+﻿// Central i18n dictionary. `en` is the source of truth for shape; `vi` and `lo` must match.
 // Add a new string here (all three locales) and reference it via `getDictionary(locale)`.
-// AIM is positioned as SV Digital Software's AI & data platform (not an investment product).
 
 export const en = {
   header: {
     nav: {
-      solution: "SOLUTION",
+      solution: "SERVICES",
       technologies: "TECHNOLOGIES",
-      aim: "AIM",
-      company: "COMPANY",
+      company: "ABOUT US",
       recruit: "RECRUIT",
-      news: "NEWS",
     },
     contact: "CONTACT",
     homeAria: "SV Digital Software home",
@@ -26,12 +23,14 @@ export const en = {
     text: "Code never lies, comments sometimes do.",
   },
   footer: {
-    groupCompanies: "Group Companies",
-    nav: {
-      solution: "SOLUTION",
-      technologies: "TECHNOLOGIES",
-      aim: "AIM",
+    headings: {
+      services: "SERVICES",
+      company: "COMPANY",
+      contact: "CONTACT",
     },
+    tagline:
+      "We design, build and maintain digital products end to end — web applications, mobile apps, enterprise systems and modern data platforms.",
+    followUs: "FOLLOW US",
     contact: "CONTACT",
     copyright: "©SV Digital Software Co. Ltd. all rights reserved.",
     companyInfo:
@@ -50,6 +49,7 @@ export const en = {
     emailLabel: "Email",
     phoneLabel: "Phone",
     addressLabel: "Office",
+    address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
     hoursLabel: "Office hours",
     hours: "Mon–Fri, 9:00–18:00 (JST)",
     followUs: "Follow us",
@@ -60,28 +60,18 @@ export const en = {
     subtitle:
       "SV Digital Software designs and builds digital products, data platforms and AI solutions. We combine cutting-edge engineering with deep domain expertise to deliver software that meets our customers' highest standards.",
     cta: "CONTACT",
-    news: [
-      { date: "2025/4/14 10:00", title: "SV Digital Software participates in Snowflake Summit 2025" },
-      { date: "2024/11/20 09:00", title: "AlphaCrafter featured at AWS re:Invent 2024" },
-    ],
   },
   solutions: {
-    heading: "SOLUTIONS",
+    heading: "SERVICES",
     dataSolution: {
-      title: "DATA SOLUTION",
-      desc: "SV Digital Software builds modern data platforms that turn raw data into decisions. From data warehouse design and pipeline engineering to analytics and AI-ready infrastructure, we deliver secure, scalable data foundations. Our flagship product \"AlphaCrafter\" — a generative AI data agent operating directly within data warehouses — won the Grand Prize at the Japan Financial Innovation Award 2024.",
-      learnMore: "Learn more",
-    },
-    aim: {
-      title: "AIM AI PLATFORM",
-      subtitle: "(SV Digital Software AI Platform)",
-      desc: "AIM is our core AI and data platform — the engineering foundation behind our products. It combines independently developed AI algorithms with production-grade software to turn complex data into reliable forecasts and decisions. AIM powers the AI investment product \"ROBOPRO\", built in collaboration with SaveZust, with over $250M in assets under management.",
+      title: "SERVICES",
+      desc: "SV Digital Software designs, builds and maintains digital products end to end — web applications, mobile apps, enterprise systems and modern data platforms. From UX design and system architecture through development, testing and long-term support, our engineering team turns business requirements into secure, scalable software that ships on schedule and grows with your business.",
       learnMore: "Learn more",
     },
   },
   companyTeaser: {
     heading: "COMPANY",
-    desc: "SV Digital Software is a group company of SaveZust Holdings. As a member of the SaveZust Group, which aims to create new financial solutions and realize a prosperous future, we combine our AI and system development technologies with our financial expertise to provide cutting-edge technology that meets the needs of our customers.",
+    desc: "SV Digital Software is a software development company delivering digital products end to end — web applications, mobile apps, enterprise systems and data platforms. We combine modern engineering, disciplined quality assurance and long-term support to build secure, scalable software that helps businesses operate efficiently and grow with confidence.",
     readMore: "Read more",
   },
   recruitTeaser: {
@@ -89,27 +79,13 @@ export const en = {
     desc: "We are engineers and makers. By the values of crafting with excellence, thinking bold, building together, earning trust and embracing change, we ship digital products that last. If that resonates — come build the next version with us.",
     readMore: "Read more",
   },
-  newsTeaser: {
-    heading: "NEWS",
-    viewAll: "View All",
-    items: [
-      { date: "2025.04.14", title: "SV Digital Software participates in Snowflake Summit 2025" },
-      { date: "2024.11.20", title: "AlphaCrafter featured at AWS re:Invent 2024 — Generative AI data agent demo" },
-    ],
-  },
   solutionPage: {
-    heroTitle: "SOLUTION",
-    heading: "SOLUTIONS",
+    heroTitle: "SERVICES",
+    heading: "SERVICES",
     dataSolution: {
-      title: "DATA SOLUTION",
-      desc: "SV Digital Software designs and builds enterprise data platforms end to end — data warehouse architecture, ETL/ELT pipelines, analytics dashboards and AI-ready infrastructure. Our flagship product \"AlphaCrafter\" is a generative AI data agent that operates directly inside the data warehouse, turning natural-language questions into live analyses. Products built on this technology won the Grand Prize at the Japan Financial Innovation Award 2024.",
+      title: "SERVICES",
+      desc: "SV Digital Software delivers custom software end to end — web and enterprise applications, mobile apps, QA and test automation, legacy system modernization and cloud-ready data platforms. One experienced team takes your project from requirements and architecture through development, testing, deployment and ongoing maintenance, giving you a single accountable partner for the entire product lifecycle.",
       contactUs: "Contact us",
-    },
-    aim: {
-      title: "AIM AI PLATFORM",
-      subtitle: "(SV Digital Software AI Platform)",
-      desc: "AIM is our core AI and data platform — where software engineering meets data intelligence. Independently developed AI algorithms, delivered through production-grade systems, turn complex data into reliable medium to long term forecasts. AIM powers the AI investment product \"ROBOPRO\", built in collaboration with SaveZust, with over $250M in assets under management.",
-      learnMore: "Learn more",
     },
     cta: {
       title: "Have a project in mind?",
@@ -117,98 +93,264 @@ export const en = {
       contactUs: "Contact Us",
     },
   },
-  aimPage: {
-    heroTitle: "AIM",
-    heroSubtitle: "",
-    intro: {
-      title: "AIM",
-      para1: "AIM is SV Digital Software's core AI and data platform — the engineering foundation behind our products. We combine independently developed AI algorithms with production-grade software to turn complex data into clear, reliable signals that businesses can act on.",
-      para2: "Born in the demanding domain of quantitative finance, AIM analyses large volumes of market and operational data to produce disciplined, medium to long term forecasts. The same platform now powers the AI investment product \"ROBOPRO\", built in collaboration with SaveZust, with over $250M in assets under management — and can be applied far beyond finance.",
-      bullets: [
-        "Data-driven forecasting with independently developed AI",
-        "Medium to long term horizon — robust against short-term noise",
-        "Reliable, risk-aware decision support",
-        "Proven at scale inside ROBOPRO (>$250M AUM)",
-      ],
+  services: {
+    heroTitle: "SERVICES",
+    heading: "SERVICES",
+    nav: {
+      mobile: "Mobile Solutions",
+      custom: "Custom Software Development",
+      testing: "Testing Services",
+      legacy: "Legacy System Migration",
     },
-    stats: [
-      { value: "$250M+", label: "AUM powered by AIM via ROBOPRO" },
-      { value: "No. 1", label: "FSA ranking — cumulative return & Sharpe ratio" },
-      { value: "Since 2022", label: "AIM operating in production" },
-    ],
-    howItWorks: {
-      title: "HOW AIM WORKS",
-      cards: [
-        { step: "01", title: "Data ingestion", desc: "Collects and cleanses market, macro, and operational data at scale into a unified, secure data warehouse." },
-        { step: "02", title: "AI forecasting", desc: "Our proprietary algorithms produce medium to long term forecasts and regime signals with full traceability." },
-        { step: "03", title: "Delivery & integration", desc: "Insights are delivered as signals, APIs, or a managed product — integrated directly into your systems." },
-      ],
+    crossLinksHeading: "OTHER SERVICES",
+    mobile: {
+      heroTitle: "Mobile Solutions",
+      intro:
+        "We design and build native and cross-platform mobile applications for iOS and Android — from concept and UX through launch and ongoing maintenance. Our mobile team ships reliable, performant apps that feel at home on every device.",
+      features: {
+        heading: "WHAT WE DELIVER",
+        items: [
+          "Native iOS & Android development",
+          "Cross-platform apps (React Native, Flutter)",
+          "UI/UX design and interactive prototyping",
+          "App Store & Google Play publishing",
+          "Post-launch maintenance & support",
+        ],
+      },
+      process: {
+        heading: "OUR PROCESS",
+        steps: [
+          { step: "01", title: "Requirements & analysis", desc: "We gather and evaluate your needs to define the optimal solution and project scope." },
+          { step: "02", title: "Design", desc: "We craft the UI and UX flows, turning requirements into intuitive, testable designs." },
+          { step: "03", title: "Development", desc: "We build functional prototypes, then complete the app to design and requirements." },
+          { step: "04", title: "Testing", desc: "We test on real devices throughout, run UAT and verify integrated functionality." },
+          { step: "05", title: "Launch & support", desc: "We publish to the stores after your acceptance and support you through maintenance." },
+        ],
+      },
+      benefits: {
+        heading: "WHY CHOOSE US",
+        items: [
+          "Professional, dedicated mobile team",
+          "Reliable delivery on schedule",
+          "Fast turnaround without compromising quality",
+          "Competitive, transparent cost",
+          "Creative, user-first product thinking",
+        ],
+      },
+      projects: {
+        heading: "FEATURED PROJECTS",
+        items: [
+          { title: "Mobile Banking App", desc: "A secure banking app for on-the-go transactions and account management.", stack: ["Spring Boot", "Android", "iOS"] },
+          { title: "E-commerce Fulfillment Platform", desc: "An omnichannel e-fulfillment platform spanning web and mobile.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+          { title: "Device Usage Control App", desc: "A parental-control app for managing screen time across devices.", stack: [".NET Core", "PHP", "Android", "iOS"] },
+        ],
+      },
+      cta: {
+        title: "Ready to build your mobile app?",
+        desc: "Tell us about your idea and we'll show you how our mobile team can turn it into a polished, production-ready product.",
+        contactUs: "Contact Us",
+      },
     },
-    robopro: {
-      label: "PRODUCT",
-      title: "ROBOPRO — AI investment powered by AIM",
-      desc: "Jointly developed with SaveZust. Evaluated by the Financial Services Agency as No. 1 in cumulative return and Sharpe ratio among domestic asset managers.",
-      learnMore: "Learn about ROBOPRO",
+    custom: {
+      heroTitle: "Custom Software Development",
+      intro:
+        "We build software to your exact requirements — from design through development, testing and maintenance. Our experienced team handles application development, API integration, legacy modernization and system integration, delivering the most effective and cost-efficient solution for your business.",
+      features: {
+        heading: "WHAT WE DELIVER",
+        items: [
+          "Tailored web & enterprise applications",
+          "API design, development & integration",
+          "Legacy system modernization",
+          "Application & workflow integration",
+          "Digital transformation & data management",
+        ],
+      },
+      process: {
+        heading: "OUR PROCESS",
+        steps: [
+          { step: "01", title: "Requirements gathering", desc: "We collect your needs, desired outcomes and intended functionality to define the project scope." },
+          { step: "02", title: "Analysis & proposal", desc: "We evaluate requirements and recommend solutions that minimize risk and fit your budget." },
+          { step: "03", title: "Development", desc: "Our team programs and builds the product to the agreed designs and requirement set." },
+          { step: "04", title: "Testing", desc: "Quality control through functional, system, integration, stress and user-acceptance testing." },
+          { step: "05", title: "Installation & maintenance", desc: "We finalize deployment and provide ongoing support for stability and long-term quality." },
+        ],
+      },
+      benefits: {
+        heading: "WHY CHOOSE US",
+        items: [
+          "Flexible adjustment to your requirements",
+          "A unique product you own and can scale",
+          "Independent, self-disciplined engineering team",
+          "Built to grow as your business expands",
+          "Large capacity for parallel task distribution",
+        ],
+      },
+      projects: {
+        heading: "REPRESENTATIVE PROJECTS",
+        items: [
+          { title: "Car Services Management", desc: "A mobile app for managing automotive services and bookings.", stack: [".NET Core", "AngularJS"] },
+          { title: "Work Management ERP", desc: "An internal ERP for task tracking and team workflow.", stack: ["React", "MySQL", "Spring Boot", "AWS"] },
+          { title: "Omnichannel E-commerce", desc: "A retail platform unifying web, online and mobile channels.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+        ],
+      },
+      cta: {
+        title: "Have a custom build in mind?",
+        desc: "Share your requirements and we'll propose an architecture and roadmap that fits your goals and budget.",
+        contactUs: "Contact Us",
+      },
     },
-    cta: {
-      title: "Explore AIM for your business",
-      desc: "Whether you are in finance or another data-driven industry — let's discuss how the AIM platform can power your next product.",
-      contactUs: "Contact Us",
+    testing: {
+      heroTitle: "Testing Services",
+      intro:
+        "We provide comprehensive software testing across mobile, web and enterprise platforms — catching defects before release so your product ships with confidence. Our QA team combines manual expertise with automation to keep quality high and delivery fast.",
+      features: {
+        heading: "WHAT WE DELIVER",
+        items: [
+          "Mobile app testing across devices & resolutions",
+          "Automated testing for repeatable coverage",
+          "Web application & cross-browser testing",
+          "24/7 build-and-test cycles across time zones",
+          "Performance, security & regression testing",
+        ],
+      },
+      process: {
+        heading: "OUR PROCESS",
+        steps: [
+          { step: "01", title: "Requirements analysis", desc: "We collect and analyze your requirements to define the testing scope." },
+          { step: "02", title: "Test planning", desc: "We develop test plans and strategies once the scope is identified." },
+          { step: "03", title: "Test case building", desc: "We create the test scenarios executed during and after development." },
+          { step: "04", title: "Environment setup", desc: "We prepare all environments and devices needed for execution." },
+          { step: "05", title: "Execution & reporting", desc: "We run test scripts, log every issue and verify fixes with the full team." },
+        ],
+      },
+      benefits: {
+        heading: "WHY CHOOSE US",
+        items: [
+          "Reduced risk by catching defects early",
+          "Faster release cycles through automation",
+          "Coverage across mobile, web & integration layers",
+          "Round-the-clock testing without late shifts",
+          "Proven with enterprise-scale projects",
+        ],
+      },
+      capabilities: {
+        heading: "CORE TESTING CAPABILITIES",
+        items: [
+          { title: "Mobile App Testing", desc: "We verify apps across many devices and screen resolutions for a seamless experience." },
+          { title: "Automated Testing", desc: "We automate repetitive checks so your team can focus on competitive advantage." },
+          { title: "Web Application Testing", desc: "We scan sites to minimize vulnerabilities and fix functional and performance issues." },
+          { title: "24/7 Continuous Testing", desc: "We use time-zone differences to run a continuous build-and-test cycle around the clock." },
+        ],
+      },
+      toolsHeading: "TOOLS & COVERAGE",
+      cta: {
+        title: "Need a reliable QA partner?",
+        desc: "Let us take quality off your plate — tell us about your product and we'll build a testing plan around it.",
+        contactUs: "Contact Us",
+      },
+    },
+    legacy: {
+      heroTitle: "Legacy System Migration",
+      intro:
+        "We restructure your processes end to end and migrate legacy systems to modern platforms — preserving data integrity and the core features of your established models with minimal disruption. Our engineers and consultants bring broad experience across modern technology stacks.",
+      features: {
+        heading: "WHAT WE DELIVER",
+        items: [
+          "End-to-end process restructuring (A to Z)",
+          "Data migration with integrity preserved",
+          "Legacy-to-modern platform conversion",
+          "Feature retention from established models",
+          "Full lifecycle support, planning to post-migration",
+        ],
+      },
+      process: {
+        heading: "OUR PROCESS",
+        steps: [
+          { step: "01", title: "Discovery", desc: "We identify your data, formats, locations and impact levels." },
+          { step: "02", title: "Backup", desc: "We back up all data before any migration work begins." },
+          { step: "03", title: "Planning", desc: "We determine the technical, time and financial requirements." },
+          { step: "04", title: "Phased migration & testing", desc: "We migrate in phases and test the system after each stage." },
+          { step: "05", title: "Data cleansing & load", desc: "We clean the data, resolve issues and load it into the new system." },
+        ],
+      },
+      benefits: {
+        heading: "WHY CHOOSE US",
+        items: [
+          "Data integrity preserved through the transition",
+          "Core features retained from existing models",
+          "Minimal issues arising during migration",
+          "Support across the full project lifecycle",
+          "Engineers experienced across many platforms",
+        ],
+      },
+      values: {
+        heading: "WHAT WE GUARANTEE",
+        items: [
+          { title: "Data integrity", desc: "Your data stays complete and accurate throughout the entire transition." },
+          { title: "Feature retention", desc: "The core features of your established models are preserved in the new system." },
+          { title: "Minimal disruption", desc: "A staged approach keeps your business running with the fewest issues." },
+        ],
+      },
+      caseStudy: {
+        heading: "CASE HIGHLIGHT",
+        title: "Flash to HTML5 — K12 education content",
+        desc: "We converted thousands of K12 educational content items from legacy Flash to modern HTML5, preserving interactivity while future-proofing delivery across devices.",
+        tag: "Education",
+      },
+      cta: {
+        title: "Ready to modernize your systems?",
+        desc: "Tell us about your legacy platform and we'll map a safe, staged migration path to a modern foundation.",
+        contactUs: "Contact Us",
+      },
     },
   },
   companyPage: {
     heroTitle: "COMPANY",
-    info: {
-      heading: "COMPANY INFORMATION",
+    philosophy: {
+      heading: "BUSINESS PHILOSOPHY",
+      desc: "SV Digital Software is committed to building a trusted software brand through long-term partnerships on the global IT market. Technology changes quickly, but we believe the most important thing is always relevance — software that truly fits our customers' requirements, delivered with discipline, transparency and care.",
+    },
+    values: {
+      heading: "CORE VALUES",
+      items: [
+        { title: "Delivery capability", desc: "End-to-end delivery — from requirements and architecture through development, testing, deployment and long-term maintenance." },
+        { title: "Global standards", desc: "We adopt international engineering and quality standards so every project meets expectations, anywhere in the world." },
+        { title: "People first", desc: "We attract, develop and retain talented engineers — the foundation behind every successful project we ship." },
+        { title: "Certified quality", desc: "Disciplined QA processes and internationally recognized quality management practices applied to every release." },
+      ],
+    },
+    vision: {
+      heading: "VISION",
+      desc: "SV Digital Software aims to become a leading partner in custom software development, legacy system migration & maintenance, and digital transformation — helping businesses modernize with confidence and grow on a solid technology foundation.",
+    },
+    ceo: {
+      label: "MESSAGE FROM THE CEO",
+      name: "James Whitfield",
+      role: "Representative Director & CEO",
+      desc: "Our promise to every client is simple: understand deeply, build honestly and deliver completely. We treat each project as a long-term commitment — and we measure our success by how well your software performs years after launch, not only on delivery day.",
+    },
+    factSheet: {
+      heading: "FACT SHEET",
       rows: [
         { label: "Company Name", value: "SV Digital Software Co., Ltd." },
         { label: "Date of Establishment", value: "July 8, 2022" },
-        { label: "Head Office Location", value: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom" },
-        { label: "Capital", value: "USD 67,000 (as of March 2026)" },
-        { label: "Business Lines", value: "Custom software development · Data & AI platform engineering · Cloud modernization · Digital transformation consulting" },
-        { label: "Core Technologies", value: "TypeScript / React / Next.js · Python · LLM & Generative AI · Snowflake / dbt · AWS / GCP / Azure" },
-        { label: "Representative Director & CEO", value: "James Whitfield" },
-        { label: "Representative Director, CAO", value: "Sarah Mitchell" },
-        { label: "Director", value: "Oliver Hartley" },
-        { label: "Director", value: "Daniel Brooks" },
-        { label: "Director", value: "Emma Collins" },
-        { label: "Standing Corporate Auditor", value: "Richard Foster" },
-        { label: "Executive Officer, CTO", value: "Marcus Reid" },
+        { label: "Business Lines", value: "Custom software development · Mobile solutions · Testing services · Legacy system migration" },
+        { label: "Core Technologies", value: "TypeScript / React / Next.js · Python · Snowflake / dbt · AWS / GCP / Azure" },
       ],
     },
-    history: {
-      heading: "COMPANY HISTORY",
-      items: [
-        { year: "2022.07", text: "SV Digital Software Co., Ltd. established in Tokyo — founded on the belief that great software turns complex data into clear decisions." },
-        { year: "2022.10", text: "R&D of the AIM platform begins: our internally developed AI forecasting engine, designed from day one to run in production." },
-        { year: "2023.05", text: "AIM proves itself under the strictest requirements — deployed in production to power quantitative decision-making at scale." },
-        { year: "2023.11", text: "Data engineering practice established — certified across Snowflake, dbt and the major cloud providers, delivering enterprise data foundations." },
-        { year: "2024.11", text: "AlphaCrafter, our generative AI data agent, featured at AWS re:Invent 2024 — live demos of natural-language analytics inside the data warehouse." },
-        { year: "2025.03", text: "AlphaCrafter wins the Grand Prize at the Google Cloud Generative AI Innovation Awards." },
-        { year: "2025.06", text: "AIM & AlphaCrafter recognized across the industry — SV Digital Software expands its product and delivery teams to serve clients beyond finance." },
-      ],
-    },
-    achievements: {
-      heading: "PRODUCTS & FLAGSHIP PROJECTS",
-      items: [
-        { title: "AlphaCrafter", desc: "Generative AI data agent that lives inside the data warehouse — answer business questions in natural language and get live, governed analyses. Grand Prize, Japan Financial Innovation Award 2024.", meta: "Generative AI / Data Agent" },
-        { title: "AIM Platform", desc: "Our AI & data platform: independent algorithms, production-grade engineering, medium to long term forecasts powering ROBOPRO with over $250M in assets under management.", meta: "AI Platform / Forecasting" },
-        { title: "Enterprise Delivery", desc: "Full-cycle software delivery for data-intensive businesses — from architecture and cloud migration to managed operations, with security and quality built in.", meta: "Custom Software / Cloud" },
-      ],
-      note: "*Includes the achievements of our predecessor company.",
+    partners: {
+      heading: "TECHNOLOGY PARTNERS",
+      desc: "We build on proven, industry-leading platforms and maintain close working relationships with the ecosystems behind them.",
+      items: ["AWS", "Google Cloud", "Microsoft Azure", "Snowflake", "dbt", "Docker"],
     },
     awards: {
       heading: "AWARD-WINNING TRACK RECORD",
       items: [
         { date: "2017.04.06", title: "MUFG Fintech Accelerator Program \"Runner-up Prize\"", desc: "Selected from hundreds of applicants and partnered with kabu.com Securities — the foundation of our experience building mission-critical software for highly regulated industries." },
-        { date: "2023.05.16", title: "AIM in production: No. 1 in cumulative return & Sharpe ratio (FSA report)", desc: "The AIM platform's production track record was evaluated as No. 1 in the Financial Services Agency's KPI report — proof that our engineering holds up under real-world pressure." },
-        { date: "2025.03.17", title: "Grand Prize — 3rd Google Cloud Generative AI Innovation Awards", desc: "Our AI data agent \"AlphaCrafter\" won the Grand Prize for exploring data warehouses and generating analyses from natural-language questions." },
-        { date: "2025.06.05", title: "Nikkei Trendy \"2025 Robo-Advisor Grand Prize\"", desc: "ROBOPRO, powered by our AIM platform, recorded the highest returns among major robo-advisors in Nikkei Trendy's comparison (July 2025 issue)." },
+        { date: "2023.08.22", title: "Secure-delivery benchmark — zero major incidents across 3 consecutive years", desc: "Our QA-led delivery process passed every external security review, with no production incident traced to a missed bug or vulnerability." },
+        { date: "2025.03.17", title: "Grand Prize — 3rd Google Cloud Innovation Awards", desc: "Our cloud-native data and application platform won the Grand Prize for its reliable architecture, scalable performance and clean developer experience." },
+        { date: "2025.06.05", title: "Trust & retention — 100% on-time delivery, 100% repeat-client rate", desc: "All contracted milestones delivered on schedule, with every client choosing to continue into a long-term partnership beyond their first project." },
       ],
-    },
-    map: {
-      address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
-      viewMap: "View Google Map",
     },
     contact: {
       heading: "CONTACT",
@@ -231,25 +373,6 @@ export const en = {
       { title: "Product Manager — Data & AI Products", location: "London, UK / Remote", type: "Full-time" },
       { title: "Software Engineer — Platform & Infrastructure", location: "London, UK", type: "Full-time" },
       { title: "UI/UX Designer — Design Systems & Product", location: "London, UK / Remote", type: "Full-time" },
-    ],
-  },
-  newsPage: {
-    heroTitle: "NEWS",
-    viewMore: "View More",
-    showLess: "Show Less",
-    items: [
-      { date: "2025.04.14", title: "SV Digital Software participates in Snowflake Summit 2025 — Booth demo of AlphaCrafter" },
-      { date: "2025.03.17", title: "AlphaCrafter wins Grand Prize at the 3rd Google Cloud Generative AI Innovation Awards" },
-      { date: "2024.11.20", title: "AlphaCrafter featured at AWS re:Invent 2024 — live demo of generative AI data agent" },
-      { date: "2024.09.10", title: "AIM platform v2 released — new integration APIs, enterprise-grade security and expanded forecasting capabilities" },
-      { date: "2024.06.05", title: "SV Digital Software launches a generative AI consulting practice for enterprise clients" },
-      { date: "2024.01.18", title: "Our engineering team doubles as we take on larger platform builds" },
-      { date: "2023.11.09", title: "Data engineering practice certified across Snowflake, dbt and major cloud providers" },
-      { date: "2023.08.22", title: "SV Digital Software open-sources an internal data pipeline toolkit" },
-      { date: "2023.05.16", title: "AIM reaches a production milestone — deployed at scale to power data-driven decision-making" },
-      { date: "2023.02.14", title: "SV Digital Software becomes Snowflake Solutions Partner" },
-      { date: "2022.12.15", title: "AIM platform v1 enters production" },
-      { date: "2022.09.01", title: "SV Digital Software opens its first dedicated R&D studio" },
     ],
   },
   technologiesPage: {
@@ -278,6 +401,15 @@ export const en = {
       ai:
         "From generative AI and LLM integrations to machine learning and computer vision — we turn emerging tech into real product value.",
     },
+    projects: {
+      heading: "FEATURED PROJECTS",
+      viewAll: "View all services",
+      items: [
+        { title: "Mobile Banking App", desc: "A secure banking application for on-the-go transactions and account management, delivered for iOS and Android.", stack: ["Spring Boot", "Android", "iOS"] },
+        { title: "Work Management ERP", desc: "An internal ERP system for task tracking and team workflow, built for a client's daily operations.", stack: ["React", "MySQL", "Spring Boot", "AWS"] },
+        { title: "Omnichannel E-commerce", desc: "A retail platform unifying web, online and mobile channels into one seamless shopping experience.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+      ],
+    },
   },
 };
 
@@ -286,12 +418,10 @@ export type Dictionary = typeof en;
 export const vi: Dictionary = {
   header: {
     nav: {
-      solution: "GIẢI PHÁP",
+      solution: "DỊCH VỤ",
       technologies: "CÔNG NGHỆ",
-      aim: "MỤC TIÊU",
-      company: "CÔNG TY",
+      company: "VỀ CHÚNG TÔI",
       recruit: "TUYỂN DỤNG",
-      news: "TIN TỨC",
     },
     contact: "LIÊN HỆ",
     homeAria: "Trang chủ SV Digital Software",
@@ -307,12 +437,14 @@ export const vi: Dictionary = {
     text: "Code không bao giờ nói dối, comment đôi khi thì có.",
   },
   footer: {
-    groupCompanies: "Công ty thành viên",
-    nav: {
-      solution: "GIẢI PHÁP",
-      technologies: "CÔNG NGHỆ",
-      aim: "MỤC TIÊU",
+    headings: {
+      services: "DỊCH VỤ",
+      company: "CÔNG TY",
+      contact: "LIÊN HỆ",
     },
+    tagline:
+      "Chúng tôi thiết kế, xây dựng và bảo trì sản phẩm số trọn vẹn — ứng dụng web, ứng dụng di động, hệ thống doanh nghiệp và nền tảng dữ liệu hiện đại.",
+    followUs: "THEO DÕI CHÚNG TÔI",
     contact: "LIÊN HỆ",
     copyright: "©SV Digital Software Co. Ltd. Bảo lưu mọi quyền.",
     companyInfo:
@@ -331,6 +463,7 @@ export const vi: Dictionary = {
     emailLabel: "Email",
     phoneLabel: "Điện thoại",
     addressLabel: "Văn phòng",
+    address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
     hoursLabel: "Giờ làm việc",
     hours: "Thứ 2–Thứ 6, 9:00–18:00 (JST)",
     followUs: "Theo dõi chúng tôi",
@@ -341,28 +474,18 @@ export const vi: Dictionary = {
     subtitle:
       "SV Digital Software thiết kế và xây dựng các sản phẩm số, nền tảng dữ liệu và giải pháp AI. Chúng tôi kết hợp kỹ thuật tiên tiến với chuyên môn sâu để tạo ra phần mềm đáp ứng những tiêu chuẩn khắt khe nhất của khách hàng.",
     cta: "LIÊN HỆ",
-    news: [
-      { date: "2025/4/14 10:00", title: "SV Digital Software tham gia Snowflake Summit 2025" },
-      { date: "2024/11/20 09:00", title: "AlphaCrafter góp mặt tại AWS re:Invent 2024" },
-    ],
   },
   solutions: {
-    heading: "GIẢI PHÁP",
+    heading: "DỊCH VỤ",
     dataSolution: {
-      title: "GIẢI PHÁP DỮ LIỆU",
-      desc: "SV Digital Software xây dựng các nền tảng dữ liệu hiện đại, biến dữ liệu thô thành quyết định kinh doanh. Từ thiết kế kho dữ liệu, xây dựng pipeline đến phân tích và hạ tầng sẵn sàng cho AI, chúng tôi cung cấp nền tảng dữ liệu an toàn và mở rộng được. Sản phẩm chủ lực \"AlphaCrafter\" — tác nhân dữ liệu AI tạo sinh hoạt động trực tiếp trong kho dữ liệu — đã giành Giải Đặc biệt tại Japan Financial Innovation Award 2024.",
-      learnMore: "Tìm hiểu thêm",
-    },
-    aim: {
-      title: "NỀN TẢNG AI AIM",
-      subtitle: "(Nền tảng AI SV Digital Software)",
-      desc: "AIM là nền tảng AI và dữ liệu cốt lõi của chúng tôi — nền móng kỹ thuật đằng sau các sản phẩm. AIM kết hợp các thuật toán AI tự phát triển với phần mềm chuẩn production để biến dữ liệu phức tạp thành dự báo và quyết định đáng tin cậy. AIM vận hành sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng SaveZust, với tổng tài sản quản lý hơn 250 triệu USD.",
+      title: "DỊCH VỤ",
+      desc: "SV Digital Software thiết kế, xây dựng và bảo trì sản phẩm số trọn vẹn — ứng dụng web, ứng dụng di động, hệ thống doanh nghiệp và nền tảng dữ liệu hiện đại. Từ thiết kế UX, kiến trúc hệ thống đến phát triển, kiểm thử và hỗ trợ dài hạn, đội ngũ kỹ sư của chúng tôi biến yêu cầu kinh doanh thành phần mềm an toàn, có khả năng mở rộng, bàn giao đúng hạn và phát triển cùng doanh nghiệp của bạn.",
       learnMore: "Tìm hiểu thêm",
     },
   },
   companyTeaser: {
     heading: "CÔNG TY",
-    desc: "SV Digital Software là công ty thành viên của SaveZust Holdings. Là một phần của Tập đoàn SaveZust, hướng tới việc tạo ra các giải pháp tài chính mới và hiện thực hóa tương lai thịnh vượng, chúng tôi kết hợp công nghệ AI và phát triển hệ thống với chuyên môn tài chính để cung cấp công nghệ tiên tiến đáp ứng nhu cầu của khách hàng.",
+    desc: "SV Digital Software là công ty phát triển phần mềm cung cấp sản phẩm số trọn vẹn — ứng dụng web, ứng dụng di động, hệ thống doanh nghiệp và nền tảng dữ liệu. Chúng tôi kết hợp kỹ thuật hiện đại, quy trình kiểm thử chặt chẽ và hỗ trợ dài hạn để xây dựng phần mềm an toàn, có khả năng mở rộng, giúp doanh nghiệp vận hành hiệu quả và tăng trưởng bền vững.",
     readMore: "Đọc thêm",
   },
   recruitTeaser: {
@@ -370,27 +493,13 @@ export const vi: Dictionary = {
     desc: "Chúng tôi là những kỹ sư và người làm sản phẩm. Với các giá trị theo đuổi chất lượng, dám nghĩ dám làm, cùng nhau kiến tạo, chính trực và luôn đổi mới, chúng tôi tạo nên những sản phẩm số bền vững. Nếu điều đó chạm đến bạn — hãy cùng xây phiên bản tiếp theo.",
     readMore: "Đọc thêm",
   },
-  newsTeaser: {
-    heading: "TIN TỨC",
-    viewAll: "Xem tất cả",
-    items: [
-      { date: "2025.04.14", title: "SV Digital Software tham gia Snowflake Summit 2025" },
-      { date: "2024.11.20", title: "AlphaCrafter góp mặt tại AWS re:Invent 2024 — Demo tác nhân dữ liệu AI tạo sinh" },
-    ],
-  },
   solutionPage: {
-    heroTitle: "GIẢI PHÁP",
-    heading: "GIẢI PHÁP",
+    heroTitle: "DỊCH VỤ",
+    heading: "DỊCH VỤ",
     dataSolution: {
-      title: "GIẢI PHÁP DỮ LIỆU",
-      desc: "SV Digital Software thiết kế và xây dựng nền tảng dữ liệu doanh nghiệp trọn vẹn — kiến trúc kho dữ liệu, pipeline ETL/ELT, dashboard phân tích và hạ tầng sẵn sàng cho AI. Sản phẩm chủ lực \"AlphaCrafter\" là tác nhân dữ liệu AI tạo sinh hoạt động trực tiếp trong kho dữ liệu, chuyển câu hỏi ngôn ngữ tự nhiên thành phân tích theo thời gian thực. Các sản phẩm xây dựng trên công nghệ này đã giành Giải Đặc biệt tại Japan Financial Innovation Award 2024.",
+      title: "DỊCH VỤ",
+      desc: "SV Digital Software cung cấp phần mềm theo yêu cầu trọn vẹn — ứng dụng web và doanh nghiệp, ứng dụng di động, kiểm thử và tự động hóa kiểm thử, hiện đại hóa hệ thống cũ và nền tảng dữ liệu sẵn sàng cho cloud. Một đội ngũ giàu kinh nghiệm đảm nhận dự án của bạn từ khâu yêu cầu và kiến trúc đến phát triển, kiểm thử, triển khai và bảo trì liên tục — một đối tác duy nhất chịu trách nhiệm cho toàn bộ vòng đời sản phẩm.",
       contactUs: "Liên hệ",
-    },
-    aim: {
-      title: "NỀN TẢNG AI AIM",
-      subtitle: "(Nền tảng AI SV Digital Software)",
-      desc: "AIM là nền tảng AI và dữ liệu cốt lõi của chúng tôi — nơi kỹ thuật phần mềm gặp gỡ trí tuệ dữ liệu. Các thuật toán AI tự phát triển, vận hành qua hệ thống đạt chuẩn production, biến dữ liệu phức tạp thành dự báo trung - dài hạn đáng tin cậy. AIM điều hành sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng SaveZust, với tổng tài sản quản lý hơn 250 triệu USD.",
-      learnMore: "Tìm hiểu thêm",
     },
     cta: {
       title: "Bạn có dự án nào trong đầu không?",
@@ -398,98 +507,264 @@ export const vi: Dictionary = {
       contactUs: "Liên hệ",
     },
   },
-  aimPage: {
-    heroTitle: "MỤC TIÊU",
-    heroSubtitle: "",
-    intro: {
-      title: "MỤC TIÊU",
-      para1: "AIM là nền tảng AI và dữ liệu cốt lõi của SV Digital Software — nền móng kỹ thuật đằng sau các sản phẩm của chúng tôi. Chúng tôi kết hợp các thuật toán AI tự phát triển với phần mềm chuẩn production để biến dữ liệu phức tạp thành tín hiệu rõ ràng, đáng tin cậy mà doanh nghiệp có thể hành động.",
-      para2: "Ra đời trong lĩnh vực tài chính định lượng đòi hỏi khắt khe, AIM phân tích khối lượng lớn dữ liệu thị trường và vận hành để tạo ra dự báo trung - dài hạn có kỷ luật. Cùng nền tảng này hiện vận hành sản phẩm đầu tư AI \"ROBOPRO\", phát triển cùng SaveZust, với tổng tài sản quản lý hơn 250 triệu USD — và có thể ứng dụng rộng rãi vượt ra ngoài lĩnh vực tài chính.",
-      bullets: [
-        "Dự báo dựa trên dữ liệu với AI tự phát triển",
-        "Tầm nhìn trung - dài hạn — vững vàng trước biến động ngắn hạn",
-        "Hỗ trợ ra quyết định đáng tin cậy, ý thức về rủi ro",
-        "Đã được chứng minh ở quy mô lớn trong ROBOPRO (>250 triệu USD AUM)",
-      ],
+  services: {
+    heroTitle: "DỊCH VỤ",
+    heading: "DỊCH VỤ",
+    nav: {
+      mobile: "Phát triển ứng dụng di động",
+      custom: "Phát triển phần mềm theo yêu cầu",
+      testing: "Dịch vụ kiểm thử",
+      legacy: "Chuyển đổi hệ thống",
     },
-    stats: [
-      { value: "250 triệu USD+", label: "AUM do AIM vận hành qua ROBOPRO" },
-      { value: "Số 1", label: "Xếp hạng FSA — lợi nhuận lũy kế & tỷ lệ Sharpe" },
-      { value: "Từ 2022", label: "AIM hoạt động trong production" },
-    ],
-    howItWorks: {
-      title: "CÁCH AIM HOẠT ĐỘNG",
-      cards: [
-        { step: "01", title: "Thu thập dữ liệu", desc: "Thu thập và làm sạch dữ liệu thị trường, vĩ mô và dữ liệu vận hành ở quy mô lớn vào một kho dữ liệu thống nhất, bảo mật." },
-        { step: "02", title: "Dự báo bằng AI", desc: "Các thuật toán độc quyền tạo ra dự báo trung - dài hạn và tín hiệu trạng thái thị trường với khả năng truy vết đầy đủ." },
-        { step: "03", title: "Triển khai & tích hợp", desc: "Insight được cung cấp dưới dạng tín hiệu, API hoặc sản phẩm quản lý — tích hợp trực tiếp vào hệ thống của bạn." },
-      ],
+    crossLinksHeading: "DỊCH VỤ KHÁC",
+    mobile: {
+      heroTitle: "Phát triển ứng dụng di động",
+      intro:
+        "Chúng tôi thiết kế và xây dựng ứng dụng native và đa nền tảng cho iOS và Android — từ ý tưởng, UX đến phát hành và bảo trì. Đội ngũ mobile tạo ra những ứng dụng đáng tin cậy, hiệu năng cao và thân thiện với mọi thiết bị.",
+      features: {
+        heading: "NHỮNG GÌ CHÚNG TÔI CUNG CẤP",
+        items: [
+          "Phát triển native iOS & Android",
+          "Ứng dụng đa nền tảng (React Native, Flutter)",
+          "Thiết kế UI/UX và prototype tương tác",
+          "Phát hành lên App Store & Google Play",
+          "Bảo trì & hỗ trợ sau ra mắt",
+        ],
+      },
+      process: {
+        heading: "QUY TRÌNH CỦA CHÚNG TÔI",
+        steps: [
+          { step: "01", title: "Thu thập & phân tích yêu cầu", desc: "Thu thập và đánh giá nhu cầu để xác định giải pháp tối ưu và phạm vi dự án." },
+          { step: "02", title: "Thiết kế", desc: "Xây dựng luồng UI & UX, biến yêu cầu thành thiết kế trực quan, dễ kiểm thử." },
+          { step: "03", title: "Phát triển", desc: "Tạo prototype chức năng, sau đó hoàn thiện ứng dụng theo thiết kế và yêu cầu." },
+          { step: "04", title: "Kiểm thử", desc: "Thử nghiệm trên thiết bị thực trong suốt quá trình, chạy UAT và xác minh tích hợp." },
+          { step: "05", title: "Ra mắt & hỗ trợ", desc: "Phát hành lên kho ứng dụng sau khi bạn nghiệm thu và đồng hành trong quá trình bảo trì." },
+        ],
+      },
+      benefits: {
+        heading: "VÌ SAO CHỌN CHÚNG TÔI",
+        items: [
+          "Đội ngũ mobile chuyên nghiệp, tận tâm",
+          "Giao hàng đáng tin cậy, đúng hạn",
+          "Tốc độ nhanh mà không đánh đổi chất lượng",
+          "Chi phí cạnh tranh và minh bạch",
+          "Tư duy sản phẩm sáng tạo, lấy người dùng làm trung tâm",
+        ],
+      },
+      projects: {
+        heading: "DỰ ÁN TIÊU BIỂU",
+        items: [
+          { title: "Ứng dụng Mobile Banking", desc: "Ứng dụng ngân hàng an toàn cho giao dịch và quản lý tài khoản mọi lúc.", stack: ["Spring Boot", "Android", "iOS"] },
+          { title: "Nền tảng E-commerce Fulfillment", desc: "Nền tảng e-fulfillment đa kênh trên cả web và mobile.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+          { title: "Ứng dụng kiểm soát thiết bị", desc: "Ứng dụng kiểm soát dành cho phụ huynh quản lý thời gian dùng thiết bị.", stack: [".NET Core", "PHP", "Android", "iOS"] },
+        ],
+      },
+      cta: {
+        title: "Sẵn sàng xây ứng dụng di động?",
+        desc: "Chia sẻ ý tưởng và chúng tôi sẽ cho bạn thấy đội ngũ mobile biến nó thành sản phẩm tinh tế, sẵn sàng ra mắt như thế nào.",
+        contactUs: "Liên hệ",
+      },
     },
-    robopro: {
-      label: "SẢN PHẨM",
-      title: "ROBOPRO — Đầu tư AI vận hành bởi AIM",
-      desc: "Đồng phát triển cùng SaveZust. Được Cơ quan Dịch vụ Tài chính đánh giá là Số 1 về lợi nhuận lũy kế và tỷ lệ Sharpe trong số các nhà quản lý tài sản trong nước.",
-      learnMore: "Tìm hiểu về ROBOPRO",
+    custom: {
+      heroTitle: "Phát triển phần mềm theo yêu cầu",
+      intro:
+        "Chúng tôi xây phần mềm theo đúng yêu cầu của bạn — từ thiết kế đến phát triển, kiểm thử và bảo trì. Đội ngũ giàu kinh nghiệm đảm nhận phát triển ứng dụng, tích hợp API, hiện đại hóa hệ thống và tích hợp luồng nghiệp vụ, mang đến giải pháp hiệu quả và tiết kiệm nhất.",
+      features: {
+        heading: "NHỮNG GÌ CHÚNG TÔI CUNG CẤP",
+        items: [
+          "Ứng dụng web & doanh nghiệp theo yêu cầu",
+          "Thiết kế, phát triển & tích hợp API",
+          "Hiện đại hóa hệ thống legacy",
+          "Tích hợp ứng dụng & quy trình nghiệp vụ",
+          "Chuyển đổi số & quản trị dữ liệu",
+        ],
+      },
+      process: {
+        heading: "QUY TRÌNH CỦA CHÚNG TÔI",
+        steps: [
+          { step: "01", title: "Thu thập yêu cầu", desc: "Thu thập nhu cầu, kết quả mong muốn và tính năng dự kiến để xác định phạm vi." },
+          { step: "02", title: "Phân tích & đề xuất", desc: "Đánh giá yêu cầu và đề xuất giải pháp giảm thiểu rủi ro, phù hợp ngân sách." },
+          { step: "03", title: "Phát triển", desc: "Đội ngũ lập trình và xây dựng sản phẩm theo thiết kế và bộ yêu cầu đã thống nhất." },
+          { step: "04", title: "Kiểm thử", desc: "Kiểm soát chất lượng qua kiểm thử chức năng, hệ thống, tích hợp, tải và nghiệm thu." },
+          { step: "05", title: "Cài đặt & bảo trì", desc: "Hoàn tất triển khai và cung cấp hỗ trợ liên tục để đảm bảo ổn định lâu dài." },
+        ],
+      },
+      benefits: {
+        heading: "VÌ SAO CHỌN CHÚNG TÔI",
+        items: [
+          "Linh hoạt điều chỉnh theo yêu cầu của bạn",
+          "Sản phẩm độc quyền bạn sở hữu và có thể mở rộng",
+          "Đội ngũ kỹ sư kỷ luật, làm việc độc lập tốt",
+          "Dễ nâng cấp khi bạn mở rộng quy mô kinh doanh",
+          "Năng lực lớn để phân bổ nhiệm vụ song song",
+        ],
+      },
+      projects: {
+        heading: "DỰ ÁN TIÊU BIỂU",
+        items: [
+          { title: "Quản lý dịch vụ ô tô", desc: "Ứng dụng di động quản lý dịch vụ và đặt lịch ô tô.", stack: [".NET Core", "AngularJS"] },
+          { title: "ERP quản lý công việc", desc: "ERP nội bộ theo dõi nhiệm vụ và quy trình làm việc nhóm.", stack: ["React", "MySQL", "Spring Boot", "AWS"] },
+          { title: "E-commerce đa kênh", desc: "Nền tảng bán lẻ hợp nhất web, online và mobile.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+        ],
+      },
+      cta: {
+        title: "Bạn có ý tưởng phần mềm riêng?",
+        desc: "Chia sẻ yêu cầu và chúng tôi sẽ đề xuất kiến trúc cùng lộ trình phù hợp mục tiêu và ngân sách của bạn.",
+        contactUs: "Liên hệ",
+      },
     },
-    cta: {
-      title: "Khám phá AIM cho doanh nghiệp của bạn",
-      desc: "Dù bạn hoạt động trong lĩnh vực tài chính hay bất kỳ ngành nào dựa trên dữ liệu — hãy cùng thảo luận cách nền tảng AIM có thể thúc đẩy sản phẩm tiếp theo của bạn.",
-      contactUs: "Liên hệ",
+    testing: {
+      heroTitle: "Dịch vụ kiểm thử",
+      intro:
+        "Chúng tôi cung cấp dịch vụ kiểm thử toàn diện trên mobile, web và nền tảng doanh nghiệp — phát hiện lỗi trước khi ra mắt để sản phẩm xuất xưởng với sự tự tin. Đội QA kết hợp chuyên môn thủ công và tự động hóa để giữ chất lượng cao và giao hàng nhanh.",
+      features: {
+        heading: "NHỮNG GÌ CHÚNG TÔI CUNG CẤP",
+        items: [
+          "Kiểm thử ứng dụng di động trên nhiều thiết bị & độ phân giải",
+          "Kiểm thử tự động cho độ bao phủ lặp lại",
+          "Kiểm thử ứng dụng web & đa trình duyệt",
+          "Chu trình build & test 24/7 theo múi giờ",
+          "Kiểm thử hiệu năng, bảo mật & hồi quy",
+        ],
+      },
+      process: {
+        heading: "QUY TRÌNH CỦA CHÚNG TÔI",
+        steps: [
+          { step: "01", title: "Phân tích yêu cầu", desc: "Thu thập và phân tích yêu cầu để xác định phạm vi kiểm thử." },
+          { step: "02", title: "Lập kế hoạch kiểm thử", desc: "Xây dựng kế hoạch và chiến lược kiểm thử khi phạm vi đã rõ." },
+          { step: "03", title: "Xây dựng kịch bản", desc: "Tạo các kịch bản kiểm thử thực thi trong và sau quá trình phát triển." },
+          { step: "04", title: "Chuẩn bị môi trường", desc: "Chuẩn bị mọi môi trường và thiết bị cần thiết cho thực thi." },
+          { step: "05", title: "Thực thi & báo cáo", desc: "Chạy script kiểm thử, ghi nhận mọi vấn đề và xác minh sửa lỗi cùng cả đội." },
+        ],
+      },
+      benefits: {
+        heading: "VÌ SAO CHỌN CHÚNG TÔI",
+        items: [
+          "Giảm rủi ro nhờ phát hiện lỗi sớm",
+          "Chu trình phát hành nhanh hơn qua tự động hóa",
+          "Bao phủ mobile, web & tầng tích hợp",
+          "Kiểm thử liên tục không cần làm khuya",
+          "Đã được chứng minh ở dự án quy mô doanh nghiệp",
+        ],
+      },
+      capabilities: {
+        heading: "NĂNG LỰC KIỂM THỬ CỐT LÕI",
+        items: [
+          { title: "Kiểm thử ứng dụng di động", desc: "Xác minh ứng dụng trên nhiều thiết bị và độ phân giải để có trải nghiệm liền mạch." },
+          { title: "Kiểm thử tự động", desc: "Tự động hóa các bước lặp lại để đội ngũ tập trung vào lợi thế cạnh tranh." },
+          { title: "Kiểm thử ứng dụng web", desc: "Quét trang web để giảm thiểu lỗ hổng và khắc phục lỗi chức năng, hiệu năng." },
+          { title: "Kiểm thử liên tục 24/7", desc: "Tận dụng chênh lệch múi giờ để chạy chu trình build & test liên tục suốt ngày đêm." },
+        ],
+      },
+      toolsHeading: "CÔNG CỤ & ĐỘ BAO PHỦ",
+      cta: {
+        title: "Cần một đối tác QA đáng tin?",
+        desc: "Hãy để chúng tôi lo chất lượng — kể về sản phẩm của bạn và chúng tôi sẽ xây kế hoạch kiểm thử phù hợp.",
+        contactUs: "Liên hệ",
+      },
+    },
+    legacy: {
+      heroTitle: "Chuyển đổi hệ thống",
+      intro:
+        "Chúng tôi tái cấu trúc quy trình trọn vẹn và di chuyển hệ thống legacy sang nền tảng hiện đại — bảo toàn toàn vẹn dữ liệu và các tính năng cốt lõi của mô hình hiện hữu với gián đoạn tối thiểu. Đội ngũ kỹ sư và tư vấn giàu kinh nghiệm trên nhiều nền tảng công nghệ.",
+      features: {
+        heading: "NHỮNG GÌ CHÚNG TÔI CUNG CẤP",
+        items: [
+          "Tái cấu trúc quy trình trọn vẹn từ A đến Z",
+          "Di chuyển dữ liệu với toàn vẹn được bảo toàn",
+          "Chuyển đổi legacy sang nền tảng hiện đại",
+          "Giữ lại tính năng của mô hình hiện hữu",
+          "Hỗ trợ trọn vòng đời, từ lập kế hoạch đến sau di chuyển",
+        ],
+      },
+      process: {
+        heading: "QUY TRÌNH CỦA CHÚNG TÔI",
+        steps: [
+          { step: "01", title: "Khảo sát", desc: "Xác định dữ liệu, định dạng, vị trí và mức độ tác động." },
+          { step: "02", title: "Sao lưu", desc: "Sao lưu toàn bộ dữ liệu trước khi bắt đầu di chuyển." },
+          { step: "03", title: "Lập kế hoạch", desc: "Xác định yêu cầu kỹ thuật, thời gian và tài chính." },
+          { step: "04", title: "Di chuyển theo giai đoạn & kiểm thử", desc: "Di chuyển theo từng giai đoạn và kiểm thử sau mỗi giai đoạn." },
+          { step: "05", title: "Làm sạch & nạp dữ liệu", desc: "Làm sạch dữ liệu, xử lý vấn đề phát sinh và nạp vào hệ thống mới." },
+        ],
+      },
+      benefits: {
+        heading: "VÌ SAO CHỌN CHÚNG TÔI",
+        items: [
+          "Toàn vẹn dữ liệu được bảo toàn suốt chuyển đổi",
+          "Tính năng cốt lõi của mô hình cũ được giữ lại",
+          "Vấn đề phát sinh tối thiểu trong quá trình di chuyển",
+          "Hỗ trợ đầy đủ vòng đời dự án",
+          "Kỹ sư giàu kinh nghiệm trên nhiều nền tảng",
+        ],
+      },
+      values: {
+        heading: "NHỮNG GÌ CHÚNG TÔI CAM KẾT",
+        items: [
+          { title: "Toàn vẹn dữ liệu", desc: "Dữ liệu của bạn luôn đầy đủ và chính xác trong suốt quá trình chuyển đổi." },
+          { title: "Giữ nguyên tính năng", desc: "Các tính năng cốt lõi của mô hình hiện hữu được giữ lại trong hệ thống mới." },
+          { title: "Gián đoạn tối thiểu", desc: "Cách tiếp cận theo giai đoạn giúp doanh nghiệp vận hành với ít vấn đề nhất." },
+        ],
+      },
+      caseStudy: {
+        heading: "CASE NỔI BẬT",
+        title: "Flash sang HTML5 — nội dung giáo dục K12",
+        desc: "Chúng tôi chuyển đổi hàng nghìn nội dung giáo dục K12 từ Flash legacy sang HTML5 hiện đại, giữ nguyên tính tương tác và sẵn sàng cho tương lai trên mọi thiết bị.",
+        tag: "Giáo dục",
+      },
+      cta: {
+        title: "Sẵn sàng hiện đại hóa hệ thống?",
+        desc: "Kể về nền tảng legacy của bạn và chúng tôi sẽ vạch lộ trình di chuyển an toàn, theo từng giai đoạn lên nền tảng hiện đại.",
+        contactUs: "Liên hệ",
+      },
     },
   },
   companyPage: {
     heroTitle: "CÔNG TY",
-    info: {
-      heading: "THÔNG TIN CÔNG TY",
+    philosophy: {
+      heading: "TRIẾT LÝ KINH DOANH",
+      desc: "SV Digital Software cam kết xây dựng một thương hiệu phần mềm đáng tin cậy thông qua những mối quan hệ hợp tác lâu dài trên thị trường IT toàn cầu. Công nghệ thay đổi nhanh chóng, nhưng chúng tôi tin điều quan trọng nhất luôn là sự phù hợp — phần mềm đáp ứng đúng yêu cầu của khách hàng, được bàn giao với kỷ luật, sự minh bạch và tận tâm.",
+    },
+    values: {
+      heading: "GIÁ TRỊ CỐT LÕI",
+      items: [
+        { title: "Năng lực phân phối", desc: "Phân phối trọn vẹn từ A đến Z — từ yêu cầu và kiến trúc đến phát triển, kiểm thử, triển khai và bảo trì dài hạn." },
+        { title: "Tiêu chuẩn toàn cầu", desc: "Chúng tôi áp dụng các tiêu chuẩn kỹ thuật và chất lượng quốc tế để mọi dự án đều đạt kỳ vọng, ở bất kỳ đâu trên thế giới." },
+        { title: "Con người là trung tâm", desc: "Chúng tôi thu hút, đào tạo và giữ chân những kỹ sư tài năng — nền tảng đằng sau mọi dự án thành công mà chúng tôi bàn giao." },
+        { title: "Chất lượng được chứng nhận", desc: "Quy trình QA kỷ luật và các thực hành quản lý chất lượng được công nhận quốc tế, áp dụng cho mọi bản phát hành." },
+      ],
+    },
+    vision: {
+      heading: "TẦM NHÌN",
+      desc: "SV Digital Software hướng tới trở thành đối tác hàng đầu trong lĩnh vực phát triển phần mềm theo yêu cầu, di chuyển & bảo trì hệ thống cũ, và chuyển đổi số — giúp doanh nghiệp hiện đại hóa một cách tự tin và tăng trưởng trên nền tảng công nghệ vững chắc.",
+    },
+    ceo: {
+      label: "THÔNG ĐIỆP TỪ CEO",
+      name: "James Whitfield",
+      role: "Giám đốc đại diện & CEO",
+      desc: "Lời hứa của chúng tôi với mọi khách hàng rất đơn giản: hiểu sâu, xây dựng trung thực và bàn giao trọn vẹn. Chúng tôi coi mỗi dự án là một cam kết lâu dài — và đo lường thành công bằng việc phần mềm của bạn vận hành tốt ra sao nhiều năm sau khi ra mắt, chứ không chỉ ở thời điểm bàn giao.",
+    },
+    factSheet: {
+      heading: "FACT SHEET",
       rows: [
         { label: "Tên công ty", value: "SV Digital Software Co., Ltd." },
         { label: "Ngày thành lập", value: "8 tháng 7, 2022" },
-        { label: "Địa chỉ trụ sở chính", value: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom" },
-        { label: "Vốn điều lệ", value: "67.000 USD (tính đến tháng 3/2026)" },
-        { label: "Lĩnh vực hoạt động", value: "Phát triển phần mềm theo yêu cầu · Nền tảng Dữ liệu & AI · Hiện đại hóa Cloud · Tư vấn chuyển đổi số" },
-        { label: "Công nghệ cốt lõi", value: "TypeScript / React / Next.js · Python · LLM & AI tạo sinh · Snowflake / dbt · AWS / GCP / Azure" },
-        { label: "Giám đốc đại diện & CEO", value: "James Whitfield" },
-        { label: "Giám đốc đại diện, CAO", value: "Sarah Mitchell" },
-        { label: "Giám đốc", value: "Oliver Hartley" },
-        { label: "Giám đốc", value: "Daniel Brooks" },
-        { label: "Giám đốc", value: "Emma Collins" },
-        { label: "Kiểm toán viên thường trực", value: "Richard Foster" },
-        { label: "Giám đốc điều hành, CTO", value: "Marcus Reid" },
+        { label: "Lĩnh vực hoạt động", value: "Phát triển phần mềm theo yêu cầu · Giải pháp di động · Dịch vụ kiểm thử · Chuyển đổi hệ thống cũ" },
+        { label: "Công nghệ cốt lõi", value: "TypeScript / React / Next.js · Python · Snowflake / dbt · AWS / GCP / Azure" },
       ],
     },
-    history: {
-      heading: "LỊCH SỬ CÔNG TY",
-      items: [
-        { year: "2022.07", text: "Thành lập SV Digital Software Co., Ltd. tại Tokyo — khởi đầu từ niềm tin rằng phần mềm tốt biến dữ liệu phức tạp thành quyết định rõ ràng." },
-        { year: "2022.10", text: "Khởi động R&D nền tảng AIM: cỗ máy dự báo AI do chúng tôi tự phát triển, được thiết kế ngay từ đầu để vận hành trong môi trường production." },
-        { year: "2023.05", text: "AIM chứng minh năng lực dưới những yêu cầu khắt khe nhất — triển khai trong production để hỗ trợ ra quyết định định lượng ở quy mô lớn." },
-        { year: "2023.11", text: "Thành lập đội ngũ kỹ thuật dữ liệu — đạt chứng nhận trên Snowflake, dbt và các nền tảng cloud lớn, cung cấp nền tảng dữ liệu doanh nghiệp." },
-        { year: "2024.11", text: "AlphaCrafter, tác nhân dữ liệu AI tạo sinh của chúng tôi, góp mặt tại AWS re:Invent 2024 — demo trực tiếp phân tích bằng ngôn ngữ tự nhiên ngay trong kho dữ liệu." },
-        { year: "2025.03", text: "AlphaCrafter giành Giải Đặc biệt tại Google Cloud Generative AI Innovation Awards." },
-        { year: "2025.06", text: "AIM & AlphaCrafter được công nhận rộng rãi — SV Digital Software mở rộng đội ngũ sản phẩm và triển khai để phục vụ khách hàng vượt ra ngoài lĩnh vực tài chính." },
-      ],
-    },
-    achievements: {
-      heading: "SẢN PHẨM & DỰ ÁN TIÊU BIỂU",
-      items: [
-        { title: "AlphaCrafter", desc: "Tác nhân dữ liệu AI tạo sinh sống ngay trong kho dữ liệu — đặt câu hỏi bằng ngôn ngữ tự nhiên và nhận phân tích trực tiếp, có kiểm soát. Giải Đặc biệt, Japan Financial Innovation Award 2024.", meta: "AI tạo sinh / Tác nhân dữ liệu" },
-        { title: "Nền tảng AIM", desc: "Nền tảng AI & dữ liệu của chúng tôi: thuật toán tự phát triển, kỹ thuật chuẩn production, dự báo trung - dài hạn vận hành ROBOPRO với hơn 250 triệu USD tài sản quản lý.", meta: "Nền tảng AI / Dự báo" },
-        { title: "Triển khai doanh nghiệp", desc: "Cung cấp phần mềm trọn vòng đời cho doanh nghiệp dữ liệu lớn — từ kiến trúc và di chuyển cloud đến vận hành, với bảo mật và chất lượng được xây sẵn.", meta: "Phần mềm theo yêu cầu / Cloud" },
-      ],
-      note: "*Bao gồm thành tựu của công ty tiền thân.",
+    partners: {
+      heading: "ĐỐI TÁC CÔNG NGHỆ",
+      desc: "Chúng tôi xây dựng trên các nền tảng tiên tiến, đã được kiểm chứng trong ngành và duy trì quan hệ hợp tác chặt chẽ với các hệ sinh thái đằng sau chúng.",
+      items: ["AWS", "Google Cloud", "Microsoft Azure", "Snowflake", "dbt", "Docker"],
     },
     awards: {
       heading: "THÀNH TÍCH GIẢI THƯỞNG",
       items: [
         { date: "2017.04.06", title: "Chương trình Tăng tốc Fintech MUFG \"Giải Á quân\"", desc: "Được chọn từ hàng trăm ứng viên và hợp tác cùng kabu.com Securities — nền tảng cho kinh nghiệm xây dựng phần mềm trọng yếu cho các ngành có quy định nghiêm ngặt." },
-        { date: "2023.05.16", title: "AIM trong production: Số 1 về lợi nhuận lũy kế & tỷ lệ Sharpe (báo cáo FSA)", desc: "Thành tích vận hành thực tế của nền tảng AIM được đánh giá là Số 1 trong báo cáo KPI của Cơ quan Dịch vụ Tài chính — minh chứng rằng kỹ thuật của chúng tôi đứng vững dưới áp lực thực tế." },
-        { date: "2025.03.17", title: "Giải Đặc biệt — Google Cloud Generative AI Innovation Awards lần 3", desc: "Tác nhân dữ liệu AI \"AlphaCrafter\" giành Giải Đặc biệt nhờ khả năng khám phá kho dữ liệu và tạo phân tích từ câu hỏi ngôn ngữ tự nhiên." },
-        { date: "2025.06.05", title: "Nikkei Trendy \"Giải Robo-Advisor 2025\"", desc: "ROBOPRO, vận hành bởi nền tảng AIM của chúng tôi, ghi nhận lợi nhuận cao nhất trong số các robo-advisor lớn theo so sánh của Nikkei Trendy (ấn bản tháng 7/2025)." },
+        { date: "2023.08.22", title: "Tiêu chuẩn bàn giao an toàn — 3 năm liên tiếp không có sự cố nghiêm trọng", desc: "Quy trình QA kỷ luật của chúng tôi vượt qua mọi đợt đánh giá bảo mật bên ngoài, không có sự cố nào liên quan tới bug hay lỗ hổng bị sót." },
+        { date: "2025.03.17", title: "Giải Đặc biệt — Google Cloud Innovation Awards lần 3", desc: "Nền tảng ứng dụng & dữ liệu cloud-native của chúng tôi giành Giải Đặc biệt nhờ kiến trúc bền vững, hiệu năng mở rộng và trải nghiệm developer tinh gọn." },
+        { date: "2025.06.05", title: "Niềm tin & gắn bó dài hạn — bàn giao đúng hạn 100%, tỉ lệ khách hàng quay lại 100%", desc: "Mọi mốc cam kết đều được bàn giao đúng hạn và mọi khách hàng đều tiếp tục hợp tác lâu dài sau dự án đầu tiên." },
       ],
-    },
-    map: {
-      address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
-      viewMap: "Xem Google Map",
     },
     contact: {
       heading: "LIÊN HỆ",
@@ -512,25 +787,6 @@ export const vi: Dictionary = {
       { title: "Quản lý Sản phẩm — Sản phẩm Dữ liệu & AI", location: "London, Anh / Từ xa", type: "Toàn thời gian" },
       { title: "Kỹ sư Phần mềm — Nền tảng & Hạ tầng", location: "London, Anh", type: "Toàn thời gian" },
       { title: "Thiết kế UI/UX — Hệ thống Thiết kế & Sản phẩm", location: "London, Anh / Từ xa", type: "Toàn thời gian" },
-    ],
-  },
-  newsPage: {
-    heroTitle: "TIN TỨC",
-    viewMore: "Xem thêm",
-    showLess: "Thu gọn",
-    items: [
-      { date: "2025.04.14", title: "SV Digital Software tham gia Snowflake Summit 2025 — Demo AlphaCrafter tại gian hàng" },
-      { date: "2025.03.17", title: "AlphaCrafter giành Giải Đặc biệt tại Google Cloud Generative AI Innovation Awards lần 3" },
-      { date: "2024.11.20", title: "AlphaCrafter góp mặt tại AWS re:Invent 2024 — demo trực tiếp tác nhân dữ liệu AI tạo sinh" },
-      { date: "2024.09.10", title: "Ra mắt nền tảng AIM v2 — API tích hợp mới, bảo mật cấp doanh nghiệp và khả năng dự báo mở rộng" },
-      { date: "2024.06.05", title: "SV Digital Software ra mắt dịch vụ tư vấn AI tạo sinh cho khách hàng doanh nghiệp" },
-      { date: "2024.01.18", title: "Đội ngũ kỹ sư của chúng tôi tăng gấp đôi khi đảm nhận các dự án nền tảng lớn hơn" },
-      { date: "2023.11.09", title: "Bộ phận kỹ thuật dữ liệu đạt chứng nhận trên Snowflake, dbt và các nhà cung cấp cloud lớn" },
-      { date: "2023.08.22", title: "SV Digital Software mã nguồn mở bộ công cụ pipeline dữ liệu nội bộ" },
-      { date: "2023.05.16", title: "AIM đạt cột mốc production — triển khai ở quy mô lớn để hỗ trợ ra quyết định dựa trên dữ liệu" },
-      { date: "2023.02.14", title: "SV Digital Software trở thành Đối tác Giải pháp Snowflake" },
-      { date: "2022.12.15", title: "Nền tảng AIM v1 đi vào production" },
-      { date: "2022.09.01", title: "SV Digital Software mở studio R&D chuyên dụng đầu tiên" },
     ],
   },
   technologiesPage: {
@@ -559,18 +815,25 @@ export const vi: Dictionary = {
       ai:
         "Từ AI tạo sinh và tích hợp LLM đến machine learning và thị giác máy tính — chúng tôi biến công nghệ mới nổi thành giá trị sản phẩm thực.",
     },
+    projects: {
+      heading: "DỰ ÁN TIÊU BIỂU",
+      viewAll: "Xem tất cả dịch vụ",
+      items: [
+        { title: "Ứng dụng Mobile Banking", desc: "Ứng dụng ngân hàng an toàn cho giao dịch và quản lý tài khoản mọi lúc, triển khai trên iOS và Android.", stack: ["Spring Boot", "Android", "iOS"] },
+        { title: "ERP quản lý công việc", desc: "Hệ thống ERP nội bộ theo dõi nhiệm vụ và quy trình làm việc nhóm, xây dựng cho vận hành hằng ngày của khách hàng.", stack: ["React", "MySQL", "Spring Boot", "AWS"] },
+        { title: "E-commerce đa kênh", desc: "Nền tảng bán lẻ hợp nhất kênh web, online và mobile thành một trải nghiệm mua sắm liền mạch.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+      ],
+    },
   },
 };
 
 export const lo: Dictionary = {
   header: {
     nav: {
-      solution: "ວິທີແກ້ໄຂ",
+      solution: "ບໍລິການ",
       technologies: "ເທັກໂນໂລຢີ",
-      aim: "AIM",
-      company: "ບໍລິສັດ",
+      company: "ກ່ຽວກັບພວກເຮົາ",
       recruit: "ຮັບສະໝັກງານ",
-      news: "ຂ່າວສານ",
     },
     contact: "ຕິດຕໍ່",
     homeAria: "ໜ້າຫຼັກ SV Digital Software",
@@ -586,12 +849,14 @@ export const lo: Dictionary = {
     text: "ໂຄ້ດບໍ່ເຄີຍໂກຫກ, ຄຳເຫັນບາງຄັ້ງກໍໂກຫກ.",
   },
   footer: {
-    groupCompanies: "ບໍລິສັດໃນເຄືອ",
-    nav: {
-      solution: "ວິທີແກ້ໄຂ",
-      technologies: "ເທັກໂນໂລຢີ",
-      aim: "AIM",
+    headings: {
+      services: "ບໍລິການ",
+      company: "ບໍລິສັດ",
+      contact: "ຕິດຕໍ່",
     },
+    tagline:
+      "ພວກເຮົາອອກແບບ, ພັດທະນາ ແລະ ບຳລຸງຮັກສາຜະລິດຕະພັນດິຈິຕອນແບບຄົບວົງຈອນ — ແອັບເວັບ, ແອັບມືຖື, ລະບົບວິສາຫະກິດ ແລະ ແພລດຟອມຂໍ້ມູນທັນສະໄໝ.",
+    followUs: "ຕິດຕາມພວກເຮົາ",
     contact: "ຕິດຕໍ່",
     copyright: "©SV Digital Software Co. Ltd. ສະຫງວນລິຂະສິດ.",
     companyInfo:
@@ -610,6 +875,7 @@ export const lo: Dictionary = {
     emailLabel: "ອີເມວ",
     phoneLabel: "ໂທລະສັບ",
     addressLabel: "ສຳນັກງານ",
+    address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
     hoursLabel: "ເວລາເຮັດວຽກ",
     hours: "ຈັນ–ສຸກ, 9:00–18:00 (JST)",
     followUs: "ຕິດຕາມພວກເຮົາ",
@@ -620,28 +886,18 @@ export const lo: Dictionary = {
     subtitle:
       "SV Digital Software ອອກແບບ ແລະ ພັດທະນາຜະລິດຕະພັນດິຈິຕອນ, ແພລດຟອມຂໍ້ມູນ ແລະ ວິທີແກ້ໄຂ AI. ພວກເຮົາປະສົມປະສານວິສະວະກຳລ້ຳສະໄໝ ັບ ວາມຊ່ຽວຊານເລິກເຊິ່ງ ເພື່ອສົ່ງມອບຊອບແວທີ່ຕອບສະໜອງມາດຕະຖານສູງສຸດຂອງລູກຄ້າ.",
     cta: "ຕິດຕໍ່",
-    news: [
-      { date: "2025/4/14 10:00", title: "SV Digital Software ຮ່ວມງານ Snowflake Summit 2025" },
-      { date: "2024/11/20 09:00", title: "AlphaCrafter ຖືກນຳສະເໜີໃນ AWS re:Invent 2024" },
-    ],
   },
   solutions: {
-    heading: "ວິທີແກ້ໄຂ",
+    heading: "ບໍລິການ",
     dataSolution: {
-      title: "ວິທີແກ້ໄຂຂໍ້ມູນ",
-      desc: "SV Digital Software ສ້າງແພລດຟອມຂໍ້ມູນທີ່ທັນສະໄໝ ເພື່ອປ່ຽນຂໍ້ມູນດິບໃຫ້ເປັນການຕັດສິນໃຈ. ຕັ້ງແຕ່ການອອກແບບຄັງຂໍ້ມູນ ແລະ ວິສະວະກຳ pipeline ຈົນເຖິງການວິເຄາະ ແລະ ໂຄງລ່າງທີ່ພ້ອມສຳລັບ AI, ພວກເຮົາສົ່ງມອບພື້ນຖານຂໍ້ມູນທີ່ປອດໄພ ແລະ ຂະຫຍາຍໄດ້. ຜະລິດຕະພັນຫຼັກ \"AlphaCrafter\" — ຕົວແທນຂໍ້ມູນ AI ສ້າງສັນ ທີ່ເຮັດວຽກໂດຍກົງພາຍໃນຄັງຂໍ້ມູນ — ໄດ້ຮັບລາງວັນໃຫຍ່ໃນ Japan Financial Innovation Award 2024.",
-      learnMore: "ຮຽນຮູ້ເພີ່ມເຕີມ",
-    },
-    aim: {
-      title: "ແພລດຟອມ AI ຂອງ AIM",
-      subtitle: "(ແພລດຟອມ AI ຂອງ SV Digital Software)",
-      desc: "AIM ແມ່ນແພລດຟອມ AI ແລະ ຂໍ້ມູນຫຼັກຂອງພວກເຮົາ — ພ້ນຖານວິສະວະກຳເບື້ອງຫຼັງຜະລິດຕະພັນຂອງພວກເຮົາ. ມັນປະສົມປະສານອັນກໍຣິທຶມ AI ທີ່ພັດທະນາເອງ ກັບ ຊອບແວລະດັບ production ເພື່ອປ່ຽນຂໍ້ມູນທີ່ຊັບຊ້ອນໃຫ້ເປັນການຄາດການ ແລະ ການຕັດສິນໃຈທີ່ເຊື່ອຖືໄດ້. AIM ຂັບເຄື່ອນຜະລິດຕະພັນການລົງທຶນ AI \"ROBOPRO\", ພັດທະນາຮ່ວມກັບ SaveZust, ມີຊັບສິນພາຍໃຕ້ການບໍລິຫານຫຼາຍກວ່າ $250M.",
+      title: "ບໍລິການ",
+      desc: "SV Digital Software ອອກແບບ, ພັດທະນາ ແລະ ບຳລຸງຮັກສາຜະລິດຕະພັນດິຈິຕອນແບບຄົບວົງຈອນ — ແອັບເວັບ, ແອັບມືຖື, ລະບົບວິສາຫະກິດ ແລະ ແພລດຟອມຂໍ້ມູນທັນສະໄໝ. ຕັ້ງແຕ່ການອອກແບບ UX, ໂຄງສ້າງລະບົບ ຈົນເຖິງການພັດທະນາ, ທົດສອບ ແລະ ຊ່ວຍເຫຼືອໄລຍະຍາວ, ທີມວິສະວະກອນຂອງພວກເຮົາປ່ຽນຄວາມຕ້ອງການທາງທຸລະກິດໃຫ້ເປັນຊອບແວທີ່ປອດໄພ, ຂະຫຍາຍໄດ້, ສົ່ງມອບຕາມກຳນົດ ແລະ ເຕີບໂຕໄປພ້ອມກັບທຸລະກິດຂອງທ່ານ.",
       learnMore: "ຮຽນຮູ້ເພີ່ມເຕີມ",
     },
   },
   companyTeaser: {
     heading: "ບໍລິສັດ",
-    desc: "SV Digital Software ແມ່ນບໍລິສັດໃນເຄືອຂອງ SaveZust Holdings. ໃນຖານະສະມາຊິກຂອງກຸ່ມ SaveZust, ເຊິ່ງມຸ່ງສ້າງວິທີແກ້ໄຂທາງການເງິນໃໝ່ ແລະ ສ້າງອະນາຄົດທີ່ຈະເລີນ, ພວກເຮົາປະສົມປະສານເທັກໂນລຢີ AI ແລະ ການພັດທະນາລະບົບ ກັບ ຄວາມຊ່ຽວຊານທາງການເງິນ ເພື່ອສະໜອງເທັກໂນໂລຢີລ້ຳສະໄໝທີ່ຕອບສະໜອງຄວາມຕ້ອງການຂອງລູກຄ້າ.",
+    desc: "SV Digital Software ແມ່ນບໍລິສັດພັດທະນາຊອບແວ ທີ່ສົ່ງມອບຜະລິດຕະພັນດິຈິຕອນແບບຄົບວົງຈອນ — ແອັບເວັບ, ແອັບມືຖື, ລະບົບວິສາຫະກິດ ແລະ ແພລດຟອມຂໍ້ມູນ. ພວກເຮົາປະສົມປະສານເທັກນິກທັນສະໄໝ, ຂະບວນການທົດສອບທີ່ເຂັ້ມງວດ ແລະ ການຊ່ວຍເຫຼືອໄລຍະຍາວ ເພື່ອສ້າງຊອບແວທີ່ປອດໄພ ແລະ ຂະຫຍາຍໄດ້, ຊ່ວຍໃຫ້ທຸລະກິດດຳເນີນການຢ່າງມີປະສິດທິພາບ ແລະ ເຕີບໂຕຢ່າງໝັ້ນຄົງ.",
     readMore: "ອ່ານເພີ່ມເຕີມ",
   },
   recruitTeaser: {
@@ -649,27 +905,13 @@ export const lo: Dictionary = {
     desc: "ພວກເຮົາແມ່ນວິສະວະກອນ ແລະ ນັກສ້າງ. ດ້ວຍຄຸນຄ່າຂອງການສ້າງສັນຢ່າງເປັນເລີດ, ຄິດຢ່າງກ້າຫານ, ສ້າງຮ່ວມກັນ, ສ້າງຄວາມໄວ້ເນື້ອເຊື່ອໃຈ ແລະ ອ້ອມຮັບການປ່ຽນແປງ, ພວກເຮົາສົ່ງມອບຜະລິດຕະພັນດິຈິຕອນທີ່ຍືນຍົງ. ຖ້າສິ່ງນີ້ກົງໃຈທ່ານ — ມາສ້າງເວີຊັນຕໍ່ໄປກັບພວກເຮົາ.",
     readMore: "ອ່ານເພີ່ມເຕີມ",
   },
-  newsTeaser: {
-    heading: "ຂ່າວສານ",
-    viewAll: "ເບິ່ງທັງໝົດ",
-    items: [
-      { date: "2025.04.14", title: "SV Digital Software ຮ່ວມງານ Snowflake Summit 2025" },
-      { date: "2024.11.20", title: "AlphaCrafter ຖືກນຳສະເໜີໃນ AWS re:Invent 2024 — ສາທິດຕົວແທນຂໍ້ມູນ AI ສ້າງສັນ" },
-    ],
-  },
   solutionPage: {
-    heroTitle: "ວິທີແກ້ໄຂ",
-    heading: "ວິທີແກ້ໄຂ",
+    heroTitle: "ບໍລິການ",
+    heading: "ບໍລິການ",
     dataSolution: {
-      title: "ວິທີແກ້ໄຂຂໍ້ມູນ",
-      desc: "SV Digital Software ອອກແບບ ແລະ ສ້າງແພລດຟອມຂໍ້ມູນລະດັບວິສາຫະກິດແບບຄົບວົງຈອນ — ໂຄງສ້າງຄັງຂໍ້ມູນ, pipeline ETL/ELT, ແດຊບອດວິເຄາະ ແລະ ໂຄງລ່າງທີ່ພ້ອມສຳລັບ AI. ຜະລິດຕະພັນຫຼັກ \"AlphaCrafter\" ແມ່ນຕົວແທນຂໍ້ມູນ AI ສ້າງສັນ ທີ່ເຮັດວຽກໂດຍກົງພາຍໃນຄັງຂໍ້ມູນ, ປ່ຽນຄຳຖາມພາສາທຳມະຊາດໃຫ້ເປັນການວິເຄາະແບບສົດ. ຜະລິດຕະພັນທີ່ສ້າງດ້ວຍເທັກໂນໂລຢີນີ້ໄດ້ຮັບລາງວັນໃຫຍ່ໃນ Japan Financial Innovation Award 2024.",
+      title: "ບໍລິການ",
+      desc: "SV Digital Software ສົ່ງມອບຊອບແວຕາມຄວາມຕ້ອງການແບບຄົບວົງຈອນ — ແອັບເວັບ ແລະ ລະບົບວິສາຫະກິດ, ແອັບມືຖື, ການທົດສອບ ແລະ ການອັດຕະໂນມັດການທົດສອບ, ການປັບປຸງລະບົບເກົ່າໃຫ້ທັນສະໄໝ ແລະ ແພລດຟອມຂໍ້ມູນທີ່ພ້ອມສຳລັບ cloud. ທີມງານທີ່ມີປະສົບການຮັບຜິດຊອບໂປຣເຈັກຂອງທ່ານຕັ້ງແຕ່ການເກັບຄວາມຕ້ອງການ ແລະ ໂຄງສ້າງ ຈົນເຖິງການພັດທະນາ, ທົດສອບ, ນຳໃຊ້ ແລະ ບຳລຸງຮັກສາຕະຫຼອດໄປ — ຄູ່ຮ່ວມງານດຽວທີ່ຮັບຜິດຊອບທັງວົງຈອນຊີວິດຜະລິດຕະພັນ.",
       contactUs: "ຕິດຕໍ່ພວກເຮົາ",
-    },
-    aim: {
-      title: "ແພລດຟອມ AI ຂອງ AIM",
-      subtitle: "(ແພລດຟອມ AI ຂອງ SV Digital Software)",
-      desc: "AIM ແມ່ນແພລດຟອມ AI ແລະ ຂໍ້ມູນຫຼັກຂອງພວກເຮົາ — ບ່ອນທີ່ວິສະວະກຳຊອບແວພົບກັບປັນຍາຂໍ້ມູນ. ອັນກໍຣິທຶມ AI ທີ່ພັດທະນາເອງ, ສົ່ງມອບຜ່ານລະບົບລະດັບ production, ປ່ຽນຂໍ້ມູນທີ່ຊັບຊ້ອນໃຫ້ເປັນການຄາດການໄລຍະກາງເຖິງຍາວທີ່ເຊື່ອຖືໄດ້. AIM ຂັບເຄື່ອນຜະລິດຕະພັນການລົງທຶນ AI \"ROBOPRO\", ພັດທະນາຮ່ວມກັບ SaveZust, ມີຊັບສິນພາຍໃຕ້ການບໍລິຫານຫຼາຍກວ່າ $250M.",
-      learnMore: "ຮຽນຮູ້ເພີ່ມເຕີມ",
     },
     cta: {
       title: "ທ່ານມີໂປຣເຈັກໃນໃຈບໍ?",
@@ -677,98 +919,264 @@ export const lo: Dictionary = {
       contactUs: "ຕິດຕໍ່ພວກເຮົາ",
     },
   },
-  aimPage: {
-    heroTitle: "AIM",
-    heroSubtitle: "",
-    intro: {
-      title: "AIM",
-      para1: "AIM ແມ່ນແພລດຟອມ AI ແລະ ຂໍ້ມູນຫຼັກຂອງ SV Digital Software — ພື້ນຖານວິສະວະກຳເບື້ອງຫຼັງຜະລິດຕະພັນຂອງພວກເຮົາ. ພວກເຮົາປະສົມປະສານອັນກໍຣິທຶມ AI ທີ່ພັດທະນາເອງ ກັບ ຊອບແວລະດັບ production ເພື່ອປ່ຽນຂໍ້ມູນທີ່ຊັບຊ້ອນໃຫ້ເປັນສັນຍານທີ່ຊັດເຈນ, ເຊ່ອຖືໄດ້ ທີ່ທຸລະກິດສາມາດນຳໃຊ້ໄດ້.",
-      para2: "ເກີດຂຶ້ນໃນຂົງເຂດການເງິນເຊິງປະລິມານທີ່ເຂັ້ມງວດ, AIM ວິເຄາະຂໍ້ມູນຕະຫຼາດ ແລະ ການດຳເນີນການປະລິມານຫຼວງຫຼາຍ ເພື່ອສ້າງການຄາດການໄລຍະກາງເຖິງຍາວທີ່ມີວິໄນ. ແພລດຟອມດຽວກັນນີ້ຂັບເຄື່ອນຜະລິດຕະພັນການລົງທຶນ AI \"ROBOPRO\", ພັດທະນາຮ່ວມກັບ SaveZust, ມີຊັບສິນພາຍໃຕ້ການບໍລິຫານຫຼາຍກວ່າ $250M — ແລະ ສາມາດນຳໃຊ້ໄດ້ໄກເກີນຂອບເຂດການເງິນ.",
-      bullets: [
-        "ການຄາດການໂດຍອີງຂໍ້ມູນດ້ວຍ AI ທີ່ພັດທະນາເອງ",
-        "ໄລຍະເວລາກາງເຖິງຍາວ — ແຂງແຮງຕໍ່ສຽງລົບກວນໄລຍະສັ້ນ",
-        "ການສະໜັບສະໜູນການຕັດສິນໃຈທີ່ເຊື່ອຖືໄດ້, ຮັບຮູ້ຄວາມສ່ຽງ",
-        "ພິສູດແລ້ວໃນຂະໜາດໃຫຍ່ພາຍໃນ ROBOPRO (>$250M AUM)",
-      ],
+  services: {
+    heroTitle: "ບໍລິການ",
+    heading: "ບໍລິການ",
+    nav: {
+      mobile: "ພັດທະນາແອັບມືຖື",
+      custom: "ພັດທະນາຊອບແວຕາມຄຳຂໍ",
+      testing: "ບໍລິການທົດສອບ",
+      legacy: "ຍ້າຍລະບົບເກົ່າ",
     },
-    stats: [
-      { value: "$250M+", label: "AUM ຂັບເຄື່ອນໂດຍ AIM ຜ່ານ ROBOPRO" },
-      { value: "ອັນດັບ 1", label: "ອັນດັບ FSA — ຜົນຕອບແທນສະສົມ & ອັດຕາສ່ວນ Sharpe" },
-      { value: "ຕັ້ງແຕ່ 2022", label: "AIM ເຮັດວຽກໃນ production" },
-    ],
-    howItWorks: {
-      title: "ວິທີການເຮັດວຽກຂອງ AIM",
-      cards: [
-        { step: "01", title: "ການນຳເຂົ້າຂໍ້ມູນ", desc: "ເກັບກຳ ແລະ ທຳຄວາມສະອາດຂໍ້ມູນຕະຫຼາດ, ມະຫາພາກ ແລະ ການດຳເນີນການໃນຂະໜາດໃຫຍ່ ເຂົ້າສູ່ຄັງຂໍ້ມູນດຽວທີ່ປອດໄພ." },
-        { step: "02", title: "ການຄາດການດ້ວຍ AI", desc: "ອັນກໍຣິທຶມສະເພາະຂອງພວກເຮົາສ້າງການຄາດການໄລຍະກາງເຖິງຍາວ ແລະ ສັນຍານສະພາບຕະຫຼາດ ພ້ອມການຕິດຕາມຄົບຖ້ວນ." },
-        { step: "03", title: "ການສົ່ງມອບ & ການເຊື່ອມໂຍງ", desc: "ເຊີງເລິກຖືກສົ່ງມອບເປັນສັນຍານ, API, ຫຼື ຜະລິດຕະພັນທີ່ມີການບໍລິຫານ — ເຊື່ອມໂຍງໂດຍກົງເຂົ້າລະບົບຂອງທ່ານ." },
-      ],
+    crossLinksHeading: "ບໍລິການອື່ນ",
+    mobile: {
+      heroTitle: "ພັດທະນາແອັບມືຖື",
+      intro:
+        "ພວກເຮົາອອກແບບ ແລະ ພັດທະນາແອັບມືຖືທັງແບບ native ແລະ ແບບຂ້າມແພລດຟອມ ຳລັບ iOS ແລະ Android — ຕັ້ງແຕ່ແນວຄິດ ແລະ UX ຈົນເຖິງການເປີດໃຊ້ ແລະ ການບຳລຸງຮັກສາ. ທີມມືຖືຂອງພວກເຮົາສົ່ງມອບແອັບທີ່ເຊື່ອຖືໄດ້, ເຮັດວຽກໄວ ແລະ ໃຊ້ງ່າຍເທິງທຸກອຸປະກອນ.",
+      features: {
+        heading: "ສິ່ງທີ່ພວກເຮົາສົ່ງມອບ",
+        items: [
+          "ພັດທະນາແບບ native iOS ແລະ Android",
+          "ແອັບຂ້າມແພລດຟອມ (React Native, Flutter)",
+          "ອອກແບບ UI/UX ແລະ ເຮັດຕົ້ນແບບ",
+          "ເປີດໃຊ້ເທິງ App Store ແລະ Google Play",
+          "ບຳລຸງຮັກສາ ແລະ ຊ່ວຍເຫຼືອຫຼັງເປີດໃຊ້",
+        ],
+      },
+      process: {
+        heading: "ຂັ້ນຕອນການເຮັດວຽກ",
+        steps: [
+          { step: "01", title: "ຮວບຮວມ ແລະ ວິເຄາະຄວາມຕ້ອງການ", desc: "ຮວບຮວມ ແລະ ປະເມີນຄວາມຕ້ອງການຂອງທ່ານ ເພື່ອກຳນົດວິທີແກ້ໄຂທີ່ເໝາະສົມ ແລະ ໂຄງ່າງໂປເຈັກ." },
+          { step: "02", title: "ອອກແບບ", desc: "ອອກແບບໜ້າຈໍ UI ແລະ ເສັ້ນທາງ UX ເພ່ອປ່ຽນຄວາມຕ້ອງການໃຫ້ເປັນການອອກແບບທີ່ເຂົ້າໃຈງ່າຍ." },
+          { step: "03", title: "ພັດທະນາ", desc: "ສ້າງຕົ້ນແບບທີ່ໃຊ້ງານໄດ້ ຈາກນັ້ນພັດທະນາແອັບໃຫ້ຄົບຖ້ວນຕາມການອອກແບບ." },
+          { step: "04", title: "ທົດສອບ", desc: "ທົດສອບເທິງອຸປະກອນຈິງຕະຫຼອດຂັ້ນຕອນ ແລະ ຳເນີນການຮັບອງຈາກູ້ໃຊ້ (UAT)." },
+          { step: "05", title: "ເປີດໃຊ້ ແລະ ຊ່ວຍເຫຼືອ", desc: "ນຳແອັບຂຶ້ນຮ້ານຫຼັງຈາກທ່ານຕ້ອນຮັບ ແລະ ຊ່ວຍເຫຼືອໃນຊ່ວງບຳລຸງຮັກສາ." },
+        ],
+      },
+      benefits: {
+        heading: "ເຫດຜົນທີ່ຄວນເລືອກພວກເຮົາ",
+        items: [
+          "ທີມມືຖືມືອາຊີບ ແລະ ເຕັມໃຈ",
+          "ສົ່ງມອບໄດ້ຕາມເວລາທີ່ກຳນົດ",
+          "ເຮັດວຽກໄວ ດຍບໍ່ສູນເສຍຄຸນນະພາບ",
+          "ຕົ້ນທຶນແຂ່ງຂັນ ແລະ ປ່ງໃສ",
+          "ຄິດສ້າງສັນ ໂດຍເອົາຜູ້ໃ້ເປັນສູນກາງ",
+        ],
+      },
+      projects: {
+        heading: "ໂປຣເຈັກໂດດເດັ່ນ",
+        items: [
+          { title: "ແອັບ Mobile Banking", desc: "ແອັບທະນາຄານທີ່ປອດໄພສຳລັບທຸລະກຳ ແລະ ບໍລິຫານບັນຊີທຸກທີ່.", stack: ["Spring Boot", "Android", "iOS"] },
+          { title: "ແພລດຟອມ E-commerce Fulfillment", desc: "ແພລດຟອມ e-fulfillment ຫຼາຍຊ່ອງທາງທັງເວັບ ແລະ ມືື.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+          { title: "ແອັບຄວບຄຸມການໃຊ້ອຸປະກອນ", desc: "ແອັບຄວບຄຸມສຳລັບຜູ້ປົກຄອງໃນການຈັດການເວລາໃຊ້ອຸປະກອນ.", stack: [".NET Core", "PHP", "Android", "iOS"] },
+        ],
+      },
+      cta: {
+        title: "ພ້ອມສ້າງແອັບມືຖືຂອງທ່ານບໍ?",
+        desc: "ບອກແນວຄິດຂອງທ່ານ ແລະ ພວກເຮົາຈະສະແດງໃຫ້ເຫັນວ່າທີມມືຖືຈະປ່ຽນມັນເປັນຜະລິດຕະພັນທີ່ພ້ອມອອກສູ່ຕະຫຼາດໄດ້ແນວໃດ.",
+        contactUs: "ຕິດຕໍ່ພວກເຮົາ",
+      },
     },
-    robopro: {
-      label: "ຜະລິດຕະພັນ",
-      title: "ROBOPRO — ການລົງທຶນ AI ຂັບເຄື່ອນໂດຍ AIM",
-      desc: "ພັດທະນາຮ່ວມກັບ SaveZust. ຖືກປະເມີນໂດຍອົງການບໍລິການທາງການເງິນ ເປັນອັນດັບ 1 ນຜົນຕອບແທນສະສົມ ແລະ ອັດຕາສ່ວນ Sharpe ໃນບັນດາຜູ້ບໍລິຫານຊັບສິນພາຍໃນປະເທດ.",
-      learnMore: "ຮຽນຮູ້ກ່ຽວກັບ ROBOPRO",
+    custom: {
+      heroTitle: "ພັດທະນາຊອບແວຕາມຄຳຂໍ",
+      intro:
+        "ພວກເຮົາສ້າງຊອບແວຕາມຄວາມຕ້ອງການສະເພາະຂອງທ່ານ — ຕັ້ງແຕ່ອອກແບບ ຈົນເຖິງພັດທະນາ, ທົດສອບ ແລະ ບຳລຸງຮັກສາ. ທີມທີ່ມີປະສົບການຮັບຜິດຊອບທັງການພັດທະນາແອັບ, ການເຊື່ອມໂຍງ API, ການປັບປຸງລະບົບເກົ່າ ແລະ ການເຊື່ອມໂຍງລະບົບ ໂດຍສົ່ງມອບວິທີແກ້ໄຂທີ່ໄດ້ຜົນ ແລະ ປະຢັດທີ່ສຸດ.",
+      features: {
+        heading: "ສິ່ງທີ່ພວກເຮົາສົ່ງມອບ",
+        items: [
+          "ແອັບເວັບ ແລະ ອັບວິສາຫະກິດຕາມຄຳຂໍ",
+          "ອອກແບບ, ພັດທະນາ ແລະ ເຊື່ອມໂຍງ API",
+          "ປັບປຸງລະບົບເກົ່າໃຫ້ທັນສະໄໝ",
+          "ເຊື່ອມໂຍງແອັບ ແລະ ຂັ້ນຕອນເຮັດວຽກ",
+          "ປ່ຽນແປງດິຈິຕອນ ແລະ ໍລິຫານຂໍ້ມູນ",
+        ],
+      },
+      process: {
+        heading: "ຂັ້ນຕອນການເຮັດວຽກ",
+        steps: [
+          { step: "01", title: "ຮວບຮວມຄວາມຕ້ອງການ", desc: "ຮວບຮວມຄວາມຕ້ອງການ ແລະ ຜົນທີ່ຄາດຫວັງ ເພື່ອກຳນົດໂຄງຮ່າງໂປຣເຈັກ." },
+          { step: "02", title: "ວິເຄາະ ແລະ ເໜີແນະ", desc: "ປະເມີນຄວາມຕ້ອງການ ແລະ ເໜີແນະວິທີແກ້ໄຂທີ່ຫຼຸດຜ່ອນຄວາມສ່ຽງ ແລະ ເໝາະກັບງົບປະມານ." },
+          { step: "03", title: "ພັດທະນາ", desc: "ທີມຂຽນລະຫັດ ແລະ ສ້າງຜະລິດຕະພັນຕາມການອອກແບບທີ່ຕົກລົງກັນ." },
+          { step: "04", title: "ທົດສອບ", desc: "ກວດສອບຄຸນນະພາບດ້ວຍການທົດສອບໜ້າທີ່, ລະບົບ, ການເຊື່ອມໂຍງ ແລະ ການຮັບຮອງຈາກຜູ້ໃຊ້." },
+          { step: "05", title: "ຕິດຕັ້ງ ແລະ ບຳລຸງຮັກສາ", desc: "ສຳເລັດການນຳໃຊ້ ແລະ ຊ່ວຍເຫຼືອຕະຫຼອດ ເພື່ອຄວາມໝັ້ນຄົງໃນໄລຍະຍາວ." },
+        ],
+      },
+      benefits: {
+        heading: "ເຫດຜົນທີ່ຄວນເລືອກພວກເຮົາ",
+        items: [
+          "ປັບແຕ່ງຕາມຄວາມຕ້ອງການໄດ້ຢ່າງຄ່ອງຕົວ",
+          "ເປັນຜະລິດຕະພັນເອກະລັກທີ່ທ່ານເປັນເຈົ້າຂອງ",
+          "ທີມມີວິໄນ ລະ ເຮັດວຽກດ້ວຍຕົນເອງໄດ້ດີ",
+          "ອອກແບບມາໃຫ້ຂະຫຍາຍຕາມທຸລະກິດໄດ້",
+          "ມີແຮງງານພຽງພໍຮອງຮັບວຽກຂະໜານກັນ",
+        ],
+      },
+      projects: {
+        heading: "ໂປຣເຈັກໂດດເດັ່ນ",
+        items: [
+          { title: "ບໍລິຫານບໍລິການລົດ", desc: "ແອັບມືຖືສຳລັບບໍລິຫານບໍລິການ ແລະ ຈອງລົດ.", stack: [".NET Core", "AngularJS"] },
+          { title: "ERP ບໍລິຫານວຽກ", desc: "ERP ພາຍໃນຕິດຕາມໜ້າວຽກ ແລະ ຂັ້ນຕອນເຮັດວຽກທີມ.", stack: ["React", "MySQL", "Spring Boot", "AWS"] },
+          { title: "E-commerce ຫຼາຍຊ່ອງທາງ", desc: "ແພລດຟອມຄ້າປີກລວມເວັບ, ອອນລາຍ ແລະ ມືື.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+        ],
+      },
+      cta: {
+        title: "ມີໂຄງການຊອບແວສະເພາະບໍ?",
+        desc: "ແບ່ງປັນຄວາມຕ້ອງການຂອງທ່ານ ແລະ ວກເຮົາຈະເໜີໂຄງສ້າງ ແລະ ແຜນການທີ່ເໝາະກັບເປົ້າໝາຍ ລະ ງົບປະມານ.",
+        contactUs: "ຕິດຕໍ່ພວກເຮົາ",
+      },
     },
-    cta: {
-      title: "ສຳຫຼວດ AIM ສຳລັບທຸລະກິດຂອງທ່ານ",
-      desc: "ບໍ່ວ່າທ່ານຈະຢູ່ໃນຂະແໜງການເງິນ ຫຼື ອຸດສາຫະກຳທີ່ຂັບເຄື່ອນດ້ວຍຂໍ້ມູນອື່ນ — ມາປຶກສາກັນວ່າແພລດຟອມ AIM ສາມາດຂັບເຄື່ອນຜະລິດຕະພັນຕໍ່ໄປຂອງທ່ານໄດ້ແນວໃດ.",
-      contactUs: "ຕິດຕໍ່ພວກເຮົາ",
+    testing: {
+      heroTitle: "ບໍລິການທົດສອບ",
+      intro:
+        "ພວກເຮົາສະໜອງບໍລິການທົດສອບຊອບແວແບບຄົບວົງຈອນທັງແອັບມືຖື, ເວັບ ແລະ ລະບົບວິສາຫະກິດ — ຊ່ວຍຈັບບົກຜ່ອງກ່ອນເປີດໃຊ້ ເພື່ອໃຫ້ຜະລິດຕະພັນຂອງທ່ານອອກສູ່ຕະຫຼາດຢ່າງໝັ້ນໃຈ. ທີມ QA ຂອງພວກເຮົາລວມທັງການທົດສອບດ້ວຍມື ແລະ ານອັດຕະໂນມັດ ເພື່ອຮັກສາຄຸນນະພາບໃຫ້ສູງ ລະ ສົ່ງມອບໄວຂຶ້ນ.",
+      features: {
+        heading: "ສິ່ງທີ່ພວກເຮົາສົ່ງມອບ",
+        items: [
+          "ທົດສອບແອັບມືຖືຫຼາຍອປະກອນ ລະ ຫຼາຍຂະໜາດໜ້າຈໍ",
+          "ການທົດສອບແບບອັດຕະໂນມັດເພື່ອໃຊ້ຊ້ຳໄດ້",
+          "ທົດສອບແອັບເວັບ ແລະ ຼາຍບາວເຊີ",
+          "ວົງຈອນ build ແລະ test ຕະຫຼອດ 24 ຊົ່ວໂມງຕາມເຂດເວລາ",
+          "ທົດສອບປະສິດທິພາບ, ຄວາມປອດໄພ ລະ ການກັບຄືນ",
+        ],
+      },
+      process: {
+        heading: "ຂັ້ນຕອນການເຮັດວຽກ",
+        steps: [
+          { step: "01", title: "ວິເຄາະຄວາມຕ້ອງການ", desc: "ຮວບຮວມ ແລະ ວິເຄາະຄວາມຕ້ອງການ ເພື່ອກຳນົດຂອບເຂດການທົດສອບ." },
+          { step: "02", title: "ວາງແຜນການທົດສອບ", desc: "ສ້າງແຜນ ແລະ ຍຸດທະສາດການທົດສອບຫຼັງຈາກຮູ້ຂອບເຂດແລ້ວ." },
+          { step: "03", title: "ຂຽນກໍລະນີທົດສອບ", desc: "ສ້າງສະຖານະການທົດສອບທີ່ຈະໃຊ້ໃນລະຫວ່າງ ແລະ ຫຼັງການພັດທະນາ." },
+          { step: "04", title: "ກະກຽມສະພາບແວດລ້ອມ", desc: "ກະກຽມສະພາບແວດລ້ອມ ແລະ ອຸປະກອນທີ່ຕ້ອງການສຳລັບການທົດສອບ." },
+          { step: "05", title: "ທົດສອບ ແລະ າຍງານ", desc: "ແລ່ນຕົວທົດສອບ, ບັນທກບົກຜ່ອງ ແລະ ຢັ້ງຢືນການແກ້ໄຂຮ່ວມກັບທີມ." },
+        ],
+      },
+      benefits: {
+        heading: "ເຫດຜົນທີ່ຄວນເລືອກພວກເຮົາ",
+        items: [
+          "ຫຼຸດຄວາມສ່ຽງດ້ວຍການຈັບບົກຜ່ອງຕັ້ງແຕ່ໄວ",
+          "ເປີດໃຊ້ໄວຂຶ້ນດ້ວຍການອັດຕະໂນມັດ",
+          "ຄຸ້ມຄອງທັງແອັບມືຖື, ເວັບ ແລະ ານເຊື່ອມໂຍງ",
+          "ທົດສອບຕະຫຼອດເວລາໂດຍບໍ່ຕ້ອງເຮັດງານກາງຄືນ",
+          "ມີປະສົບການກັບໂຄງການຂະໜາດວິສາຫະກິດ",
+        ],
+      },
+      capabilities: {
+        heading: "ຄວາມສາມາດທົດສອບຫຼັກ",
+        items: [
+          { title: "ທົດສອບແອັບມືຖື", desc: "ຢັ້ງຢືນແອັບເທິງຫຼາຍອຸປະກອນ ແລະ ຄວາມລະອຽດໜ້າຈໍ ເພື່ອປະສົບການທີ່ລື່ນໄຫຼ." },
+          { title: "ທົດສອບແບບອັດຕະໂນມັດ", desc: "ອັດຕະໂນມັດຂັ້ນຕອນຊ້ຳ ເພື່ອໃຫ້ທີມສຸມໃສ່ຂໍ້ໄດ້ປຽບໃນການແຂ່ງຂັນ." },
+          { title: "ທົດສອບແອັບເວັບ", desc: "ສະແກນເວັບໄທ໌ ພື່ອຫຼຸດຊ່ອງໂຫວ່ ແລະ ແກ້ໄຂບັນຫາດ້ານໜ້າທີ່ ແລະ ປະສິດທິພາບ." },
+          { title: "ທົດສອບຕໍ່ເນື່ອງ 24/7", desc: "ໃຊ້ຄວາມແຕກຕ່າງເຂດເວລາ ເພື່ອແລ່ນວົງຈອນ build & test ຕະຫຼອດເວລາ." },
+        ],
+      },
+      toolsHeading: "ເຄື່ອງມື & ການຄຸ້ມຄອງ",
+      cta: {
+        title: "ຕ້ອງການທີມ QA ທີ່ເຊື່ອຖືໄດ້ບໍ?",
+        desc: "ໃຫ້ພວກເຮົາເບິ່ງແຍງຄຸນນະພາບ — ເລົ່າກ່ຽວກັບຜະລິດຕະພັນຂອງທ່ານ ແລະ ພວກເຮົາຈະສ້າງແຜນທົດສອບທີ່ເໝາະສົມ.",
+        contactUs: "ຕິດຕໍ່ພວກເຮົາ",
+      },
+    },
+    legacy: {
+      heroTitle: "ຍ້າຍລະບົບເກົ່າ",
+      intro:
+        "ພວກເຮົາປັບໂຄງສ້າງຂັ້ນຕອນເຮັດວຽກແບບຄົບວົງຈອນ ແລະ ຍ້າຍລະບົບເກົ່າໄປສູ່ແພລດຟອມທັນສະໄໝ — ໂດຍຮັກສາຄວາມສົມບູນຂອງຂໍ້ມູນ ແລະ ໜ້າທີ່ຫຼັກຂອງລະບົບເກົ່າ ດ້ວຍຜົນກະທົບໜ້ອຍທີ່ສຸດ. ວິສະວະກອນ ແລະ ທີ່ປຶກສາຂອງພວກເຮົາມີປະສົບການກວ້າງຂວາງໃນຫຼາຍແພລດຟອມ.",
+      features: {
+        heading: "ສິ່ງທີ່ພວກເຮົາສົ່ງມອບ",
+        items: [
+          "ປັບໂຄງສ້າງຂັ້ນຕອນເຮັດວຽກແບບຄົບວົງຈອນ (A ຫາ Z)",
+          "ຍ້າຍຂໍ້ມູນໂດຍຮັກສາຄວາມສົມບູນ",
+          "ປ່ຽນລະບົບເກົ່າໄປສູ່ແພລດຟອມທັນສະໄໝ",
+          "ຮັກສາໜ້າທີ່ຫຼັກຂອງລະບົບທີ່ໃຊ້ຢູ່",
+          "ຊ່ວຍເຫຼືອຄົບຊີວິດໂຄງການ ຕັ້ງແຕ່ວາງແຜນຈົນຫຼັງຍ້າຍ",
+        ],
+      },
+      process: {
+        heading: "ຂັ້ນຕອນການເຮັດວຽກ",
+        steps: [
+          { step: "01", title: "ສຳຫຼວດ", desc: "ກຳນົດຂໍ້ມູນ, ູບແບບ, ຕຳແໜ່ງ ລະ ລະດັບຜົນກະທົບ." },
+          { step: "02", title: "ສຳຮອງຂໍ້ມູນ", desc: "ສຳຮອງຂໍ້ມູນທັງໝົດກ່ອນເລີ່ມງານຍ້າຍ." },
+          { step: "03", title: "ວາງແຜນ", desc: "ກຳນົດຄວາມຕ້ອງການທາງເຕັກນິກ, ເວລາ ແລະ ງົບປະມານ." },
+          { step: "04", title: "ຍ້າຍເທື່ອລະຂັ້ນ ແລະ ທົດສອບ", desc: "ຍ້າຍແບບເທື່ອລະຂັ້ນ ແລະ ົດສອບລະບົບຫຼັງແຕ່ລະຂັ້ນ." },
+          { step: "05", title: "ເຮັດຄວາມສະອາດ ແລະ ຫຼດຂໍ້ມູນ", desc: "ເຮັດຄວາມສະອາດຂໍ້ມູນ, ກ້ໄຂບັນຫາ ແລະ ໂຫຼດເຂົ້າລະບົບໃໝ່." },
+        ],
+      },
+      benefits: {
+        heading: "ເຫດຜົນທີ່ຄວນເລືອກພວກເຮົາ",
+        items: [
+          "ຮັກສາຄວາມສົມບູນຂອງຂໍ້ມູນຕະຫຼອດການຍ້າຍ",
+          "ຍັງຄົງໜ້າທີ່ຫຼັກຂອງລະບົບເກົ່າໄວ້",
+          "ມີບັນຫານ້ອຍທີ່ສຸດໃນຊ່ວງຍ້າຍ",
+          "ຊ່ວຍເຫຼືອຄົບທັງຊີວິດໂຄງການ",
+          "ທີມມີປະສົບການໃນຫຼາຍແພລດຟອມ",
+        ],
+      },
+      values: {
+        heading: "ສິ່ງທີ່ພວກເຮົາຮັບປະກັນ",
+        items: [
+          { title: "ຄວາມສົມບູນຂອງຂໍ້ມູນ", desc: "ຂໍ້ມູນຂອງທ່ານຍັງຄົບຖ້ວນ ແລະ ຖືກຕ້ອງຕະຫຼອດການປ່ຽນແປງ." },
+          { title: "ຮັກສາໜ້າທີ່", desc: "ໜ້າທີ່ຫຼັກຂອງເມົາເດີທີ່ໃຊ້ຢູ່ຖືກຮັກສາໄວ້ໃນລະບົບໃໝ່." },
+          { title: "ການກະທົບໜ້ອຍສຸດ", desc: "ວິທີແບບເທື່ອລະຂັ້ນຊ່ວຍໃຫ້ທຸລະກິດດຳເນີນຕໍ່ໄດ້ດ້ວຍບັນຫານ້ອຍສຸດ." },
+        ],
+      },
+      caseStudy: {
+        heading: "CASE ໂດດເດັ່ນ",
+        title: "Flash ຫາ HTML5 — ເນື້ອຫາການສຶກສາ K12",
+        desc: "ພວກເຮົາປ່ຽນເນື້ອຫາການສຶກສາ K12 ຫຼາຍພັນລາຍການຈາກ Flash ເກົ່າ ໄປສູ່ HTML5 ທັນສະໄໝ, ັກສາການຕ້ຕອບ ລະ ພ້ອມສຳລັບອະນາຄົດເທິງທຸກອຸປະກອນ.",
+        tag: "ການສຶກສາ",
+      },
+      cta: {
+        title: "ພ້ອມປັບລະບົບເກົ່າໃຫ້ທັນສະໄໝບໍ?",
+        desc: "ເລົ່າກ່ຽວກັບລະບົບເກົ່າຂອງທ່ານ ແລະ ພວກເຮົາຈະວາງເສັ້ນທາງຍ້າຍທີ່ປອດໄພ ແບບເທື່ອລະຂັ້ນ ໄປສູ່ພື້ນຖານໃໝ່.",
+        contactUs: "ຕິດຕໍ່ພວກເຮົາ",
+      },
     },
   },
   companyPage: {
     heroTitle: "ບໍລິສັດ",
-    info: {
-      heading: "ຂໍ້ມູນບໍລິສັດ",
+    philosophy: {
+      heading: "ປັດຊະຍາທຸລະກິດ",
+      desc: "SV Digital Software ມຸ່ງໝັ້ນສ້າງແບຣນຊອບແວທີ່ໜ້າເຊື່ອຖື ຜ່ານການເປັນຄູ່ຮ່ວມງານໄລຍະຍາວໃນຕະຫຼາດ IT ສາກົນ. ເທັກໂນໂລຢີປ່ຽນແປງໄວ, ແຕ່ພວກເຮົາເຊື່ອວ່າສິ່ງສຳຄັນທີ່ສຸດແມ່ນຄວາມເໝາະສົມ — ຊອບແວທີ່ຕອບສະໜອງຄວາມຕ້ອງການຈິງຂອງລູກຄ້າ, ສົ່ງມອບດ້ວຍຄວາມມີວິໄນ, ຄວາມໂປ່ງໃສ ແລະ ຄວາມເອົາໃຈໃສ່.",
+    },
+    values: {
+      heading: "ຄຸນຄ່າຫຼັກ",
+      items: [
+        { title: "ຄວາມສາມາດໃນການສົ່ງມອບ", desc: "ສົ່ງມອບຄົບວົງຈອນ — ຕັ້ງແຕ່ການເກັບຄວາມຕ້ອງການ ແລະ ໂຄງສ້າງ ຈົນເຖິງການພັດທະນາ, ທົດສອບ, ນຳໃຊ້ ແລະ ບຳລຸງຮັກສາໄລຍະຍາວ." },
+        { title: "ມາດຕະຖານສາກົນ", desc: "ພວກເຮົາຮັບເອົາມາດຕະຖານວິສະວະກຳ ແລະ ຄຸນນະພາບສາກົນ ເພື່ອໃຫ້ທຸກໂປຣເຈັກບັນລຸຄວາມຄາດຫວັງ ໃນທຸກບ່ອນໃນໂລກ." },
+        { title: "ຄົນເປັນສູນກາງ", desc: "ພວກເຮົາດຶງດູດ, ພັດທະນາ ແລະ ຮັກສາວິສະວະກອນທີ່ມີຄວາມສາມາດ — ພື້ນຖານຢູ່ເບື້ອງຫຼັງທຸກໂປຣເຈັກທີ່ປະສົບຜົນສຳເລັດ." },
+        { title: "ຄຸນນະພາບທີ່ໄດ້ຮັບການຢັ້ງຢືນ", desc: "ຂະບວນການ QA ທີ່ມີວິໄນ ແລະ ການປະຕິບັດການຈັດການຄຸນນະພາບທີ່ໄດ້ຮັບການຍອມຮັບສາກົນ ໃຊ້ກັບທຸກການອອກລຸ່ນ." },
+      ],
+    },
+    vision: {
+      heading: "ວິໄສທັດ",
+      desc: "SV Digital Software ມຸ່ງເປັນຄູ່ຮ່ວມງານຊັ້ນນຳໃນການພັດທະນາຊອບແວຕາມຄວາມຕ້ອງການ, ການຍ້າຍ ແລະ ບຳລຸງຮັກສາລະບົບເກົ່າ ແລະ ການປ່ຽນແປງດິຈິຕອນ — ຊ່ວຍໃຫ້ທຸລະກິດປັບປຸງໃຫ້ທັນສະໄໝຢ່າງໝັ້ນໃຈ ແລະ ເຕີບໂຕເທິງພື້ນຖານເທັກໂນໂລຢີທີ່ແຂງແຮງ.",
+    },
+    ceo: {
+      label: "ຂໍ້ຄວາມຈາກ CEO",
+      name: "James Whitfield",
+      role: "ຜູ້ອຳນວຍການຕົວແທນ & CEO",
+      desc: "ຄຳໝັ້ນສັນຍາຂອງພວກເຮົາຕໍ່ລູກຄ້າທຸກຄົນງ່າຍດາຍ: ເຂົ້າໃຈຢ່າງເລິກເຊິ່ງ, ສ້າງຢ່າງຊື່ສັດ ແລະ ສົ່ງມອບຢ່າງຄົບຖ້ວນ. ພວກເຮົາຖືທຸກໂປຣເຈັກເປັນຄວາມຮັບຜິດຊອບໄລຍະຍາວ — ແລະ ວັດແທກຄວາມສຳເລັດດ້ວຍການທີ່ຊອບແວຂອງທ່ານເຮັດວຽກໄດ້ດີແຄ່ໄຫນຫຼາຍປີຫຼັງຈາກເປີດຕົວ, ບໍ່ແມ່ນແຄ່ໃນມື້ສົ່ງມອບ.",
+    },
+    factSheet: {
+      heading: "FACT SHEET",
       rows: [
         { label: "ຊື່ບໍລິສັດ", value: "SV Digital Software Co., Ltd." },
         { label: "ວັນທີກໍ່ຕັ້ງ", value: "8 ກໍລະກົດ 2022" },
-        { label: "ທີ່ຕັ້ງສຳນັກງານໃຫຍ່", value: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom" },
-        { label: "ທຶນຈົດທະບຽນ", value: "USD 67,000 (ເຖິງເດືອນມີນາ 2026)" },
-        { label: "ສາຍທຸລະກິດ", value: "ການພັດທະນາຊອບແວຕາມຄວາມຕ້ອງການ · ວິສະວະກຳແພລດຟອມຂໍ້ມູນ & AI · ການທັນສະໄໝ Cloud · ການປຶກສາການປ່ຽນແປງດິຈິຕອນ" },
-        { label: "ເທັກໂນໂລຢີຫຼັກ", value: "TypeScript / React / Next.js · Python · LLM & AI ສ້າງສັນ · Snowflake / dbt · AWS / GCP / Azure" },
-        { label: "ຜູ້ອຳນວຍການຕົວແທນ & CEO", value: "James Whitfield" },
-        { label: "ຜູ້ອຳນວຍການຕົວແທນ, CAO", value: "Sarah Mitchell" },
-        { label: "ກຳມະການ", value: "Oliver Hartley" },
-        { label: "ກຳມະການ", value: "Daniel Brooks" },
-        { label: "ກຳມະການ", value: "Emma Collins" },
-        { label: "ຜູ້ກວດສອບປະຈຳ", value: "Richard Foster" },
-        { label: "ຜູ້ບໍລິຫານ, CTO", value: "Marcus Reid" },
+        { label: "ສາຍທຸລະກິດ", value: "ການພັດທະນາຊອບແວຕາມຄວາມຕ້ອງການ · ວິທີແກ້ໄຂມືຖື · ບໍລິການທົດສອບ · ການຍ້າຍລະບົບເກົ່າ" },
+        { label: "ເທັກໂນໂລຢີຫຼັກ", value: "TypeScript / React / Next.js · Python · Snowflake / dbt · AWS / GCP / Azure" },
       ],
     },
-    history: {
-      heading: "ປະຫວັດບໍລິສັດ",
-      items: [
-        { year: "2022.07", text: "ກໍ່ຕັ້ງ SV Digital Software Co., Ltd. ຢູ່ໂຕກຽວ — ກໍ່ຕັ້ງດ້ວຍຄວາມເຊື່ອວ່າຊອບແວທີ່ດີປ່ຽນຂໍ້ມູນທີ່ຊັບຊ້ອນໃຫ້ເປັນການຕັດສິນໃຈທີ່ຊັດເຈນ." },
-        { year: "2022.10", text: "ເລີ່ມ R&D ແພລດຟອມ AIM: ເຄື່ອງຈັກຄາດການ AI ທີ່ພັດທະນາພາຍໃນ, ອອກແບບຕັ້ງແຕ່ວັນທຳອິດໃຫ້ເຮັດວຽກໃນ production." },
-        { year: "2023.05", text: "AIM ພິສູດຕົວເອງພາຍໃຕ້ຂໍ້ກຳນົດທີ່ເຂັ້ມງວດທີ່ສຸດ — ນໃຊ້ໃນ production ເພື່ອຂັບເຄື່ອນການຕັດສິນໃຈເຊິງປະລິມານໃນຂະໜາດໃຫຍ່." },
-        { year: "2023.11", text: "ສ້າງຕັ້ງການປະຕິບັດວິສະວະກຳຂໍ້ມູນ — ໄດ້ຮັບການຮັບຮອງທົ່ວ Snowflake, dbt ແລະ ຜູ້ໃຫ້ບໍລິການ cloud ຫຼັກ, ສົ່ງມອບພື້ນຖານຂໍ້ມູນລະດັບວິສາຫະກິດ." },
-        { year: "2024.11", text: "AlphaCrafter, ຕົວແທນຂໍ້ມູນ AI ສ້າງສັນຂອງພວກເຮົາ, ຖືກນຳສະເໜີໃນ AWS re:Invent 2024 — ສາທິດການວິເຄາະພາສາທຳມະຊາດພາຍໃນຄັງຂໍ້ມູນແບບສົດ." },
-        { year: "2025.03", text: "AlphaCrafter ຊະນະລາງວັນໃຫຍ່ໃນ Google Cloud Generative AI Innovation Awards." },
-        { year: "2025.06", text: "AIM & AlphaCrafter ໄດ້ຮັບການຍອມຮັບທົ່ວອຸດສາຫະກຳ — SV Digital Software ຂະຫຍາຍທີມຜະລິດຕະພັນ ແລະ ການສົ່ງມອບ ເພື່ອບໍລິການລູກຄ້າເກີນຂອບເຂດການເງິນ." },
-      ],
-    },
-    achievements: {
-      heading: "ຜະລິດຕະພັນ & ໂປຣເຈັກຫຼັກ",
-      items: [
-        { title: "AlphaCrafter", desc: "ຕົວແທນຂໍ້ມູນ AI ສ້າງສັນ ທີ່ຢູ່ພາຍໃນຄັງຂໍ້ມູນ — ຕອບຄຳຖາມທຸລະກິດດ້ວຍພາສາທຳມະຊາດ ແລະ ໄດ້ຮັບການວິເຄາະແບບສົດທີ່ມີການຄວບຄຸມ. ລາງວັນໃຫຍ່, Japan Financial Innovation Award 2024.", meta: "AI ສ້າງສັນ / ຕົວແທນຂໍ້ມູນ" },
-        { title: "ແພລດຟອມ AIM", desc: "ແພລດຟອມ AI & ຂໍ້ມູນຂອງພວກເຮົາ: ອັນກໍຣິທຶມເອກະລາດ, ວິສະວະກຳລະດັບ production, ການຄາດການໄລຍະກາງເຖິງຍາວ ຂັບເຄື່ອນ ROBOPRO ມີຊັບສິນພາຍໃຕ້ການບໍລິຫານຫຼາຍກວ່າ $250M.", meta: "ແພລດຟອມ AI / ການຄາດການ" },
-        { title: "ການສົ່ງມອບວິສາຫະກິດ", desc: "ການສົ່ງມອບຊອບແວຄົບວົງຈອນສຳລັບທຸລະກິດທີ່ໃຊ້ຂໍ້ມູນເຂັ້ມຂຸ້ນ — ຕັ້ງແຕ່ໂຄງສ້າງ ແລະ ການຍ້າຍ cloud ຈົນເຖິງການດຳເນີນການທີ່ມີການບໍລິຫານ, ພ້ອມຄວາມປອດໄພ ແລະ ຄຸນນະພາບ.", meta: "ຊອບແວຕາມຄວາມຕ້ອງການ / Cloud" },
-      ],
-      note: "*ລວມຜົນງານຂອງບໍລິສັດບູພະການ.",
+    partners: {
+      heading: "ຄູ່ຮ່ວມເທັກໂນໂລຢີ",
+      desc: "ພວກເຮົາສ້າງເທິງແພລດຟອມທີ່ພິສູດແລ້ວ ແລະ ເປັນຊັ້ນນຳຂອງອຸດສາຫະກຳ, ພ້ອມຮັກສາຄວາມສຳພັນໃນການເຮັດວຽກຢ່າງໃກ້ຊິດກັບລະບົບນິເວດຢູ່ເບື້ອງຫຼັງພວກມັນ.",
+      items: ["AWS", "Google Cloud", "Microsoft Azure", "Snowflake", "dbt", "Docker"],
     },
     awards: {
       heading: "ຜົນງານທີ່ໄດ້ຮັບລາງວັນ",
       items: [
         { date: "2017.04.06", title: "ໂປຣແກຣມ MUFG Fintech Accelerator \"ລາງວັນຮອງຊະນະເລີດ\"", desc: "ຖືກເລືອກຈາກຜູ້ສະໝັກຫຼາຍຮ້ອຍຄົນ ແລະ ເປັນພາຄີກັບ kabu.com Securities — ພື້ນຖານຂອງປະສົບການສ້າງຊອບແວທີ່ສຳຄັນຕໍ່ພາລະກິດສຳລັບອຸດສາຫະກຳທີ່ມີການຄວບຄຸມເຂັ້ມງວດ." },
-        { date: "2023.05.16", title: "AIM ໃນ production: ອັນດັບ 1 ໃນຜົນຕອບແທນສະສົມ & ອັດຕາສ່ວນ Sharpe (ລາຍງານ FSA)", desc: "ຜົນງານ production ຂອງແພລດຟອມ AIM ຖືກປະເມີນເປັນອັນດັບ 1 ໃນລາຍງານ KPI ຂອງອົງການບໍລິການທາງການເງິນ — ຫຼັກຖານວ່າວິສະວະກຳຂອງພວກເຮົາທົນທານພາຍໃຕ້ແຮງກົດດັນໃນໂລກຈິງ." },
-        { date: "2025.03.17", title: "ລາງວັນໃຫຍ່ — Google Cloud Generative AI Innovation Awards ຄັ້ງທີ 3", desc: "ຕົວແທນຂໍ້ມູນ AI \"AlphaCrafter\" ຂອງພວກເຮົາຊະນະລາງວັນໃຫຍ່ ສຳລັບການສຳຫຼວດຄັງຂໍ້ມູນ ແລະ ສ້າງການວິເຄາະຈາກຄຳຖາມພາສາທຳມະຊາດ." },
-        { date: "2025.06.05", title: "Nikkei Trendy \"ລາງວັນໃຫຍ່ Robo-Advisor 2025\"", desc: "ROBOPRO, ຂັບເຄື່ອນໂດຍແພລດຟອມ AIM ຂອງພວກເຮົາ, ບັນທຶກຜົນຕອບແທນສູງສຸດໃນບັນດາ robo-advisor ຫຼັກ ໃນການປຽບທຽບຂອງ Nikkei Trendy (ສະບັບເດືອນກໍລະກົດ 2025)." },
+        { date: "2023.08.22", title: "ມາດຕະຖານການສົ່ງມອບທີ່ປອດໄພ — 3 ປີຕິດຕໍ່ກັນໂດຍບໍ່ມີເຫດການຮ້າຍແຮງ", desc: "ຂະບວນການ QA ທີ່ມີວິໄນຂອງພວກເຮົາຜ່ານທຸກການປະເມີນຄວາມປອດໄພຈາກພາຍນອກ ໂດຍບໍ່ມີເຫດການໃດທີ່ເກີດຈາກ bug ຫຼື ຊ່ອງໂຫວ່ທີ່ຖືກປ່ອຍເລີຍ." },
+        { date: "2025.03.17", title: "ລາງວັນໃຫຍ່ — Google Cloud Innovation Awards ຄັ້ງທີ 3", desc: "ແພລດຟອມແອັບພລິເຄຊັນ ແລະ ຂໍ້ມູນ cloud-native ຂອງພວກເຮົາຊະນະລາງວັນໃຫຍ່ ດ້ວຍສະຖາປັດຕະຍະກຳທີ່ໝັ້ນຄົງ, ປະສິດທິພາບທີ່ຂະຫຍາຍໄດ້ ແລະ ປະສົບການ developer ທີ່ສະອາດ." },
+        { date: "2025.06.05", title: "ຄວາມໄວ້ເນື້ອເຊື່ອໃຈ ແລະ ການຮ່ວມມືໄລຍະຍາວ — ສົ່ງມອບຕາມກຳນົດ 100%, ອັດຕາລູກຄ້າກັບມາ 100%", desc: "ທຸກເສົາຫຼັກທີ່ສັນຍາໄວ້ຖືກສົ່ງມອບຕາມກຳນົດ ແລະ ລູກຄ້າທຸກລາຍເລືອກສືບຕໍ່ການຮ່ວມມືໄລຍະຍາວຫຼັງຈາກໂປຣເຈັກທຳອິດ." },
       ],
-    },
-    map: {
-      address: "12 King Street, Westminster, London SW1Y 6QY, United Kingdom",
-      viewMap: "ເບິ່ງແຜນທີ່ Google",
     },
     contact: {
       heading: "ຕິດຕໍ່",
@@ -791,25 +1199,6 @@ export const lo: Dictionary = {
       { title: "ຜູ້ຈັດການຜະລິດຕະພັນ — ຜະລິດຕະພັນຂໍ້ມູນ & AI", location: "ລອນດອນ, ອັງກິດ / ຈາກໄກ", type: "ເຕັມເວລາ" },
       { title: "ວິສະວະກອນຊອບແວ — ແພລດຟອມ & ໂຄງລ່າງ", location: "ລອນດອນ, ອັງກິດ", type: "ເຕັມເວລາ" },
       { title: "ນັກອອກແບບ UI/UX — ລະບົບອອກແບບ & ຜະລິດຕະພັນ", location: "ລອນດອນ, ອັງກິດ / ຈາກໄກ", type: "ເຕັມເວລາ" },
-    ],
-  },
-  newsPage: {
-    heroTitle: "ຂ່າວສານ",
-    viewMore: "ເບິ່ງເພີ່ມ",
-    showLess: "ຫຍໍ້ລົງ",
-    items: [
-      { date: "2025.04.14", title: "SV Digital Software ຮ່ວມງານ Snowflake Summit 2025 — ສາທິດ AlphaCrafter ທີ່ບູດ" },
-      { date: "2025.03.17", title: "AlphaCrafter ຊະນະລາງວັນໃຫຍ່ໃນ Google Cloud Generative AI Innovation Awards ຄັ້ງທີ 3" },
-      { date: "2024.11.20", title: "AlphaCrafter ຖືກນຳສະເໜີໃນ AWS re:Invent 2024 — ສາທິດສົດຕົວແທນຂໍ້ມູນ AI ສ້າງສັນ" },
-      { date: "2024.09.10", title: "ເປີດຕົວແພລດຟອມ AIM v2 — API ເຊື່ອມໂຍງໃໝ່, ຄວາມປອດໄພລະດັບວິສາຫະກິດ ແລະ ຄວາມສາມາດຄາດການທີ່ຂະຫຍາຍ" },
-      { date: "2024.06.05", title: "SV Digital Software ເປີດບໍລິການທີ່ປຶກສາ AI ສ້າງສັນ ສຳລັບລູກຄ້າວິສາຫະກິດ" },
-      { date: "2024.01.18", title: "ທີມວິສະວະກອນຂອງພວກເຮົາເພີ່ມຂຶ້ນເປັນສອງເທົ່າ ເມື່ອຮັບໂປຣເຈັກແພລດຟອມຂະໜາດໃຫຍ່ຂຶ້ນ" },
-      { date: "2023.11.09", title: "ພະແນກວິສະວະກຳຂໍ້ມູນໄດ້ຮັບການຮັບຮອງເທິງ Snowflake, dbt ແລະ ຜູ້ໃຫ້ບໍລິການ cloud ຫຼັກ" },
-      { date: "2023.08.22", title: "SV Digital Software ເປີດເຜີຍລະຫັດແຫຼ່ງ (open-source) ຊຸດເຄື່ອງມື pipeline ຂໍ້ມູນພາຍໃນ" },
-      { date: "2023.05.16", title: "AIM ບັນລຸຈຸດສຳຄັນໃນ production — ນຳໃຊ້ໃນຂະໜາດໃຫຍ່ເພື່ອຂັບເຄື່ອນການຕັດສິນໃຈໂດຍອີງຂໍ້ມູນ" },
-      { date: "2023.02.14", title: "SV Digital Software ກາຍເປັນຄູ່ຮ່ວມວິທີແກ້ໄຂ Snowflake" },
-      { date: "2022.12.15", title: "ແພລດຟອມ AIM v1 ເຂົ້າສູ່ production" },
-      { date: "2022.09.01", title: "SV Digital Software ເປີດສະຕູດິໂອ R&D ສະເພາະທຳອິດ" },
     ],
   },
   technologiesPage: {
@@ -837,6 +1226,15 @@ export const lo: Dictionary = {
         "ຄັງຂໍ້ມູນທີ່ເໝາະສຳລັບທຸກວຽກ — ຄວາມສຳພັນ, ເອກະສານ ຫຼື in-memory — ອອກແບບເພື່ອປະສິດທິພາບ, ຄວາມຖືກຕ້ອງ ແລະ ການຂະຫຍາຍ.",
       ai:
         "ຕັ້ງແຕ່ AI ສ້າງສັນ ແລະ ການເຊື່ອມໂຍງ LLM ຈົນເຖິງ machine learning ແລະ ການເບິ່ງເຫັນ — ພວກເຮົາປ່ຽນເທັກໂນໂລຢີໃໝ່ໃຫ້ເປັນມູນຄ່າຜະລິດຕະພັນຈິງ.",
+    },
+    projects: {
+      heading: "ໂປຣເຈັກໂດດເດັ່ນ",
+      viewAll: "ເບິ່ງບໍລິການທັງໝົດ",
+      items: [
+        { title: "ແອັບ Mobile Banking", desc: "ແອັບທະນາຄານທີ່ປອດໄພສຳລັບທຸລະກຳ ແລະ ບໍລິຫານບັນຊີທຸກທີ່, ພັດທະນາເທິງ iOS ແລະ Android.", stack: ["Spring Boot", "Android", "iOS"] },
+        { title: "ERP ບໍລິຫານວຽກ", desc: "ລະບົບ ERP ພາຍໃນຕິດຕາມໜ້າວຽກ ແລະ ຂັ້ນຕອນເຮັດວຽກທີມ, ສ້າງສຳລັບການດຳເນີນການປະຈຳວັນຂອງລູກຄ້າ.", stack: ["React", "MySQL", "Spring Boot", "AWS"] },
+        { title: "E-commerce ຫຼາຍຊ່ອງທາງ", desc: "ແພລດຟອມຄ້າປີກລວມຊ່ອງທາງເວັບ, ອອນລາຍ ແລະ ມືຖືເປັນປະສົບການຊື້ເຄື່ອງທີ່ລື່ນໄຫຼ.", stack: ["OpenCart", "PHP", "iOS", "Android"] },
+      ],
     },
   },
 };

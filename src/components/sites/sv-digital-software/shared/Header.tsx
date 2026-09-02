@@ -3,23 +3,32 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import type { Locale } from "@/lib/i18n/types";
 import { getDictionary } from "@/lib/i18n/getDictionary";
+import { SERVICE_SLUGS, servicePath } from "@/lib/services";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 type Props = { locale: Locale };
+
+type NavItem = {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+};
 
 export function Header({ locale }: Props) {
   const pathname = usePathname();
   const dict = getDictionary(locale);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const [lastPath, setLastPath] = useState(pathname);
 
   if (pathname !== lastPath) {
     setLastPath(pathname);
     setMenuOpen(false);
+    setServicesOpen(false);
   }
 
   useEffect(() => {
@@ -36,19 +45,24 @@ export function Header({ locale }: Props) {
     };
   }, [menuOpen]);
 
-  const isActive = (href: string) => {
-    const [path] = href.split("#");
+  const servicesHref = `/${locale}/services`;
+  const serviceChildren = SERVICE_SLUGS.map((slug) => ({
+    label: dict.services.nav[slug === "mobile-solutions" ? "mobile" : slug === "custom-software-development" ? "custom" : slug === "testing-services" ? "testing" : "legacy"],
+    href: servicePath(locale, slug),
+  }));
+
+  const NAV_ITEMS: NavItem[] = [
+    { label: dict.header.nav.solution, href: servicesHref, children: serviceChildren },
+    { label: dict.header.nav.technologies, href: `/${locale}/technologies` },
+    { label: dict.header.nav.recruit, href: `/${locale}/recruit` },
+    { label: dict.header.nav.company, href: `/${locale}/company` },
+  ];
+
+  const isActive = (item: NavItem) => {
+    if (item.children) return pathname.startsWith(servicesHref);
+    const [path] = item.href.split("#");
     return path !== `/${locale}` && pathname === path;
   };
-
-  const NAV_ITEMS = [
-    { label: dict.header.nav.solution, href: `/${locale}/solution` },
-    { label: dict.header.nav.technologies, href: `/${locale}/technologies` },
-    { label: dict.header.nav.aim, href: `/${locale}/aim` },
-    { label: dict.header.nav.company, href: `/${locale}/company` },
-    { label: dict.header.nav.recruit, href: `/${locale}/recruit` },
-    { label: dict.header.nav.news, href: `/${locale}/news` },
-  ] as const;
 
   return (
     <header
@@ -65,12 +79,19 @@ export function Header({ locale }: Props) {
       >
         <Link
           href={`/${locale}`}
-          className="flex items-center gap-2.5 shrink-0 transition-transform duration-300 hover:scale-[1.03]"
+          className="flex items-center gap-3 shrink-0 transition-transform duration-300 hover:scale-[1.03]"
           aria-label={dict.header.homeAria}
         >
-          <span className="flex items-center justify-center h-[46px] w-[46px] max-[991px]:h-[34px] max-[991px]:w-[34px] rounded-xl bg-white text-at-primary font-[var(--font-montserrat)] font-extrabold text-lg max-[991px]:text-sm leading-none select-none">
-            SV
-          </span>
+          {/* Glow logo — transparent PNG, renders true colors on the dark header */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo-sv.png"
+            alt=""
+            aria-hidden
+            width={520}
+            height={277}
+            className="h-[56px] w-auto object-contain max-[991px]:h-[40px]"
+          />
           <span className="flex flex-col leading-none">
             <span className="font-[var(--font-montserrat)] text-white font-extrabold text-[22px] max-[991px]:text-[17px] tracking-[0.02em]">SV Digital</span>
             <span className="font-[var(--font-montserrat)] text-white/80 font-bold text-[10px] max-[991px]:text-[8px] tracking-[0.28em] mt-1">SOFTWARE</span>
@@ -78,24 +99,61 @@ export function Header({ locale }: Props) {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`group relative flex flex-col items-start py-1.5 ${
-                isActive(item.href) ? "text-white" : "text-white/80"
-              }`}
-            >
-              <span className="text-[14px] font-bold tracking-[0.08em] leading-[1.4] transition-colors duration-300 group-hover:text-white">
-                {item.label}
-              </span>
-              <span
-                className={`h-[2px] rounded-full bg-white transition-all duration-300 ${
-                  isActive(item.href) ? "w-full" : "w-0 group-hover:w-full"
+          {NAV_ITEMS.map((item) =>
+            item.children ? (
+              <div key={item.href} className="relative group">
+                <Link
+                  href={item.href}
+                  className={`group/nav relative flex flex-col items-start py-1.5 ${
+                    isActive(item) ? "text-white" : "text-white/80"
+                  }`}
+                >
+                  <span className="flex items-center gap-1 text-[14px] font-bold tracking-[0.08em] leading-[1.4] transition-colors duration-300 group-hover:text-white">
+                    {item.label}
+                    <ChevronDown className="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180" />
+                  </span>
+                  <span
+                    className={`h-[2px] rounded-full bg-white transition-all duration-300 ${
+                      isActive(item) ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  />
+                </Link>
+                {/* Dropdown panel — pt-3 bridges the hover gap so it doesn't drop */}
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <ul className="w-[300px] rounded-xl bg-at-section border border-at-border shadow-xl py-2 overflow-hidden">
+                    {item.children.map((child) => (
+                      <li key={child.href}>
+                        <Link
+                          href={child.href}
+                          className="flex items-center gap-2.5 px-4 py-2.5 text-at-text-dark hover:bg-at-bg-soft hover:text-at-primary text-sm font-medium transition-colors"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-at-pink shrink-0" />
+                          <span className="truncate">{child.label}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`group relative flex flex-col items-start py-1.5 ${
+                  isActive(item) ? "text-white" : "text-white/80"
                 }`}
-              />
-            </Link>
-          ))}
+              >
+                <span className="text-[14px] font-bold tracking-[0.08em] leading-[1.4] transition-colors duration-300 group-hover:text-white">
+                  {item.label}
+                </span>
+                <span
+                  className={`h-[2px] rounded-full bg-white transition-all duration-300 ${
+                    isActive(item) ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                />
+              </Link>
+            )
+          )}
         </nav>
 
         <div className="hidden lg:flex items-center gap-6">
@@ -133,24 +191,68 @@ export function Header({ locale }: Props) {
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col h-full pt-28 pb-10 px-8">
+        <div className="flex flex-col h-full pt-28 pb-10 px-8 overflow-y-auto">
           <nav className="flex flex-col flex-1">
-            {NAV_ITEMS.map((item, i) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMenuOpen(false)}
-                style={{ transitionDelay: menuOpen ? `${100 + i * 60}ms` : "0ms" }}
-                className={`flex items-center justify-between py-5 border-b border-white/10 transition-all duration-500 ${
-                  menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
-              >
-                <span className="font-[var(--font-montserrat)] text-white text-2xl font-bold tracking-[0.08em]">
-                  {item.label}
-                </span>
-                <ArrowRight className="w-5 h-5 text-white/40" />
-              </Link>
-            ))}
+            {NAV_ITEMS.map((item, i) =>
+              item.children ? (
+                <div
+                  key={item.href}
+                  style={{ transitionDelay: menuOpen ? `${100 + i * 60}ms` : "0ms" }}
+                  className={`border-b border-white/10 transition-all duration-500 ${
+                    menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
+                >
+                  <button
+                    type="button"
+                    onClick={() => setServicesOpen((v) => !v)}
+                    aria-expanded={servicesOpen}
+                    className="w-full flex items-center justify-between py-5"
+                  >
+                    <span className="font-[var(--font-montserrat)] text-white text-2xl font-bold tracking-[0.08em]">
+                      {item.label}
+                    </span>
+                    <ChevronDown
+                      className={`w-5 h-5 text-white/40 transition-transform duration-300 ${servicesOpen ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  <div
+                    className={`grid transition-all duration-300 overflow-hidden ${
+                      servicesOpen ? "grid-rows-[1fr] pb-4" : "grid-rows-[0fr]"
+                    }`}
+                  >
+                    <ul className="flex flex-col gap-1 min-h-0">
+                      {item.children.map((child) => (
+                        <li key={child.href}>
+                          <Link
+                            href={child.href}
+                            onClick={() => setMenuOpen(false)}
+                            className="flex items-center gap-2.5 py-2.5 pl-4 text-white/80 hover:text-white text-base font-medium transition-colors"
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full bg-at-pink shrink-0" />
+                            <span className="truncate">{child.label}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  style={{ transitionDelay: menuOpen ? `${100 + i * 60}ms` : "0ms" }}
+                  className={`flex items-center justify-between py-5 border-b border-white/10 transition-all duration-500 ${
+                    menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
+                >
+                  <span className="font-[var(--font-montserrat)] text-white text-2xl font-bold tracking-[0.08em]">
+                    {item.label}
+                  </span>
+                  <ArrowRight className="w-5 h-5 text-white/40" />
+                </Link>
+              )
+            )}
           </nav>
 
           <div

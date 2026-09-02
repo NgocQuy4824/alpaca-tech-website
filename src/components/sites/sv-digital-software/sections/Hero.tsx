@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/types";
 import { HeroLottie } from "@/components/HeroLottie";
@@ -49,27 +49,6 @@ export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
           </Link>
         </div>
 
-        {/* floating news cards */}
-        <div className="mt-10 lg:mt-0 lg:absolute lg:bottom-8 lg:right-0 flex flex-col gap-3 w-full lg:w-[392px]">
-          {dict.hero.news.map((item, idx) => (
-            <Link
-              key={item.title}
-              href={`/${locale}/news`}
-              className={`flex items-center justify-between gap-4 bg-at-section border border-at-border rounded-lg px-6 py-4 hover:bg-at-hover hover:text-at-primary group transition-colors ${idx === 1 ? "hidden lg:flex" : ""}`}
-            >
-              <div className="flex flex-col gap-1 min-w-0">
-                <div className="flex items-center gap-2">
-                  <span className="text-at-text-muted group-hover:text-at-primary/70 text-sm font-normal">{item.date}</span>
-                  <span className="text-at-accent group-hover:text-at-primary/80 text-sm font-bold">NEW</span>
-                </div>
-                <span className="text-at-text-medium group-hover:text-at-primary text-sm leading-[1.8] truncate">
-                  {item.title}
-                </span>
-              </div>
-              <ArrowUpRight className="w-6 h-6 shrink-0 text-at-primary" strokeWidth={2} />
-            </Link>
-          ))}
-        </div>
       </div>
     </section>
   );

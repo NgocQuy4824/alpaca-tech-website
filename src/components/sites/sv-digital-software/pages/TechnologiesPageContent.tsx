@@ -1,6 +1,8 @@
+import Link from "next/link";
 import type { Locale } from "@/lib/i18n/types";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { PageHero } from "@/components/sites/sv-digital-software/shared/PageHero";
+import { SectionHeading } from "@/components/sites/sv-digital-software/shared/SectionHeading";
 import { TECH_CATEGORIES } from "@/lib/technologies";
 
 type Props = { dict: Dictionary; locale: Locale };
@@ -14,6 +16,13 @@ const CATEGORY_IMAGES: Record<string, string> = {
   ai: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=560&h=360&fit=crop&q=80",
 };
 
+/** Featured-project photos — fintech, analytics dashboard, e-commerce logistics. */
+const PROJECT_IMAGES = [
+  "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=520&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=520&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=520&fit=crop&q=80",
+];
+
 export function TechnologiesPageContent({ dict, locale }: Props) {
   const d = dict.technologiesPage;
 
@@ -24,9 +33,22 @@ export function TechnologiesPageContent({ dict, locale }: Props) {
       <div className="flex justify-center bg-at-bg px-0">
         <div className="bg-at-section rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex justify-center px-5 lg:px-[76px] py-[100px] max-[540px]:py-16">
           <div className="w-full max-w-[1288px] flex flex-col gap-12">
-            <p className="text-at-text-dark text-base leading-[2] tracking-[0.04em] font-[var(--font-noto-sans-jp)] max-w-[820px]">
-              {d.intro}
-            </p>
+            {/* Intro — panel with team-at-work background image */}
+            <div className="relative overflow-hidden rounded-[32px] border border-at-border bg-at-bg-soft px-6 lg:px-12 py-10 lg:py-14">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1600&h=900&fit=crop&q=80"
+                alt=""
+                aria-hidden
+                loading="lazy"
+                referrerPolicy="no-referrer"
+                className="absolute inset-0 h-full w-full object-cover opacity-55"
+              />
+              <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-at-section via-at-section/70 to-transparent" />
+              <p className="relative z-10 text-at-text-dark text-xl lg:text-2xl leading-[1.9] tracking-[0.02em] font-[var(--font-noto-sans-jp)] max-w-[980px]">
+                {d.intro}
+              </p>
+            </div>
 
             <div className="flex flex-col gap-10">
               {TECH_CATEGORIES.map((cat, idx) => {
@@ -89,6 +111,50 @@ export function TechnologiesPageContent({ dict, locale }: Props) {
                 );
               })}
             </div>
+
+            {/* Featured Projects — matching TSO's "Dự án tiêu biểu" */}
+            <section className="flex flex-col gap-8 pt-4" aria-labelledby="tech-projects">
+              <SectionHeading as="h2"><span id="tech-projects">{d.projects.heading}</span></SectionHeading>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {d.projects.items.map((p, i) => (
+                  <article
+                    key={p.title}
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-at-border bg-at-bg-soft transition-colors hover:border-at-pink/40"
+                  >
+                    <div className="relative h-[190px] overflow-hidden bg-at-bg-soft">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={PROJECT_IMAGES[i % PROJECT_IMAGES.length]}
+                        alt={p.title}
+                        loading="lazy"
+                        referrerPolicy="no-referrer"
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col gap-3 p-6">
+                      <h3 className="text-at-primary text-lg font-bold leading-[1.4] font-[var(--font-noto-sans-jp)]">{p.title}</h3>
+                      <p className="flex-1 text-at-text-dark text-sm leading-[1.8] tracking-[0.03em] font-[var(--font-noto-sans-jp)]">{p.desc}</p>
+                      <ul className="flex flex-wrap gap-1.5">
+                        {p.stack.map((tech) => (
+                          <li
+                            key={tech}
+                            className="rounded-full border border-at-border bg-at-section px-2.5 py-1 text-[11px] font-medium text-at-text-muted hover:border-at-pink/40 hover:bg-at-bg-soft hover:text-at-primary transition-colors"
+                          >
+                            {tech}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </article>
+                ))}
+              </div>
+              <Link
+                href={`/${locale}/services`}
+                className="self-center inline-flex items-center justify-center rounded-lg border border-at-border bg-at-bg-soft px-8 py-3.5 text-sm font-bold tracking-[0.06em] text-at-primary hover:bg-at-hover hover:border-at-hover hover:text-at-primary transition-colors"
+              >
+                {d.projects.viewAll} →
+              </Link>
+            </section>
           </div>
         </div>
       </div>

@@ -8,8 +8,8 @@ export function RecruitTeaser({ dict, locale }: { dict: Dictionary; locale: Loca
 
   return (
     <section className="flex justify-center bg-at-bg px-5 lg:px-[76px] py-0 pb-[120px]">
-      <div className="bg-at-section rounded-[60px] max-[991px]:rounded-[40px] border border-at-border w-full max-w-[1288px] flex flex-col items-center px-10 lg:px-8 py-[120px] gap-10">
-        <h2 className="font-[var(--font-montserrat)] text-at-primary text-[72px] max-[991px]:text-[50px] font-bold leading-none self-start w-full">
+      <div className="bg-at-section rounded-[60px] max-[991px]:rounded-[40px] border border-at-border w-full max-w-[1288px] flex flex-col items-center px-5 sm:px-10 lg:px-8 py-16 sm:py-[120px] gap-8 sm:gap-10">
+        <h2 className="font-[var(--font-montserrat)] text-at-primary font-bold leading-none self-start w-full break-words [overflow-wrap:anywhere] text-[40px] sm:text-[50px] lg:text-[72px]">
           {dict.recruitTeaser.heading}
         </h2>
         <Image

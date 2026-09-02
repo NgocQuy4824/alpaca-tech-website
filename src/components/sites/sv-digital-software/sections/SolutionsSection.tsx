@@ -10,7 +10,7 @@ export function SolutionsSection({ dict, locale }: { dict: Dictionary; locale: L
     <section id="solutions" className="flex justify-center bg-at-bg px-0">
       <div className="bg-at-section rounded-t-[60px] max-[991px]:rounded-t-[40px] w-full flex justify-center px-5 lg:px-[76px] py-[120px] max-[540px]:py-20">
         <div className="w-full max-w-[1288px] flex flex-col gap-16">
-          <h2 className="font-[var(--font-montserrat)] text-at-primary text-[72px] max-[991px]:text-[50px] font-extrabold leading-none">
+          <h2 className="font-[var(--font-montserrat)] text-at-primary font-extrabold leading-none break-words [overflow-wrap:anywhere] text-[40px] sm:text-[50px] lg:text-[72px]">
             {dict.solutions.heading}
           </h2>
 

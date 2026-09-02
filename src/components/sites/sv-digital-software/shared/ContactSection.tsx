@@ -111,9 +111,9 @@ export function ContactSection({ dict }: Props) {
           </div>
 
           {/* Social */}
-          <div className="flex items-center gap-3 bg-at-bg-soft border border-at-border rounded-2xl px-6 py-4 w-full justify-center">
+          <div className="flex items-center justify-center flex-wrap gap-x-2 gap-y-2 bg-at-bg-soft border border-at-border rounded-2xl px-4 sm:px-6 py-4 w-full">
             <span className="text-at-text-muted text-xs font-bold tracking-[0.1em] uppercase">{c.followUs}</span>
-            <span className="w-px h-4 bg-at-border" aria-hidden />
+            <span className="w-px h-4 bg-at-border hidden sm:block" aria-hidden />
             <a
               href={SOCIAL_LINKS.linkedin}
               target="_blank"

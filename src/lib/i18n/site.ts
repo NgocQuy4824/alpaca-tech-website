@@ -4,7 +4,7 @@
 import type { Metadata } from "next";
 import { LOCALES } from "./types";
 
-export const SITE_URL = "https://www.alpaca-tech.ai";
+export const SITE_URL = "https://www.svdigitalsoftware.com";
 export const BRAND_NAME = "SV Digital Software";
 
 // Contact details shown in the Contact section. Update these in one place.

@@ -75,8 +75,8 @@ export function CustomServiceContent({ dict, locale }: Props) {
                 {features.map((f) => {
                   const Icon = f.icon;
                   return (
-                    <li key={f.step} className="flex items-start gap-3 border border-at-border rounded-2xl bg-at-bg-soft px-5 py-4">
-                      <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-at-pink/12 text-at-primary shrink-0">
+                    <li key={f.step} className="group flex items-start gap-3 border border-at-border rounded-2xl bg-at-bg-soft px-5 py-4 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
+                      <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-at-pink/12 text-at-primary shrink-0 transition-all duration-300 group-hover:scale-110">
                         <Icon className="w-5 h-5" strokeWidth={1.75} />
                       </span>
                       <span className="text-at-text-dark text-sm font-medium leading-[1.6] font-[var(--font-noto-sans-jp)]">
@@ -98,11 +98,11 @@ export function CustomServiceContent({ dict, locale }: Props) {
                   {steps.map((step) => {
                     const Icon = step.icon;
                     return (
-                      <li key={step.step} className="flex flex-col items-center text-center">
-                        <span className="relative z-10 flex h-[52px] w-[52px] items-center justify-center rounded-full bg-at-primary text-white ring-[8px] ring-at-section">
+                      <li key={step.step} className="group flex flex-col items-center text-center">
+                        <span className="relative z-10 flex h-[52px] w-[52px] items-center justify-center rounded-full bg-at-primary text-white ring-[8px] ring-at-section transition-all duration-300 group-hover:scale-110">
                           <Icon className="h-5 w-5" strokeWidth={1.9} />
                         </span>
-                        <div className="mt-4 flex w-full flex-1 flex-col gap-2 rounded-2xl border border-at-border bg-at-bg-soft px-4 py-5">
+                        <div className="mt-4 flex w-full flex-1 flex-col gap-2 rounded-2xl border border-at-border bg-at-bg-soft px-4 py-5 transition-all duration-300 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                           <span className="font-[var(--font-montserrat)] text-[11px] font-extrabold tracking-[0.18em] text-at-pink">PHASE {step.step}</span>
                           <h3 className="text-[15px] font-bold leading-[1.4] text-at-primary font-[var(--font-noto-sans-jp)]">{step.title}</h3>
                           <p className="text-[13px] leading-[1.7] text-at-text-muted font-[var(--font-noto-sans-jp)]">{step.desc}</p>
@@ -123,7 +123,7 @@ export function CustomServiceContent({ dict, locale }: Props) {
                       <span className="relative z-10 flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-full bg-at-primary text-white">
                         <Icon className="h-[18px] w-[18px]" strokeWidth={1.9} />
                       </span>
-                      <div className="flex flex-1 flex-col gap-1.5 rounded-2xl border border-at-border bg-at-bg-soft px-5 py-4">
+                      <div className="flex flex-1 flex-col gap-1.5 rounded-2xl border border-at-border bg-at-bg-soft px-5 py-4 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                         <span className="font-[var(--font-montserrat)] text-[11px] font-extrabold tracking-[0.18em] text-at-pink">PHASE {step.step}</span>
                         <h3 className="text-[15px] font-bold text-at-primary font-[var(--font-noto-sans-jp)]">{step.title}</h3>
                         <p className="text-[13.5px] leading-[1.7] text-at-text-muted font-[var(--font-noto-sans-jp)]">{step.desc}</p>
@@ -144,7 +144,7 @@ export function CustomServiceContent({ dict, locale }: Props) {
               </div>
               <ul className="mt-8 grid gap-4 sm:grid-cols-2">
                 {s.benefits.items.map((item) => (
-                  <li key={item} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-4 backdrop-blur">
+                  <li key={item} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-4 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-at-pink/40 hover:bg-white/[0.12]">
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-at-pink text-at-primary">
                       <Check className="h-3.5 w-3.5" strokeWidth={3} />
                     </span>
@@ -173,7 +173,7 @@ export function CustomServiceContent({ dict, locale }: Props) {
               <SectionHeading>{s.projects.heading}</SectionHeading>
               <div className="grid md:grid-cols-3 gap-5">
                 {s.projects.items.map((p, i) => (
-                  <article key={p.title} className="group flex flex-col overflow-hidden rounded-2xl border border-at-border bg-at-bg-soft transition-colors hover:border-at-pink/40">
+                  <article key={p.title} className="group flex flex-col overflow-hidden rounded-2xl border border-at-border bg-at-bg-soft transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                     <div className="relative h-[180px] overflow-hidden bg-at-bg-soft">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img

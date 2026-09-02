@@ -56,7 +56,7 @@ export function LegacyServiceContent({ dict, locale }: Props) {
                 {s.values.items.map((v, i) => {
                   const Icon = VALUE_ICONS[i] ?? ShieldCheck;
                   return (
-                    <div key={v.title} className="flex flex-col gap-3 border border-at-border rounded-2xl bg-at-bg-soft p-6">
+                    <div key={v.title} className="flex flex-col gap-3 border border-at-border rounded-2xl bg-at-bg-soft p-6 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                       <span className="flex items-center justify-center w-12 h-12 rounded-2xl bg-at-primary text-white">
                         <Icon className="w-6 h-6" strokeWidth={1.75} />
                       </span>
@@ -79,7 +79,7 @@ export function LegacyServiceContent({ dict, locale }: Props) {
                   return (
                     <li
                       key={step.step}
-                      className="flex flex-col gap-3 rounded-2xl border border-at-border bg-at-bg-soft p-6 transition-colors hover:border-at-pink/40"
+                      className="flex flex-col gap-3 rounded-2xl border border-at-border bg-at-bg-soft p-6 transition-all duration-300 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]"
                       style={{ transform: `translateY(-${rise}px)` }}
                     >
                       <div className="flex items-center justify-between">
@@ -106,7 +106,7 @@ export function LegacyServiceContent({ dict, locale }: Props) {
                   const Icon = step.icon;
                   const isLast = idx === steps.length - 1;
                   return (
-                    <li key={step.step} className="relative flex flex-col gap-3 rounded-2xl border border-at-border bg-at-bg-soft p-6">
+                    <li key={step.step} className="relative flex flex-col gap-3 rounded-2xl border border-at-border bg-at-bg-soft p-6 transition-all duration-300 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                       <div className="flex items-center gap-3">
                         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-at-primary text-white">
                           <Icon className="h-5 w-5" strokeWidth={1.75} />
@@ -143,7 +143,7 @@ export function LegacyServiceContent({ dict, locale }: Props) {
                 {s.benefits.items.map((item) => (
                   <li
                     key={item}
-                    className="flex gap-4 rounded-2xl border border-at-border bg-at-section p-6 transition-colors hover:border-at-pink/30"
+                    className="flex gap-4 rounded-2xl border border-at-border bg-at-section p-6 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]"
                   >
                     <span aria-hidden className="w-1 shrink-0 self-stretch rounded-full bg-at-pink" />
                     <span className="flex-1 text-[14px] font-medium leading-[1.7] text-at-text-dark font-[var(--font-noto-sans-jp)] lg:text-[15px]">{item}</span>

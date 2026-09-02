@@ -59,7 +59,7 @@ export function TestingServiceContent({ dict, locale }: Props) {
                 {s.capabilities.items.map((cap, i) => {
                   const Icon = CAPABILITY_ICONS[i] ?? ClipboardCheck;
                   return (
-                    <article key={cap.title} className="flex gap-4 border border-at-border rounded-2xl bg-at-bg-soft p-6">
+                    <article key={cap.title} className="flex gap-4 border border-at-border rounded-2xl bg-at-bg-soft p-6 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                       <span className="flex items-center justify-center w-12 h-12 rounded-2xl bg-at-primary text-white shrink-0">
                         <Icon className="w-6 h-6" strokeWidth={1.75} />
                       </span>
@@ -100,7 +100,7 @@ export function TestingServiceContent({ dict, locale }: Props) {
                           <Icon className="h-[18px] w-[18px] shrink-0 text-at-pink" strokeWidth={2} />
                           <h3 className="text-[13px] font-bold leading-tight tracking-[0.02em] font-[var(--font-noto-sans-jp)]">{step.title}</h3>
                         </div>
-                        <div className="flex flex-1 flex-col gap-1.5 border border-at-border bg-at-bg-soft px-5 py-4">
+                        <div className="flex flex-1 flex-col gap-1.5 border border-at-border bg-at-bg-soft px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                           <span className="font-[var(--font-montserrat)] text-[11px] font-extrabold tracking-[0.16em] text-at-pink">STAGE {step.step}</span>
                           <p className="flex-1 text-[13px] leading-[1.7] text-at-text-muted font-[var(--font-noto-sans-jp)]">{step.desc}</p>
                         </div>
@@ -114,7 +114,7 @@ export function TestingServiceContent({ dict, locale }: Props) {
                 {steps.map((step) => {
                   const Icon = step.icon;
                   return (
-                    <li key={step.step} className="flex items-start gap-4 rounded-2xl border border-at-border bg-at-bg-soft px-5 py-4">
+                    <li key={step.step} className="flex items-start gap-4 rounded-2xl border border-at-border bg-at-bg-soft px-5 py-4 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                       <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-at-primary text-white">
                         <Icon className="h-[18px] w-[18px]" strokeWidth={2} />
                       </span>

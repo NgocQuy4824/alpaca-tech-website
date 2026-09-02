@@ -95,8 +95,11 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
               {d.values.items.map((v, i) => {
                 const Icon = VALUE_ICONS[i] ?? BadgeCheck;
                 return (
-                  <li key={v.title} className="flex flex-col gap-3 rounded-2xl border border-at-border bg-at-bg-soft p-6 transition-colors hover:border-at-pink/30">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-at-primary text-white">
+                  <li
+                    key={v.title}
+                    className="group flex flex-col gap-3 rounded-2xl border border-at-border bg-at-bg-soft p-6 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]"
+                  >
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-at-primary text-white transition-all duration-300 group-hover:scale-110 group-hover:bg-at-pink group-hover:text-at-primary">
                       <Icon className="h-6 w-6" strokeWidth={1.75} />
                     </span>
                     <h3 className="text-at-primary text-base font-bold font-[var(--font-noto-sans-jp)]">{v.title}</h3>
@@ -182,7 +185,7 @@ export function CompanyPageContent({ dict, locale }: { dict: Dictionary; locale:
               {d.partners.items.map((p) => (
                 <li
                   key={p}
-                  className="flex items-center justify-center rounded-2xl border border-at-border bg-at-bg-soft px-4 py-7 text-at-primary text-[15px] font-bold tracking-[0.04em] font-[var(--font-montserrat)] transition-colors hover:border-at-pink/40 hover:bg-at-section"
+                  className="flex items-center justify-center rounded-2xl border border-at-border bg-at-bg-soft px-4 py-7 text-at-primary text-[15px] font-bold tracking-[0.04em] font-[var(--font-montserrat)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.03] hover:border-at-pink/40 hover:bg-at-section hover:text-at-primary hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]"
                 >
                   {p}
                 </li>

@@ -76,7 +76,7 @@ export function MobileServiceContent({ dict, locale }: Props) {
 
                       {/* card — alternates left / right on desktop, always right of spine on mobile */}
                       <div className={`pl-[56px] lg:pl-0 ${isLeft ? "lg:col-start-1 lg:pr-12 lg:text-right" : "lg:col-start-2 lg:pl-12"}`}>
-                        <div className="rounded-2xl border border-at-border bg-at-bg-soft p-6 text-left transition-colors hover:border-at-pink/30">
+                        <div className="rounded-2xl border border-at-border bg-at-bg-soft p-6 text-left transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                           <div className={`flex items-center gap-2.5 ${isLeft ? "lg:flex-row-reverse" : ""}`}>
                             <span className="font-[var(--font-montserrat)] text-xs font-extrabold tracking-[0.18em] text-at-pink">{step.step}</span>
                             <span aria-hidden className="h-px w-6 bg-at-line lg:hidden" />
@@ -102,7 +102,7 @@ export function MobileServiceContent({ dict, locale }: Props) {
                 {s.benefits.items.map((item, i) => (
                   <li
                     key={item}
-                    className="relative overflow-hidden rounded-2xl border border-at-border bg-at-section p-6 pt-8 transition-colors hover:border-at-pink/25"
+                    className="relative overflow-hidden rounded-2xl border border-at-border bg-at-section p-6 pt-8 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]"
                   >
                     <span
                       aria-hidden
@@ -122,7 +122,7 @@ export function MobileServiceContent({ dict, locale }: Props) {
               <SectionHeading>{s.projects.heading}</SectionHeading>
               <div className="grid md:grid-cols-3 gap-5">
                 {s.projects.items.map((p, i) => (
-                  <article key={p.title} className="group flex flex-col overflow-hidden rounded-2xl border border-at-border bg-at-bg-soft transition-colors hover:border-at-pink/40">
+                  <article key={p.title} className="group flex flex-col overflow-hidden rounded-2xl border border-at-border bg-at-bg-soft transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]">
                     <div className="relative h-[180px] overflow-hidden bg-at-bg-soft">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img

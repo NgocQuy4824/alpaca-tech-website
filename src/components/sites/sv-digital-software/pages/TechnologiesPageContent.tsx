@@ -87,9 +87,9 @@ export function TechnologiesPageContent({ dict, locale }: Props) {
                         {cat.items.map((item) => (
                           <div
                             key={item.name}
-                            className="group border border-at-border rounded-2xl bg-at-bg-soft px-4 py-6 flex flex-col items-center gap-3 hover:border-at-pink/40 hover:bg-at-section transition-colors"
+                            className="group border border-at-border rounded-2xl bg-at-bg-soft px-4 py-6 flex flex-col items-center gap-3 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.03] hover:border-at-pink/40 hover:bg-at-section hover:shadow-[0_16px_40px_rgba(45,56,100,0.14)]"
                           >
-                            <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-white border border-at-border/80 group-hover:border-at-pink/30 transition-colors">
+                            <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-white border border-at-border/80 transition-all duration-300 group-hover:scale-110 group-hover:border-at-pink/40">
                               {item.logo ? (
                                 // eslint-disable-next-line @next/next/no-img-element
                                 <img src={item.logo} alt="" loading="lazy" className="w-7 h-7 object-contain" />

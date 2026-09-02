@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { LOCALES } from "@/lib/i18n/types";
 import { absoluteUrl, buildAlternates } from "@/lib/i18n/site";
 import { SERVICE_SLUGS } from "@/lib/services";
+import { JOB_SLUGS } from "@/lib/jobs";
 
 const paths = [
   "",
@@ -10,6 +11,7 @@ const paths = [
   "/technologies",
   "/company",
   "/recruit",
+  ...JOB_SLUGS.map((slug) => `/recruit/${slug}`),
   "/contact",
 ];
 

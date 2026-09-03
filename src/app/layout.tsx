@@ -103,6 +103,8 @@ const organizationJsonLd = {
 };
 
 export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
   themeColor: "#2D3864",
   colorScheme: "light",
 };

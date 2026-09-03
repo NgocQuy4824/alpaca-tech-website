@@ -7,7 +7,7 @@ import { HeroLottie } from "@/components/HeroLottie";
 export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
 
   return (
-    <section className="relative bg-gradient-to-br from-at-primary to-at-secondary flex justify-center items-center min-h-[100vh] overflow-hidden px-5 lg:px-[76px] pb-[50px] lg:pb-[50px] pt-[100px]">
+    <section className="relative bg-gradient-to-br from-at-primary to-at-secondary flex justify-center items-center min-h-[100svh] overflow-hidden px-5 lg:px-[76px] max-[375px]:px-4 pb-[40px] sm:pb-[50px] pt-[96px] sm:pt-[108px]">
       <div
         aria-hidden
         className="absolute inset-0 opacity-40"
@@ -28,13 +28,13 @@ export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
         <HeroLottie variant="mobile" className="w-full h-[220px] opacity-45" />
       </div>
 
-      <div className="relative z-10 w-full max-w-[1288px] flex flex-col justify-end h-full min-h-[calc(100vh-120px)]">
+      <div className="relative z-10 w-full max-w-[1288px] flex flex-col justify-end h-full min-h-[calc(100svh-120px)]">
         <div className="max-w-[897px] animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          <h1 className="font-[var(--font-montserrat)] text-white text-[28px] sm:text-[42px] lg:text-[50px] font-bold leading-[1.6] tracking-[0.04em]">
+          <h1 className="font-[var(--font-montserrat)] text-white font-bold leading-[1.15] tracking-[0.04em] break-words [overflow-wrap:anywhere] text-[32px] max-[375px]:text-[28px] sm:text-[36px] lg:text-[50px]">
             {dict.hero.titleLine1} <br />
             {dict.hero.titleLine2}
           </h1>
-          <p className="text-white text-xs lg:text-sm leading-[2] tracking-[0.04em] mt-4 max-w-[820px] font-[var(--font-noto-sans-jp)]">
+          <p className="text-white text-sm leading-[1.7] sm:leading-[2] tracking-[0.04em] mt-4 max-w-[820px] font-[var(--font-noto-sans-jp)] break-words">
             {dict.hero.subtitle}
           </p>
 

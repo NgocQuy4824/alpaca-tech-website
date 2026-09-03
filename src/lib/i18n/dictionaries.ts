@@ -370,12 +370,12 @@ export const en = {
     applyBody:
       "Dear SV Digital Software Hiring Team,\n\nI would like to apply for the {title} position.\n\nFull name: \nEmail: \nPhone: \nLocation: \nYears of experience: \nPortfolio / LinkedIn: \n\nMessage: \n\n\nThank you for your consideration.",
     jobs: [
-      { slug: "full-stack-engineer", title: "Full-Stack Engineer — React / Next.js / Node.js", location: "Remote", type: "Full-time", desc: "Design and ship end-to-end web applications — from responsive frontends with React and Next.js to scalable Node.js APIs and databases." },
-      { slug: "data-engineer", title: "Data Engineer — Snowflake / dbt / Cloud", location: "Remote", type: "Full-time", desc: "Build and maintain modern data platforms — warehouse modelling, dbt transformations and cloud pipelines that turn raw data into trusted analytics." },
-      { slug: "ai-engineer", title: "AI Engineer — LLMs & Generative Data Agents", location: "Remote", type: "Full-time", desc: "Develop LLM-powered features and generative data agents — retrieval, tool-calling and evaluation for production AI products." },
-      { slug: "product-manager", title: "Product Manager — Data & AI Products", location: "Remote", type: "Full-time", desc: "Own the roadmap for data and AI products — translate customer needs into clear specs and drive delivery with engineering and design." },
-      { slug: "platform-engineer", title: "Software Engineer — Platform & Infrastructure", location: "Remote", type: "Full-time", desc: "Build the foundations our products run on — CI/CD, cloud infrastructure, observability and developer tooling." },
-      { slug: "uiux-designer", title: "UI/UX Designer — Design Systems & Product", location: "Remote", type: "Full-time", desc: "Craft intuitive interfaces and maintain our design system — from research and wireframes to polished, accessible product screens." },
+      { slug: "full-stack-engineer", title: "Full-Stack Engineer — React / Next.js / Node.js", shortTitle: "Full-Stack Engineer", location: "Remote", type: "Full-time", desc: "Design and ship end-to-end web applications — from responsive frontends with React and Next.js to scalable Node.js APIs and databases." },
+      { slug: "data-engineer", title: "Data Engineer — Snowflake / dbt / Cloud", shortTitle: "Data Engineer", location: "Remote", type: "Full-time", desc: "Build and maintain modern data platforms — warehouse modelling, dbt transformations and cloud pipelines that turn raw data into trusted analytics." },
+      { slug: "ai-engineer", title: "AI Engineer — LLMs & Generative Data Agents", shortTitle: "AI Engineer", location: "Remote", type: "Full-time", desc: "Develop LLM-powered features and generative data agents — retrieval, tool-calling and evaluation for production AI products." },
+      { slug: "product-manager", title: "Product Manager — Data & AI Products", shortTitle: "Product Manager", location: "Remote", type: "Full-time", desc: "Own the roadmap for data and AI products — translate customer needs into clear specs and drive delivery with engineering and design." },
+      { slug: "platform-engineer", title: "Software Engineer — Platform & Infrastructure", shortTitle: "Software Engineer", location: "Remote", type: "Full-time", desc: "Build the foundations our products run on — CI/CD, cloud infrastructure, observability and developer tooling." },
+      { slug: "uiux-designer", title: "UI/UX Designer — Design Systems & Product", shortTitle: "UI/UX Designer", location: "Remote", type: "Full-time", desc: "Craft intuitive interfaces and maintain our design system — from research and wireframes to polished, accessible product screens." },
     ],
     jobDetail: {
       backToJobs: "Back to all positions",
@@ -908,12 +908,12 @@ export const vi: Dictionary = {
     applyBody:
       "Kính gửi Bộ phận Tuyển dụng SV Digital Software,\n\nTôi muốn ứng tuyển vị trí {title}.\n\nHọ và tên: \nEmail: \nĐiện thoại: \nĐịa chỉ: \nSố năm kinh nghiệm: \nPortfolio / LinkedIn: \n\nLời nhắn: \n\n\nXin cảm ơn.",
     jobs: [
-      { slug: "full-stack-engineer", title: "Kỹ sư Full-Stack — React / Next.js / Node.js", location: "Từ xa", type: "Toàn thời gian", desc: "Thiết kế và phát triển ứng dụng web trọn vẹn — từ frontend responsive với React và Next.js đến API Node.js và cơ sở dữ liệu mở rộng được." },
-      { slug: "data-engineer", title: "Kỹ sư Dữ liệu — Snowflake / dbt / Cloud", location: "Từ xa", type: "Toàn thời gian", desc: "Xây dựng và bảo trì nền tảng dữ liệu hiện đại — mô hình hoá kho dữ liệu, transformation với dbt và pipeline cloud biến dữ liệu thô thành phân tích đáng tin cậy." },
-      { slug: "ai-engineer", title: "Kỹ sư AI — LLM & Tác nhân dữ liệu tạo sinh", location: "Từ xa", type: "Toàn thời gian", desc: "Phát triển tính năng dựa trên LLM và tác nhân dữ liệu tạo sinh — retrieval, tool-calling và đánh giá cho sản phẩm AI production." },
-      { slug: "product-manager", title: "Quản lý Sản phẩm — Sản phẩm Dữ liệu & AI", location: "Từ xa", type: "Toàn thời gian", desc: "Sở hữu lộ trình sản phẩm dữ liệu & AI — chuyển nhu cầu khách hàng thành đặc tả rõ ràng và dẫn dắt triển khai cùng kỹ thuật và thiết kế." },
-      { slug: "platform-engineer", title: "Kỹ sư Phần mềm — Nền tảng & Hạ tầng", location: "Từ xa", type: "Toàn thời gian", desc: "Xây dựng nền tảng vận hành sản phẩm — CI/CD, hạ tầng cloud, observability và công cụ cho developer." },
-      { slug: "uiux-designer", title: "Thiết kế UI/UX — Hệ thống Thiết kế & Sản phẩm", location: "Từ xa", type: "Toàn thời gian", desc: "Thiết kế giao diện trực quan và duy trì design system — từ nghiên cứu, wireframe đến màn hình sản phẩm hoàn thiện, dễ tiếp cận." },
+      { slug: "full-stack-engineer", title: "Kỹ sư Full-Stack — React / Next.js / Node.js", shortTitle: "Kỹ sư Full-Stack", location: "Từ xa", type: "Toàn thời gian", desc: "Thiết kế và phát triển ứng dụng web trọn vẹn — từ frontend responsive với React và Next.js đến API Node.js và cơ sở dữ liệu mở rộng được." },
+      { slug: "data-engineer", title: "Kỹ sư Dữ liệu — Snowflake / dbt / Cloud", shortTitle: "Kỹ sư Dữ liệu", location: "Từ xa", type: "Toàn thời gian", desc: "Xây dựng và bảo trì nền tảng dữ liệu hiện đại — mô hình hoá kho dữ liệu, transformation với dbt và pipeline cloud biến dữ liệu thô thành phân tích đáng tin cậy." },
+      { slug: "ai-engineer", title: "Kỹ sư AI — LLM & Tác nhân dữ liệu tạo sinh", shortTitle: "Kỹ sư AI", location: "Từ xa", type: "Toàn thời gian", desc: "Phát triển tính năng dựa trên LLM và tác nhân dữ liệu tạo sinh — retrieval, tool-calling và đánh giá cho sản phẩm AI production." },
+      { slug: "product-manager", title: "Quản lý Sản phẩm — Sản phẩm Dữ liệu & AI", shortTitle: "Quản lý Sản phẩm", location: "Từ xa", type: "Toàn thời gian", desc: "Sở hữu lộ trình sản phẩm dữ liệu & AI — chuyển nhu cầu khách hàng thành đặc tả rõ ràng và dẫn dắt triển khai cùng kỹ thuật và thiết kế." },
+      { slug: "platform-engineer", title: "Kỹ sư Phần mềm — Nền tảng & Hạ tầng", shortTitle: "Kỹ sư Phần mềm", location: "Từ xa", type: "Toàn thời gian", desc: "Xây dựng nền tảng vận hành sản phẩm — CI/CD, hạ tầng cloud, observability và công cụ cho developer." },
+      { slug: "uiux-designer", title: "Thiết kế UI/UX — Hệ thống Thiết kế & Sản phẩm", shortTitle: "Thiết kế UI/UX", location: "Từ xa", type: "Toàn thời gian", desc: "Thiết kế giao diện trực quan và duy trì design system — từ nghiên cứu, wireframe đến màn hình sản phẩm hoàn thiện, dễ tiếp cận." },
     ],
     jobDetail: {
       backToJobs: "Quay lại tất cả vị trí",
@@ -1444,12 +1444,12 @@ export const lo: Dictionary = {
     applyBody:
       "ຮຽນ ພະແນກຮັບສະໝັກງານ SV Digital Software,\n\nຂ້ອຍຢາກສະໝັກຕຳແໜ່ງ {title}.\n\nຊື່ ແລະ ນາມສະກຸນ: \nອີເມວ: \nໂທລະສັບ: \nທີ່ຢູ່: \nຈຳນວນປີປະສົບການ: \nPortfolio / LinkedIn: \n\nຂໍ້ຄວາມ: \n\n\nຂອບໃຈ.",
     jobs: [
-      { slug: "full-stack-engineer", title: "ວິສະວະກອນ Full-Stack — React / Next.js / Node.js", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ອອກແບບ ແລະ ພັດທະນາແອັບເວັບຄົບວົງຈອນ — ຕັ້ງແຕ່ frontend responsive ດ້ວຍ React ແລະ Next.js ຈົນເຖິງ API Node.js ແລະ ຖານຂໍ້ມູນທີ່ຂະຫຍາຍໄດ້." },
-      { slug: "data-engineer", title: "ວິສະວະກອນຂໍ້ມູນ — Snowflake / dbt / Cloud", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ສ້າງ ແລະ ບຳລຸງຮັກສາແພລດຟອມຂໍ້ມູນທັນສະໄໝ — ານສ້າງແບບຈຳລອງຄັງຂໍ້ມູນ, transformation ດ້ວຍ dbt ແລະ pipeline cloud." },
-      { slug: "ai-engineer", title: "ວິສະວະກອນ AI — LLM & ຕົວແທນຂໍ້ມູນສ້າງສັນ", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ພັດທະນາຟີເຈີທີ່ໃຊ້ LLM ແລະ ຕົວແທນຂໍ້ມູນສ້າງສັນ — retrieval, tool-calling ແລະ ການປະເມີນສຳລັບຜະລິດຕະພັນ AI ໃນ production." },
-      { slug: "product-manager", title: "ຜູ້ຈັດການຜະລິດຕະພັນ — ຜະລິດຕະພັນຂໍ້ມູນ & AI", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ຮັບຜິດຊອບແຜນງານຜະລິດຕະພັນຂໍ້ມູນ & AI — ແປຄວາມຕ້ອງການລູກຄ້າເປັນສະເປັກທີ່ຊັດເຈນ ແລະ ນຳພາການສົ່ງມອບ." },
-      { slug: "platform-engineer", title: "ວິສະວະກອນຊອບແວ — ແພລດຟອມ & ໂຄງລ່າງ", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ສ້າງພື້ນຖານທີ່ຜະລິດຕະພັນຂອງພວກເຮົາເຮັດວຽກ — CI/CD, ໂຄງລ່າງ cloud, observability ແລະ ເຄື່ອງມືສຳລັບ developer." },
-      { slug: "uiux-designer", title: "ນັກອອກແບບ UI/UX — ລະບົບອອກແບບ & ຜະລິດຕະພັນ", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ອອກແບບໜ້າຈໍທີ່ເຂົ້າໃຈງ່າຍ ແລະ ຮັກສາ design system — ຕັ້ງແຕ່ການຄົ້ນຄວ້າ, wireframe ຈົນເຖິງໜ້າຈໍຜະລິດຕະພັນທີ່ສົມບູນ." },
+      { slug: "full-stack-engineer", title: "ວິສະວະກອນ Full-Stack — React / Next.js / Node.js", shortTitle: "ວິສະວະກອນ Full-Stack", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ອອກແບບ ແລະ ພັດທະນາແອັບເວັບຄົບວົງຈອນ — ຕັ້ງແຕ່ frontend responsive ດ້ວຍ React ແລະ Next.js ຈົນເຖິງ API Node.js ແລະ ຖານຂໍ້ມູນທີ່ຂະຫຍາຍໄດ້." },
+      { slug: "data-engineer", title: "ວິສະວະກອນຂໍ້ມູນ — Snowflake / dbt / Cloud", shortTitle: "ວິສະວະກອນຂໍ້ມູນ", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ສ້າງ ແລະ ບຳລຸງຮັກສາແພລດຟອມຂໍ້ມູນທັນສະໄໝ — ານສ້າງແບບຈຳລອງຄັງຂໍ້ມູນ, transformation ດ້ວຍ dbt ແລະ pipeline cloud." },
+      { slug: "ai-engineer", title: "ວິສະວະກອນ AI — LLM & ຕົວແທນຂໍ້ມູນສ້າງສັນ", shortTitle: "ວິສະວະກອນ AI", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ພັດທະນາຟີເຈີທີ່ໃຊ້ LLM ແລະ ຕົວແທນຂໍ້ມູນສ້າງສັນ — retrieval, tool-calling ແລະ ການປະເມີນສຳລັບຜະລິດຕະພັນ AI ໃນ production." },
+      { slug: "product-manager", title: "ຜູ້ຈັດການຜະລິດຕະພັນ — ຜະລິດຕະພັນຂໍ້ມູນ & AI", shortTitle: "ຜູ້ຈັດການຜະລິດຕະພັນ", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ຮັບຜິດຊອບແຜນງານຜະລິດຕະພັນຂໍ້ມູນ & AI — ແປຄວາມຕ້ອງການລູກຄ້າເປັນສະເປັກທີ່ຊັດເຈນ ແລະ ນຳພາການສົ່ງມອບ." },
+      { slug: "platform-engineer", title: "ວິສະວະກອນຊອບແວ — ແພລດຟອມ & ໂຄງລ່າງ", shortTitle: "ວິສະວະກອນຊອບແວ", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ສ້າງພື້ນຖານທີ່ຜະລິດຕະພັນຂອງພວກເຮົາເຮັດວຽກ — CI/CD, ໂຄງລ່າງ cloud, observability ແລະ ເຄື່ອງມືສຳລັບ developer." },
+      { slug: "uiux-designer", title: "ນັກອອກແບບ UI/UX — ລະບົບອອກແບບ & ຜະລິດຕະພັນ", shortTitle: "ນັກອອກແບບ UI/UX", location: "ຈາກໄກ", type: "ເຕັມເວລາ", desc: "ອອກແບບໜ້າຈໍທີ່ເຂົ້າໃຈງ່າຍ ແລະ ຮັກສາ design system — ຕັ້ງແຕ່ການຄົ້ນຄວ້າ, wireframe ຈົນເຖິງໜ້າຈໍຜະລິດຕະພັນທີ່ສົມບູນ." },
     ],
     jobDetail: {
       backToJobs: "ກັບຄືນຫາທຸກຕຳແໜ່ງ",

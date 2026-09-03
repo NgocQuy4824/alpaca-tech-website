@@ -82,8 +82,8 @@ export function JobDetailPageContent({ dict, locale, slug }: Props) {
     <main className="flex flex-col">
       <JsonLd data={jobPosting} />
       <PageHero
-        title={job.title}
-        current={job.title}
+        title={job.shortTitle}
+        current={job.shortTitle}
         locale={locale}
         parent={{ label: d.heroTitle, href: `/${locale}/recruit` }}
       />

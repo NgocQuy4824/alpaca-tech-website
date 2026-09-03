@@ -40,8 +40,10 @@ export function Header({ locale }: Props) {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
+    document.body.style.touchAction = menuOpen ? "none" : "";
     return () => {
       document.body.style.overflow = "";
+      document.body.style.touchAction = "";
     };
   }, [menuOpen]);
 
@@ -65,6 +67,7 @@ export function Header({ locale }: Props) {
   };
 
   return (
+    <>
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
@@ -178,20 +181,26 @@ export function Header({ locale }: Props) {
         <button
           type="button"
           onClick={() => setMenuOpen((v) => !v)}
-          className="lg:hidden flex items-center justify-center w-11 h-11 rounded-full text-white hover:bg-white/10 transition-colors"
+          className="relative z-50 lg:hidden flex items-center justify-center w-11 h-11 -m-2 p-2 rounded-full text-white hover:bg-white/10 transition-colors"
           aria-label={menuOpen ? dict.header.closeMenu : dict.header.openMenu}
           aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
+    </header>
 
-      <div
-        className={`lg:hidden fixed inset-0 top-0 z-40 bg-at-primary/98 backdrop-blur-2xl transition-all duration-500 ${
-          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
-      >
-        <div className="flex flex-col h-full pt-28 pb-10 px-8 overflow-y-auto">
+    <div
+      id="mobile-menu"
+      className={`lg:hidden fixed inset-0 z-40 bg-at-primary/98 backdrop-blur-2xl transition-opacity duration-500 ${
+        menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+      }`}
+    >
+        <div
+          className="flex flex-col h-full pt-28 pb-10 px-8 overflow-y-auto overscroll-contain"
+          style={{ WebkitOverflowScrolling: "touch" }}
+        >
           <nav className="flex flex-col flex-1">
             {NAV_ITEMS.map((item, i) =>
               item.children ? (
@@ -277,6 +286,6 @@ export function Header({ locale }: Props) {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }

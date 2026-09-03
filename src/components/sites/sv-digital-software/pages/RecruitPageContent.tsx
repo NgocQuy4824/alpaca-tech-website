@@ -68,7 +68,7 @@ export function RecruitPageContent({ dict, locale }: Props) {
                     key={job.slug}
                     className="flex flex-col gap-4 rounded-2xl border border-at-border bg-at-bg-soft p-6 transition-colors hover:border-at-pink/40"
                   >
-                    <h3 className="text-at-primary text-lg font-bold leading-[1.4] font-[var(--font-noto-sans-jp)]">{job.title}</h3>
+                    <h3 className="text-at-primary text-lg font-bold leading-[1.4] font-[var(--font-noto-sans-jp)]">{job.shortTitle}</h3>
 
                     <div className="flex flex-wrap gap-2">
                       <span className="inline-flex items-center gap-1.5 rounded-full border border-at-border bg-at-section px-3 py-1 text-xs font-medium text-at-text-muted">

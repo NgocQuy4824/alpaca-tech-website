@@ -101,6 +101,13 @@ export const en = {
       custom: "Custom Software Development",
       testing: "Testing Services",
       legacy: "Legacy System Migration",
+      lowcode: "Low-code Development",
+      cloud: "Cloud Services",
+      ai: "AI Solutions",
+    },
+    groups: {
+      outsourcing: "Software Outsourcing Services",
+      advanced: "Advanced Technologies",
     },
     crossLinksHeading: "OTHER SERVICES",
     mobile: {
@@ -300,6 +307,124 @@ export const en = {
       cta: {
         title: "Ready to modernize your systems?",
         desc: "Tell us about your legacy platform and we'll map a safe, staged migration path to a modern foundation.",
+        contactUs: "Contact Us",
+      },
+    },
+    lowcode: {
+      heroTitle: "Low-code Development",
+      intro:
+        "We accelerate delivery with visual, configuration-driven low-code platforms — combining prebuilt components with custom extensions so you ship reliable apps in weeks, not quarters.",
+      capabilities: {
+        heading: "WHAT WE DELIVER",
+        items: [
+          { title: "Rapid app assembly", desc: "Build forms, screens and reports from visual, configuration-driven tooling." },
+          { title: "Workflow automation", desc: "Model business processes with rules, approvals and automated hand-offs." },
+          { title: "Integrations", desc: "Connect your data and systems through API connectors and prebuilt components." },
+          { title: "Custom extensions", desc: "Add bespoke code exactly where the platform's native capabilities end." },
+          { title: "Governance & training", desc: "Hand over ownership, train your team and manage the app lifecycle." },
+        ],
+      },
+      process: {
+        heading: "HOW WE DELIVER",
+        steps: [
+          { step: "01", title: "Model", desc: "Map your domain and processes into data models and workflow diagrams." },
+          { step: "02", title: "Compose", desc: "Assemble screens, rules and data flows from the platform's visual tooling." },
+          { step: "03", title: "Extend", desc: "Implement custom logic or integrations beyond the platform's native capabilities." },
+          { step: "04", title: "Validate", desc: "Run through functional, integration and UAT checkpoints before release." },
+          { step: "05", title: "Evolve", desc: "Train your team and govern future change so the app scales with demand." },
+        ],
+      },
+      platforms: {
+        heading: "PLATFORMS WE BUILD ON",
+        items: ["OutSystems", "Mendix", "Appian", "Microsoft Power Platform", "ServiceNow"],
+      },
+      benefits: {
+        heading: "WHY CHOOSE US",
+        items: [
+          "Faster delivery on proven low-code platforms",
+          "Business teams can own changes without code",
+          "Deep integrations with your existing systems",
+          "Enterprise-grade security and governance",
+          "Upgrade paths when low-code hits its limits",
+        ],
+      },
+      projects: {
+        heading: "FEATURED PROJECTS",
+        items: [
+          { title: "Loan Workflow Automation", desc: "A low-code loan origination workflow with automated approvals and document generation.", stack: ["OutSystems", "PostgreSQL", "REST"] },
+          { title: "Field Operations Portal", desc: "A field-inspection portal with offline-ready forms and real-time dashboards.", stack: ["Mendix", "Azure", "Power BI"] },
+          { title: "HR Self-service App", desc: "An employee self-service app for leave, onboarding and approvals across devices.", stack: ["Appian", "AWS", "SSO"] },
+        ],
+      },
+      cta: {
+        title: "Ship faster with low-code?",
+        desc: "Show us the process that hurts and we'll map a low-code path to automate it.",
+        contactUs: "Contact Us",
+      },
+    },
+    cloud: {
+      heroTitle: "Cloud Services",
+      intro:
+        "We design, migrate and operate cloud infrastructure that is secure, observable and cost-aware — from landing zones and platform engineering to 24/7 operations.",
+      pillars: {
+        heading: "OUR CLOUD PILLARS",
+        nut: "Security",
+        bolt: "Cost Control",
+        items: [
+          { title: "Land & Migrate", desc: "Assess, plan and migrate workloads to the right cloud with minimal downtime." },
+          { title: "Platform & IaC", desc: "Provision landing zones, networks and platforms with infrastructure-as-code." },
+          { title: "Observe & Secure", desc: "Instrument monitoring, logging and guardrails from day one." },
+          { title: "Operate & Optimize", desc: "Run, tune and continuously optimize for reliability, cost and performance." },
+        ],
+      },
+      certifications: {
+        heading: "CERTIFIED & BATTLE-TESTED",
+        items: ["AWS", "GCP", "Azure", "Kubernetes", "Terraform"],
+      },
+      cta: {
+        title: "Ready for a well-architected cloud?",
+        desc: "Tell us where you run today and where you want to scale — we'll chart the move.",
+        contactUs: "Contact Us",
+      },
+    },
+    ai: {
+      heroTitle: "AI Solutions",
+      intro:
+        "We embed AI where it creates measurable value — from data pipelines and feature stores to LLM-powered agents and retrieval. Our AI team pairs research judgement with production discipline.",
+      capabilities: {
+        heading: "CAPABILITIES",
+        items: [
+          { title: "Data & Feature Engineering", desc: "Curate, label and transform data into reliable features for training and inference." },
+          { title: "Models & Fine-tuning", desc: "Select, fine-tune and evaluate models — from classic ML to LLMs and VLMs." },
+          { title: "Retrieval & Agents", desc: "Build RAG pipelines and tool-calling agents that act on your data and workflows." },
+        ],
+      },
+      steps: {
+        heading: "FROM DATA TO VALUE",
+        headingSuffix: "— How Intelligence Flows",
+        items: [
+          { step: "Data", desc: "Collect and curate trusted, labeled data from your systems." },
+          { step: "Feature", desc: "Engineer features and embeddings that carry the right signal." },
+          { step: "Model", desc: "Train, fine-tune and evaluate the right model for the job." },
+          { step: "Deploy", desc: "Serve and observe it reliably in production." },
+          { step: "Value", desc: "Link every deployment to a measurable business outcome." },
+        ],
+      },
+      stack: {
+        heading: "OUR STACK",
+        items: ["OpenAI", "Azure AI", "LangChain", "Pinecone", "Snowflake", "dbt"],
+      },
+      projects: {
+        heading: "AI IN PRODUCTION",
+        items: [
+          { title: "Document Intelligence Agent", desc: "An agent that classifies, extracts and routes documents across enterprise systems.", stack: ["OpenAI", "LangChain", "Azure"] },
+          { title: "Demand Forecast Model", desc: "A time-series model improving forecast accuracy across retail channels.", stack: ["Python", "Snowflake", "dbt"] },
+          { title: "Support Assistant", desc: "A RAG assistant that answers from your knowledge base with cited sources.", stack: ["RAG", "Pinecone", "Next.js"] },
+        ],
+      },
+      cta: {
+        title: "Have an AI use case?",
+        desc: "Describe the workflow you want to make intelligent and we'll scope a path from data to deployment.",
         contactUs: "Contact Us",
       },
     },
@@ -639,6 +764,13 @@ export const vi: Dictionary = {
       custom: "Phát triển phần mềm theo yêu cầu",
       testing: "Dịch vụ kiểm thử",
       legacy: "Chuyển đổi hệ thống",
+      lowcode: "Phát triển Low-code",
+      cloud: "Dịch vụ Cloud",
+      ai: "Giải pháp AI",
+    },
+    groups: {
+      outsourcing: "Dịch vụ Gia công phần mềm",
+      advanced: "Công nghệ tiên tiến",
     },
     crossLinksHeading: "DỊCH VỤ KHÁC",
     mobile: {
@@ -838,6 +970,124 @@ export const vi: Dictionary = {
       cta: {
         title: "Sẵn sàng hiện đại hóa hệ thống?",
         desc: "Kể về nền tảng legacy của bạn và chúng tôi sẽ vạch lộ trình di chuyển an toàn, theo từng giai đoạn lên nền tảng hiện đại.",
+        contactUs: "Liên hệ",
+      },
+    },
+    lowcode: {
+      heroTitle: "Phát triển Low-code",
+      intro:
+        "Chúng tôi đẩy nhanh tiến độ bàn giao bằng các nền tảng low-code trực quan, cấu hình-driven — kết hợp thành phần dựng sẵn với phần mở rộng tùy chỉnh để bạn ra mắt ứng dụng tin cậy trong vài tuần thay vì vài quý.",
+      capabilities: {
+        heading: "CHÚNG TÔI CUNG CẤP",
+        items: [
+          { title: "Lắp ráp ứng dụng nhanh", desc: "Xây dựng form, màn hình và báo cáo từ công cụ trực quan, cấu hình-driven." },
+          { title: "Tự động hóa quy trình", desc: "Mô hình hoá quy trình nghiệp vụ với quy tắc, phê duyệt và chuyển giao tự động." },
+          { title: "Tích hợp hệ thống", desc: "Kết nối dữ liệu và hệ thống của bạn qua connector API và thành phần dựng sẵn." },
+          { title: "Phần mở rộng tùy chỉnh", desc: "Bổ sung code tùy biến đúng nơi khả năng gốc của nền tảng dừng lại." },
+          { title: "Quản trị & đào tạo", desc: "Bàn giao quyền sở hữu, đào tạo đội ngũ và quản lý vòng đời ứng dụng." },
+        ],
+      },
+      process: {
+        heading: "CÁCH CHÚNG TÔI THỰC HIỆN",
+        steps: [
+          { step: "01", title: "Mô hình hoá", desc: "Ánh xạ miền và quy trình của bạn thành mô hình dữ liệu và sơ đồ quy trình." },
+          { step: "02", title: "Lắp ghép", desc: "Ghép màn hình, quy tắc và luồng dữ liệu từ công cụ trực quan của nền tảng." },
+          { step: "03", title: "Mở rộng", desc: "Triển khai logic tùy chỉnh hoặc tích hợp vượt ngoài khả năng gốc của nền tảng." },
+          { step: "04", title: "Kiểm chứng", desc: "Chạy qua các mốc kiểm thử chức năng, tích hợp và UAT trước khi phát hành." },
+          { step: "05", title: "Tiến hoá", desc: "Đào tạo đội ngũ và quản trị thay đổi để ứng dụng mở rộng theo nhu cầu." },
+        ],
+      },
+      platforms: {
+        heading: "NỀN TẢNG CHÚNG TÔI XÂY DỰNG",
+        items: ["OutSystems", "Mendix", "Appian", "Microsoft Power Platform", "ServiceNow"],
+      },
+      benefits: {
+        heading: "VÌ SAO CHỌN CHÚNG TÔI",
+        items: [
+          "Bàn giao nhanh hơn trên các nền tảng low-code đã kiểm chứng",
+          "Đội nghiệp vụ tự thay đổi mà không cần code",
+          "Tích hợp sâu với các hệ thống hiện có của bạn",
+          "Bảo mật và quản trị đạt chuẩn doanh nghiệp",
+          "Lộ trình nâng cấp khi low-code chạm giới hạn",
+        ],
+      },
+      projects: {
+        heading: "DỰ ÁN TIÊU BIỂU",
+        items: [
+          { title: "Tự động hoá quy trình cho vay", desc: "Quy trình khởi tạo khoản vay low-code với phê duyệt tự động và sinh tài liệu.", stack: ["OutSystems", "PostgreSQL", "REST"] },
+          { title: "Cổng vận hành hiện trường", desc: "Cổng kiểm tra hiện trường với form hoạt động offline và dashboard thời gian thực.", stack: ["Mendix", "Azure", "Power BI"] },
+          { title: "Ứng dụng self-service nhân sự", desc: "Ứng dụng self-service cho nghỉ phép, onboarding và phê duyệt trên mọi thiết bị.", stack: ["Appian", "AWS", "SSO"] },
+        ],
+      },
+      cta: {
+        title: "Ra mắt nhanh hơn với low-code?",
+        desc: "Cho chúng tôi thấy quy trình đang gây khó và chúng tôi sẽ vạch lộ trình low-code để tự động hoá nó.",
+        contactUs: "Liên hệ",
+      },
+    },
+    cloud: {
+      heroTitle: "Dịch vụ Cloud",
+      intro:
+        "Chúng tôi thiết kế, di chuyển và vận hành hạ tầng cloud an toàn, quan sát được và tối ưu chi phí — từ landing zone và kỹ thuật nền tảng đến vận hành 24/7.",
+      pillars: {
+        heading: "TRỤ CỘT CLOUD CỦA CHÚNG TÔI",
+        nut: "Bảo mật",
+        bolt: "Kiểm soát chi phí",
+        items: [
+          { title: "Định vị & Di chuyển", desc: "Đánh giá, lập kế hoạch và di chuyển workload lên đúng cloud với thời gian gián đoạn tối thiểu." },
+          { title: "Nền tảng & IaC", desc: "Cấp phát landing zone, mạng và nền tảng bằng infrastructure-as-code." },
+          { title: "Quan sát & Bảo mật", desc: "Thiết lập giám sát, log và hàng rào bảo vệ ngay từ ngày đầu." },
+          { title: "Vận hành & Tối ưu", desc: "Vận hành, tinh chỉnh và tối ưu liên tục cho độ tin cậy, chi phí và hiệu năng." },
+        ],
+      },
+      certifications: {
+        heading: "CHỨNG CHỈ & THỰC CHIẾN",
+        items: ["AWS", "GCP", "Azure", "Kubernetes", "Terraform"],
+      },
+      cta: {
+        title: "Sẵn sàng cho một cloud được thiết kế chuẩn?",
+        desc: "Kể chúng tôi bạn đang chạy ở đâu và muốn mở rộng tới đâu — chúng tôi sẽ vạch lộ trình di chuyển.",
+        contactUs: "Liên hệ",
+      },
+    },
+    ai: {
+      heroTitle: "Giải pháp AI",
+      intro:
+        "Chúng tôi nhúng AI vào nơi tạo ra giá trị đo lường được — từ pipeline dữ liệu và feature store đến agent và retrieval dùng LLM. Đội AI của chúng tôi kết hợp phán đoán nghiên cứu với kỷ luật production.",
+      capabilities: {
+        heading: "NĂNG LỰC",
+        items: [
+          { title: "Kỹ thuật dữ liệu & Feature", desc: "Tuyển chọn, gán nhãn và biến đổi dữ liệu thành feature đáng tin cậy cho huấn luyện và suy luận." },
+          { title: "Mô hình & Fine-tuning", desc: "Lựa chọn, tinh chỉnh và đánh giá mô hình — từ ML cổ điển đến LLM và VLM." },
+          { title: "Retrieval & Agent", desc: "Xây dựng pipeline RAG và agent gọi công cụ hành động trên dữ liệu và quy trình của bạn." },
+        ],
+      },
+      steps: {
+        heading: "TỪ DỮ LIỆU ĐẾN GIÁ TRỊ",
+        headingSuffix: "— Dòng chảy trí tuệ",
+        items: [
+          { step: "Dữ liệu", desc: "Thu thập và tuyển chọn dữ liệu đã gán nhãn, đáng tin cậy từ hệ thống của bạn." },
+          { step: "Feature", desc: "Kỹ thuật feature và embedding mang đúng tín hiệu." },
+          { step: "Mô hình", desc: "Huấn luyện, tinh chỉnh và đánh giá mô hình phù hợp cho bài toán." },
+          { step: "Triển khai", desc: "Phục vụ và quan sát nó một cách tin cậy trong production." },
+          { step: "Giá trị", desc: "Gắn mỗi lần triển khai với một kết quả kinh doanh đo lường được." },
+        ],
+      },
+      stack: {
+        heading: "CÔNG NGHỆ CỦA CHÚNG TÔI",
+        items: ["OpenAI", "Azure AI", "LangChain", "Pinecone", "Snowflake", "dbt"],
+      },
+      projects: {
+        heading: "AI TRONG SẢN XUẤT",
+        items: [
+          { title: "Agent xử lý tài liệu", desc: "Agent phân loại, trích xuất và định tuyến tài liệu giữa các hệ thống doanh nghiệp.", stack: ["OpenAI", "LangChain", "Azure"] },
+          { title: "Mô hình dự báo nhu cầu", desc: "Mô hình chuỗi thời gian cải thiện độ chính xác dự báo trên các kênh bán lẻ.", stack: ["Python", "Snowflake", "dbt"] },
+          { title: "Trợ lý hỗ trợ", desc: "Trợ lý RAG trả lời từ kho tri thức của bạn kèm nguồn trích dẫn.", stack: ["RAG", "Pinecone", "Next.js"] },
+        ],
+      },
+      cta: {
+        title: "Có use case AI?",
+        desc: "Mô tả quy trình bạn muốn làm cho thông minh và chúng tôi sẽ vạch lộ trình từ dữ liệu đến triển khai.",
         contactUs: "Liên hệ",
       },
     },
@@ -1175,6 +1425,13 @@ export const lo: Dictionary = {
       custom: "ພັດທະນາຊອບແວຕາມຄຳຂໍ",
       testing: "ບໍລິການທົດສອບ",
       legacy: "ຍ້າຍລະບົບເກົ່າ",
+      lowcode: "ການພັດທະນາ Low-code",
+      cloud: "ບໍລິການ Cloud",
+      ai: "ວິທີແກ້ໄຂ AI",
+    },
+    groups: {
+      outsourcing: "ບໍລິການ Outsource ຊອບແວ",
+      advanced: "ເທັກໂນໂລຢີຂັ້ນສູງ",
     },
     crossLinksHeading: "ບໍລິການອື່ນ",
     mobile: {
@@ -1374,6 +1631,124 @@ export const lo: Dictionary = {
       cta: {
         title: "ພ້ອມປັບລະບົບເກົ່າໃຫ້ທັນສະໄໝບໍ?",
         desc: "ເລົ່າກ່ຽວກັບລະບົບເກົ່າຂອງທ່ານ ແລະ ພວກເຮົາຈະວາງເສັ້ນທາງຍ້າຍທີ່ປອດໄພ ແບບເທື່ອລະຂັ້ນ ໄປສູ່ພື້ນຖານໃໝ່.",
+        contactUs: "ຕິດຕໍ່ພວກເຮົາ",
+      },
+    },
+    lowcode: {
+      heroTitle: "ການພັດທະນາ Low-code",
+      intro:
+        "ພວກເຮົາເລັ່ງການສົ່ງມອບດ້ວຍແພລດຟອມ low-code ແບບເຫັນພາບ, ຂັບເຄື່ອນດ້ວຍການຕັ້ງຄ່າ — ຜະສົມຜະສານອົງປະກອບສຳເລັດຮູບກັບສ່ວນຂະຫຍາຍແບບກຳນົດເອງ ເພື່ອໃຫ້ທ່ານອອກແອັບທີ່ເຊື່ອຖືໄດ້ໃນບໍ່ເທົ່າໃດອາທິດ ແທນທີ່ຈະເປັນບໍ່ເທົ່າໃດໄຕມາດ.",
+      capabilities: {
+        heading: "ສິ່ງທີ່ພວກເຮົາສົ່ງມອບ",
+        items: [
+          { title: "ປະກອບແອັບຢ່າງໄວ", desc: "ສ້າງຟອມ, ໜ້າຈໍ ແລະ າຍງານຈາກເຄື່ອງມືແບບເຫັນພາບ, ຂັບເຄື່ອນດ້ວຍການຕັ້ງຄ່າ." },
+          { title: "ອັດຕະໂນມັດຂັ້ນຕອນ", desc: "ສ້າງແບບຈຳລອງຂັ້ນຕອນທຸລະກິດດ້ວຍກົດ, ການອະນຸມັດ ແລະ ການສົ່ງຕໍ່ອັດຕະໂນມັດ." },
+          { title: "ການເຊື່ອມໂຍງ", desc: "ເຊື່ອມຂໍ້ມູນ ແລະ ລະບົບຂອງທ່ານຜ່ານ connector API ແລະ ອົງປະກອບສຳເລັດຮູບ." },
+          { title: "ສ່ວນຂະຫຍາຍແບບກຳນົດເອງ", desc: "ເພີ່ມ code ແບບກຳນົດເອງໃນຈຸດທີ່ຄວາມສາມາດດັ້ງເດີມຂອງແພລດຟອມສິ້ນສຸດ." },
+          { title: "ການຄຸ້ມຄອງ & ຝຶກອົບຮົມ", desc: "ສົ່ງມອບສິດເປັນເຈົ້າຂອງ, ຝຶກອົບຮົມທີມ ແລະ ຸ້ມຄອງວົງຈອນຊີວິດຂອງແອັບ." },
+        ],
+      },
+      process: {
+        heading: "ວິທີທີ່ພວກເຮົາສົ່ງມອບ",
+        steps: [
+          { step: "01", title: "ສ້າງແບບຈຳລອງ", desc: "ແປງເຂດວຽກ ແລະ ຂັ້ນຕອນຂອງທ່ານເປັນແບບຈຳລອງຂໍ້ມູນ ແລະ ຜັງຂັ້ນຕອນ." },
+          { step: "02", title: "ປະກອບ", desc: "ປະກອບໜ້າຈໍ, ກົດ ແລະ ກະແສຂໍ້ມູນຈາກເຄື່ອງມືແບບເຫັນພາບຂອງແພລດຟອມ." },
+          { step: "03", title: "ຂະຫຍາຍ", desc: "ນຳໃຊ້ logic ກຳນົດເອງ ຫຼື ານເຊື່ອມໂຍງທີ່ເກີນຄວາມສາມາດດັ້ງເດີມຂອງແພລດຟອມ." },
+          { step: "04", title: "ຢັ້ງຢືນ", desc: "ແລ່ນຜ່ານຈຸດກວດທົດສອບໜ້າທີ່, ການເື່ອມໂຍງ ແລະ UAT ກ່ອນອອກລຸ່ນ." },
+          { step: "05", title: "ວິວັດທະນາການ", desc: "ຝຶກອົບຮົມທີມ ແລະ ຄຸ້ມຄອງການປ່ຽນແປງ ເພື່ອໃຫ້ແອັບຂະຫຍາຍຕາມຄວາມຕ້ອງການ." },
+        ],
+      },
+      platforms: {
+        heading: "ແພລດຟອມທີ່ພວກເຮົາສ້າງ",
+        items: ["OutSystems", "Mendix", "Appian", "Microsoft Power Platform", "ServiceNow"],
+      },
+      benefits: {
+        heading: "ເປັນຫຍັງຄວນເລືອກພວກເຮົາ",
+        items: [
+          "ສົ່ງມອບໄວຂ້ນເທິງແພລດຟອມ low-code ທີ່ໄດ້ຮັບການຢັ້ງຢືນ",
+          "ທີມທຸລະກິດສາມາດປ່ຽນແປງໄດ້ໂດຍບໍ່ຕ້ອງໃຊ້ code",
+          "ການເຊື່ອມໂຍງເລິກກັບລະບົບທີ່ມີຢູ່ແລ້ວຂອງທ່ານ",
+          "ຄວາມປອດໄພ ແລະ ການຄຸ້ມຄອງລະດັບວິສາຫະກິດ",
+          "ເສັ້ນທາງອັບເກຣດເມື່ອ low-code ໄປຮອດຂີດຈຳກັດ",
+        ],
+      },
+      projects: {
+        heading: "ໂປຣເຈັກໂດດເດັ່ນ",
+        items: [
+          { title: "ອັດຕະໂນມັດຂັ້ນຕອນການໃຫ້ກູ້", desc: "ຂັ້ນຕອນການອອກເງິນກູ້ແບບ low-code ພ້ອມການອະນຸມັດອັດຕະໂນມັດ ແລະ ການສ້າງເອກະສານ.", stack: ["OutSystems", "PostgreSQL", "REST"] },
+          { title: "ປະຕູການປະຕິບັດການພາກສະໜາມ", desc: "ປະຕູການກວດກາພາກສະໜາມ ພ້ອມຟອມເຮັດວຽກ offline ແລະ dashboard ເວລາຈິງ.", stack: ["Mendix", "Azure", "Power BI"] },
+          { title: "ແອັບ self-service ບຸກຄະລາກອນ", desc: "ແອັບ self-service ສຳລັບການລາ, onboarding ແລະ ການອະນຸມັດເທິງທຸກອປະກອນ.", stack: ["Appian", "AWS", "SSO"] },
+        ],
+      },
+      cta: {
+        title: "ອອກໄວຂຶ້ນດ້ວຍ low-code?",
+        desc: "ສະແດງຂັ້ນຕອນທີ່ກຳລັງສ້າງຄວາມຫຍຸ້ງຍາກ ແລະ ພວກເຮົາຈະວາງເສັ້ນທາງ low-code ເພ່ອອັດຕະໂນມັດມັນ.",
+        contactUs: "ຕິດຕໍ່ພວກເຮົາ",
+      },
+    },
+    cloud: {
+      heroTitle: "ບໍລິການ Cloud",
+      intro:
+        "ພວກເຮົາອອກແບບ, ຍ້າຍ ແລະ ດຳເນີນການໂຄງລ່າງ cloud ທີ່ປອດໄພ, ັງເກດດ້ ແລະ ປະຢັດຕົ້ນທຶນ — ຕັ້ງແຕ່ landing zone ແລະ ວິສະວະກຳແພລດຟອມ ຈົນເຖິງການດຳເນີນການ 24/7.",
+      pillars: {
+        heading: "ເສົາຫຼັກ CLOUD ຂອງພວກເຮົາ",
+        nut: "ຄວາມປອດໄພ",
+        bolt: "ການຄວບຄຸມຕົ້ນທຶນ",
+        items: [
+          { title: "ຕັ້ງຖານ & ຍ້າຍ", desc: "ປະເມີນ, ວາງແຜນ ແລະ ຍ້າຍ workload ໄປສູ່ cloud ທີ່ເໝາະສົມ ດ້ວຍເວລາຢຸດຊົ່ວຄາວໜ້ອຍທີ່ສຸດ." },
+          { title: "ແພລດຟອມ & IaC", desc: "ຈັດສັນ landing zone, ເຄືອຂ່າຍ ແລະ ແພລດຟອມດ້ວຍ infrastructure-as-code." },
+          { title: "ສັງເກດ & ປົກປ້ອງ", desc: "ຕິດຕັ້ງການຕິດຕາມ, ການບັນທຶກ log ແລະ ຮົ້ວປ້ອງກັນຕັ້ງແຕ່ມື້ທຳອິດ." },
+          { title: "ດຳເນີນການ & ປັບປຸງ", desc: "ດຳເນີນການ, ປັບແຕ່ງ ແລະ ປັບປຸງຢ່າງຕໍ່ເນື່ອງ ເພື່ອຄວາມເຊື່ອຖື, ຕົ້ນທຶນ ແລະ ປະສິດທິພາບ." },
+        ],
+      },
+      certifications: {
+        heading: "ໃບຢັ້ງຢືນ & ຜ່ານການທົດລອງຈິງ",
+        items: ["AWS", "GCP", "Azure", "Kubernetes", "Terraform"],
+      },
+      cta: {
+        title: "ພ້ອມສຳລັບ cloud ທີ່ອອກແບບມາດີບໍ?",
+        desc: "ບອກພວກເຮົາວ່າທ່ານກຳລັງແລ່ນຢູ່ໃສ ແລະ ຢາກຂະຫຍາຍໄປໃສ — ພວກເຮົາຈະວາງເສັ້ນທາງການຍ້າຍ.",
+        contactUs: "ຕິດຕໍ່ພວກເຮົາ",
+      },
+    },
+    ai: {
+      heroTitle: "ວິທີແກ້ໄຂ AI",
+      intro:
+        "ພວກເຮົາຝັງ AI ໃນບ່ອນທີ່ສ້າງມູນຄ່າທີ່ວັດແທກໄດ້ — ຕັ້ງແຕ່ pipeline ຂໍ້ມູນ ແລະ feature store ຈົນເຖິງ agent ແລະ retrieval ທີ່ໃຊ້ LLM. ທີມ AI ຂອງພວກເຮົາຜະສົມການຕັດສິນໃຈດ້ານການຄົ້ນຄວ້າກັບວິໄນດ້ານການຜະລິດ.",
+      capabilities: {
+        heading: "ຄວາມສາມາດ",
+        items: [
+          { title: "ວິສະວະກຳຂໍ້ມູນ & Feature", desc: "ຄັດເລືອກ, ກນົດປ້າຍ ແລະ ແປງຂໍ້ມູນເປັນ feature ທີ່ເຊື່ອຖືໄດ້ ສຳລັບການຝຶກ ແລະ ການສະຫຼຸບ." },
+          { title: "ໂມເດວ & Fine-tuning", desc: "ເລືອກ, ປັບແຕ່ງ ແລະ ະເມີນມເດວ — ັ້ງແຕ່ ML ແບບດັ້ງເດີມ ຈົນເຖິງ LLM ແລະ VLM." },
+          { title: "Retrieval & Agent", desc: "ສ້າງ pipeline RAG ແລະ agent ທີ່ເອີ້ນເຄື່ອງມື ເພື່ອກະທຳເທິງຂໍ້ມູນ ແລະ ຂັ້ນຕອນຂອງທ່ານ." },
+        ],
+      },
+      steps: {
+        heading: "ຈາກຂໍ້ມູນສູ່ມູນຄ່າ",
+        headingSuffix: "— ກະແສຂອງປັນຍາ",
+        items: [
+          { step: "ຂໍ້ມູນ", desc: "ເກັບກຳ ແລະ ຄັດເລືອກຂໍ້ມູນທີ່ກຳນົດປ້າຍ, ເຊື່ອຖືໄດ້ ຈາກລະບົບຂອງທ່ານ." },
+          { step: "Feature", desc: "ສ້າງ feature ແລະ embedding ທີ່ມີສັນຍານທີ່ຖືກຕ້ອງ." },
+          { step: "ໂມເດວ", desc: "ຝຶກ, ປັບແຕ່ງ ແລະ ປະເມີນໂມເດວທີ່ເໝາະສົມສຳລັບວຽກ." },
+          { step: "ນຳໃຊ້", desc: "ໃຫ້ບໍລິການ ແລະ ັງເກດມັນຢ່າງເຊື່ອຖືໄດ້ໃນ production." },
+          { step: "ມູນຄ່າ", desc: "ເຊື່ອມທຸກການນຳໃຊ້ກັບຜົນລັບທຸລະກິດທີ່ວັດແທກໄດ້." },
+        ],
+      },
+      stack: {
+        heading: "ເທັກໂນໂລຢີຂອງພວກເຮົາ",
+        items: ["OpenAI", "Azure AI", "LangChain", "Pinecone", "Snowflake", "dbt"],
+      },
+      projects: {
+        heading: "AI ໃນການຜະລິດ",
+        items: [
+          { title: "Agent ຈັດການເອກະສານ", desc: "Agent ທີ່ຈຳແນກ, ດຶງຂໍ້ມູນ ແລະ ສົ່ງຕໍ່ເອກະສານລະຫວ່າງລະບົບວິສາຫະກິດ.", stack: ["OpenAI", "LangChain", "Azure"] },
+          { title: "ໂມເດວຄາດຄະເນຄວາມຕ້ອງການ", desc: "ໂມເດວອະນຸກົມເວລາ ທີ່ປັບປຸງຄວາມຖືກຕ້ອງຂອງການຄາດຄະເນໃນຊ່ອງທາງການຄ້າ.", stack: ["Python", "Snowflake", "dbt"] },
+          { title: "ຜູ້ຊ່ວຍການສະໜັບສະໜູນ", desc: "ຜູ້ຊ່ວຍ RAG ທີ່ຕອບຈາກຄັງຄວາມຮູ້ຂອງທ່ານ ພ້ອມແຫຼ່ງອ້າງອີງ.", stack: ["RAG", "Pinecone", "Next.js"] },
+        ],
+      },
+      cta: {
+        title: "ມີ use case AI ບໍ?",
+        desc: "ອະທິບາຍຂັ້ນຕອນທີ່ທ່ານຢາກເຮັດໃຫ້ມີປັນຍາ ແລະ ພວກເຮົາຈະວາງເສັ້ນທາງຈາກຂໍ້ມູນສູ່ການນຳໃຊ້.",
         contactUs: "ຕິດຕໍ່ພວກເຮົາ",
       },
     },

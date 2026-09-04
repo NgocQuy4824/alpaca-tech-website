@@ -47,6 +47,9 @@ export function Footer({ dict, locale }: Props) {
     { key: "custom", label: dict.services.nav.custom },
     { key: "testing", label: dict.services.nav.testing },
     { key: "legacy", label: dict.services.nav.legacy },
+    { key: "lowcode", label: dict.services.nav.lowcode },
+    { key: "cloud", label: dict.services.nav.cloud },
+    { key: "ai", label: dict.services.nav.ai },
   ];
 
   const companyLinks = [

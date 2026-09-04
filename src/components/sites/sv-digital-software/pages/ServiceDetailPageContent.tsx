@@ -6,6 +6,9 @@ import { MobileServiceContent } from "./services/MobileServiceContent";
 import { CustomServiceContent } from "./services/CustomServiceContent";
 import { TestingServiceContent } from "./services/TestingServiceContent";
 import { LegacyServiceContent } from "./services/LegacyServiceContent";
+import { LowCodeServiceContent } from "./services/LowCodeServiceContent";
+import { CloudServiceContent } from "./services/CloudServiceContent";
+import { AiServiceContent } from "./services/AiServiceContent";
 
 type Props = { dict: Dictionary; locale: Locale; slug: ServiceSlug };
 
@@ -25,5 +28,11 @@ export function ServiceDetailPageContent({ dict, locale, slug }: Props) {
       return <TestingServiceContent dict={dict} locale={locale} />;
     case "legacy":
       return <LegacyServiceContent dict={dict} locale={locale} />;
+    case "lowcode":
+      return <LowCodeServiceContent dict={dict} locale={locale} />;
+    case "cloud":
+      return <CloudServiceContent dict={dict} locale={locale} />;
+    case "ai":
+      return <AiServiceContent dict={dict} locale={locale} />;
   }
 }

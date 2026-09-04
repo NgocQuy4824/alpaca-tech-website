@@ -7,27 +7,51 @@ export const SERVICE_SLUGS = [
   "custom-software-development",
   "testing-services",
   "legacy-system-migration",
+  "low-code",
+  "cloud-services",
+  "ai",
 ] as const;
 
 export type ServiceSlug = (typeof SERVICE_SLUGS)[number];
 
 /** Map a URL slug to the matching key in the `services` dictionary block. */
-export const SERVICE_KEY_BY_SLUG: Record<ServiceSlug, "mobile" | "custom" | "testing" | "legacy"> = {
+export const SERVICE_KEY_BY_SLUG = {
   "mobile-solutions": "mobile",
   "custom-software-development": "custom",
   "testing-services": "testing",
   "legacy-system-migration": "legacy",
-};
+  "low-code": "lowcode",
+  "cloud-services": "cloud",
+  ai: "ai",
+} as const;
 
 /** Reverse map: dictionary key -> URL slug (for cross-links). */
-export const SERVICE_SLUG_BY_KEY: Record<"mobile" | "custom" | "testing" | "legacy", ServiceSlug> = {
+export const SERVICE_SLUG_BY_KEY = {
   mobile: "mobile-solutions",
   custom: "custom-software-development",
   testing: "testing-services",
   legacy: "legacy-system-migration",
-};
+  lowcode: "low-code",
+  cloud: "cloud-services",
+  ai: "ai",
+} as const;
 
 export type ServiceKey = keyof typeof SERVICE_SLUG_BY_KEY;
+
+/**
+ * Services are presented in two groups (mirrors the header mega-menu and the
+ * TSO-style "outsourcing vs advanced technology" split).
+ */
+export const SERVICE_GROUPS: { key: "outsourcing" | "advanced"; services: ServiceKey[] }[] = [
+  { key: "outsourcing", services: ["mobile", "custom", "testing", "legacy"] },
+  { key: "advanced", services: ["lowcode", "cloud", "ai"] },
+];
+
+/** The group a service belongs to (used for cross-links of related services). */
+export function serviceGroupOf(key: ServiceKey): ServiceKey[] {
+  const group = SERVICE_GROUPS.find((g) => g.services.includes(key));
+  return group ? group.services : [key];
+}
 
 export function isServiceSlug(value: string): value is ServiceSlug {
   return (SERVICE_SLUGS as readonly string[]).includes(value);

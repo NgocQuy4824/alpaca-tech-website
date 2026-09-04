@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { SERVICE_SLUG_BY_KEY, type ServiceKey } from "@/lib/services";
+import { SERVICE_SLUG_BY_KEY, serviceGroupOf, type ServiceKey } from "@/lib/services";
 
 type Props = {
   locale: string;
@@ -10,9 +10,14 @@ type Props = {
 };
 
 export function ServiceCrossLinks({ locale, currentKey, heading, nav }: Props) {
-  const others: ServiceKey[] = (["mobile", "custom", "testing", "legacy"] as const).filter(
-    (k) => k !== currentKey
-  );
+  // Show other services in the same group first, then one from the other group
+  // (keeps the card row at 3 items and surfaces the full range).
+  const group = serviceGroupOf(currentKey);
+  const groupOthers = group.filter((k) => k !== currentKey);
+  const external = (Object.keys(SERVICE_SLUG_BY_KEY) as ServiceKey[]).filter(
+    (k) => k !== currentKey && !group.includes(k)
+  ) as ServiceKey[];
+  const others: ServiceKey[] = [...groupOthers, external[0]].slice(0, 3);
   return (
     <nav className="flex flex-col gap-4" aria-label={heading}>
       <h2 className="text-at-text-muted text-xs font-bold tracking-[0.24em] font-[var(--font-montserrat)]">

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import type { Locale } from "@/lib/i18n/types";
 import { getDictionary } from "@/lib/i18n/getDictionary";
-import { SERVICE_SLUGS, servicePath } from "@/lib/services";
+import { SERVICE_SLUG_BY_KEY, SERVICE_GROUPS, servicePath, type ServiceKey } from "@/lib/services";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 type Props = { locale: Locale };
@@ -15,6 +15,7 @@ type NavItem = {
   label: string;
   href: string;
   children?: { label: string; href: string }[];
+  groups?: { heading: string; items: { label: string; href: string }[] }[];
 };
 
 export function Header({ locale }: Props) {
@@ -48,13 +49,17 @@ export function Header({ locale }: Props) {
   }, [menuOpen]);
 
   const servicesHref = `/${locale}/services`;
-  const serviceChildren = SERVICE_SLUGS.map((slug) => ({
-    label: dict.services.nav[slug === "mobile-solutions" ? "mobile" : slug === "custom-software-development" ? "custom" : slug === "testing-services" ? "testing" : "legacy"],
-    href: servicePath(locale, slug),
+  // Services are grouped in the desktop mega-menu exactly as the site nav labels them:
+  // outsourcing (mobile, custom, testing, legacy) vs advanced tech (low-code, cloud, AI).
+  const hrefFor = (key: ServiceKey) => servicePath(locale, SERVICE_SLUG_BY_KEY[key]);
+  const serviceGroups = SERVICE_GROUPS.map((group) => ({
+    heading: dict.services.groups[group.key],
+    items: group.services.map((key) => ({ label: dict.services.nav[key], href: hrefFor(key) })),
   }));
+  const serviceChildren = serviceGroups.flatMap((g) => g.items);
 
   const NAV_ITEMS: NavItem[] = [
-    { label: dict.header.nav.solution, href: servicesHref, children: serviceChildren },
+    { label: dict.header.nav.solution, href: servicesHref, children: serviceChildren, groups: serviceGroups },
     { label: dict.header.nav.technologies, href: `/${locale}/technologies` },
     { label: dict.header.nav.recruit, href: `/${locale}/recruit` },
     { label: dict.header.nav.company, href: `/${locale}/company` },
@@ -121,21 +126,44 @@ export function Header({ locale }: Props) {
                     }`}
                   />
                 </Link>
-                {/* Dropdown panel — pt-3 bridges the hover gap so it doesn't drop */}
+                {/* Mega-dropdown — pt-3 bridges the hover gap so it doesn't drop */}
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <ul className="w-[300px] rounded-xl bg-at-section border border-at-border shadow-xl py-2 overflow-hidden">
-                    {item.children.map((child) => (
-                      <li key={child.href}>
-                        <Link
-                          href={child.href}
-                          className="flex items-center gap-2.5 px-4 py-2.5 text-at-text-dark hover:bg-at-bg-soft hover:text-at-primary text-sm font-medium transition-colors"
-                        >
-                          <span className="w-1.5 h-1.5 rounded-full bg-at-pink shrink-0" />
-                          <span className="truncate">{child.label}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  {item.groups ? (
+                    <div className="min-w-[560px] rounded-2xl bg-at-section border border-at-border shadow-xl overflow-hidden p-6 grid grid-cols-2 gap-8">
+                      {item.groups.map((group) => (
+                        <div key={group.heading} className="flex flex-col gap-3">
+                          <span className="text-[11px] font-extrabold tracking-[0.18em] text-at-primary/70">{group.heading.toUpperCase()}</span>
+                          <ul className="flex flex-col gap-0.5">
+                            {group.items.map((child) => (
+                              <li key={child.href}>
+                                <Link
+                                  href={child.href}
+                                  className="flex items-center gap-2.5 py-2 text-at-text-dark hover:text-at-primary text-sm font-medium transition-colors"
+                                >
+                                  <span className="w-1.5 h-1.5 rounded-full bg-at-pink shrink-0" />
+                                  <span>{child.label}</span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <ul className="w-[300px] rounded-xl bg-at-section border border-at-border shadow-xl py-2 overflow-hidden">
+                      {item.children!.map((child) => (
+                        <li key={child.href}>
+                          <Link
+                            href={child.href}
+                            className="flex items-center gap-2.5 px-4 py-2.5 text-at-text-dark hover:bg-at-bg-soft hover:text-at-primary text-sm font-medium transition-colors"
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full bg-at-pink shrink-0" />
+                            <span className="truncate">{child.label}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             ) : (
@@ -229,20 +257,46 @@ export function Header({ locale }: Props) {
                       servicesOpen ? "grid-rows-[1fr] pb-4" : "grid-rows-[0fr]"
                     }`}
                   >
-                    <ul className="flex flex-col gap-1 min-h-0">
-                      {item.children.map((child) => (
-                        <li key={child.href}>
-                          <Link
-                            href={child.href}
-                            onClick={() => setMenuOpen(false)}
-                            className="flex items-center gap-2.5 py-2.5 pl-4 text-white/80 hover:text-white text-base font-medium transition-colors"
-                          >
-                            <span className="w-1.5 h-1.5 rounded-full bg-at-pink shrink-0" />
-                            <span className="truncate">{child.label}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="flex flex-col gap-3 min-h-0">
+                      {item.groups ? (
+                        item.groups.map((group) => (
+                          <div key={group.heading} className="flex flex-col gap-1">
+                            <span className="px-4 pt-1 text-[10px] font-extrabold tracking-[0.18em] text-white/40">
+                              {group.heading.toUpperCase()}
+                            </span>
+                            <ul className="flex flex-col gap-0.5">
+                              {group.items.map((child) => (
+                                <li key={child.href}>
+                                  <Link
+                                    href={child.href}
+                                    onClick={() => setMenuOpen(false)}
+                                    className="flex items-center gap-2.5 py-2.5 pl-4 text-white/80 hover:text-white text-base font-medium transition-colors"
+                                  >
+                                    <span className="w-1.5 h-1.5 rounded-full bg-at-pink shrink-0" />
+                                    <span className="truncate">{child.label}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))
+                      ) : (
+                        <ul className="flex flex-col gap-1">
+                          {item.children!.map((child) => (
+                            <li key={child.href}>
+                              <Link
+                                href={child.href}
+                                onClick={() => setMenuOpen(false)}
+                                className="flex items-center gap-2.5 py-2.5 pl-4 text-white/80 hover:text-white text-base font-medium transition-colors"
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full bg-at-pink shrink-0" />
+                                <span className="truncate">{child.label}</span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   </div>
                 </div>
               ) : (
